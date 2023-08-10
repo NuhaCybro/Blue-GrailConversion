@@ -1,0 +1,198 @@
+.navbar-nav {
+    .bg-custom-search {
+        background-color: $secondary-color;
+        border-radius: 6px;
+        border: 1px solid $stroke-color;
+        border-left: none;
+        border-right: none;
+        padding-left: 0px;
+        color: $sub-fonts;
+        font-size: 14px;
+        font-weight: 400;
+        width: 400px;
+        position: relative;
+
+    }
+}
+
+.bg-custom-search::placeholder {
+    color: $sub-fonts;
+}
+
+.bg-custom-search:focus {
+    color: $sub-fonts;
+    background-color: $secondary-color;
+    border-color: $stroke-color;
+    outline: 0;
+    box-shadow: none;
+}
+
+.bg-search {
+    background-color: $secondary-color;
+    border-radius: 6px;
+    border: 1px solid $stroke-color;
+    border-right: none;
+    background-color: $secondary-color;
+    padding-right: 6px;
+}
+
+.bg-search-icon {
+    color: $sub-fonts;
+}
+
+.input-group-text {
+    .bg-searchbox-K {
+        width: 28px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-weight: 500;
+        color: $sub-fonts;
+    }
+}
+
+.bg-search_property {
+    background-color: $secondary-color;
+    border: 1px solid $stroke-color;
+    border-radius: 6px;
+    padding: 3px;
+}
+
+.navbar-nav {
+    .nav-item {
+        .bg-search_property:last-child {
+            border-left: 0px;
+            padding-right: 10px;
+
+        }
+    }
+}
+
+.bg-icons {
+    color: $primary-font;
+    font-size: 20px;
+}
+
+.bg-nav-links {
+    color: $main-heading;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: $text-font;
+}
+
+.bg-nav-links:hover {
+    color: $main-heading;
+}
+
+.bg-nav-links {
+    span {
+        padding: 0 0.6rem;
+    }
+}
+
+.bg-top-navbar {
+    background-color: #fff;
+    border-bottom: 1px solid $stroke-color;
+}
+
+.badge-clock {
+    background-color: $badge-bg;
+    position: absolute;
+    top: 8px;
+    right: -6px;
+    font-size: 9px;
+    padding: 3px 6px;
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+.bg-clock-container {
+    position: relative;
+}
+
+.bg-left-sidebar {
+    background-color: #fff;
+    border-right: 2px solid #F2F2F4;
+    height: 90vh;
+    overflow-y: auto;
+    padding-bottom: 4rem;
+}
+
+.bg-sidebar-nav {
+    font-size: 14px;
+    font-family: $mainhead-font;
+
+    color: $primary-font;
+    font-weight: 600;
+}
+
+.bg-sidebar-nav:hover {
+    color: $primary-font;
+}
+
+.bg-sidebar-nav {
+    .bg-icons {
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+.bg-sidebar-heading {
+    color: $sub-fonts;
+    font-family: $text-font;
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+.bg-logo-img {
+    padding-left: 1rem;
+}
+
+.bg-sidebar-collapse {
+    position: fixed;
+    bottom: 0px;
+    padding: 1rem;
+    background-color: #fff;
+
+}
+
+.bg-sidebar-collapse {
+    a {
+        color: $primary-font;
+        font-size: 14px;
+        text-decoration: none;
+        font-family: $text-font;
+        font-weight: 500;
+        align-items: center;
+        display: flex;
+    }
+}
+
+.bg-sidebar-collapse {
+    a {
+        .bg-collapse-icon {
+            background: $secondary-color;
+            border-radius: 50px;
+            padding: 0 0.2rem;
+            margin-right: 9px;
+        }
+    }
+}
+.bg-new-btn{
+    color: $primary-font;
+    font-weight: 500;
+    padding: 0.6rem 0rem;
+    font-size: 14px;
+    font-family: $text-font;
+}
+.bg-page-count{
+    font-size: 14px;
+    color: $primary-font;
+}

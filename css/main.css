@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+.bg-button-stroke {
+  border-radius: 6px;
+  border-top: 1px solid #DFDFDF;
+  border-right: 1px solid #DFDFDF;
+  border-bottom: 2px solid #DFDFDF;
+  border-left: 1px solid #DFDFDF;
+  background-color: #fff;
+}
+
+.bg-border-btm {
+  border-bottom: 1px solid #DFDFDF;
+}
+
+.navbar-nav .bg-custom-search {
+  background-color: #F7F7F7;
+  border-radius: 6px;
+  border: 1px solid #DFDFDF;
+  border-left: none;
+  border-right: none;
+  padding-left: 0px;
+  color: #AFB7C9;
+  font-size: 14px;
+  font-weight: 400;
+  width: 400px;
+  position: relative;
+}
+
+.bg-custom-search::-webkit-input-placeholder {
+  color: #AFB7C9;
+}
+
+.bg-custom-search::-moz-placeholder {
+  color: #AFB7C9;
+}
+
+.bg-custom-search:-ms-input-placeholder {
+  color: #AFB7C9;
+}
+
+.bg-custom-search::-ms-input-placeholder {
+  color: #AFB7C9;
+}
+
+.bg-custom-search::placeholder {
+  color: #AFB7C9;
+}
+
+.bg-custom-search:focus {
+  color: #AFB7C9;
+  background-color: #F7F7F7;
+  border-color: #DFDFDF;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-search {
+  background-color: #F7F7F7;
+  border-radius: 6px;
+  border: 1px solid #DFDFDF;
+  border-right: none;
+  background-color: #F7F7F7;
+  padding-right: 6px;
+}
+
+.bg-search-icon {
+  color: #AFB7C9;
+}
+
+.input-group-text .bg-searchbox-K {
+  width: 28px;
+  height: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  font-weight: 500;
+  color: #AFB7C9;
+}
+
+.bg-search_property {
+  background-color: #F7F7F7;
+  border: 1px solid #DFDFDF;
+  border-radius: 6px;
+  padding: 3px;
+}
+
+.navbar-nav .nav-item .bg-search_property:last-child {
+  border-left: 0px;
+  padding-right: 10px;
+}
+
+.bg-icons {
+  color: #505050;
+  font-size: 20px;
+}
+
+.bg-nav-links {
+  color: #222222;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+
+.bg-nav-links:hover {
+  color: #222222;
+}
+
+.bg-nav-links span {
+  padding: 0 0.6rem;
+}
+
+.bg-top-navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #DFDFDF;
+}
+
+.badge-clock {
+  background-color: #FF8982;
+  position: absolute;
+  top: 8px;
+  right: -6px;
+  font-size: 9px;
+  padding: 3px 6px;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+.bg-clock-container {
+  position: relative;
+}
+
+.bg-left-sidebar {
+  background-color: #fff;
+  border-right: 2px solid #F2F2F4;
+  height: 90vh;
+  overflow-y: auto;
+  padding-bottom: 4rem;
+}
+
+.bg-sidebar-nav {
+  font-size: 14px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #505050;
+  font-weight: 600;
+}
+
+.bg-sidebar-nav:hover {
+  color: #505050;
+}
+
+.bg-sidebar-nav .bg-icons {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.bg-sidebar-heading {
+  color: #AFB7C9;
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+
+.bg-logo-img {
+  padding-left: 1rem;
+}
+
+.bg-sidebar-collapse {
+  position: fixed;
+  bottom: 0px;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.bg-sidebar-collapse a {
+  color: #505050;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bg-sidebar-collapse a .bg-collapse-icon {
+  background: #F7F7F7;
+  border-radius: 50px;
+  padding: 0 0.2rem;
+  margin-right: 9px;
+}
+
+.bg-new-btn {
+  color: #505050;
+  font-weight: 500;
+  padding: 0.6rem 0rem;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+}
+
+.bg-page-count {
+  font-size: 14px;
+  color: #505050;
+}

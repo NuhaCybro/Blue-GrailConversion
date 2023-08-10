@@ -1,0 +1,7 @@
+.bg-button-stroke {
+  border-radius: 6px;
+  border-top: 1px solid #DFDFDF;
+  border-right: 1px solid #DFDFDF;
+  border-bottom: 2px solid #DFDFDF;
+  border-left: 1px solid #DFDFDF;
+}
