@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form settings page</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-top-navbar">
+        <div class="container-fluid">
+            <a href="" class="bg-menu_icon d-block d-md-none"> <i class="bg-icons ri-menu-line"></i></a>
+            <a class="navbar-brand bg-logo-img" href="#">
+                <img src="images/BlueGrail.svg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+            </a>
+            <ul class="navbar-nav bg-search_navbar-nav d-none d-md-block">
+                <li class="nav-item">
+                    <form class="d-flex">
+                        <div class="input-group">
+                            <span class="input-group-text bg-search">
+                                <i class="ri-search-line bg-search-icon"></i>
+                            </span>
+                            <input class="form-control bg-custom-search " type="search" placeholder="Search"
+                                aria-label="Search">
+                            <span class="input-group-text bg-search_property">
+                                <i class="ri-command-line bg-search-icon bg-searchbox-K bg-button-stroke"></i>
+                            </span>
+                            <span class="input-group-text bg-search_property">
+                                <a href="" class="bg-searchbox-K bg-button-stroke"> K</a>
+                            </span>
+                        </div>
+                    </form>
+                </li>
+            </ul>
+            <ul class="navbar-nav d-flex flex-row ms-auto align-items-center">
+                <li class="nav-item d-block d-md-none">
+                    <a href="" class="nav-link px-2 bg-mob-search-icon">
+                        <i class="ri-search-line bg-icons"></i>
+                    </a>
+
+                    <div class="bg-mob-search_container">
+                        <form class="d-flex">
+                            <div class="input-group">
+                                <span class="input-group-text bg-search bg-mob-search-box">
+                                    <i class="ri-search-line bg-search-icon"></i>
+                                </span>
+                                <input class="form-control bg-custom-search bg-mob-search-box" type="search"
+                                    placeholder="Search" aria-label="Search">
+                                <span class="input-group-text bg-search_property bg-mob-search-box">
+                                    <i class="ri-command-line bg-search-icon bg-searchbox-K bg-button-stroke"></i>
+                                </span>
+                                <span class="input-group-text bg-search_property bg-mob-search-box">
+                                    <a href="" class="bg-searchbox-K bg-button-stroke">K</a>
+                                </span>
+                            </div>
+
+
+                        </form>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle bg-dropdown-arrow" href="#" id="chatDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="ri-chat-3-line bg-icons"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="chatDropdown">
+                        <li><a class="dropdown-item" href="#">Chat Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Chat Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Chat Option 3</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle bg-dropdown-arrow bg-clock-container" href="#" id="clockDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="ri-time-line bg-icons"></i>
+                        <span class="badge badge-clock">21</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="clockDropdown">
+                        <li><a class="dropdown-item" href="#">Clock Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Clock Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Clock Option 3</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bg-nav-links" href="#">
+                        <span>Acme, Inc.</span>
+                        <img src="images/user-profile.png" alt="Profile" class="profile-pic rounded-circle me-2">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="bg-overlay"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 d-md-block bg-left-sidebar">
+                <div class="position-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link bg-sidebar-heading" href="#">
+                                Modules
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-chat-3-line bg-icons"></i>Discuss
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-calendar-line bg-icons"></i> Calendar
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-survey-line bg-icons"></i>
+                                To-do
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-contacts-book-line bg-icons"></i>
+                                Contacts
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-shake-hands-line bg-icons"></i>
+                                CRM
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav active-sidebar" href="#">
+                                <i class="ri-line-chart-line bg-icons"></i>
+                                Sales
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-dashboard-line bg-icons"></i>
+                                Dashboards
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-bank-card-line bg-icons"></i>
+                                Point of Sale
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-bill-line bg-icons"></i>
+                                Invoicing
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-projector-line bg-icons"></i>
+                                Project
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-timer-line bg-icons"></i>
+                                Timesheets
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-global-line bg-icons"></i>
+                                Website
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-graduation-cap-line  bg-icons"></i>
+                                eLearning
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-mail-open-line bg-icons"></i>
+                                Email Marketing
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-smartphone-line  bg-icons"></i>
+                                SMS Marketing
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-calendar-event-line bg-icons"></i>
+                                Events
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-checkbox-line  bg-icons"></i>
+                                Surveys
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-bank-card-2-line  bg-icons"></i>
+                                Purchase
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-archive-line  bg-icons"></i>
+                                Inventory
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="collapse-icon text-center bg-sidebar-collapse">
+                    <a href="#sidebarCollapse" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="sidebarCollapse">
+                        <i class="ri-arrow-left-s-line bg-icons  bg-collapse-icon"></i>
+                        Collapse Menu
+                    </a>
+                </div>
+            </nav>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 ">
+                <section id="bg-main-section">
+                    <div class="bg-form-settings-main-content flex-grow-1 ">
+                        <div class="row d-flex align-items-center py-2  bg-border-btm">
+                            <div class="col bg-main-sectionhead d-flex   py-1">
+                                <button class="bg-navigation-btn">Team</button>
+                                <button class="bg-navigation-btn">New</button>
+                            </div>
+
+                        </div>
+
+                        <div class="row bg-form-settings_content">
+                            <div class="p-0">
+                                <ul class=" nav nav-tabs mb-3 " id="ex1" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link bg-sidebar-nav bg-form-settings_tab active" id="ex3-tab-1"
+                                            data-bs-toggle="tab" href="#ex3-tabs-1" role="tab"
+                                            aria-controls="ex3-tabs-1" aria-selected="true">CRM</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link bg-sidebar-nav bg-form-settings_tab" id="ex3-tab-2"
+                                            data-bs-toggle="tab" href="#ex3-tabs-2" role="tab"
+                                            aria-controls="ex3-tabs-2" aria-selected="false">Sales</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link bg-sidebar-nav bg-form-settings_tab" id="ex3-tab-3"
+                                            data-bs-toggle="tab" href="#ex3-tabs-3" role="tab"
+                                            aria-controls="ex3-tabs-3" aria-selected="false">Accounting</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link bg-sidebar-nav bg-form-settings_tab" id="ex3-tab-4"
+                                            data-bs-toggle="tab" href="#ex3-tabs-4" role="tab"
+                                            aria-controls="ex3-tabs-4" aria-selected="false">Reporting</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link bg-sidebar-nav bg-form-settings_tab" id="ex3-tab-5"
+                                            data-bs-toggle="tab" href="#ex3-tabs-5" role="tab"
+                                            aria-controls="ex3-tabs-5" aria-selected="false">Taxes</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link bg-sidebar-nav bg-form-settings_tab" id="ex3-tab-6"
+                                            data-bs-toggle="tab" href="#ex3-tabs-6" role="tab"
+                                            aria-controls="ex3-tabs-6" aria-selected="false">Payroll</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link bg-sidebar-nav bg-form-settings_tab" id="ex3-tab-7"
+                                            data-bs-toggle="tab" href="#ex3-tabs-7" role="tab"
+                                            aria-controls="ex3-tabs-7" aria-selected="false">Customers</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link bg-sidebar-nav bg-form-settings_tab" id="ex3-tab-8"
+                                            data-bs-toggle="tab" href="#ex3-tabs-8" role="tab"
+                                            aria-controls="ex3-tabs-8" aria-selected="false">Configuration</a>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content px-3" id="ex2-content">
+                                    <div class="tab-pane fade show active" id="ex3-tabs-1" role="tabpanel"
+                                        aria-labelledby="ex3-tab-1">
+                                        <form class="py-2">
+                                            <div class="mb-4">
+                                                <label for="name"
+                                                    class="form-label bg-form_label bg-form_label-sm">Name</label>
+                                                <div class="input-group bg-inputbox-container">
+                                                    <input type="text" class="form-control bg-form-inputbox" id="name"
+                                                        placeholder="e.g. Customer Care">
+                                                    <select class="bg-selection_box" id="language">
+                                                        <option value="english">EN</option>
+                                                        <option value="spanish">SN</option>
+                                                        <option value="french">FH</option>
+
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <div class="mb-3 bg-border-btm">
+                                                    <p class="form-label bg-form_label">Assignment &
+                                                        Visibility</p>
+                                                </div>
+
+                                                <label for="name"
+                                                    class="form-label bg-form_label bg-form_label-sm">Visibility</label>
+                                                <p class="bg-form-settings-txt">Users to whom this team will be visible.
+                                                </p>
+                                                <div class="d-flex flex-wrap mb-3">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="options"
+                                                            id="option1" value="option1">
+                                                        <label class="bg-form-check-label" for="option1">Invited
+                                                            internal
+                                                            users</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="options"
+                                                            id="option2" value="option2">
+                                                        <label class="bg-form-check-label" for="option2">All internal
+                                                            users</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="options"
+                                                            id="option3" value="option3" checked>
+                                                        <label class="bg-form-check-label" for="option3">Invited portal
+                                                            users
+                                                            and
+                                                            all
+                                                            internal
+                                                            users</label>
+                                                    </div>
+                                                </div>
+                                                <div class="bg-form-setting-ideabox mb-3"><i
+                                                        class="ri-lightbulb-line"></i><span>Grant
+                                                        portal
+                                                        users access to your helpdesk or tickets by adding them as
+                                                        followers</span>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <label for="name"
+                                                        class="form-label bg-form_label bg-form_label-sm">Follow
+                                                        All
+                                                        Team’s
+                                                        Ticket</label>
+                                                    <p class="bg-form-settings-txt">Receive notifications whenever
+                                                        tickets
+                                                        are
+                                                        created,
+                                                        rated or
+                                                        discussed on in this team</p>
+                                                    <div class="mb-3">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="checkbox">
+                                                            <label
+                                                                class="form-check-label bg-form_label bg-form_label-sm"
+                                                                for="checkbox">Automatic Assignment</label>
+                                                        </div>
+                                                        <p class="bg-form-settings-txt bg-checkbox-undertxt">Automate
+                                                            the
+                                                            assignment
+                                                            of
+                                                            new
+                                                            tickets to the right people, and make sure all tickets are
+                                                            being
+                                                            handled
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <div class="mb-3 bg-border-btm">
+                                                    <p class="form-label bg-form_label">Channels</p>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <div class="bg-form-settings-configure bg-button-stroke">
+                                                        <i class="ri-settings-line"></i><span
+                                                            class="d-none d-md-inline">Configure a custom
+                                                            domain</span>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="checkbox"
+                                                            checked>
+                                                        <label class="form-check-label bg-form_label bg-form_label-sm"
+                                                            for="checkbox">Automatic
+                                                            Assignment</label>
+                                                    </div>
+                                                    <p class="bg-form-settings-txt bg-checkbox-undertxt">Automate the
+                                                        assignment
+                                                        of
+                                                        new
+                                                        tickets to the right people, and make sure all tickets are being
+                                                        handled
+                                                    </p>
+                                                </div>
+
+                                                <div class="bg-form-setting-ideabox mb-3">
+                                                    <i class="ri-lightbulb-line"></i><span>Enable
+                                                        the
+                                                        Custom Email Servers feature in the General Settings and
+                                                        indicate an
+                                                        alias
+                                                        domain</span>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="checkbox">
+                                                        <label class="form-check-label bg-form_label bg-form_label-sm"
+                                                            for="checkbox">Live
+                                                            Chat</label>
+                                                    </div>
+                                                    <p class="bg-form-settings-txt bg-checkbox-undertxt">Get in touch
+                                                        with
+                                                        your
+                                                        website
+                                                        visitors
+                                                    </p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="checkbox">
+                                                        <label class="form-check-label bg-form_label bg-form_label-sm"
+                                                            for="checkbox">Website
+                                                            Form</label>
+                                                    </div>
+                                                    <p class="bg-form-settings-txt bg-checkbox-undertxt">Get tickets
+                                                        through
+                                                        an
+                                                        online
+                                                        form</p>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <div class="mb-3 bg-border-btm">
+                                                    <p class="form-label bg-form_label">Track & Bill Time</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="checkbox">
+                                                        <label class="form-check-label bg-form_label bg-form_label-sm"
+                                                            for="checkbox">Timesheets</label>
+                                                    </div>
+                                                    <p class="bg-form-settings-txt bg-checkbox-undertxt">Get tickets
+                                                        through
+                                                        an
+                                                        online
+                                                        form</p>
+                                                </div>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="ex3-tabs-2" role="tabpanel"
+                                        aria-labelledby="ex3-tab-2">
+
+                                    </div>
+                                    <div class="tab-pane fade" id="ex3-tabs-3" role="tabpanel"
+                                        aria-labelledby="ex3-tab-3">
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-main-content_right-sidebar pt-3">
+                        <i class="ri-lifebuoy-line"></i>
+                        <i class="ri-calendar-check-line"></i>
+                    </div>
+                </section>
+
+            </main>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        var menuIcon = document.querySelector(".bg-menu_icon");
+        var leftSidebar = document.querySelector(".bg-left-sidebar");
+        var overLay = document.querySelector(".bg-overlay");
+        menuIcon.addEventListener("click", function () {
+            event.preventDefault();
+            leftSidebar.classList.toggle("show");
+            overLay.classList.toggle("show");
+        });
+
+        var searchIcon = document.querySelector(".bg-mob-search-icon");
+        var searchContainer = document.querySelector(".bg-mob-search_container");
+
+        searchIcon.addEventListener("click", function (event) {
+            event.preventDefault();
+            searchContainer.style.display = (searchContainer.style.display === "none") ? "block" : "none";
+        });
+
+    </script>
+
+</body>
+
+</html>

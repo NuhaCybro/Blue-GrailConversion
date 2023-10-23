@@ -1,0 +1,112 @@
+.bg-onboard_modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(9, 13, 17, 0.78);
+    backdrop-filter: blur(9px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.bg-modal_content {
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 10px 100px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+.bg-onboarding_modalbox {
+    width: 90%;
+    max-width: 700px;
+}
+
+.bg-modal_content-header {
+    display: block;
+    border-bottom: none;
+    padding: 2rem;
+}
+
+.bg-modal_content-header {
+    h5 {
+        color: #222;
+        font-family: $text-font;
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    p {
+        color: $font-color;
+        font-family: $text-font;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 0px;
+    }
+}
+
+.bg-modal-company_img {
+    width: 70px;
+    height: 70px;
+}
+
+.bg-modal_main-body {
+    height: 50vh;
+    overflow-y: scroll;
+    padding: 0rem 2rem 1rem 2rem;
+}
+
+.bg-modal_main-body {
+    input::placeholder {
+        color: $sub-fonts;
+        font-family: $text-font;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+.bg-modal_main-body {
+    input {
+        font-size: 14px;
+        height: 40px;
+        color: $main-heading;
+    }
+}
+
+.bg-modal_main-body {
+    input:focus {
+        box-shadow: none;
+        outline: none;
+        border-color: $stroke-color;
+    }
+}
+
+.bg-modal_footer {
+    padding: 1rem;
+    border-radius: 0px 0px 20px 20px;
+    background: #FFF;
+    border-top: 1px solid $stroke-color;
+}
+
+.bg-modal_footer_btns {
+    float: right;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.bg-modal-form_label {
+    color: $primary-color;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: $text-font;
+}
+
+.bg-modal_footer_btns {
+    .btn:focus {
+        box-shadow: none;
+
+    }
+
+}

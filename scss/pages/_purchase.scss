@@ -1,0 +1,33 @@
+.bg-navigation-btn.bg-purchase_table_container {
+    height: 48vh;
+    overflow: auto;
+}
+
+.bg-purchase_btn {
+    min-width: 80px;
+}
+
+.bg-purchase_dashboard {
+
+    .bg-helpdesk-table {
+        .bg-purchase_date {
+            width: 125px;
+            text-align: end;
+            padding-bottom: 0px;
+        }
+    }
+}
+
+
+.bg-table_head {
+    width: 125px;
+    padding-bottom: 0px;
+}
+@media (max-width:575px){
+    .bg-purchase_btn {
+        min-height: 80px;
+    }
+    .bg-purchase_container{
+    padding: 1rem;
+    }
+}

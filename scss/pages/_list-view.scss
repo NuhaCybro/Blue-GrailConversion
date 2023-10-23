@@ -1,0 +1,187 @@
+.bg-navitem-list {
+    display: flex;
+    font-size: 14px;
+    color: $primary-font;
+    font-family: $text-font;
+    font-weight: 500;
+    gap: 4px;
+}
+
+.bg-navitem-list:hover {
+    color: $primary-font;
+}
+
+.bg-navigation-btn {
+    color: $primary-color;
+    font-size: 14px;
+    font-weight: 500;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+
+}
+.bg-navigation-btn::after {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px; 
+    background-image: url('../images/arrow-right-s-line.svg'); 
+    background-size: contain; 
+    background-repeat: no-repeat;
+   
+}
+.bg-main-sectionhead{
+    .bg-navigation-btn:not(:last-child){
+        color: $primary-font;
+    }}
+.bg-main-sectionhead{
+    .bg-navigation-btn:last-child:after {
+        display: none;
+    }
+}
+
+.bg-listView-table {
+    width: 100%;
+}
+
+.bg-listview-head {
+    background: $secondary-color;
+    border-bottom: 1px solid $stroke-color;
+    position: sticky;
+    top: 0;
+}
+
+.bg-listview-head {
+    th {
+        color: $main-heading;
+        font-size: 14px;
+        padding: 1rem 0.5rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100px;
+    }
+}
+
+.bg-listview-head {
+    th:first-child {
+        text-align: center;
+    }
+}
+
+.bg-listView-table {
+    tbody {
+        td {
+            padding: 0.8rem 0.5rem;
+            font-size: 14px;
+            color: $main-heading;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 190px;
+        }
+    }
+}
+
+.bg-listView-table {
+    tbody {
+        tr {
+            border-bottom: 1px solid $stroke-color;
+        }
+    }
+}
+
+.bg-listView-table {
+    tbody {
+        tr:nth-child(even) {
+            background: $secondary-color;
+        }
+    }
+}
+
+.bg-status-state {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    padding: 4px 8px;
+
+    border-radius: 35px;
+
+}
+
+.bg-status-quotion {
+    background-color: #FFE1DF;
+    color: $badge-bg;
+}
+
+.bg-status_sales-order {
+    background-color: $green-bg;
+    color: $green-font;
+}
+
+.bg-status_quotionsend {
+    background-color: $yellow-bg;
+    color: $yellow-font;
+}
+
+.bg-listView-table {
+    tr {
+        td:first-child {
+            text-align: center;
+        }
+    }
+}
+
+.bg-ps_profile {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 600;
+    font-family: $text-font;
+
+    padding: 6px;
+    border-radius: 50px;
+    margin-right: 6px;
+}
+
+.bg-ps_profile-jd {
+    color: #1BB2F1;
+    background-color: #CCF0FF;
+}
+
+.bg-ps_profile-sr {
+    color: #F1821B;
+    background-color: #FFEECC;
+}
+
+.bg-call-icon {
+
+    color: $green-font;
+    font-size: 16px;
+    margin-right: 6px;
+    vertical-align: middle;
+
+}
+
+.bg-table_icons {
+    color: $primary-font;
+    font-size: 16px;
+}
+
+.bg-table_container {
+    max-height: 76vh;
+    overflow: auto;
+}
+
+.bg-total-amt {
+    font-weight: 600;
+    text-align: right;
+}
+
+.bg-total-head-amt {
+    text-align: right;
+}
+.bg-form-settings-main-content{
+    padding-right: 0.7rem;
+}
+

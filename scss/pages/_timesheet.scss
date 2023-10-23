@@ -1,0 +1,374 @@
+.bg-timesheet_btn {
+    padding: 0.4rem 1.2rem;
+}
+
+.bg-timesheet_subhead {
+    color: $font-color ;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: right;
+    margin-bottom: 0.6rem;
+}
+
+.bg-timesheet_mainhead {
+    color: $main-heading;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: right;
+    margin-bottom: 0px;
+}
+
+.bg-timesheet_txt {
+    font-size: 14px;
+    color: $main-heading;
+    font-weight: 400;
+    text-align: right;
+}
+
+.bg-timesheet_table {
+
+    td,
+    th {
+        white-space: nowrap;
+        height: 30px;
+    }
+}
+
+.bg-timesheet_table {
+
+    td,
+    th:not(:last-child) {
+        padding: 0.8rem 0.5rem;
+
+    }
+
+    td:first-child,
+    th:first-child {
+
+        width: 40%;
+    }
+}
+
+.bg-timesheet_table {
+    tr {
+        border-bottom: 1px solid $stroke-color;
+    }
+}
+
+.bg-timesheet-project {
+    font-size: 14px;
+    color: $main-heading;
+    font-weight: 400;
+
+}
+
+.bg-timesheet-task {
+    border-left: 1px solid $stroke-color;
+    padding-left: 0.6rem;
+}
+
+.bg-timesheet_table {
+    // overflow: hidden;
+}
+
+.bg-timesheet_table {
+    tr:hover {
+        background-color: $secondary-color;
+    }
+}
+
+.bg-timesheet_table {
+
+    td,
+    th {
+        position: relative;
+
+    }
+}
+
+
+
+/*
+.bg-timesheet_table {
+
+    td:hover:not(:first-child):after,
+    thead th:hover:not(:first-child)::after {
+        content: "";
+        position: absolute;
+        background-color: $secondary-color;
+        left: 0;
+        top: -5000px;
+        height: 10000px;
+        width: 100%;
+        z-index: -2;
+    }
+}
+*/
+.bg-timesheet_table {
+    tr:not(:nth-last-child(2)) td:not(:first-child):last-child div {
+        background-color: $secondary-color;
+        border: 1px solid $primary-color;
+        padding: 1rem 0.5rem;
+        border-top: none;
+        height: 100%;
+        border-bottom: 0px;
+    }
+
+    tr:not(:nth-last-child(4)) td:not(:first-child):last-child {
+        padding: 0px;
+
+        position: sticky;
+        right: 0px;
+    }
+
+    th:last-child div {
+        background-color: $secondary-color;
+        border: 1px solid $primary-color;
+        padding: 0.8rem 0.5rem;
+        border-radius: 6px 6px 0px 0px;
+        border-bottom: none;
+
+    }
+
+    th:last-child {
+        position: sticky;
+        right: 0px;
+    }
+
+    tr:nth-last-child(4) td:not(:first-child):last-child {
+        padding: 0px;
+        position: sticky;
+        right: 0px;
+    }
+
+    tr:nth-last-child(-n+3) td:not(:first-child):last-child {
+        border: none;
+        background-color: transparent;
+        position: static;
+    }
+
+    tr:nth-last-child(4) td:not(:first-child):last-child div {
+        padding: 1rem 0.5rem;
+        border-radius: 0px 0px 6px 6px;
+        background-color: $secondary-color;
+        border: 1px solid $primary-color;
+        border-top: 0px;
+
+    }
+
+    tr:last-child td:last-child {
+        background-color: none;
+        border: none;
+    }
+}
+
+.bg-timesheet_table {
+    tr:last-child td:last-child {
+        border: none;
+        background-color: none;
+    }
+
+}
+
+.bg-timesheet_table {
+    thead {
+        position: sticky;
+        top: 0;
+        background-color: #fff;
+        z-index: 2;
+        border-bottom: 1px solid $stroke-color;
+    }
+}
+
+.bg-overtime-indication {
+    font-size: 12px;
+}
+
+.bg-success-txt {
+    color: $green-font;
+}
+
+.bg-danger-txt {
+    color: $badge-bg;
+}
+
+.bg-timesheet_off {
+    color: $sub-fonts;
+}
+
+.bg-timesheet_add {
+    font-size: 14px;
+    font-weight: 500;
+    color: $primary-color;
+    padding-left: 32px;
+}
+
+.bg-record_container {
+    position: absolute;
+    top: 2.5rem;
+    height: 462px;
+    background-color: #fff;
+    right: 0px;
+    padding: 1.4rem;
+    box-shadow: 0 0 8px rgb(0, 0, 0, 0.1);
+    z-index: 22;
+
+    min-width: 300px;
+    width: 100%;
+}
+
+.bg-timesheet_label {
+    color: #222;
+    font-size: 14px;
+    font-family: $text-font;
+    font-weight: 500;
+}
+
+.bg-record_controller {
+    width: 86px;
+    height: 86px;
+    background-color: #f7f7f7;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.bg-record_count {
+    color: #000;
+    font-family: $mainhead-font;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.bg-select_form {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: $primary-font;
+    background-color: transparent;
+    padding: 0 2rem 0 0;
+}
+
+.bg-select_form:focus {
+    box-shadow: none;
+}
+
+.bg-timesheet_table {
+    .bg-navigation-icon-box {
+        i {
+            padding: 2px 4px;
+        }
+
+    }
+
+}
+
+.bg-timerecord_overlay {
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(9, 13, 17, 0.78);
+    backdrop-filter: blur(9px);
+
+}
+
+.bg-record_discard {
+    font-weight: 500;
+    font-size: 14px;
+    color: $primary-color;
+}
+
+.bg-timesheet_table-hover {
+    background-color: $secondary-color;
+
+}
+
+.bg-timesheet_table-hover {
+
+    .bg-timesheet_overtimeCount {
+        opacity: 1;
+    }
+}
+
+.bg-today_highlight {
+    background-color: rgba(14, 58, 93, 0.1);
+
+}
+
+//...........All Timesheet Page................
+
+.bg-timesheet_profile {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.bg-timesheet_profile {
+    img {
+        width: 100%;
+        height: 100%;
+
+    }
+}
+
+.bg-timesheet_all {
+    background-color: $secondary-color;
+}
+
+.bg-timesheet_table {
+
+
+    td:first-child,
+    th:first-child {
+
+        width: 45%;
+    }
+}
+
+
+.bg-timesheet_overtime {
+    position: relative;
+    height: 100%;
+    z-index: 1;
+}
+
+.bg-overtime_progress {
+    background-color: $stroke-color;
+    width: 100%;
+    bottom: 0px;
+    border-top: 1px solid $primary-color;
+    left: 0px;
+    z-index: -1;
+
+}
+
+.bg-timesheet_overtimeCount {
+    background-color: #fff;
+    padding: 0.2rem 0.3rem;
+    border-radius: 30px;
+    font-size: 12.8px;
+    font-weight: 600;
+    color: $primary-color;
+    opacity: 0;
+    z-index: 1;
+}
+
+
+@media(max-width:768px) {
+
+    .bg-timesheet_table {
+
+        td:first-child,
+        th:first-child {
+
+            width: 25%;
+        }
+    }
+}

@@ -1,5 +1,21 @@
 
-@import 'base/variables', 'base/base.scss';
+@import 'base/variables', 'base/base.scss','base/search-modal';
 
 
-@import 'pages/kanban-employee';
+@import 'pages/kanban-employee' ,
+ 'pages/list-view' ,
+ 'pages/form-settings',
+ 'pages/pipeline-view',
+ 'pages/help-desk',
+ 'pages/onboarding-modal',
+ 'pages/purchase',
+ 'pages/documents',
+ 'pages/timesheet',
+ 'pages/form-view',
+ 'pages/dashboard',
+ 'pages/email-marketing',
+ 'pages/knowledge',
+ 'pages/social-marketing',
+ 'pages/templates',
+ 'pages/chat',
+ 'pages/sheet';

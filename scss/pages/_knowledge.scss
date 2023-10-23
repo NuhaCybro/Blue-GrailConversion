@@ -1,0 +1,99 @@
+.bg-knowledge__searchbox {
+    span {
+        background-color: #fff;
+        border-radius: 6px 0px 0px 6px;
+    }
+
+    input {
+
+        padding-left: 0px;
+        color: $placeholder-color;
+        font-size: 12px;
+        font-weight: 500;
+        border: 1px solid $stroke-color;
+        border-left: 0px;
+        border-radius: 0px 6px 6px 0px;
+    }
+}
+
+.bg-knowledge__mainhead {
+    font-family: $mainhead-font;
+    font-size: 28px;
+    color: $main-heading;
+    font-weight: 600;
+}
+
+.bg-knowledge__txt {
+    font-size: 14px;
+    color: $primary-font;
+    font-weight: 400;
+}
+
+.bg-knowledge-subhead {
+    p {
+        color: $primary-color;
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+.bg-knowledge-head {
+    color: $main-heading;
+    font-size: 14px;
+    font-family: $text-font;
+    font-weight: 500;
+}
+
+.bg-knowledge__list {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.bg-knowledge__list {
+    li {
+        padding-bottom: 0.5rem;
+    }
+}
+
+.bg-knownledge-card {
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: $secondary-color;
+    max-width: 70%;
+    margin: 1rem 0;
+}
+
+.bg-knownledge-card {
+    .bg-knowledge-head:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.bg-clipboard {
+    color: $main-heading;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.bg-knowledge__span {
+    color: $primary-color;
+    font-weight: 600;
+}
+
+.bg-knowledge_section {
+    height: 78vh;
+    overflow-y: auto;
+}
+
+.bg-knownledge_attach {
+    span{
+        color: $main-heading;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+.bg-knowledge__btn{
+    font-size: 12px;
+    color: $main-heading;
+    
+}

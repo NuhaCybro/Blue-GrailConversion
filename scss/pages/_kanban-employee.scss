@@ -11,7 +11,7 @@
         font-weight: 400;
         width: 400px;
         position: relative;
-
+        max-width: 100%;
     }
 }
 
@@ -40,18 +40,18 @@
     color: $sub-fonts;
 }
 
-.input-group-text {
-    .bg-searchbox-K {
-        width: 28px;
-        height: 28px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-decoration: none;
-        font-weight: 500;
-        color: $sub-fonts;
-    }
+
+.bg-searchbox-K {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 500;
+    color: $sub-fonts;
 }
+
 
 .bg-search_property {
     background-color: $secondary-color;
@@ -95,6 +95,13 @@
 .bg-top-navbar {
     background-color: #fff;
     border-bottom: 1px solid $stroke-color;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+.bg-dropdown-arrow::after {
+    display: none;
 }
 
 .badge-clock {
@@ -130,6 +137,8 @@
 
 .bg-sidebar-nav:hover {
     color: $primary-font;
+    background-color: $secondary-color;
+    border-radius: 6px;
 }
 
 .bg-sidebar-nav {
@@ -151,12 +160,16 @@
     margin-top: 2rem;
 }
 
+.bg-sidebar-heading:hover {
+    color: $sub-fonts;
+}
+
 .bg-logo-img {
     padding-left: 1rem;
 }
 
 .bg-sidebar-collapse {
-    position: fixed;
+    position: absolute;
     bottom: 0px;
     padding: 1rem;
     background-color: #fff;
@@ -185,14 +198,145 @@
         }
     }
 }
-.bg-new-btn{
+
+.bg-new-btn {
     color: $primary-font;
     font-weight: 500;
     padding: 0.6rem 0rem;
     font-size: 14px;
     font-family: $text-font;
+    display: flex;
+    align-items: center;
+    gap: 3px;
 }
-.bg-page-count{
-    font-size: 14px;
+
+.bg-new-btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.bg-page-count {
+    font-size: 12px;
     color: $primary-font;
+}
+
+.bg-navigation-icon {
+    color: $sub-fonts;
+}
+
+.bg-navigation-icon.active {
+    color: $primary-font;
+}
+
+
+.bg-aligned-icons {
+    border: 1px solid $stroke-color;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    padding: 0 0.2rem;
+}
+
+.bg-main-sectionhead {
+    font-size: 14px;
+    color: $primary-color;
+    font-weight: 500;
+    font-family: $text-font;
+}
+
+.bg-aligned-icons i {
+
+
+    font-size: 14px;
+    padding: 5px 8px;
+}
+
+.bg-aligned-icons i:not(:last-child) {
+    border-right: 1px solid $stroke-color;
+
+
+}
+
+.bg-sidebar-nav.active-sidebar {
+    background-color: $secondary-color;
+    border-radius: 6px;
+    color: $primary-color;
+}
+
+.bg-profile-img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid $stroke-color;
+    border-radius: 10px;
+    object-fit: cover;
+    padding: 2px;
+}
+
+.main-card-box__container {
+    height: 76vh;
+    overflow-y: auto;
+}
+
+.bg-card-container {
+    border-radius: 10px;
+    box-shadow: 0px 0.5px 2px 0px rgba(0, 0, 0, 0.10);
+    border: 1px solid $stroke-color;
+    background: #fff;
+}
+
+.bg-card-name {
+    font-family: $mainhead-font;
+    font-size: 16px;
+    color: $main-heading;
+    font-weight: 700;
+}
+
+.bg-card-text {
+    font-size: 12.8px;
+    font-weight: 500;
+    color: $font-color;
+    font-family: $text-font;
+    margin-bottom: 8px;
+}
+
+.bg-secondary-btn {
+    color: $primary-font;
+    width: 100%;
+}
+
+.bg-secondary-btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.bg-primary-btn {
+    width: 100%;
+}
+
+.bg-card-btn {
+    width: 100%;
+    padding: 10px 16px;
+}
+
+.bg-card-btn:first-child {
+    margin-right: 1rem;
+}
+
+.bg-card-btn:focus {
+    box-shadow: none;
+    outline: 0;
+}
+
+.bg-card-active:hover {
+    color: $primary-font;
+}
+
+.bg-card-view:hover {
+    color: #fff;
+}
+
+@media (max-width:575px) {
+    .navbar-nav .bg-custom-search {
+        width: unset;
+    }
 }

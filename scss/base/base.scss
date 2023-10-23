@@ -1,14 +1,104 @@
-
 //button border.....................
+* {
+  margin: 0px;
+  padding: 0px;
+
+  box-sizing: border-box;
+
+
+
+}
+
+body {
+  font-family:$text-font;
+
+}
 
 .bg-button-stroke {
-    border-radius: 6px;
-    border-top: 1px solid #DFDFDF;
-    border-right: 1px solid #DFDFDF;
-    border-bottom: 2px solid #DFDFDF;
-    border-left: 1px solid #DFDFDF;
-    background-color: #fff;
+  border-radius: 6px;
+  border-top: 1px solid #DFDFDF;
+  border-right: 1px solid #DFDFDF;
+  border-bottom: 2px solid #DFDFDF;
+  border-left: 1px solid #DFDFDF;
+  background-color: #fff;
+  color: $primary-font;
+  font-weight: 600;
+  font-size: 13px;
 }
-.bg-border-btm{
-    border-bottom: 1px solid $stroke-color;
+
+.bg-button-stroke:focus {
+  box-shadow: none;
+  border-color: $stroke-color;
+}
+
+.bg-border-btm {
+  border-bottom: 1px solid $stroke-color;
+}
+
+.bg-button-primary-stroke {
+  border-radius: 6px;
+  border-top: 1px solid $primary-border;
+  border-right: 1px solid $primary-border;
+  border-bottom: 1.5px solid $primary-border;
+  border-left: 1px solid $primary-border;
+  background: $primary-color;
+  color: #fff;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.bg-border-right {
+  border-right: 1px solid $stroke-color;
+}
+
+.bg-button-primary-stroke:hover {
+  color: #fff;
+}
+
+.bg-button-primary-stroke:focus {
+  box-shadow: none;
+  border-color: $primary-border;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+* {
+  &::-webkit-scrollbar {
+    visibility: hidden;
+    width: 5px;
+    height: 5px;
+  }
+
+  &:hover {
+
+    /* width */
+    &::-webkit-scrollbar {
+      visibility: visible;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: rgba($border-light-color, 0.3);
+      border-radius: 25px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: $border-color;
+      border-radius: 25px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: $placeholder-color;
+    }
+  }
+}
+
+.bg-maincard--sidebar {
+  height: 76vh;
+  overflow-y: auto;
 }

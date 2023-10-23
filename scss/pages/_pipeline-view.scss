@@ -1,0 +1,181 @@
+.bg-pipeline-main {
+    height: 78vh;
+    overflow: auto;
+}
+
+.bg-pipeline-main_section {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+}
+
+.bg-pipeline-card-container {
+    padding: 1.2rem 1rem;
+    background-color: $secondary-color;
+    border-radius: 10px;
+    min-height: 545px;
+
+
+}
+
+
+.bg-pipeline_card-progress {
+    border-radius: 25px;
+    background: #E6E6E6;
+    height: 14px;
+    position: relative;
+    width: 100%;
+}
+
+.bg-pipeline_progress_bar {
+    border-radius: 0px 8px 8px;
+    position: absolute;
+    height: 100%;
+}
+
+.bg-quotion-progress {
+    background-color: $badge-bg;
+}
+
+.bg-quotion-sent-progress {
+    background-color: $yellow-font;
+}
+
+.bg-saleorder-progress {
+    background-color: $green-font;
+}
+
+.bg-pipeline-addicon {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.bg-pipeline-title {
+    color: $main-heading;
+    font-family: $mainhead-font;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.bg-pipeline-progress_count {
+    color: $primary-font;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: $mainhead-font;
+}
+
+.bg-pipeline-boxcard {
+    border-radius: 10px;
+    border: 1px solid $stroke-color;
+    background: #FFF;
+    box-shadow: 0px 0.5px 2px 0px rgba(0, 0, 0, 0.10);
+    padding: 20px 16px;
+}
+
+.bg-pipeline-sub-title {
+    color: $font-color;
+    font-size: 12.8px;
+    font-family: $text-font;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.bg-pipeline-amount {
+    font-weight: 700;
+    font-size: 12.8px;
+    color: $main-heading;
+    font-family: $text-font;
+}
+
+.bg-dot {
+    border-radius: 35px;
+    width: 6px;
+    height: 6px;
+    margin-right: 8px;
+}
+
+.bg-pipleline-btn {
+    font-size: 12.8px;
+    white-space: nowrap;
+    font-weight: 500;
+    font-family: $text-font;
+    width: 100%;
+
+}
+
+.bg-saleorder-font {
+    color: $green-font;
+}
+
+.bg-quotation-font {
+    color: $badge-bg;
+}
+
+.bg-quotion-sent-font {
+    color: $yellow-font;
+}
+
+.bg-add_stage-container {
+    white-space: nowrap;
+}
+
+.bg-add_stage-container {
+    i {
+        margin-right: 4px;
+    }
+}
+
+.bg-add_inputbox {
+    margin-bottom: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid $stroke-color;
+    background: #FFF;
+
+}
+
+.bg-add_inputbox::placeholder {
+    font-size: 14px;
+    color: $font-color;
+
+}
+
+.bg-add_inputbox:focus {
+    box-shadow: none;
+    border-color: $stroke-color;
+}
+
+.bg-pipeline-addbox {
+    padding: 1rem 0.8rem;
+}
+
+.bg-esc-txt {
+    font-size: 12px;
+    color: $sub-fonts;
+    text-align: right;
+    margin: 1rem 0;
+}
+
+.bg-add_stage-container {
+    button {
+        padding: 0 5rem;
+    }
+}
+
+/*
+.bg-pipelineadd_stage-section {
+    padding-left: 0px;
+}*/
+
+.bg-esc-txt {
+    button {
+        border-radius: 6px;
+        border-top: 1px solid $stroke-color;
+        border-right: 1px solid $stroke-color;
+        border-bottom: 2px solid $stroke-color;
+        border-left: 1px solid $stroke-color;
+        background: #FFF;
+        padding: 6px;
+        color: $sub-fonts;
+    }
+}

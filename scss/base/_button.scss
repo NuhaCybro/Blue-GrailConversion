@@ -1,0 +1,49 @@
+.bg-btn{
+    border-radius: 5px;
+}
+.bg-btn--transparent{
+    border: none;
+    background: transparent;
+}
+.bg-btn--edit{
+    background-size: 18px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'%3E%3C/path%3E%3Cpath d='M15.7279 9.57629L14.3137 8.16207L5 17.4758V18.89H6.41421L15.7279 9.57629ZM17.1421 8.16207L18.5563 6.74786L17.1421 5.33365L15.7279 6.74786L17.1421 8.16207ZM7.24264 20.89H3V16.6474L16.435 3.21233C16.8256 2.8218 17.4587 2.8218 17.8492 3.21233L20.6777 6.04075C21.0682 6.43128 21.0682 7.06444 20.6777 7.45497L7.24264 20.89Z'%3E%3C/path%3E%3C/svg%3E");
+    transition: all 0.4s ease-in-out;
+    
+    &:hover{
+        background-color: $secondary-color;
+        transition: all 0.4s ease-in-out;
+    }
+}
+.bg-btn--square-sm{
+    width: 34.5px;
+    height: 34.5px;
+}
+.bg-chat__header-actions{
+    display: flex;
+    align-items: center;
+}
+.bg-chat__header-user{
+    display: flex;
+    align-items: center;
+}
+.bg-chat__header-avatar{
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.bg-chat__header-avatar-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.bg-chat__header-prompt{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: $primary-color;
+}

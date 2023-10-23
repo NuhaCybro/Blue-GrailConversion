@@ -17,37 +17,51 @@
       <a class="navbar-brand bg-logo-img" href="#">
         <img src="images/BlueGrail.svg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
       </a>
-      <ul class="navbar-nav">
+      <ul class="navbar-nav bg-search_navbar-nav">
         <li class="nav-item">
           <form class="d-flex">
             <div class="input-group">
               <span class="input-group-text bg-search">
                 <i class="ri-search-line bg-search-icon"></i>
               </span>
-              <input class="form-control bg-custom-search " type="search" placeholder="Search" aria-label="Search">
+              <input class="form-control bg-custom-search" type="search" placeholder="Search" aria-label="Search">
               <span class="input-group-text bg-search_property">
                 <i class="ri-command-line bg-search-icon bg-searchbox-K bg-button-stroke"></i>
               </span>
               <span class="input-group-text bg-search_property">
-                <a href="" class="bg-searchbox-K bg-button-stroke"> K</a>
+                <a href="" class="bg-searchbox-K bg-button-stroke">K</a>
               </span>
             </div>
+          
+            
           </form>
         </li>
       </ul>
-      <ul class="navbar-nav ms-auto align-items-center">
-        <li class="nav-item">
-          <a class="nav-link" href="#">
+      <ul class="navbar-nav d-flex flex-row ms-auto align-items-center">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle bg-dropdown-arrow" href="#" id="chatDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
             <i class="ri-chat-3-line bg-icons"></i>
           </a>
-
+          <ul class="dropdown-menu" aria-labelledby="chatDropdown">
+            <li><a class="dropdown-item" href="#">Chat Option 1</a></li>
+            <li><a class="dropdown-item" href="#">Chat Option 2</a></li>
+            <li><a class="dropdown-item" href="#">Chat Option 3</a></li>
+          </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link bg-clock-container" href="#">
-            <i class="ri-time-line  bg-icons"></i>
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle bg-dropdown-arrow bg-clock-container" href="#" id="clockDropdown"
+            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="ri-time-line bg-icons"></i>
             <span class="badge badge-clock">21</span>
           </a>
-
+          <ul class="dropdown-menu" aria-labelledby="clockDropdown">
+            <li><a class="dropdown-item" href="#">Clock Option 1</a></li>
+            <li><a class="dropdown-item" href="#">Clock Option 2</a></li>
+            <li><a class="dropdown-item" href="#">Clock Option 3</a></li>
+          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link bg-nav-links" href="#">
@@ -98,7 +112,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+              <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav active-sidebar" href="#">
                 <i class="ri-line-chart-line bg-icons"></i>
                 Sales
               </a>
@@ -191,50 +205,355 @@
           </a>
         </div>
       </nav>
-
       <main class="col-md-9 ms-sm-auto col-lg-10 ">
-        <div class="row">
+        <div class="row py-2">
           <div class="col bg-border-btm">
             <button class="btn bg-new-btn">+ New</button>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-3">
+        <div class="row d-flex align-items-center py-2 bg-border-btm">
+          <div class="col-md-3 bg-main-sectionhead">
             Employee
           </div>
-          <div class="col-md-9 d-flex align-items-center justify-content-end">
-
-
+          <div class="col-md-9 d-flex align-items-center justify-content-end gap-2">
             <div class="bg-page-count">
               1/3
             </div>
 
-            <div class="bg-navigation-icon-box">
-              
-              <i class="ri-arrow-left-s-line navigation-icon"></i>
-              
-              <i class="ri-arrow-right-s-line navigation-icon"></i>
-            </div>
-           
-            <div class="aligned-icons">
-              <i class="ri-star-line"></i>
-              <i class="ri-heart-line"></i>
-              <i class="ri-settings-line"></i>
+            <div class=" bg-aligned-icons bg-navigation-icon-box">
+
+              <i class="ri-arrow-left-s-line bg-navigation-icon"></i>
+
+              <i class="ri-arrow-right-s-line  bg-navigation-icon active"></i>
             </div>
 
-
-           
-            <div class="content-box">
-             
-              <div class="chart">
-                
-              </div>
-             
-              <div class="timeline">
-              </div>
+            <div class="bg-aligned-icons ">
+              <i class="ri-align-justify"></i>
+              <i class="ri-bar-chart-2-fill"></i>
+              <i class="ri-time-line"></i>
             </div>
-
           </div>
+        </div>
+
+        <div class="row">
+          <nav class="col-md-3 col-lg-2 d-md-block bg-maincard--sidebar">
+            <div class="position-sticky">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link bg-sidebar-heading" href="#">
+                    Companies
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav active-sidebar" href="#">
+                    All
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                    Acme, Inc.
+                  </a>
+                </li>
+              </ul>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link bg-sidebar-heading" href="#">
+                    Departments
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav active-sidebar" href="#">
+                    All
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                    Administration
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                    Management
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                    Consultant
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                    Developers
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                    Designers
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                    Testers
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                    Quality Assurance
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                    R&D
+                  </a>
+                </li>
+          </nav>
+          <div class="col-md-9 col-lg-10 main-card-box__container">
+            <div class="card-container py-4">
+              <div class="row">
+                <div class="col-lg-4 col-md-6">
+                  <div class="card mb-4 bg-card-container">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center bg-border-btm pb-3">
+                        <img src="images/user-profile.png" alt="Profile Image" class="bg-profile-img">
+                        <div class="ms-3">
+                          <h5 class="card-title bg-card-name">John Doe</h5>
+                          <p class="card-text bg-card-text">Developer</p>
+                        </div>
+                      </div>
+                      <p class="card-text bg-card-text mt-3">eluid.olu@acme.io</p>
+                      <p class="card-text bg-card-text">334-897-8709</p>
+                      <div class="d-flex justify-content-between mt-3">
+
+                        <button class="btn bg-button-stroke bg-card-btn bg-card-active">Activities</button>
+                        <button class="btn bg-button-primary-stroke bg-card-btn bg-card-view">View Profile</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="card mb-4 bg-card-container">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center bg-border-btm pb-3">
+                        <img src="images/user-profile-2.png" alt="Profile Image" class="bg-profile-img">
+                        <div class="ms-3">
+                          <h5 class="card-title bg-card-name">Jeannie Prather</h5>
+                          <p class="card-text bg-card-text">Designer</p>
+                        </div>
+                      </div>
+                      <p class="card-text bg-card-text mt-3">jean.prather@acme.io</p>
+                      <p class="card-text bg-card-text">336-688-2459</p>
+                      <div class="d-flex justify-content-between mt-3">
+
+                        <button class="btn bg-button-stroke bg-card-btn bg-card-active">Activities</button>
+                        <button class="btn bg-button-primary-stroke bg-card-btn bg-card-view">View Profile</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="card mb-4 bg-card-container">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center bg-border-btm pb-3">
+                        <img src="images/user-profile-3.png" alt="Profile Image" class="bg-profile-img">
+                        <div class="ms-3">
+                          <h5 class="card-title bg-card-name">Regina Bunyard</h5>
+                          <p class="card-text bg-card-text">312-317-6483</p>
+                        </div>
+                      </div>
+                      <p class="card-text bg-card-text mt-3">regina.bunyard@acme.io</p>
+                      <p class="card-text bg-card-text">312-317-6483</p>
+                      <div class="d-flex justify-content-between mt-3">
+
+                        <button class="btn bg-button-stroke bg-card-btn bg-card-active">Activities</button>
+                        <button class="btn bg-button-primary-stroke bg-card-btn bg-card-view">View Profile</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="card mb-4 bg-card-container">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center bg-border-btm pb-3">
+                        <img src="images/user-profile-3.png" alt="Profile Image" class="bg-profile-img">
+                        <div class="ms-3">
+                          <h5 class="card-title bg-card-name">Alfred Dougherty</h5>
+                          <p class="card-text bg-card-text">Management</p>
+                        </div>
+                      </div>
+                      <p class="card-text bg-card-text mt-3">alfred@acme.io</p>
+                      <p class="card-text bg-card-text">414-205-5498</p>
+                      <div class="d-flex justify-content-between mt-3">
+
+                        <button class="btn bg-button-stroke bg-card-btn bg-card-active">Activities</button>
+                        <button class="btn bg-button-primary-stroke bg-card-btn bg-card-view">View Profile</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="card mb-4 bg-card-container">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center bg-border-btm pb-3">
+                        <img src="images/user-profile.png" alt="Profile Image" class="bg-profile-img">
+                        <div class="ms-3">
+                          <h5 class="card-title bg-card-name">Smidt Kamilla</h5>
+                          <p class="card-text bg-card-text">Administration</p>
+                        </div>
+                      </div>
+                      <p class="card-text bg-card-text mt-3">smidt@acme.io</p>
+                      <p class="card-text bg-card-text">646-942-9890</p>
+                      <div class="d-flex justify-content-between mt-3">
+
+                        <button class="btn bg-button-stroke bg-card-btn bg-card-active">Activities</button>
+                        <button class="btn bg-button-primary-stroke bg-card-btn bg-card-view">View Profile</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="card mb-4 bg-card-container">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center bg-border-btm pb-3">
+                        <img src="images/user-profile-2.png" alt="Profile Image" class="bg-profile-img">
+                        <div class="ms-3">
+                          <h5 class="card-title bg-card-name">Arezu Zadegi</h5>
+                          <p class="card-text bg-card-text">Management</p>
+                        </div>
+                      </div>
+                      <p class="card-text bg-card-text mt-3">ms.zadegi@acme.io</p>
+                      <p class="card-text bg-card-text">816-277-1320</p>
+                      <div class="d-flex justify-content-between mt-3">
+
+                        <button class="btn bg-button-stroke bg-card-btn bg-card-active">Activities</button>
+                        <button class="btn bg-button-primary-stroke bg-card-btn bg-card-view">View Profile</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="card mb-4 bg-card-container">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center bg-border-btm pb-3">
+                        <img src="images/user-profile-3.png" alt="Profile Image" class="bg-profile-img">
+                        <div class="ms-3">
+                          <h5 class="card-title bg-card-name">Alfred Dougherty</h5>
+                          <p class="card-text bg-card-text">Management</p>
+                        </div>
+                      </div>
+                      <p class="card-text bg-card-text mt-3">alfred@acme.io</p>
+                      <p class="card-text bg-card-text">414-205-5498</p>
+                      <div class="d-flex justify-content-between mt-3">
+
+                        <button class="btn bg-button-stroke bg-card-btn bg-card-active">Activities</button>
+                        <button class="btn bg-button-primary-stroke bg-card-btn bg-card-view">View Profile</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="card mb-4 bg-card-container">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center bg-border-btm pb-3">
+                        <img src="images/user-profile.png" alt="Profile Image" class="bg-profile-img">
+                        <div class="ms-3">
+                          <h5 class="card-title bg-card-name">Smidt Kamilla</h5>
+                          <p class="card-text bg-card-text">Administration</p>
+                        </div>
+                      </div>
+                      <p class="card-text bg-card-text mt-3">smidt@acme.io</p>
+                      <p class="card-text bg-card-text">646-942-9890</p>
+                      <div class="d-flex justify-content-between mt-3">
+
+                        <button class="btn bg-button-stroke bg-card-btn bg-card-active">Activities</button>
+                        <button class="btn bg-button-primary-stroke bg-card-btn bg-card-view">View Profile</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="card mb-4 bg-card-container">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center bg-border-btm pb-3">
+                        <img src="images/user-profile-2.png" alt="Profile Image" class="bg-profile-img">
+                        <div class="ms-3">
+                          <h5 class="card-title bg-card-name">Arezu Zadegi</h5>
+                          <p class="card-text bg-card-text">Management</p>
+                        </div>
+                      </div>
+                      <p class="card-text bg-card-text mt-3">ms.zadegi@acme.io</p>
+                      <p class="card-text bg-card-text">816-277-1320</p>
+                      <div class="d-flex justify-content-between mt-3">
+
+                        <button class="btn bg-button-stroke bg-card-btn bg-card-active">Activities</button>
+                        <button class="btn bg-button-primary-stroke bg-card-btn bg-card-view">View Profile</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="card mb-4 bg-card-container">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center bg-border-btm pb-3">
+                        <img src="images/user-profile-3.png" alt="Profile Image" class="bg-profile-img">
+                        <div class="ms-3">
+                          <h5 class="card-title bg-card-name">Alfred Dougherty</h5>
+                          <p class="card-text bg-card-text">Management</p>
+                        </div>
+                      </div>
+                      <p class="card-text bg-card-text mt-3">alfred@acme.io</p>
+                      <p class="card-text bg-card-text">414-205-5498</p>
+                      <div class="d-flex justify-content-between mt-3">
+
+                        <button class="btn bg-button-stroke bg-card-btn bg-card-active">Activities</button>
+                        <button class="btn bg-button-primary-stroke bg-card-btn bg-card-view">View Profile</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="card mb-4 bg-card-container">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center bg-border-btm pb-3">
+                        <img src="images/user-profile.png" alt="Profile Image" class="bg-profile-img">
+                        <div class="ms-3">
+                          <h5 class="card-title bg-card-name">Smidt Kamilla</h5>
+                          <p class="card-text bg-card-text">Administration</p>
+                        </div>
+                      </div>
+                      <p class="card-text bg-card-text mt-3">smidt@acme.io</p>
+                      <p class="card-text bg-card-text">646-942-9890</p>
+                      <div class="d-flex justify-content-between mt-3">
+
+                        <button class="btn bg-button-stroke bg-card-btn bg-card-active">Activities</button>
+                        <button class="btn bg-button-primary-stroke bg-card-btn bg-card-view">View Profile</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="card mb-4 bg-card-container">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center bg-border-btm pb-3">
+                        <img src="images/user-profile-2.png" alt="Profile Image" class="bg-profile-img">
+                        <div class="ms-3">
+                          <h5 class="card-title bg-card-name">Arezu Zadegi</h5>
+                          <p class="card-text bg-card-text">Management</p>
+                        </div>
+                      </div>
+                      <p class="card-text bg-card-text mt-3">ms.zadegi@acme.io</p>
+                      <p class="card-text bg-card-text">816-277-1320</p>
+                      <div class="d-flex justify-content-between mt-3">
+
+                        <button class="btn bg-button-stroke bg-card-btn bg-card-active">Activities</button>
+                        <button class="btn bg-button-primary-stroke bg-card-btn bg-card-view">View Profile</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
       </main>
     </div>

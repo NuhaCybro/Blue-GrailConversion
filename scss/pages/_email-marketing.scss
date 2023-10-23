@@ -1,0 +1,38 @@
+.bg-emailmarketing_txt {
+    font-size: 14px;
+    color: $primary-font;
+    font-weight: 400;
+}
+
+.bg-emailmarketing_templates {
+    border-left: 1px solid $stroke-color;
+}
+
+.bg-marketingtemplate-img {
+    width: 100%;
+
+
+}
+.bg-main-sectionhead{
+    .bg-navigation-btn.active{
+        color:$primary-color;
+    }
+}
+
+
+.bg-marketingtemplate-img {
+    img {
+        width: 100%;
+        height: 240px;
+
+    }
+}
+
+.bg-marketingtemplate__head {
+    color: $primary-font;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0px;
+    padding: 0.4rem 0;
+
+}

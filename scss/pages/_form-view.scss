@@ -1,0 +1,172 @@
+.bg-form_view-btn {
+    font-weight: 500;
+
+
+}
+
+.bg-form-view_content {
+    height: 84vh;
+    overflow-y: auto;
+}
+
+.bg-form-view_head {
+    color: $main-heading;
+    font-family: $mainhead-font;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.bg-form-view_subhead {
+    font-size: 12px;
+    font-family: $mainhead-font;
+    color: $primary-color;
+    font-weight: 600;
+    padding-bottom: 0.3rem;
+}
+
+.bg-form-view_container:not(:last-child) {
+    border-right: 2px solid $stroke-color;
+}
+
+.bg-form-view_container {
+    padding-left: 3rem;
+}
+.bg-form-view_container:first-child{
+    padding-left: 0px;
+}
+.bg-form-view_data {
+    font-size: 14px;
+    font-family: $text-font;
+    color: $main-heading;
+    font-weight: 400;
+    padding-top: 0.6rem;
+    padding: 0.6rem 1.4rem 1rem 0;
+}
+
+.bg-form-product_purchase {
+    border-top: 1px solid $stroke-color;
+}
+
+.bg-form-view_table {
+    width: 100%;
+
+
+}
+
+.bg-form_table-container {
+    max-width: 100%;
+    overflow-x: auto;
+    border-left: 1px solid $stroke-color;
+}
+
+
+
+.bg-form-view_table thead {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+
+.bg-form-view_table {
+    tr:not(:last-child) {
+        border-bottom: 1px solid $stroke-color;
+    }
+
+    th {
+        padding: 1rem 0.5rem;
+        font-size: 14px;
+        color: #000;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+
+    td {
+        font-size: 14px;
+        color: $main-heading;
+        padding: 1rem 0.5rem;
+        max-width: 180px;
+
+    }
+
+    .bg-form_tax-col {
+        span {
+            color: $badge-bg;
+            width: fit-content;
+            background-color: #FFE1DF;
+            font-size: 12px;
+            padding: 0.2rem 0.5rem;
+            border-radius: 40px;
+        }
+
+    }
+
+    .bg-form-view-links {
+        color: $primary-color;
+    }
+
+    .bg-form-view_total {
+        float: right;
+        min-width: 25%;
+
+
+    }
+}
+
+.bg-form-view_total {
+    p {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    p:first-child span {
+        font-weight: 700;
+    }
+}
+
+
+
+.bg-form-view_table {
+    width: 100%;
+    table-layout: auto;
+
+}
+
+.bg-form_table-container {
+    max-width: 100%;
+    max-height: 70vh;
+    overflow-x: auto;
+
+
+}
+
+.table-responsive {
+    overflow-x: auto;
+    max-width: 100%;
+    max-height: 60vh;
+}
+
+#bg-form-view {
+    position: relative;
+}
+
+.bg-form-view__rght-sidebar {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.bg-form-view__main {
+    margin-right: 2.3rem;
+}
+
+@media (max-width:768px) {
+    .bg-form-view_container:not(:last-child) {
+        border-right: none;
+
+    }
+    .bg-form-view_container {
+        padding-left: 0rem;
+    }
+}
