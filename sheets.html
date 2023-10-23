@@ -213,12 +213,18 @@
 
                 </div>
                 <div class="row bg-sheet_page-container">
-                    <div class="col-lg-5 bg-sheet_selection">
+                    <div class="col-lg-5 ">
                         <div class="row">
-                            <div class="col-lg-6 py-3 bg-sheet_input-selection">
+                            <div class="col-sm-6 col-lg-6 py-3 bg-sheet_input-selection bg-sheet_selection">
                                 <div class="col-12 mb-3">
                                     <input type="text" class="form-control bg-button-stroke" id="inputAddress"
                                         placeholder="Sheet Name">
+                                </div>
+                                <div class="col-12 mb-3 d-flex flex-wrap gap-1">
+                                    <span class="bg-status-state bg-sheet-tag">Sales Order</span>
+                                    <span class="bg-status-state bg-sheet-tag"> Sales Oder Line</span>
+                                    <span class="bg-status-state bg-sheet-tag"> Quotation</span>
+                                    <span class="bg-status-state bg-sheet-tag"> Quotation</span>
                                 </div>
                                 <div class="col-12 mb-3">
                                     <input type="text" class="form-control bg-button-stroke" id="inputAddress"
@@ -228,14 +234,25 @@
                                     <div class="py-2 ">
                                         <span>Dimensions</span>
                                     </div>
-                                    <div class="col-12 mb-3 text-center  bg-sheet-draggable-btn">
-                                        <span>Name</span>
-                                    </div>
-                                    <div class="col-12 mb-3 text-center  bg-sheet-draggable-btn">
-                                        <span>User Id</span>
-                                    </div>
-                                    <div class="col-12 mb-3 text-center  bg-sheet-draggable-btn">
-                                        <span>State</span>
+                                    <div class="bg-sheet-selection_box">
+                                        <div class="col-12 mb-3 text-center  bg-sheet-draggable-btn">
+                                            <span>Name</span>
+                                        </div>
+                                        <div class="col-12 mb-3 text-center  bg-sheet-draggable-btn">
+                                            <span>User Id</span>
+                                        </div>
+                                        <div class="col-12 mb-3 text-center  bg-sheet-draggable-btn">
+                                            <span>State</span>
+                                        </div>
+                                        <div class="col-12 mb-3 text-center  bg-sheet-draggable-btn">
+                                            <span>Name</span>
+                                        </div>
+                                        <div class="col-12 mb-3 text-center  bg-sheet-draggable-btn">
+                                            <span>User Id</span>
+                                        </div>
+                                        <div class="col-12 mb-3 text-center  bg-sheet-draggable-btn">
+                                            <span>State</span>
+                                        </div>
                                     </div>
 
                                 </div>
@@ -243,22 +260,33 @@
                                     <div class="py-2 ">
                                         <span>Measures</span>
                                     </div>
-                                    <div class="col-12 mb-3 text-center  bg-sheet-draggable-btn">
-                                        <span>Amount Total</span>
-                                    </div>
-                                    <div class="col-12 mb-3 text-center  bg-sheet-draggable-btn">
-                                        <span>Price Subtotal</span>
-                                    </div>
-                                    <div class="col-12 mb-3 text-center  bg-sheet-draggable-btn">
-                                        Tax Amount
+                                    <div class="bg-sheet-selection_box">
+                                        <div class="col-12 mb-3 text-center  bg-sheet-draggable-btn">
+                                            <span>Amount Total</span>
+                                        </div>
+                                        <div class="col-12 mb-3 text-center  bg-sheet-draggable-btn">
+                                            <span>Price Subtotal</span>
+                                        </div>
+                                        <div class="col-12 mb-3 text-center  bg-sheet-draggable-btn">
+                                            Tax Amount
+                                        </div>
+                                        <div class="col-12 mb-3 text-center  bg-sheet-draggable-btn">
+                                            <span>Amount Total</span>
+                                        </div>
+                                        <div class="col-12 mb-3 text-center  bg-sheet-draggable-btn">
+                                            <span>Price Subtotal</span>
+                                        </div>
+                                        <div class="col-12 mb-3 text-center  bg-sheet-draggable-btn">
+                                            Tax Amount
+                                        </div>
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="col-lg-6  py-3">
+
+                            <div class="col-sm-6 col-lg-6  py-3 bg-sheet_selection">
                                 <div class="d-flex flex-wrap ">
                                     <div class="col-6 col-sm-6 col-lg-6 p-2 d-flex flex-column align-items-stretch">
-                                        <div class="bg-button-stroke  p-2   bg-sheet_graph-contain ">
+                                        <div class="bg-button-stroke  p-2   bg-sheet_graph-contain active ">
                                             <div class="bg-sheet-graph_img">
                                                 <img src="images/pie-chart-example-1.png" alt="" class="bg-sheet-img">
                                             </div>
@@ -394,6 +422,10 @@
 
                     </div>
                     <div class="col-lg-7 bg-sheets-previewContainer pt-3 px-4">
+                        <div class="col-4  mb-3 bg-sheet_preview-input ">
+                            <input type="text" class="form-control bg-button-stroke" id="inputAddress"
+                                placeholder="input">
+                        </div>
                         <div class="bg-sheet-graph_preview">
                             <img src="images/bar-graph.png" alt="" class="bg-sheet-img">
                         </div>
@@ -418,15 +450,15 @@
                     <div class="row py-3 bg-sheet-filter_container">
                         <div class="col-lg-5">
                             <div class="col-6">
-                                <button class="bg-new-chat-button bg-sheetfilter-btn"><svg xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24">
+                                <button class="bg-new-chat-button bg-sheetfilter-btn"><svg
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <path fill="none" d="M0 0h24v24H0z"></path>
                                         <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="rgba(255,255,255,1)">
                                         </path>
                                     </svg>
                                     New Filter</button>
                             </div>
-                            <div class="bg-sheet-filter_state bg-button-stroke text-center p-2 my-3">
+                            <div class="bg-sheet-filter_state bg-button-stroke text-center p-2 my-3 active">
                                 <span class=" bg-sheet-graph-name">State in sale</span>
                             </div>
 
@@ -435,7 +467,8 @@
                         <div class="col-lg-7">
                             <span class="bg-sheet-title">Query</span>
                             <div class="bg-sheet_query-container my-3">
-                                <textarea name="" id=""  rows="10" class="bg-sheet_query p-3 w-100" placeholder="Query Container"></textarea>
+                                <textarea name="" id="" rows="10" class="bg-sheet_query p-3 w-100"
+                                    placeholder="Query Container"></textarea>
                             </div>
 
                         </div>
@@ -456,17 +489,17 @@
         crossorigin="anonymous"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-        const newFilterButton = document.querySelector(".bg-sheetfilter-btn");
-        const contentSection = document.querySelector(".bg-sheet-filter_state");
+            const newFilterButton = document.querySelector(".bg-sheetfilter-btn");
+            const contentSection = document.querySelector(".bg-sheet-filter_state");
 
-        newFilterButton.addEventListener("click", function () {
-            if (contentSection.style.display === "none" || contentSection.style.display === "") {
-                contentSection.style.display = "block";
-            } else {
-                contentSection.style.display = "none";
-            }
+            newFilterButton.addEventListener("click", function () {
+                if (contentSection.style.display === "none" || contentSection.style.display === "") {
+                    contentSection.style.display = "block";
+                } else {
+                    contentSection.style.display = "none";
+                }
+            });
         });
-    });
 
     </script>
 
