@@ -1,0 +1,43 @@
+.dashboard_analytics_graph{
+    border: 1px solid #DFDFDF;
+    .dashboard_analytics-graph_img{
+        height: 500px;
+        width: 100%;
+        .img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+.dashboard_analytics_detials{
+    padding: 40px 30px 30px 40px;
+    h4{
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .dashboard_analytics_info{
+        border: 1px solid;
+        border-top: 1px solid #2c9cf2;
+        border-right: 1px solid #2c9cf2;
+        border-bottom: 3px solid #2c9cf2;
+        border-left: 1px solid #2c9cf2;
+        border-radius: 5px;
+
+    }
+}
+
+.dashboard_analytics_bottom_icons{
+    border: 1px solid;
+    border-color: transparent;
+    border-bottom-color: #DFDFDF;
+    text-align: right;
+    margin-top: 40px;
+    a{
+        img{
+            width: 40px;
+        }
+        margin-right: 10px;
+    }
+}

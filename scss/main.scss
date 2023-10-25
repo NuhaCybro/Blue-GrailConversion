@@ -1,8 +1,8 @@
 
-@import 'base/variables', 'base/base.scss','base/search-modal';
+@import 'base/variables', 'base/base','base/search-modal';
 
 
-@import 'pages/kanban-employee' ,
+@import 'pages/kanban-employee',
  'pages/list-view' ,
  'pages/form-settings',
  'pages/pipeline-view',
@@ -18,4 +18,6 @@
  'pages/social-marketing',
  'pages/templates',
  'pages/chat',
- 'pages/sheet';
+ 'pages/sheet',
+ 'pages/dashboard_analytics',
+ 'pages/churn-prediction';
