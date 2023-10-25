@@ -2598,6 +2598,10 @@ a {
   color: #0E3A5D;
 }
 
+.bg-template-title:hover {
+  color: #0E3A5D;
+}
+
 .bg-template_search-bar {
   border-left: 0px;
   padding-left: 0px;
@@ -2907,17 +2911,29 @@ a {
 .bg-sheet-graph-name {
   font-size: 12.8px;
   padding: 0.4rem 0;
+  color: #505050;
+  font-weight: 500;
 }
 
 .bg-sheet-graph_preview {
   width: 100%;
-  height: 352px;
-  margin-bottom: 2rem;
+  height: 290px;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 768px) {
+  .bg-sheet-graph_preview {
+    height: unset;
+  }
 }
 
 .bg-sheet_selection {
   height: 81vh;
   overflow-y: auto;
+}
+
+.bg-sheet_preview-input {
+  margin-right: 0;
+  margin-left: auto;
 }
 
 .bg-sheet_input-selection {
@@ -2926,9 +2942,76 @@ a {
 
 .bg-sheet-draggable-btn {
   background-color: #F7F7F7;
-  cursor: move;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
   position: relative;
   padding: 0.5rem;
   color: #0E3A5D;
   font-size: 12.8px;
+}
+
+.bg-sheet-draggable-btn:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
+}
+
+.bg-sheet-draggable-input {
+  border: 3px dashed #DFDFDF;
+  font-size: 14px;
+  height: 3rem;
+}
+
+.bg-sheet-draggable-input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-sheet_page-container {
+  height: 81vh;
+  overflow-y: auto;
+}
+@media (max-width: 768px) {
+  .bg-sheet_page-container {
+    height: unset;
+  }
+}
+
+.bg-sheet-title {
+  color: #0E3A5D;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 1rem 0;
+}
+
+.bg-sheet-filter_container {
+  border-top: 1px solid #DFDFDF;
+}
+
+.bg-sheet_query {
+  background-color: black;
+  border-radius: 6px;
+}
+
+.bg-sheet_graph-contain {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.bg-sheet_graph-contain:hover,
+.bg-sheet_graph-contain.active {
+  border-color: #0D3554;
+}
+
+.bg-sheet-selection_box {
+  height: 240px;
+  overflow-y: auto;
+}
+
+.bg-sheet-tag {
+  background-color: #F7F7F7;
+  color: hsl(216, 18%, 64%);
+}
+
+.bg-sheet-filter_state.active {
+  border-color: #0D3554;
 }
