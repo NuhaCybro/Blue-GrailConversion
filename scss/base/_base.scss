@@ -21,6 +21,8 @@ body {
   font-size: 13px;
 }
 
+
+
 .bg-button-stroke:focus {
   box-shadow: none;
   border-color: $stroke-color;
@@ -96,4 +98,19 @@ a {
 .bg-maincard--sidebar {
   height: 76vh;
   overflow-y: auto;
+}
+
+.bg-button-primary-grey {
+  border-radius: 6px;
+  border-top: 1px solid $primary-border;
+  border-right: 1px solid $primary-border;
+  border-bottom: 1.5px solid $primary-border;
+  border-left: 1px solid $primary-border;
+  background: $primary-font;
+  color: #fff;
+  font-weight: 400;
+  font-size: 13px;
+  &:hover{
+    color: #fff;
+  }
 }
