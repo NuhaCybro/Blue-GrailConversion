@@ -93,6 +93,21 @@ a {
   overflow-y: auto;
 }
 
+.bg-button-primary-grey {
+  border-radius: 6px;
+  border-top: 1px solid #0D3554;
+  border-right: 1px solid #0D3554;
+  border-bottom: 1.5px solid #0D3554;
+  border-left: 1px solid #0D3554;
+  background: #505050;
+  color: #fff;
+  font-weight: 400;
+  font-size: 13px;
+}
+.bg-button-primary-grey:hover {
+  color: #fff;
+}
+
 .bg-search_modal-container {
   position: fixed;
   top: 0;
@@ -3026,6 +3041,11 @@ a {
   font-weight: 600;
   font-size: 1.2rem;
 }
+@media (max-width: 575px) {
+  .bg-sale-analysis_head {
+    font-size: 1rem;
+  }
+}
 
 .bg-sales-analysis_date {
   padding: 0rem 2rem;
@@ -3041,6 +3061,14 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (max-width: 575px) {
+  .bg-sales-analysis_date {
+    padding: 0 0.2rem;
+    height: 30px;
+    white-space: nowrap;
+    font-size: 0.8rem;
+  }
 }
 
 .bg-sales-analysis__tile {
@@ -3065,4 +3093,22 @@ a {
   border-radius: 6px;
   overflow: hidden;
   padding: 0.8rem;
+}
+
+.bg-sale-analysis_page-contain {
+  overflow-y: auto;
+  height: 90vh;
+}
+
+.bg-sale-analysis__tile-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 0.4rem 0;
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  .bg-sale-analysis__tile-title {
+    font-size: 1rem;
+  }
 }
