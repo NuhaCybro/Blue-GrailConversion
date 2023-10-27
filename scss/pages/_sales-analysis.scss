@@ -8,7 +8,8 @@
 .bg-sale-analysis_head {
     font-weight: 600;
     font-size: 1.2rem;
-    @media (max-width:575px){
+
+    @media (max-width:575px) {
         font-size: 1rem;
     }
 }
@@ -24,7 +25,8 @@
 
     display: flex;
     align-items: center;
-    @media (max-width:575px){
+
+    @media (max-width:575px) {
         padding: 0 0.2rem;
         height: 30px;
         white-space: nowrap;
@@ -40,29 +42,33 @@
 }
 
 
-.bg-sales-filters_list{
+.bg-sales-filters_list {
     padding: 0.5rem 1rem;
     display: flex;
     align-items: center;
     gap: 0.6rem;
 }
-.bg-sale-amalysis_graph-container{
+
+.bg-sale-amalysis_graph-container {
     border: 1px solid $stroke-color;
     border-radius: 6px;
     overflow: hidden;
     padding: 0.8rem;
 }
-.bg-sale-analysis_page-contain{
+
+.bg-sale-analysis_page-contain {
     overflow-y: auto;
     height: 90vh;
 }
-.bg-sale-analysis__tile-title{
+
+.bg-sale-analysis__tile-title {
     font-size: 1.4rem;
     font-weight: 500;
     padding: 0.4rem 0;
     margin-bottom: 0;
-   white-space: nowrap;
-    @media (max-width:768px){
+    white-space: nowrap;
+
+    @media (max-width:768px) {
         font-size: 1rem;
     }
 }
