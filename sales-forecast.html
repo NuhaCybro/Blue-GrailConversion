@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Forecast</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-top-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand bg-logo-img" href="#">
+                <img src="images/BlueGrail.svg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+            </a>
+            <ul class="navbar-nav bg-search_navbar-nav">
+                <li class="nav-item">
+                    <form class="d-flex">
+                        <div class="input-group">
+                            <span class="input-group-text bg-search">
+                                <i class="ri-search-line bg-search-icon"></i>
+                            </span>
+                            <input class="form-control bg-custom-search " type="search" placeholder="Search"
+                                aria-label="Search">
+                            <span class="input-group-text bg-search_property">
+                                <i class="ri-command-line bg-search-icon bg-searchbox-K bg-button-stroke"></i>
+                            </span>
+                            <span class="input-group-text bg-search_property">
+                                <a href="" class="bg-searchbox-K bg-button-stroke"> K</a>
+                            </span>
+                        </div>
+                    </form>
+                </li>
+            </ul>
+            <ul class="navbar-nav d-flex flex-row ms-auto align-items-center">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle bg-dropdown-arrow" href="#" id="chatDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="ri-chat-3-line bg-icons"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="chatDropdown">
+                        <li><a class="dropdown-item" href="#">Chat Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Chat Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Chat Option 3</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle bg-dropdown-arrow bg-clock-container" href="#" id="clockDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="ri-time-line bg-icons"></i>
+                        <span class="badge badge-clock">21</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="clockDropdown">
+                        <li><a class="dropdown-item" href="#">Clock Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Clock Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Clock Option 3</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bg-nav-links" href="#">
+                        <span>Acme, Inc.</span>
+                        <img src="images/user-profile.png" alt="Profile" class="profile-pic rounded-circle me-2">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 d-md-block bg-left-sidebar">
+                <div class="position-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link bg-sidebar-heading" href="#">
+                                Modules
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-chat-3-line bg-icons"></i>Discuss
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-calendar-line bg-icons"></i> Calendar
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-survey-line bg-icons"></i>
+                                To-do
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-contacts-book-line bg-icons"></i>
+                                Contacts
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-shake-hands-line bg-icons"></i>
+                                CRM
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav active-sidebar" href="#">
+                                <i class="ri-line-chart-line bg-icons"></i>
+                                Sales
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-dashboard-line bg-icons"></i>
+                                Dashboards
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-bank-card-line bg-icons"></i>
+                                Point of Sale
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-bill-line bg-icons"></i>
+                                Invoicing
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-projector-line bg-icons"></i>
+                                Project
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-timer-line bg-icons"></i>
+                                Timesheets
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-global-line bg-icons"></i>
+                                Website
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-graduation-cap-line  bg-icons"></i>
+                                eLearning
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-mail-open-line bg-icons"></i>
+                                Email Marketing
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-smartphone-line  bg-icons"></i>
+                                SMS Marketing
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-calendar-event-line bg-icons"></i>
+                                Events
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-checkbox-line  bg-icons"></i>
+                                Surveys
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-bank-card-2-line  bg-icons"></i>
+                                Purchase
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-archive-line  bg-icons"></i>
+                                Inventory
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="collapse-icon text-center bg-sidebar-collapse">
+                    <a href="#sidebarCollapse" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="sidebarCollapse">
+                        <i class="ri-arrow-left-s-line bg-icons  bg-collapse-icon"></i>
+                        Collapse Menu
+                    </a>
+                </div>
+            </nav>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 ">
+                <div class="row py-2 bg-border-btm  ">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class=" bg-template-title bg-sale-analysis_head">Sales Prediction</span>
+
+
+                        <div class="d-flex align-items-center gap-3 mx-3 justify-content-end flex-wrap">
+                            <div class="dropdown">
+                                <button class=" btn dropdown-toggle bg-forecast_dropdown-btn bg-button-stroke"
+                                    id="chatDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Forecast Method
+                                </button>
+                                <ul class="dropdown-menu w-100" aria-labelledby="chatDropdown">
+                                    <li><button class="dropdown-item bg-drop-down-item" href="#">Forecast Option
+                                            1</button>
+                                    </li>
+                                    <li><button class="dropdown-item  bg-drop-down-item" href="#">Forecast Option
+                                            2</button>
+                                    </li>
+                                    <li><button class="dropdown-item  bg-drop-down-item" href="#">Forecast Option
+                                            3</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bg-sales-analysis_date">Start date</div>
+                            <div class="bg-sales-analysis_date">29-1-2023</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row bg-sales-forecast_container">
+                    <div class="col-sm-3 bg-border-right py-3">
+                        <div class="col-12 mb-3">
+                            <input type="text" class="form-control bg-button-stroke" id="inputAddress"
+                                placeholder="Periods">
+                        </div>
+                        <div class="col-12 mb-3">
+                            <div class="dropdown">
+                                <button class=" btn dropdown-toggle bg-sale-forecast-dropdown bg-button-stroke w-100"
+                                    id="chatDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Frequency
+                                </button>
+                                <ul class="dropdown-menu w-100" aria-labelledby="chatDropdown">
+                                    <li><button class="dropdown-item bg-drop-down-item" href="#">Forecast Option
+                                            1</button>
+                                    </li>
+                                    <li><button class="dropdown-item  bg-drop-down-item" href="#">Forecast Option
+                                            2</button>
+                                    </li>
+                                    <li><button class="dropdown-item  bg-drop-down-item" href="#">Forecast Option
+                                            3</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-3 bg-button-stroke px-3 ">
+                            <div class="py-3 ">
+                                <span class="d-block text-center">Forecast Coefficients</span>
+                            </div>
+                            <div class="">
+                                <div class="pb-2">
+                                    <div class="col-12 mb-3 d-flex align-items-center gap-3">
+                                        <label for="">p:</label><input type="text"
+                                            class="form-control bg-button-stroke">
+                                    </div>
+                                    <div class="col-12 mb-3 d-flex align-items-center gap-3">
+                                        <label for="">d:</label><input type="text"
+                                            class="form-control bg-button-stroke">
+                                    </div>
+                                    <div class="col-12 mb-3 d-flex align-items-center gap-3">
+                                        <label for="">q:</label><input type="text"
+                                            class="form-control bg-button-stroke">
+                                    </div>
+                                </div>
+                                <div class="pb-2">
+                                    <div class="col-12 mb-3 d-flex align-items-center gap-3">
+                                        <label for="">P:</label><input type="text"
+                                            class="form-control bg-button-stroke">
+                                    </div>
+                                    <div class="col-12 mb-3 d-flex align-items-center gap-3">
+                                        <label for="">D:</label><input type="text"
+                                            class="form-control bg-button-stroke">
+                                    </div>
+                                    <div class="col-12 mb-3 d-flex align-items-center gap-3">
+                                        <label for="">Q:</label><input type="text"
+                                            class="form-control bg-button-stroke">
+                                    </div>
+                                </div>
+                                <div class="pb-2">
+                                    <div class="col-12 mb-3 d-flex align-items-center gap-3">
+                                        <label for="">s:</label><input type="text"
+                                            class="form-control bg-button-stroke">
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="col-12 ">
+                            <button class="btn bg-button-primary-stroke w-100">Forecast</button>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-6 py-3">
+                        <div class="bg-sale-forecast_graph-container">
+
+                            <img src="images/bar-graph.png" alt="" class="bg-sheet-img">
+                        </div>
+
+                    </div>
+                    <div class="col-sm-3 bg-sales-forcast_right-sidebar py-3">
+
+                        <div class="bg-button-stroke p-2">
+                            <span class="d-block text-center pb-3">Chart Types</span>
+                            <div class="d-flex flex-wrap">
+                                <div class="col col-sm-12 col-lg-6">
+                                    <div class="bg-button-stroke  p-2  m-1 active ">
+                                        <div class="bg-sheet-graph_img">
+                                            <img src="images/bar-charts-deadliest-earthquakes.png" alt=""
+                                                class="bg-sheet-img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-sm-12 col-lg-6">
+                                    <div class="bg-button-stroke  p-2   m-1  ">
+                                        <div class="bg-sheet-graph_img">
+                                            <img src="images/analytics-graph.png" alt="" class="bg-sheet-img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-sm-12 col-lg-6">
+                                    <div class="bg-button-stroke  p-2   m-1  ">
+                                        <div class="bg-sheet-graph_img">
+                                            <img src="images/analytics-graph.png" alt="" class="bg-sheet-img">
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </main>
+        </div>
+
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+
+    </script>
+
+</body>
+
+</html>

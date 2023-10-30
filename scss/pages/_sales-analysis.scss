@@ -3,6 +3,8 @@
     font-weight: 500;
     margin-bottom: 1rem;
 
+  
+
 }
 
 .bg-sale-analysis_head {
@@ -26,7 +28,7 @@
     display: flex;
     align-items: center;
 
-    @media (max-width:575px) {
+    @media (max-width:992px) {
         padding: 0 0.2rem;
         height: 30px;
         white-space: nowrap;
@@ -71,4 +73,9 @@
     @media (max-width:768px) {
         font-size: 1rem;
     }
+}
+.bg-sale-team-name{
+    font-size: 14px;
+    color: $main-heading;
+    font-weight: 400;
 }
