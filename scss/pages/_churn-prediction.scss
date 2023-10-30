@@ -42,7 +42,13 @@ table{
 }
 
 
-
+.side_graph_wrapper{
+    height: 85vh;
+    overflow-y: auto;
+    .side_graph{
+        position: sticky;
+    }
+}
 
 .churn_prediction_graph{
     border: 1px solid #DFDFDF;
@@ -50,7 +56,7 @@ table{
         text-align: center;
     }
     .churn_prediction-graph_img{
-        height: 250px;
+        height: 240px;
         width: 100%;
         .img{
             width: 100%;
