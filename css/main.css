@@ -3129,6 +3129,11 @@ a {
   }
 }
 
+.bg-sale_forecast-graph_img {
+  width: 90px;
+  height: 90px;
+}
+
 .bg-forecast_dropdown-btn {
   padding: 0.4rem 2rem;
 }
@@ -3150,4 +3155,15 @@ a {
 
 .bg-sales-forcast_right-sidebar {
   padding-right: 1.7rem;
+}
+
+.bg-sales-forecast_garphtype:hover,
+.bg-sales-forecast_garphtype.active {
+  border-color: #0E3A5D;
+  cursor: pointer;
+}
+
+.bg-sale-forecast_graph-container {
+  height: 460px;
+  width: 100%;
 }

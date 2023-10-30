@@ -1,26 +1,45 @@
-
-.bg-sales-forecast_container{
+.bg-sales-forecast_container {
     height: 83vh;
     overflow-y: auto;
-    @media (max-width:992px){
+
+    @media (max-width:992px) {
         height: unset;
     }
 }
-.bg-forecast_dropdown-btn{
- padding: 0.4rem 2rem;
+
+.bg-sale_forecast-graph_img {
+    width: 90px;
+    height: 90px;
 }
-.bg-drop-down-item{
+
+.bg-forecast_dropdown-btn {
+    padding: 0.4rem 2rem;
+}
+
+.bg-drop-down-item {
     color: $main-heading;
     font-size: 14px;
 }
-.bg-sale-forecast-dropdown{
+
+.bg-sale-forecast-dropdown {
     text-align: left;
 }
-.bg-sale-forecast-dropdown::after{
+
+.bg-sale-forecast-dropdown::after {
     position: absolute;
     right: 0px;
     margin: 0.6rem;
 }
-.bg-sales-forcast_right-sidebar{
+
+.bg-sales-forcast_right-sidebar {
     padding-right: 1.7rem;
+}
+.bg-sales-forecast_garphtype:hover,
+.bg-sales-forecast_garphtype.active{
+ border-color: $primary-color;
+ cursor: pointer;
+}
+.bg-sale-forecast_graph-container{
+    height: 460px;
+    width: 100%;
 }
