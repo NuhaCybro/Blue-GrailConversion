@@ -2789,100 +2789,115 @@ a {
   border-color: #0D3554;
 }
 
-.dashboard_analytics_graph {
-  border: 1px solid #DFDFDF;
-}
-.dashboard_analytics_graph .dashboard_analytics-graph_img {
-  height: 500px;
-  width: 100%;
-}
-.dashboard_analytics_graph .dashboard_analytics-graph_img .img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+.bg-sale-analysis-title {
+  color: #0E3A5D;
+  font-weight: 500;
+  margin-bottom: 1rem;
 }
 
-.dashboard_analytics_detials {
-  padding: 40px 30px 30px 40px;
-}
-.dashboard_analytics_detials h4 {
-  font-size: 24px;
+.bg-sale-analysis_head {
   font-weight: 600;
-  text-align: center;
+  font-size: 1.2rem;
 }
-.dashboard_analytics_detials .dashboard_analytics_info {
-  border: 1px solid;
-  border-top: 1px solid #2c9cf2;
-  border-right: 1px solid #2c9cf2;
-  border-bottom: 3px solid #2c9cf2;
-  border-left: 1px solid #2c9cf2;
+@media (max-width: 575px) {
+  .bg-sale-analysis_head {
+    font-size: 1rem;
+  }
+}
+
+.bg-sales-analysis_date {
+  padding: 0rem 2rem;
+  color: #0E3A5D;
+  font-size: 14px;
+  border: 1px solid #DFDFDF;
+  border-radius: 6px;
+  font-weight: 500;
+  height: 36px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  .bg-sales-analysis_date {
+    padding: 0 0.2rem;
+    height: 30px;
+    white-space: nowrap;
+    font-size: 0.8rem;
+  }
+}
+
+.bg-sales-analysis__tile {
+  padding: 1rem 1.2rem;
+  background-color: rgba(247, 247, 247, 0.818);
   border-radius: 5px;
 }
 
-.dashboard_analytics_bottom_icons {
-  border: 1px solid;
-  border-color: transparent;
-  border-bottom-color: #DFDFDF;
-  text-align: right;
-  margin-top: 40px;
-}
-.dashboard_analytics_bottom_icons a {
-  margin-right: 10px;
-}
-.dashboard_analytics_bottom_icons a img {
-  width: 40px;
+.bg-sales-filters_list {
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
 }
 
-.page_title {
-  font-size: 26px;
-}
-
-.page_sub_title {
-  font-size: 18px;
-}
-
-.churn_prediction_selected_filter .churn_predict_filter_details {
-  border-radius: 6px;
+.bg-sale-amalysis_graph-container {
   border: 1px solid #DFDFDF;
-  text-align: center;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 0.8rem;
 }
 
-.filter_table {
-  height: 55vh;
+.bg-sale-analysis_page-contain {
+  overflow-y: auto;
+  height: 90vh;
+}
+
+.bg-sale-analysis__tile-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 0.4rem 0;
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  .bg-sale-analysis__tile-title {
+    font-size: 1rem;
+  }
+}
+
+.bg-sale-team-name {
+  font-size: 14px;
+  color: #222222;
+  font-weight: 400;
+}
+
+.bg-sales-forecast_container {
+  height: 83vh;
   overflow-y: auto;
 }
-.table_heading .note {
-  margin-right: auto;
-  text-align: end;
-  font-size: 12px;
-  color: #AFB7C9;
-}
-.table_heading .table_header {
-  border-radius: 6px;
-  border: 1px solid #DFDFDF;
-  text-align: center;
+@media (max-width: 992px) {
+  .bg-sales-forecast_container {
+    height: unset;
+  }
 }
 
-.side_graph_wrapper {
-  height: 85vh;
-  overflow-y: auto;
-}
-.side_graph_wrapper .side_graph {
-  position: sticky;
+.bg-forecast_dropdown-btn {
+  padding: 0.4rem 2rem;
 }
 
-.churn_prediction_graph {
-  border: 1px solid #DFDFDF;
+.bg-drop-down-item {
+  color: #222222;
+  font-size: 14px;
 }
-.churn_prediction_graph .grap_heading {
-  text-align: center;
+
+.bg-sale-forecast-dropdown {
+  text-align: left;
 }
-.churn_prediction_graph .churn_prediction-graph_img {
-  height: 240px;
-  width: 100%;
+
+.bg-sale-forecast-dropdown::after {
+  position: absolute;
+  right: 0px;
+  margin: 0.6rem;
 }
-.churn_prediction_graph .churn_prediction-graph_img .img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+
+.bg-sales-forcast_right-sidebar {
+  padding-right: 1.7rem;
 }
