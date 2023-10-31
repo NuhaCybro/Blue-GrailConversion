@@ -13,7 +13,17 @@
     border-radius: 6px;
     border: 1px solid #DFDFDF;
     text-align: center;
-  
+    height: 100px;
+  .number{
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .percnt{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+  }
 }
 
 }
@@ -27,19 +37,7 @@ table{
 }
 }
 
-.table_heading{
-    .note{
-        margin-right: auto;
-        text-align: end;
-        font-size: 12px;
-        color: $sub-fonts;
-    }
-    .table_header{
-        border-radius: 6px;
-        border: 1px solid #DFDFDF;
-        text-align: center; 
-    }
-}
+
 
 
 .side_graph_wrapper{
@@ -63,5 +61,20 @@ table{
             height: 100%;
             object-fit: contain;
         }
+    }
+}
+
+
+.table_heading{
+    .note{
+        margin-right: auto;
+        text-align: end;
+        font-size: 12px;
+        color: $sub-fonts;
+    }
+    .table_header{
+        border-radius: 6px;
+        border: 1px solid #DFDFDF;
+        text-align: center; 
     }
 }
