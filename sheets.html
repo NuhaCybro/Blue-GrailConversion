@@ -233,6 +233,15 @@
                                 <div class="col-12 mb-3 bg-button-stroke px-3 ">
                                     <div class="py-2 ">
                                         <span>Dimensions</span>
+                                        <form class="d-flex my-2 ">
+                                            <div class="input-group">
+                                                <span class="input-group-text bg-search bg-templates_search-icon">
+                                                    <i class="ri-search-line bg-search-icon bg-sheet_font"></i>
+                                                </span>
+                                                <input class="form-control bg-custom-search bg-template_search-bar bg-sheet_font "
+                                                    type="search" placeholder="Search" aria-label="Search">
+                                            </div>
+                                        </form>
                                     </div>
                                     <div class="bg-sheet-selection_box">
                                         <div class="col-12 mb-3 text-center  bg-sheet-draggable-btn">
@@ -259,6 +268,15 @@
                                 <div class="col-12 mb-3 bg-button-stroke px-3 ">
                                     <div class="py-2 ">
                                         <span>Measures</span>
+                                        <form class="d-flex my-2 ">
+                                            <div class="input-group">
+                                                <span class="input-group-text bg-search bg-templates_search-icon">
+                                                    <i class="ri-search-line bg-search-icon bg-sheet_font"></i>
+                                                </span>
+                                                <input class="form-control bg-custom-search bg-template_search-bar bg-sheet_font"
+                                                    type="search" placeholder="Search" aria-label="Search">
+                                            </div>
+                                        </form>
                                     </div>
                                     <div class="bg-sheet-selection_box">
                                         <div class="col-12 mb-3 text-center  bg-sheet-draggable-btn">
@@ -280,6 +298,10 @@
                                             Tax Amount
                                         </div>
                                     </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <input type="text" class="form-control bg-button-stroke" id="inputAddress"
+                                        placeholder="Input">
                                 </div>
                             </div>
 
@@ -437,7 +459,7 @@
                             <input type="text" class="form-control text-center bg-sheet-draggable-input"
                                 id="inputAddress" placeholder="Y Axis:Price Subtotal,Tax Amount">
                         </div>
-                        <div class="bg-chat__input-stack">
+                        <div class="bg-chat__input-stack bg-sheet_chat-box">
                             <form>
                                 <div class="bg-chat__input-container">
                                     <textarea class="bg-chat__input" rows="1"
@@ -465,6 +487,13 @@
 
                         </div>
                         <div class="col-lg-7">
+                            <div class="row my-3">
+                                <div class="col-6 pr-0"><input type="text" class="form-control bg-button-stroke"
+                                        id="inputAddress" placeholder="Input"></div>
+                                <div class="col-6 pr-0"><input type="text" class="form-control bg-button-stroke"
+                                        id="inputAddress" placeholder="Input"></div>
+                            </div>
+
                             <span class="bg-sheet-title">Query</span>
                             <div class="bg-sheet_query-container my-3">
                                 <textarea name="" id="" rows="10" class="bg-sheet_query p-3 w-100"

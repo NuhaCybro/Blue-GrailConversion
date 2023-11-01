@@ -90,6 +90,21 @@ a {
   overflow-y: auto;
 }
 
+.bg-button-primary-grey {
+  border-radius: 6px;
+  border-top: 1px solid #0D3554;
+  border-right: 1px solid #0D3554;
+  border-bottom: 1.5px solid #0D3554;
+  border-left: 1px solid #0D3554;
+  background: #505050;
+  color: #fff;
+  font-weight: 400;
+  font-size: 13px;
+}
+.bg-button-primary-grey:hover {
+  color: #fff;
+}
+
 .bg-search_modal-container {
   position: fixed;
   top: 0;
@@ -2807,15 +2822,28 @@ a {
   border-color: #0D3554;
 }
 
+.bg-sheet_chat-box {
+  position: static;
+}
+
+.bg-sheet_font {
+  font-size: 0.8rem;
+}
+
 .bg-sale-analysis-title {
   color: #0E3A5D;
   font-weight: 500;
-  margin-bottom: 1.3rem;
+  margin-bottom: 1rem;
 }
 
 .bg-sale-analysis_head {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.2rem;
+}
+@media (max-width: 575px) {
+  .bg-sale-analysis_head {
+    font-size: 1rem;
+  }
 }
 
 .bg-sales-analysis_date {
@@ -2829,6 +2857,14 @@ a {
   display: flex;
   align-items: center;
 }
+@media (max-width: 575px) {
+  .bg-sales-analysis_date {
+    padding: 0 0.2rem;
+    height: 30px;
+    white-space: nowrap;
+    font-size: 0.8rem;
+  }
+}
 
 .bg-sales-analysis__tile {
   padding: 1rem 1.2rem;
@@ -2841,4 +2877,162 @@ a {
   display: flex;
   align-items: center;
   gap: 0.6rem;
+}
+
+.bg-sale-amalysis_graph-container {
+  border: 1px solid #DFDFDF;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 0.8rem;
+}
+
+.bg-sale-analysis_page-contain {
+  overflow-y: auto;
+  height: 90vh;
+}
+
+.bg-sale-analysis__tile-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 0.4rem 0;
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  .bg-sale-analysis__tile-title {
+    font-size: 1rem;
+  }
+}
+
+.bg-sale-team-name {
+  font-size: 14px;
+  color: #222222;
+  font-weight: 400;
+}
+
+/*.bg-sales-forecast_container {
+    height: 83vh;
+    overflow-y: auto;
+
+    @media (max-width:992px) {
+        height: unset;
+    }
+}*/
+.bg-sale_forecast-graph_img {
+  width: 86px;
+  height: 86px;
+}
+
+.bg-forecast_dropdown-btn {
+  padding: 0.4rem 2rem;
+}
+
+.bg-drop-down-item {
+  color: #222222;
+  font-size: 14px;
+}
+
+.bg-sale-forecast-dropdown {
+  text-align: left;
+}
+
+.bg-sale-forecast-dropdown::after {
+  position: absolute;
+  right: 0px;
+  margin: 0.6rem;
+}
+
+.bg-sales-forcast_right-sidebar {
+  padding-right: 1.7rem;
+}
+
+.bg-sales-forecast_garphtype:hover,
+.bg-sales-forecast_garphtype.active {
+  border-color: #0E3A5D;
+  cursor: pointer;
+}
+
+.bg-sale-forecast_graph-container {
+  height: 460px;
+  width: 100%;
+}
+
+.bg-sales-forecast-img {
+  width: 100%;
+  height: 100%;
+}
+
+.bg-sales-forcaste_graph-area {
+  padding-right: 1.4rem;
+}
+@media (max-width: 768px) {
+  .bg-sales-forcaste_graph-area {
+    padding-right: 1rem;
+  }
+}
+
+.page_title {
+  font-size: 26px;
+}
+
+.page_sub_title {
+  font-size: 18px;
+}
+
+.churn_prediction_selected_filter .churn_predict_filter_details {
+  border-radius: 6px;
+  border: 1px solid #DFDFDF;
+  text-align: center;
+  height: 100px;
+}
+.churn_prediction_selected_filter .churn_predict_filter_details .number {
+  color: black;
+  font-size: 24px;
+  font-weight: 600;
+}
+.churn_prediction_selected_filter .churn_predict_filter_details .percnt {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.filter_table {
+  height: 55vh;
+  overflow-y: auto;
+}
+.side_graph_wrapper {
+  height: 85vh;
+  overflow-y: auto;
+}
+.side_graph_wrapper .side_graph {
+  position: sticky;
+}
+
+.churn_prediction_graph {
+  border: 1px solid #DFDFDF;
+}
+.churn_prediction_graph .grap_heading {
+  text-align: center;
+}
+.churn_prediction_graph .churn_prediction-graph_img {
+  height: 240px;
+  width: 100%;
+}
+.churn_prediction_graph .churn_prediction-graph_img .img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.table_heading .note {
+  margin-right: auto;
+  text-align: end;
+  font-size: 12px;
+  color: #AFB7C9;
+}
+.table_heading .table_header {
+  border-radius: 6px;
+  border: 1px solid #DFDFDF;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
