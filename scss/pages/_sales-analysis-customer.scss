@@ -1,0 +1,77 @@
+.bg-sales-cust_head {
+    color: $main-heading;
+    font-size: 1rem;
+    font-weight: 500;
+    white-space: nowrap;
+    margin: 0.5rem 0;
+}
+
+.bg-sale_cust--img-container {
+    padding: 1rem;
+    border: 1px solid $stroke-color;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.bg-sale-cust_tile {
+    min-width: max-content;
+}
+
+.bg-sale_cust-graph-title {
+    color: $primary-color;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.bg-sale-custom_detial-table {
+    height: 150px;
+    overflow-y: auto;
+    display: block;
+
+    @media (max-width:992px) {
+        height: 340px;
+    }
+    @media (max-width:768px) {
+        height: 260px;
+
+    }
+}
+
+.bg-sale-custom_detial-table {
+    tbody {
+        td {
+            padding: 0.2rem 2rem;
+        }
+    }
+}
+
+.bg-dashboard_cell {
+    color: $primary-font;
+    font-size: 12px;
+    text-align: center;
+    padding: 0.2rem ;
+
+    p {
+        margin-bottom: 0px;
+    }
+}
+
+.bg-sales-analysis_customer-header {
+    background-color: $white;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid $stroke-color;
+    color: black;
+    font-weight: 500;
+    padding: 0.4rem 0.2rem;
+    font-size: 12px;
+
+}
+
+.bg-sales-analysis_custom-headline {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0.4rem 0;
+    color: black;
+
+}

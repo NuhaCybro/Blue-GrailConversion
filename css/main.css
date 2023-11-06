@@ -2202,12 +2202,19 @@ a {
   font-size: 14px;
 }
 
+.bg-card-container {
+  overflow: hidden;
+}
+
 .bg-card-container table {
   width: 100%;
 }
 
 .bg-dashboard_table thead {
   border-bottom: 1px solid #DFDFDF;
+  background-color: #fff;
+  position: sticky;
+  top: 0px;
 }
 
 .bg-dashboard_table thead th {
@@ -3252,4 +3259,79 @@ a {
   border-radius: 6px;
   border: 1px solid #DFDFDF;
   text-align: center;
+}
+
+.bg-sales-cust_head {
+  color: #222222;
+  font-size: 1rem;
+  font-weight: 500;
+  white-space: nowrap;
+  margin: 0.5rem 0;
+}
+
+.bg-sale_cust--img-container {
+  padding: 1rem;
+  border: 1px solid #DFDFDF;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.bg-sale-cust_tile {
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+
+.bg-sale_cust-graph-title {
+  color: #0E3A5D;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.bg-sale-custom_detial-table {
+  height: 150px;
+  overflow-y: auto;
+  display: block;
+}
+@media (max-width: 992px) {
+  .bg-sale-custom_detial-table {
+    height: 340px;
+  }
+}
+@media (max-width: 768px) {
+  .bg-sale-custom_detial-table {
+    height: 260px;
+  }
+}
+
+.bg-sale-custom_detial-table tbody td {
+  padding: 0.2rem 2rem;
+}
+
+.bg-dashboard_cell {
+  color: #505050;
+  font-size: 12px;
+  text-align: center;
+  padding: 0.2rem;
+}
+.bg-dashboard_cell p {
+  margin-bottom: 0px;
+}
+
+.bg-sales-analysis_customer-header {
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #DFDFDF;
+  color: black;
+  font-weight: 500;
+  padding: 0.4rem 0.2rem;
+  font-size: 12px;
+}
+
+.bg-sales-analysis_custom-headline {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0.4rem 0;
+  color: black;
 }

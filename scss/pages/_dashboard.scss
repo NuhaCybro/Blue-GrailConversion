@@ -44,7 +44,9 @@
         font-size: 14px;
     }
 }
-
+.bg-card-container {
+    overflow: hidden;
+}
 .bg-card-container {
     table {
         width: 100%;
@@ -54,6 +56,9 @@
 .bg-dashboard_table {
     thead {
         border-bottom: 1px solid $stroke-color;
+        background-color: $white;
+        position: sticky;
+        top: 0px;
     }
 }
 
