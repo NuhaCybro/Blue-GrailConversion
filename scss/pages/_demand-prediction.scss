@@ -84,17 +84,9 @@ td {
   position: sticky;
     left: 0px;
     top: 0px;
-  
-}
-.bg-demand-table_sticky-content{
     background-color: $secondary-color;
-    display: block;
-    margin-bottom: 0px;
-
+  
 }
 .bg-demand_sub-table{
     overflow: auto;
-}
-.bg-demand_prediction-head tr:first-child th{
-background-color: $secondary-color;
 }
