@@ -3363,6 +3363,11 @@ a {
   color: #222222;
   white-space: nowrap;
 }
+@media (max-width: 768px) {
+  .bg-demand-predit_head {
+    white-space: wrap;
+  }
+}
 
 .bg-demand_predit-input {
   min-width: 82px;
@@ -3375,7 +3380,7 @@ a {
 
 .bg-demand_prediction-table {
   position: relative;
-  overflow: auto;
+  overflow: hidden;
   margin: 1rem 0;
 }
 
@@ -3417,7 +3422,18 @@ td {
   position: sticky;
   left: 0px;
   top: 0px;
+}
+
+.bg-demand-table_sticky-content {
   background-color: #F7F7F7;
   display: block;
   margin-bottom: 0px;
+}
+
+.bg-demand_sub-table {
+  overflow: auto;
+}
+
+.bg-demand_prediction-head tr:first-child th {
+  background-color: #F7F7F7;
 }
