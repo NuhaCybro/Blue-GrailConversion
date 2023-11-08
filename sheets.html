@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sheet</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
@@ -238,7 +241,8 @@
                                                 <span class="input-group-text bg-search bg-templates_search-icon">
                                                     <i class="ri-search-line bg-search-icon bg-sheet_font"></i>
                                                 </span>
-                                                <input class="form-control bg-custom-search bg-template_search-bar bg-sheet_font "
+                                                <input
+                                                    class="form-control bg-custom-search bg-template_search-bar bg-sheet_font "
                                                     type="search" placeholder="Search" aria-label="Search">
                                             </div>
                                         </form>
@@ -273,7 +277,8 @@
                                                 <span class="input-group-text bg-search bg-templates_search-icon">
                                                     <i class="ri-search-line bg-search-icon bg-sheet_font"></i>
                                                 </span>
-                                                <input class="form-control bg-custom-search bg-template_search-bar bg-sheet_font"
+                                                <input
+                                                    class="form-control bg-custom-search bg-template_search-bar bg-sheet_font"
                                                     type="search" placeholder="Search" aria-label="Search">
                                             </div>
                                         </form>
@@ -444,18 +449,130 @@
 
                     </div>
                     <div class="col-lg-7 bg-sheets-previewContainer pt-3 px-4">
-                        <div class="col-4  mb-3 bg-sheet_preview-input ">
+                        <!--<div class="col-4  mb-3 bg-sheet_preview-input ">
                             <input type="text" class="form-control bg-button-stroke" id="inputAddress"
                                 placeholder="input">
+                        </div>-->
+
+                        <!-- <div class="bg-sheet-graph_preview">
+
+                             <img src="images/bar-graph.png" alt="" class="bg-sheet-img">
+                        </div>-->
+                        <div class="d-flex">
+                            <div class="bg-sheet_progress-card">
+                                <button class="bg-close_calender-btn bg-dark_close-calender"><i
+                                        class="fa-regular fa-calendar-xmark "></i></button>
+                                <span class="bg-sheet_card-heading">Sales</span>
+                                <span class="bg-sheet_card-progress-count">27.00/18.00</span>
+
+                                <div class="progress bg-sheet_progress-container" role="progressbar"
+                                    aria-label="Example with label" aria-valuenow="25" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                    <div class="progress-bar bg-sheet_progress-state" style="width: 15%"></div>
+                                </div>
+                                <span class="bg-sheet_prgress-state_count">15%</span>
+                            </div>
+                            <div class="bg-sheet_progress-card bg-sheet_progress-secondary-card">
+                                <button class="bg-close_calender-btn"><i
+                                        class="fa-regular fa-calendar-xmark"></i></button>
+                                <span class="bg-sheet_card-heading ">Sales</span>
+                                <span class="bg-sheet_card-progress-count">27.00</span>
+                                <span class="d-block bg-sheet-graph-name">Vs Target</span>
+                                <span class="bg-sheet_prgress-state_count">85% <i
+                                        class="fa-sharp fa-solid fa-arrow-trend-down bg-danger-txt"></i><span>
+
+                            </div>
                         </div>
-                        <div class="bg-sheet-graph_preview">
-                            <img src="images/bar-graph.png" alt="" class="bg-sheet-img">
+
+                        <div class="row py-2">
+                            <div class="col-sm-6">
+                                <div class="col-12  mb-2">
+                                    <label for="inputAddress" class="form-label  bg-modal-form_label">KPI Name</label>
+                                    <input type="text" class="form-control bg-button-stroke" id="inputAddress"
+                                        placeholder="Acme, Inc.">
+                                </div>
+                                <div class="col-12  mb-2">
+                                    <label for="inputAddress" class="form-label  bg-modal-form_label">KPI Icon</label>
+                                    <input type="text" class="form-control bg-button-stroke" id="inputAddress"
+                                        placeholder="">
+                                </div>
+                                <div class="col-12  mb-2">
+                                    <label for="inputAddress" class="form-label  bg-modal-form_label">KPI Target</label>
+                                    <input type="text" class="form-control bg-button-stroke" id="inputAddress"
+                                        placeholder="">
+                                </div>
+                                <div class="col-12  mb-2">
+                                    <label for="inputAddress" class="form-label  bg-modal-form_label">Measuring
+                                        view</label>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input bg-sheet_checkbox" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label bg-sheet-graph-name pt-0" for="flexCheckDefault">
+                                            View 1
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input bg-sheet_checkbox" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label bg-sheet-graph-name pt-0" for="flexCheckDefault">
+                                            View 2
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="col-12  mb-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label  bg-modal-form_label" for="flexCheckDefault">
+                                            Redirected to Record
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12  mb-2">
+                                    <label for="inputAddress" class="form-label  bg-modal-form_label">Number
+                                        System</label>
+                                    <div class="dropdown">
+                                        <button
+                                            class="btn dropdown-toggle bg-sale-forecast-dropdown bg-button-stroke w-100"
+                                            id="chatDropdown" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            1
+                                        </button>
+                                        <ul class="dropdown-menu w-100" aria-labelledby="chatDropdown" style="">
+                                            <li><button class="dropdown-item bg-drop-down-item" href="#">Forecast Option
+                                                    1</button>
+                                            </li>
+                                            <li><button class="dropdown-item  bg-drop-down-item" href="#">Forecast
+                                                    Option
+                                                    2</button>
+                                            </li>
+                                            <li><button class="dropdown-item  bg-drop-down-item" href="#">Forecast
+                                                    Option
+                                                    3</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-2">
+                                    <label for="inputAddress" class="form-label  bg-modal-form_label">Description
+                                        </label>
+                                    <textarea class="form-control bg-button-stroke" id="exampleFormControlTextarea1" rows="8"></textarea>
+                                </div>
+                            </div>
                         </div>
+
+
                         <div class="col-12 mb-3">
                             <input type="text" class="form-control text-center bg-sheet-draggable-input"
                                 id="inputAddress" placeholder="X Axis:State">
                         </div>
-                        <div class="col-12 mb-3">
+
+
+
+                        <!--<div class="col-12 mb-3">
                             <input type="text" class="form-control text-center bg-sheet-draggable-input"
                                 id="inputAddress" placeholder="Y Axis:Price Subtotal,Tax Amount">
                         </div>
@@ -467,6 +584,9 @@
                                     <button class="bg-chat__send-btn">Send</button>
                                 </div>
                             </form>
+                        </div>-->
+                        <div>
+
                         </div>
                     </div>
                     <div class="row py-3 bg-sheet-filter_container">
@@ -503,9 +623,6 @@
                         </div>
                     </div>
                 </div>
-
-
-
 
         </div>
 

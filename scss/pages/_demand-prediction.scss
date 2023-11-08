@@ -25,7 +25,8 @@
     font-weight: 600;
     color: $main-heading;
     white-space: nowrap;
-    @media (max-width :768px){
+
+    @media (max-width :768px) {
         white-space: wrap;
     }
 }
@@ -41,8 +42,8 @@
 
 .bg-demand_prediction-table {
     position: relative;
-  //  overflow: auto;
-  overflow: hidden;
+    //  overflow: auto;
+    overflow: hidden;
     margin: 1rem 0;
 }
 
@@ -70,23 +71,26 @@
     padding: 0.5rem 1rem;
 }
 
-.bg-demand_prediction-table th,
-td {
-    border: 1px solid $stroke-color;
-    border-collapse: collapse;
-  padding: 0.4rem 0.8rem;
-    font-size: 12.8px;
-    color: $primary-font;
-    text-align: center;
+.bg-demand_prediction-table{ 
+    th,
+    td {
+        border: 1px solid $stroke-color;
+        border-collapse: collapse;
+        padding: 0.4rem 0.8rem;
+        font-size: 12.8px;
+        color: $primary-font;
+        text-align: center;
+    }
+    
 }
-
 .bg-demand_prediction-table_list tr th:first-child {
-  position: sticky;
+    position: sticky;
     left: 0px;
     top: 0px;
     background-color: $secondary-color;
-  
+
 }
-.bg-demand_sub-table{
+
+.bg-demand_sub-table {
     overflow: auto;
 }

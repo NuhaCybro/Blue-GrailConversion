@@ -3046,6 +3046,13 @@ a {
   font-size: 0.8rem;
 }
 
+.bg-sheet_progress-card {
+  padding: 1rem;
+  background-color: #FF8982;
+  border-radius: 6px;
+  text-align: center;
+}
+
 .bg-sale-analysis-title {
   color: #0E3A5D;
   font-weight: 500;
