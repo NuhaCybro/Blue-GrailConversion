@@ -185,7 +185,6 @@
     color: black;
     display: flex;
     justify-content: flex-end;
-    width: 100%;
 }
 .bg-dark_close-calender{
  color: $white;
@@ -199,4 +198,26 @@
     height: 0.8em;
     margin-top: 0.35em;
     margin-left: -1em;
+}
+.bg-sheet_info-icon{
+    position: relative;
+}
+.bg-sheet_info-content{
+    position: absolute;
+    background-color: $main-heading;
+    border-radius: 4px;
+    padding: 0.3rem 0.6rem;
+    color: $white;
+    font-size: 12.8px;
+    max-width: 300px;
+    width: max-content;
+    top: 3px;
+    right: 28px;
+    display: none;
+    word-wrap: break-word;
+}
+.bg-sheet_info-icon:hover{
+    .bg-sheet_info-content{
+        display: block;
+    }
 }
