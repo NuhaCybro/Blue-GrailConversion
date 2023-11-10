@@ -3,7 +3,7 @@
     font-weight: 500;
     margin-bottom: 1rem;
 
-  
+
 
 }
 
@@ -74,8 +74,18 @@
         font-size: 1rem;
     }
 }
-.bg-sale-team-name{
+
+.bg-sale-team-name {
     font-size: 14px;
     color: $main-heading;
     font-weight: 400;
+}
+
+.bg-dashboard_modal-heading {
+    font-size: 1.2rem;
+    color: $main-heading;
+    font-weight: 500;
+}
+.bg-kpi_modal-container{
+display: none;
 }

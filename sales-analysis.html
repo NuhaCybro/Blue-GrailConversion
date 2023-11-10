@@ -213,7 +213,7 @@
                             <div class="d-flex align-items-center gap-3">
                                 <div class="bg-sales-analysis_date">Start date</div>
                                 <div class="bg-sales-analysis_date">29-1-2023</div>
-                                <a href=""><i class="ri-add-circle-line bg-icons"></i></a>
+                                <a href="" class="bg-cofigr-btn"><i class="ri-add-circle-line bg-icons"></i></a>
                             </div>
                             <div class="d-flex">
 
@@ -450,6 +450,117 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="bg-onboard_modal-container bg-kpi_modal-container">
+
+                    <div class="modal-dialog  bg-dashboard_modal-box">
+                        <div class="modal-content bg-modal_content">
+                            <div class="modal-header  bg-social_commentHead d-flex  pt-4">
+                                <h5 class="bg-dashboard_modal-heading">Configration</h5>
+                                <span class="bg-icons bg-social_cmnt-closebtn"><i class="ri-close-line"></i></span>
+                            </div>
+
+                            <div class="modal-body pt-0">
+                                <form class="p-4">
+                                    <div class="row py-2">
+                                        <div class="col-sm-6 px-2">
+                                            <div class="col-12  mb-2">
+                                                <label for="inputAddress" class="form-label  bg-modal-form_label">
+                                                    Name</label>
+                                                <input type="text" class="form-control bg-button-stroke"
+                                                    id="inputAddress" placeholder="Acme, Inc.">
+                                            </div>
+                                            <div class="col-12  mb-2">
+                                                <label for="inputAddress"
+                                                    class="form-label  bg-modal-form_label">Group</label>
+                                                <input type="text" class="form-control bg-button-stroke"
+                                                    id="inputAddress" placeholder="">
+                                            </div>
+
+
+                                        </div>
+                                        <div class="col-sm-6 px-2">
+
+                                            <div class="col-12  mb-2">
+                                                <label for="inputAddress"
+                                                    class="form-label  bg-modal-form_label">User</label>
+                                                <div class="dropdown">
+                                                    <button
+                                                        class="btn dropdown-toggle bg-sale-forecast-dropdown bg-button-stroke w-100"
+                                                        id="chatDropdown" role="button" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        User Type
+                                                    </button>
+                                                    <ul class="dropdown-menu w-100" aria-labelledby="chatDropdown">
+                                                        <li><button class="dropdown-item bg-drop-down-item"
+                                                                href="#">Forecast Option
+                                                                1</button>
+                                                        </li>
+                                                        <li><button class="dropdown-item  bg-drop-down-item"
+                                                                href="#">Forecast
+                                                                Option
+                                                                2</button>
+                                                        </li>
+                                                        <li><button class="dropdown-item  bg-drop-down-item"
+                                                                href="#">Forecast
+                                                                Option
+                                                                3</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12  mb-2">
+                                                <label for="inputAddress"
+                                                    class="form-label  bg-modal-form_label">Limit</label>
+                                                <div class="dropdown">
+                                                    <button
+                                                        class="btn dropdown-toggle bg-sale-forecast-dropdown bg-button-stroke w-100"
+                                                        id="chatDropdown" role="button" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        1
+                                                    </button>
+                                                    <ul class="dropdown-menu w-100" aria-labelledby="chatDropdown">
+                                                        <li><button class="dropdown-item bg-drop-down-item"
+                                                                href="#">Forecast Option
+                                                                1</button>
+                                                        </li>
+                                                        <li><button class="dropdown-item  bg-drop-down-item"
+                                                                href="#">Forecast
+                                                                Option
+                                                                2</button>
+                                                        </li>
+                                                        <li><button class="dropdown-item  bg-drop-down-item"
+                                                                href="#">Forecast
+                                                                Option
+                                                                3</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12  mb-2 px-2">
+                                            <label for="inputAddress"
+                                                class="form-label  bg-modal-form_label">Theme</label>
+                                            <input type="text" class="form-control bg-button-stroke" id="inputAddress"
+                                                placeholder="">
+                                        </div>
+                                    </div>
+                                </form>
+
+
+                            </div>
+                            <div class="bg-modal_footer bg-social_cmnt-footer">
+                                <div class="d-flex justify-content-end gap-2">
+                                    <button class="btn bg-button-primary-stroke">Save</button>
+                                    <button class="btn bg-button-stroke ">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
             </main>
         </div>
 
@@ -460,7 +571,27 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var chatLinks = document.querySelectorAll(".bg-cofigr-btn");
+            var modalContainer = document.querySelector(".bg-kpi_modal-container ");
+            var closeButton = document.querySelector(".bg-social_cmnt-closebtn");
 
+            chatLinks.forEach(function (link) {
+                link.addEventListener("click", function (event) {
+                    event.preventDefault();
+
+
+                    modalContainer.style.display = "flex";
+                });
+            });
+
+            closeButton.addEventListener("click", function (event) {
+                event.preventDefault();
+
+
+                modalContainer.style.display = "none";
+            });
+        });
     </script>
 
 </body>

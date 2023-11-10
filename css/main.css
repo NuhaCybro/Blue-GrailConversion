@@ -3149,6 +3149,31 @@ a {
   display: block;
 }
 
+.bg-sheet_inputlabel {
+  min-width: 90px;
+}
+
+.bg-dashboard_tab-content {
+  padding: 0.8rem;
+  border-radius: 0px 0px 6px 6px;
+}
+
+.bg-dashboard_tab-list {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+  color: #222222;
+  font-weight: 500;
+  width: 100%;
+}
+
+.bg-dashboard_tab-list.active {
+  background-color: #F7F7F7;
+  color: #0E3A5D;
+}
+
 .bg-sale-analysis-title {
   color: #0E3A5D;
   font-weight: 500;
@@ -3235,6 +3260,16 @@ a {
   font-size: 14px;
   color: #222222;
   font-weight: 400;
+}
+
+.bg-dashboard_modal-heading {
+  font-size: 1.2rem;
+  color: #222222;
+  font-weight: 500;
+}
+
+.bg-kpi_modal-container {
+  display: none;
 }
 
 /*.bg-sales-forecast_container {

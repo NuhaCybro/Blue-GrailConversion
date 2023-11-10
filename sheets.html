@@ -608,17 +608,73 @@
                     </div>
                     <div class="row py-3 bg-sheet-filter_container">
                         <div class="col-lg-5">
-                            <div class="col-6">
-                                <button class="bg-new-chat-button bg-sheetfilter-btn"><svg
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path fill="none" d="M0 0h24v24H0z"></path>
-                                        <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="rgba(255,255,255,1)">
-                                        </path>
-                                    </svg>
-                                    New Filter</button>
-                            </div>
-                            <div class="bg-sheet-filter_state bg-button-stroke text-center p-2 my-3 active">
-                                <span class=" bg-sheet-graph-name">State in sale</span>
+
+                            <ul class="nav  nav-pills nav-justified" id="pills-tab" role="tablist">
+                                <li class="bg-dashboard_tab-items" role="presentation">
+                                    <button class="bg-dashboard_tab-list  active" id="pills-home-tab"
+                                        data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"
+                                        aria-controls="pills-home" aria-selected="true">Sheet Filter</button>
+                                </li>
+                                <li class="bg-dashboard_tab-items" role="presentation">
+                                    <button class="bg-dashboard_tab-list" id="pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-profile" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false">Global Filter</button>
+                                </li>
+
+                            </ul>
+                            <div class="tab-content bg-dashboard_tab-content py-3" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                    aria-labelledby="pills-home-tab">
+                                    <div class="col-6">
+                                        <button class="bg-new-chat-button bg-sheetfilter-btn"><svg
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                                <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"
+                                                    fill="rgba(255,255,255,1)">
+                                                </path>
+                                            </svg>
+                                            New Filter</button>
+                                    </div>
+                                    <div class="bg-sheet-filter_state bg-button-stroke text-center p-2 my-3 active">
+                                        <span class=" bg-sheet-graph-name">State in sale</span>
+                                    </div>
+                                    
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab">
+                                    <div class="col-12  d-flex align-items-center  mb-3">
+                                        <label for="inputAddress"
+                                            class="form-label  bg-modal-form_label mb-0 text-nowrap bg-sheet_inputlabel">Start
+                                            Date
+                                            :</label>
+                                        <input type="text" class="form-control bg-button-stroke" id="inputAddress"
+                                            placeholder="Fields">
+                                    </div>
+                                    <div class="col-12  d-flex align-items-center  mb-3">
+                                        <label for="inputAddress"
+                                            class="form-label  bg-modal-form_label mb-0 text-nowrap bg-sheet_inputlabel">End
+                                            Date
+                                            :</label>
+                                        <input type="text" class="form-control bg-button-stroke" id="inputAddress"
+                                            placeholder="Fields">
+                                    </div>
+                                    <div class="col-12  d-flex align-items-center  mb-3">
+                                        <label for="inputAddress"
+                                            class="form-label  bg-modal-form_label mb-0 text-nowrap bg-sheet_inputlabel">Comany
+                                            :</label>
+                                        <input type="text" class="form-control bg-button-stroke" id="inputAddress"
+                                            placeholder="Fields">
+                                    </div>
+                                    <div class="col-12  d-flex align-items-center  mb-3">
+                                        <label for="inputAddress"
+                                            class="form-label  bg-modal-form_label mb-0 text-nowrap bg-sheet_inputlabel">User
+                                            :</label>
+                                        <input type="text" class="form-control bg-button-stroke" id="inputAddress"
+                                            placeholder="Fields">
+                                    </div>
+
+                                </div>
+
                             </div>
 
 
@@ -643,6 +699,53 @@
 
         </div>
 
+        <div class="bg-onboard_modal-container bg-kpi_modal-container">
+
+            <div class="modal-dialog  bg-dashboard_modal-box">
+                <div class="modal-content bg-modal_content">
+                    <div class="modal-header  bg-social_commentHead d-flex  pt-4">
+                        <h5 class="bg-dashboard_modal-heading">Odoo</h5>
+                        <span class="bg-icons bg-social_cmnt-closebtn"><i class="ri-close-line"></i></span>
+                    </div>
+
+                    <div class="modal-body pt-0">
+                        <form class="p-4">
+                            <div class="row py-2">
+
+                                <div class="col-12  mb-3 px-2">
+                                    <input type="text" class="form-control bg-button-stroke" id="inputAddress"
+                                        placeholder="">
+                                </div>
+                                <div class="col-12  mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label  bg-modal-form_label" for="flexCheckDefault">
+                                            Redirected to Record
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12  mb-3 px-2">
+                                    <input type="text" class="form-control bg-button-stroke" id="inputAddress"
+                                        placeholder="Field">
+                                </div>
+                            </div>
+                        </form>
+
+
+                    </div>
+                    <div class="bg-modal_footer bg-social_cmnt-footer">
+                        <div class="d-flex justify-content-end gap-2">
+                            <button class="btn bg-button-primary-stroke">Confirm</button>
+                            <button class="btn bg-button-stroke ">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
         </main>
     </div>
     </div>
@@ -652,18 +755,26 @@
         crossorigin="anonymous"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const newFilterButton = document.querySelector(".bg-sheetfilter-btn");
-            const contentSection = document.querySelector(".bg-sheet-filter_state");
+            var chatLinks = document.querySelectorAll(".bg-sheetfilter-btn");
+            var modalContainer = document.querySelector(".bg-kpi_modal-container ");
+            var closeButton = document.querySelector(".bg-social_cmnt-closebtn");
 
-            newFilterButton.addEventListener("click", function () {
-                if (contentSection.style.display === "none" || contentSection.style.display === "") {
-                    contentSection.style.display = "block";
-                } else {
-                    contentSection.style.display = "none";
-                }
+            chatLinks.forEach(function (link) {
+                link.addEventListener("click", function (event) {
+                    event.preventDefault();
+
+
+                    modalContainer.style.display = "flex";
+                });
+            });
+
+            closeButton.addEventListener("click", function (event) {
+                event.preventDefault();
+
+
+                modalContainer.style.display = "none";
             });
         });
-
     </script>
 
 </body>

@@ -178,7 +178,8 @@
     background-color: $white;
     color: black;
 }
-.bg-close_calender-btn{
+
+.bg-close_calender-btn {
     border: none;
     background: transparent;
     font-size: 1.4rem;
@@ -186,23 +187,28 @@
     display: flex;
     justify-content: flex-end;
 }
-.bg-dark_close-calender{
- color: $white;
+
+.bg-dark_close-calender {
+    color: $white;
 }
-.bg-input_list{
+
+.bg-input_list {
     list-style: none;
     padding-left: 0px;
 }
-.bg-sheet_checkbox{
+
+.bg-sheet_checkbox {
     width: 0.8em;
     height: 0.8em;
     margin-top: 0.35em;
     margin-left: -1em;
 }
-.bg-sheet_info-icon{
+
+.bg-sheet_info-icon {
     position: relative;
 }
-.bg-sheet_info-content{
+
+.bg-sheet_info-content {
     position: absolute;
     background-color: $main-heading;
     border-radius: 4px;
@@ -216,8 +222,36 @@
     display: none;
     word-wrap: break-word;
 }
-.bg-sheet_info-icon:hover{
-    .bg-sheet_info-content{
+
+.bg-sheet_info-icon:hover {
+    .bg-sheet_info-content {
         display: block;
     }
+}
+
+.bg-sheet_inputlabel {
+    min-width: 90px;
+}
+
+.bg-dashboard_tab-content {
+
+    padding: 0.8rem;
+
+    border-radius: 0px 0px 6px 6px;
+}
+
+.bg-dashboard_tab-list {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    font-size: 14px;
+    background-color: transparent;
+    border: none;
+    color: $main-heading;
+    font-weight: 500;
+    width: 100%;
+}
+
+.bg-dashboard_tab-list.active {
+    background-color: $secondary-color;
+    color:$primary-color ;
 }
