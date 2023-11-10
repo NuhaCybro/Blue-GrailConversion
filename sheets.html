@@ -529,7 +529,8 @@
                                                                 class="ri-bar-chart-box-line bg-icons"></i></div>
                                                     </li>
                                                     <li>
-                                                        <div class="bg-icon_box-item"  onclick="selectIcon('ri-donut-chart-line')"><i
+                                                        <div class="bg-icon_box-item"
+                                                            onclick="selectIcon('ri-donut-chart-line')"><i
                                                                 class="ri-donut-chart-line bg-icons"></i></div>
                                                     </li>
                                                     <li>
@@ -538,7 +539,8 @@
                                                                 class="ri-bar-chart-box-line bg-icons"></i></div>
                                                     </li>
                                                     <li>
-                                                        <div class="bg-icon_box-item"  onclick="selectIcon('ri-donut-chart-line')"><i
+                                                        <div class="bg-icon_box-item"
+                                                            onclick="selectIcon('ri-donut-chart-line')"><i
                                                                 class="ri-donut-chart-line bg-icons"></i></div>
                                                     </li>
                                                     <li>
@@ -547,7 +549,8 @@
                                                                 class="ri-bar-chart-box-line bg-icons"></i></div>
                                                     </li>
                                                     <li>
-                                                        <div class="bg-icon_box-item"  onclick="selectIcon('ri-donut-chart-line')"><i
+                                                        <div class="bg-icon_box-item"
+                                                            onclick="selectIcon('ri-donut-chart-line')"><i
                                                                 class="ri-donut-chart-line bg-icons"></i></div>
                                                     </li>
                                                     <li>
@@ -556,7 +559,8 @@
                                                                 class="ri-bar-chart-box-line bg-icons"></i></div>
                                                     </li>
                                                     <li>
-                                                        <div class="bg-icon_box-item"  onclick="selectIcon('ri-donut-chart-line')"><i
+                                                        <div class="bg-icon_box-item"
+                                                            onclick="selectIcon('ri-donut-chart-line')"><i
                                                                 class="ri-donut-chart-line bg-icons"></i></div>
                                                     </li>
                                                     <li>
@@ -565,7 +569,8 @@
                                                                 class="ri-bar-chart-box-line bg-icons"></i></div>
                                                     </li>
                                                     <li>
-                                                        <div class="bg-icon_box-item"  onclick="selectIcon('ri-donut-chart-line')"><i
+                                                        <div class="bg-icon_box-item"
+                                                            onclick="selectIcon('ri-donut-chart-line')"><i
                                                                 class="ri-donut-chart-line bg-icons"></i></div>
                                                     </li>
                                                     <li>
@@ -574,7 +579,8 @@
                                                                 class="ri-bar-chart-box-line bg-icons"></i></div>
                                                     </li>
                                                     <li>
-                                                        <div class="bg-icon_box-item"  onclick="selectIcon('ri-donut-chart-line')"><i
+                                                        <div class="bg-icon_box-item"
+                                                            onclick="selectIcon('ri-donut-chart-line')"><i
                                                                 class="ri-donut-chart-line bg-icons"></i></div>
                                                     </li>
                                                     <li>
@@ -583,7 +589,8 @@
                                                                 class="ri-bar-chart-box-line bg-icons"></i></div>
                                                     </li>
                                                     <li>
-                                                        <div class="bg-icon_box-item"  onclick="selectIcon('ri-donut-chart-line')"><i
+                                                        <div class="bg-icon_box-item"
+                                                            onclick="selectIcon('ri-donut-chart-line')"><i
                                                                 class="ri-donut-chart-line bg-icons"></i></div>
                                                     </li>
                                                     <li>
@@ -592,7 +599,8 @@
                                                                 class="ri-bar-chart-box-line bg-icons"></i></div>
                                                     </li>
                                                     <li>
-                                                        <div class="bg-icon_box-item"  onclick="selectIcon('ri-donut-chart-line')"><i
+                                                        <div class="bg-icon_box-item"
+                                                            onclick="selectIcon('ri-donut-chart-line')"><i
                                                                 class="ri-donut-chart-line bg-icons"></i></div>
                                                     </li>
                                                     <li>
@@ -601,11 +609,12 @@
                                                                 class="ri-bar-chart-box-line bg-icons"></i></div>
                                                     </li>
                                                     <li>
-                                                        <div class="bg-icon_box-item"  onclick="selectIcon('ri-donut-chart-line')"><i
+                                                        <div class="bg-icon_box-item"
+                                                            onclick="selectIcon('ri-donut-chart-line')"><i
                                                                 class="ri-donut-chart-line bg-icons"></i></div>
                                                     </li>
-                                                  
-                                                  
+
+
 
 
                                                 </ul>
@@ -811,10 +820,11 @@
                 <div class="modal-content bg-modal_content">
                     <div class="modal-header  bg-social_commentHead d-flex  pt-4">
                         <h5 class="bg-dashboard_modal-heading">Odoo</h5>
-                        <span class="bg-icons bg-social_cmnt-closebtn"><i class="ri-close-line"></i></span>
+                        <span id="sheet_filter_close" class="bg-icons bg-social_cmnt-closebtn"><i
+                                class="ri-close-line"></i></span>
                     </div>
 
-                    <div class="modal-body pt-0">
+                    <div class="modal-body py-0">
                         <form class="p-4">
                             <div class="row py-2">
 
@@ -835,6 +845,27 @@
                                     <input type="text" class="form-control bg-button-stroke" id="inputAddress"
                                         placeholder="Field">
                                 </div>
+                                <div class="col-6 d-flex align-items-center gap-2 mb-2 px-2">
+                                    <div aria-label="breadcrumb">
+                                        <ol class="breadcrumb mb-0">
+                                            <li class="breadcrumb-item bg-sheet_breadcrumb-item" aria-current="page">Sales Order</li>
+                                            <li class="breadcrumb-item  bg-sheet_breadcrumb-item " aria-current="page">Delivery date</li>
+                                        </ol>
+                                    </div>
+                                    <select class="form-select bg-button-stroke bg-sheet_filter-selection-box" aria-label="Default select example">
+                                        <option selected>=</option>
+                                        <option value="1">></option>
+                                        <option value="2">/</option>
+                                        <option value="3">>=</option>
+                                      </select>
+                                </div>
+
+
+                                <div class="col-6  mb-2 px-2">
+                                    <input type="text" class="form-control bg-button-stroke" id="inputAddress"
+                                        placeholder="Sales Order > Delivery date">
+                                </div>
+
                             </div>
                         </form>
 
@@ -863,7 +894,7 @@
         document.addEventListener("DOMContentLoaded", function () {
             var chatLinks = document.querySelectorAll(".bg-sheetfilter-btn");
             var modalContainer = document.querySelector(".bg-kpi_modal-container ");
-            var closeButton = document.querySelector(".bg-social_cmnt-closebtn");
+            var closeButton = document.getElementById("sheet_filter_close");
 
             chatLinks.forEach(function (link) {
                 link.addEventListener("click", function (event) {
@@ -882,10 +913,6 @@
             });
         });
 
-        function selectIcon(iconClass) {
-            var selectedIconDiv = document.querySelector('.bg-selected_icon');
-            selectedIconDiv.innerHTML = '<div class=""><i class="' + iconClass + ' bg-icons"></i></div>';
-        }
 
         document.addEventListener('DOMContentLoaded', function () {
             var iconSelectionBtn = document.querySelector('.bg-sheet_icon-selection');
@@ -900,6 +927,12 @@
                 iconSelectionBox.classList.remove('show');
             });
         });
+
+        function selectIcon(iconClass) {
+            var selectedIconDiv = document.querySelector('.bg-selected_icon');
+            selectedIconDiv.innerHTML = '<div class=""><i class="' + iconClass + ' bg-icons"></i></div>';
+        }
+
     </script>
 
 </body>
