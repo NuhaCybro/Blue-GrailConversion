@@ -3642,6 +3642,8 @@ a {
   top: 0px;
   background-color: #F7F7F7;
   border: 1px solid #DFDFDF;
+  color: #222222;
+  font-family: 500;
 }
 
 .bg-demand_sub-table {
