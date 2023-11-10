@@ -3636,13 +3636,37 @@ a {
   text-align: center;
 }
 
-.bg-demand_prediction-table_list tr th:first-child {
+.bg-demand_prediction-table_list th {
+  position: sticky;
+  left: 0px;
+  top: 0px;
+  background-color: #F7F7F7;
+  border: 1px solid #DFDFDF;
+}
+
+.bg-demand_sub-table {
+  overflow: auto;
+}
+
+.bg-table_mainhead-row {
   position: sticky;
   left: 0px;
   top: 0px;
   background-color: #F7F7F7;
 }
 
-.bg-demand_sub-table {
-  overflow: auto;
+.bg-demand-predict-subhead {
+  background-color: #F7F7F7;
+}
+
+.bg-demand_prediction-head:after {
+  content: "";
+  width: 100%;
+  background-color: #F7F7F7;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  border: 1px solid #DFDFDF;
 }

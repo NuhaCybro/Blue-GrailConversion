@@ -71,7 +71,8 @@
     padding: 0.5rem 1rem;
 }
 
-.bg-demand_prediction-table{ 
+.bg-demand_prediction-table {
+
     th,
     td {
         border: 1px solid $stroke-color;
@@ -81,16 +82,46 @@
         color: $primary-font;
         text-align: center;
     }
-    
+
 }
-.bg-demand_prediction-table_list tr th:first-child {
-    position: sticky;
-    left: 0px;
-    top: 0px;
-    background-color: $secondary-color;
+
+.bg-demand_prediction-table_list {
+    th {
+        position: sticky;
+        left: 0px;
+        top: 0px;
+        background-color: $secondary-color;
+        border: 1px solid $stroke-color;
+
+
+    }
 
 }
 
 .bg-demand_sub-table {
     overflow: auto;
+
+}
+
+.bg-table_mainhead-row {
+    position: sticky;
+    left: 0px;
+    top: 0px;
+    background-color: #F7F7F7;
+}
+
+.bg-demand-predict-subhead {
+    background-color: $secondary-color;
+}
+
+.bg-demand_prediction-head:after {
+    content: '';
+    width: 100%;
+    background-color: $secondary-color;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    border: 1px solid $stroke-color;
 }
