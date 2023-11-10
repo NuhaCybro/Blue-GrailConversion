@@ -1,342 +1,342 @@
 .navbar-nav {
-    .bg-custom-search {
-        background-color: $secondary-color;
-        border-radius: 6px;
-        border: 1px solid $stroke-color;
-        border-left: none;
-        border-right: none;
-        padding-left: 0px;
-        color: $sub-fonts;
-        font-size: 14px;
-        font-weight: 400;
-        width: 400px;
-        position: relative;
-        max-width: 100%;
+  .bg-custom-search {
+    background-color: $primary-light;
+    border-radius: 2px !important;
+    border: 1px solid $primary-border;
+    padding-left: 30px;
+    color: $sub-fonts;
+    font-size: 14px;
+    font-weight: 400;
+    width: 55vw;
+    position: relative;
+    max-width: 100%;
+
+    &::placeholder {
+      color: $primary-search-text;
     }
+    &:focus {
+      background-color: $primary-focus;
+      border-color: $primary-border-light;
+      z-index: 0 !important;
+    }
+  }
 }
 
 .bg-custom-search::placeholder {
-    color: $sub-fonts;
+  color: $sub-fonts;
 }
 
 .bg-custom-search:focus {
-    color: $sub-fonts;
-    background-color: $secondary-color;
-    border-color: $stroke-color;
-    outline: 0;
-    box-shadow: none;
+  color: $sub-fonts;
+  background-color: $secondary-color;
+  border-color: $stroke-color;
+  outline: 0;
+  box-shadow: none;
 }
 
-.bg-search {
-    background-color: $secondary-color;
-    border-radius: 6px;
-    border: 1px solid $stroke-color;
-    border-right: none;
-    background-color: $secondary-color;
-    padding-right: 6px;
+.bg-search-group {
+  position: relative;
 }
-
 .bg-search-icon {
-    color: $sub-fonts;
+  color: $primary-search-text;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 1;
 }
-
 
 .bg-searchbox-K {
-    width: 28px;
-    height: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    font-weight: 500;
-    color: $sub-fonts;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 500;
+  color: $sub-fonts;
 }
 
-
 .bg-search_property {
-    background-color: $secondary-color;
-    border: 1px solid $stroke-color;
-    border-radius: 6px;
-    padding: 3px;
+  background-color: $primary-light;
+  border: 1px solid $primary-border;
+  border-radius: 3px;
+  padding: 3px;
 }
 
 .navbar-nav {
-    .nav-item {
-        .bg-search_property:last-child {
-            border-left: 0px;
-            padding-right: 10px;
-
-        }
+  .nav-item {
+    .bg-search_property:last-child {
+      border-left: 0px;
+      padding-right: 10px;
     }
+  }
 }
 
 .bg-icons {
-    color: $primary-font;
-    font-size: 20px;
+  color: $white;
+  font-size: 20px;
 }
 
 .bg-nav-links {
-    color: $main-heading;
-    font-size: 14px;
-    font-weight: 500;
-    font-family: $text-font;
+  color: $main-heading;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: $text-font;
 }
 
 .bg-nav-links:hover {
-    color: $main-heading;
+  color: $main-heading;
 }
 
 .bg-nav-links {
-    span {
-        padding: 0 0.6rem;
-    }
+  span {
+    padding: 0 0.6rem;
+  }
 }
 
 .bg-top-navbar {
-    background-color: #fff;
-    border-bottom: 1px solid $stroke-color;
-    position: sticky;
-    top: 0px;
-    z-index: 100;
+  background-color: $primary-color;
+  border-bottom: 1px solid $stroke-color;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+
+  span {
+    color: $white;
+  }
 }
 
 .bg-dropdown-arrow::after {
-    display: none;
+  display: none;
 }
 
 .badge-clock {
-    background-color: $badge-bg;
-    position: absolute;
-    top: 8px;
-    right: -6px;
-    font-size: 9px;
-    padding: 3px 6px;
-    border-radius: 25px;
-    font-weight: 600;
+  background-color: $badge-bg;
+  position: absolute;
+  top: 5px;
+  right: -4px;
+  font-size: 9px;
+  padding: 3px;
+  border-radius: 2px;
+  border: 2px solid $primary-color;
+  font-weight: 600;
 }
 
 .bg-clock-container {
-    position: relative;
+  position: relative;
 }
 
 .bg-left-sidebar {
-    background-color: #fff;
-    border-right: 2px solid #F2F2F4;
-    height: 90vh;
-    overflow-y: auto;
-    padding-bottom: 4rem;
+  background-color: #fff;
+  border-right: 2px solid #f2f2f4;
+  height: 90vh;
+  overflow-y: auto;
+  padding-bottom: 4rem;
 }
 
 .bg-sidebar-nav {
-    font-size: 14px;
-    font-family: $mainhead-font;
+  font-size: 14px;
+  font-family: $mainhead-font;
 
-    color: $primary-font;
-    font-weight: 600;
+  color: $primary-font;
+  font-weight: 600;
 }
 
 .bg-sidebar-nav:hover {
-    color: $primary-font;
-    background-color: $secondary-color;
-    border-radius: 6px;
+  color: $primary-font;
+  background-color: $secondary-color;
+  border-radius: 6px;
 }
 
 .bg-sidebar-nav {
-    .bg-icons {
-        font-size: 18px;
-        font-weight: 500;
-    }
+  .bg-icons {
+    font-size: 18px;
+    font-weight: 500;
+  }
 }
 
 .bg-sidebar-heading {
-    color: $sub-fonts;
-    font-family: $text-font;
-    font-size: 10px;
+  color: $sub-fonts;
+  font-family: $text-font;
+  font-size: 10px;
 
-    font-weight: 600;
+  font-weight: 600;
 
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
-    margin-top: 2rem;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-top: 2rem;
 }
 
 .bg-sidebar-heading:hover {
-    color: $sub-fonts;
+  color: $sub-fonts;
 }
 
 .bg-logo-img {
-    padding-left: 1rem;
+  padding-left: 1rem;
 }
 
 .bg-sidebar-collapse {
-    position: absolute;
-    bottom: 0px;
-    padding: 1rem;
-    background-color: #fff;
-
+  position: absolute;
+  bottom: 0px;
+  padding: 1rem;
+  background-color: #fff;
 }
 
 .bg-sidebar-collapse {
-    a {
-        color: $primary-font;
-        font-size: 14px;
-        text-decoration: none;
-        font-family: $text-font;
-        font-weight: 500;
-        align-items: center;
-        display: flex;
+  a {
+    color: $primary-font;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: $text-font;
+    font-weight: 500;
+    align-items: center;
+    display: flex;
+  }
+}
+
+.bg-sidebar-collapse {
+  a {
+    .bg-collapse-icon {
+      background: $secondary-color;
+      border-radius: 50px;
+      padding: 0 0.2rem;
+      margin-right: 9px;
     }
-}
-
-.bg-sidebar-collapse {
-    a {
-        .bg-collapse-icon {
-            background: $secondary-color;
-            border-radius: 50px;
-            padding: 0 0.2rem;
-            margin-right: 9px;
-        }
-    }
+  }
 }
 
 .bg-new-btn {
-    color: $primary-font;
-    font-weight: 500;
-    padding: 0.6rem 0rem;
-    font-size: 14px;
-    font-family: $text-font;
-    display: flex;
-    align-items: center;
-    gap: 3px;
+  color: $primary-font;
+  font-weight: 500;
+  padding: 0.6rem 0rem;
+  font-size: 14px;
+  font-family: $text-font;
+  display: flex;
+  align-items: center;
+  gap: 3px;
 }
 
 .bg-new-btn:focus {
-    outline: 0;
-    box-shadow: none;
+  outline: 0;
+  box-shadow: none;
 }
 
 .bg-page-count {
-    font-size: 12px;
-    color: $primary-font;
+  font-size: 12px;
+  color: $primary-font;
 }
 
 .bg-navigation-icon {
-    color: $sub-fonts;
+  color: $sub-fonts;
 }
 
 .bg-navigation-icon.active {
-    color: $primary-font;
+  color: $primary-font;
 }
 
-
 .bg-aligned-icons {
-    border: 1px solid $stroke-color;
-    display: flex;
-    align-items: center;
-    border-radius: 6px;
-    padding: 0 0.2rem;
+  border: 1px solid $stroke-color;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  padding: 0 0.2rem;
 }
 
 .bg-main-sectionhead {
-    font-size: 14px;
-    color: $primary-color;
-    font-weight: 500;
-    font-family: $text-font;
+  font-size: 14px;
+  color: $primary-color;
+  font-weight: 500;
+  font-family: $text-font;
 }
 
 .bg-aligned-icons i {
-
-
-    font-size: 14px;
-    padding: 5px 8px;
+  font-size: 14px;
+  padding: 5px 8px;
 }
 
 .bg-aligned-icons i:not(:last-child) {
-    border-right: 1px solid $stroke-color;
-
-
+  border-right: 1px solid $stroke-color;
 }
 
 .bg-sidebar-nav.active-sidebar {
-    background-color: $secondary-color;
-    border-radius: 6px;
-    color: $primary-color;
+  background-color: $secondary-color;
+  border-radius: 6px;
+  color: $primary-color;
 }
 
 .bg-profile-img {
-    width: 50px;
-    height: 50px;
-    border: 1px solid $stroke-color;
-    border-radius: 10px;
-    object-fit: cover;
-    padding: 2px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid $stroke-color;
+  border-radius: 10px;
+  object-fit: cover;
+  padding: 2px;
 }
 
 .main-card-box__container {
-    height: 76vh;
-    overflow-y: auto;
+  height: 76vh;
+  overflow-y: auto;
 }
 
 .bg-card-container {
-    border-radius: 10px;
-    box-shadow: 0px 0.5px 2px 0px rgba(0, 0, 0, 0.10);
-    border: 1px solid $stroke-color;
-    background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0.5px 2px 0px rgba(0, 0, 0, 0.1);
+  border: 1px solid $stroke-color;
+  background: #fff;
 }
 
 .bg-card-name {
-    font-family: $mainhead-font;
-    font-size: 16px;
-    color: $main-heading;
-    font-weight: 700;
+  font-family: $mainhead-font;
+  font-size: 16px;
+  color: $main-heading;
+  font-weight: 700;
 }
 
 .bg-card-text {
-    font-size: 12.8px;
-    font-weight: 500;
-    color: $font-color;
-    font-family: $text-font;
-    margin-bottom: 8px;
+  font-size: 12.8px;
+  font-weight: 500;
+  color: $font-color;
+  font-family: $text-font;
+  margin-bottom: 8px;
 }
 
 .bg-secondary-btn {
-    color: $primary-font;
-    width: 100%;
+  color: $primary-font;
+  width: 100%;
 }
 
 .bg-secondary-btn:focus {
-    outline: none;
-    box-shadow: none;
+  outline: none;
+  box-shadow: none;
 }
 
 .bg-primary-btn {
-    width: 100%;
+  width: 100%;
 }
 
 .bg-card-btn {
-    width: 100%;
-    padding: 10px 16px;
+  width: 100%;
+  padding: 10px 16px;
 }
 
 .bg-card-btn:first-child {
-    margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 .bg-card-btn:focus {
-    box-shadow: none;
-    outline: 0;
+  box-shadow: none;
+  outline: 0;
 }
 
 .bg-card-active:hover {
-    color: $primary-font;
+  color: $primary-font;
 }
 
 .bg-card-view:hover {
-    color: #fff;
+  color: #fff;
 }
-
-@media (max-width:575px) {
-    .navbar-nav .bg-custom-search {
-        width: unset;
-    }
+@media (max-width: 575px) {
+  .navbar-nav .bg-custom-search {
+    width: unset;
+  }
 }

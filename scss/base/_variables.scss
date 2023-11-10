@@ -1,40 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import url("//fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600&display=swap");
 
 //colors..................
 
-$primary-color: #0E3A5D;
-$primary-border:#0D3554;
+$primary-color: #151E4E;
+$primary-focus: #2b366b;
+$primary-border: #2A3779;
+$primary-border-light: #364590;
+$primary-light: #202B63;
+$primary-search-text: #5C6699;
 
-
-$secondary-color:#F7F7F7;
-$stroke-color:#DFDFDF;
+$secondary-color: #f7f7f7;
+$stroke-color: #dfdfdf;
 
 $primary-font: #505050;
-$main-heading:#222222;
+$main-heading: #222222;
 
-$sub-fonts:#AFB7C9;
-$font-color:#717684;
-$white:#fff;
+$sub-fonts: #afb7c9;
+$font-color: #717684;
+$white: #fff;
 
 //fonts....................
 
-$mainhead-font:'Plus Jakarta Sans', sans-serif;
-$text-font: 'Inter', sans-serif;
+$mainhead-font: "Fira Sans", sans-serif;
+$text-font: "Fira Sans", sans-serif;
 
 //
-$badge-bg:#FF8982;
-$green-bg:#EBFAF7;
-$green-font:#1EC39A;
-$yellow-font:#F9AA4F;
-$yellow-bg:#FFEFD3;
-
+$badge-bg: #ff8982;
+$green-bg: #ebfaf7;
+$green-font: #1ec39a;
+$yellow-font: #f9aa4f;
+$yellow-bg: #ffefd3;
 
 //..................................
 
 $border-light-color: hsl(213, 22%, 93%) !default;
 $border-color: hsl(213, 22%, 84%) !default;
 $placeholder-color: hsl(216, 18%, 64%) !default;
-
-
-
-
