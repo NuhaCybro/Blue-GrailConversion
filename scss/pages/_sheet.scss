@@ -253,5 +253,58 @@
 
 .bg-dashboard_tab-list.active {
     background-color: $secondary-color;
-    color:$primary-color ;
+    color: $primary-color ;
+}
+
+.bg-sheet_icon-selection {
+    border: transparent;
+    padding: 0.4rem;
+    background: transparent;
+    vertical-align: sub;
+}
+
+.bg-sheet_icon-selection-box {
+    z-index: 999;
+}
+
+.bg-sheet_selection-box-head {
+    padding: 0.5rem 1rem;
+}
+
+.bg-sheet_selection-heading-txt {
+    font-size: 1rem;
+    color: $main-heading;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.bg-selection_icon-list {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.bg-sheet_icon-selectBox {
+    border: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.bg-selection-icon {
+    font-size: 24px;
+}
+
+.bg-icon_box-item {
+    padding: 0.3rem 0.5rem;
+    border-radius: 6px;
+}
+
+.bg-icon_box-item {
+    &:hover {
+        background-color: $secondary-color;
+    }
+}
+.bg-sheet_icon-selection-box{
+    display: none;
+}
+.bg-sheet_icon-selection-box.show{
+    display: block;
 }
