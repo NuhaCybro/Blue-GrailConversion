@@ -1,228 +1,219 @@
 .bg-right-sidebars {
-    height: 100%;
-    border-left: 1px solid $stroke-color;
+  height: 100%;
+  border-left: 1px solid $stroke-color;
 }
 
 .bg-right-sidebars {
-    i {
-        font-size: 20px;
-        color: $primary-font;
-    }
+  i {
+    font-size: 20px;
+    color: $primary-font;
+  }
 }
 
 .bg-inputbox-container {
-    width: 70%;
+  width: 70%;
 }
 
 .bg-form-inputbox {
-    border-radius: 6px;
-    border-top: 1px solid $stroke-color;
-    border-right: 1px solid $stroke-color;
-    border-bottom: 2px solid $stroke-color;
-    border-left: 1px solid $stroke-color;
+  border-radius: 6px;
+  border-top: 1px solid $stroke-color;
+  border-right: 1px solid $stroke-color;
+  border-bottom: 2px solid $stroke-color;
+  border-left: 1px solid $stroke-color;
 }
 
 .bg-form-inputbox:focus {
-    box-shadow: none;
-    border-color: $stroke-color;
+  box-shadow: none;
+  border-color: $stroke-color;
 }
 
 .bg-form-inputbox::placeholder {
-    font-size: 14px;
-    color: $sub-fonts;
+  font-size: 14px;
+  color: $sub-fonts;
 }
 
 .bg-selection_box {
-    border-radius: 0px 6px 6px 0px;
-    border-top: 1px solid $stroke-color;
-    border-right: 1px solid $stroke-color;
-    border-bottom: 2px solid $stroke-color;
-    border-left: 1px solid $stroke-color;
-    font-size: 12px;
-    color: $primary-font;
-    background-color: $secondary-color;
-    font-family: $text-font;
+  border-radius: 0px 6px 6px 0px;
+  border-top: 1px solid $stroke-color;
+  border-right: 1px solid $stroke-color;
+  border-bottom: 2px solid $stroke-color;
+  border-left: 1px solid $stroke-color;
+  font-size: 12px;
+  color: $primary-font;
+  background-color: $secondary-color;
+  font-family: $text-font;
 }
 
 .bg-selection_box:focus-visible {
-    outline: none;
+  outline: none;
 }
 
 .bg-form_label {
-    font-size: 16px;
-    color: $main-heading;
-    font-family: $mainhead-font;
-    font-weight: 600;
-    margin-bottom: 1rem;
+  font-size: 16px;
+  color: $main-heading;
+  font-family: $mainhead-font;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .bg-form_label-sm {
-    font-size: 14px;
-    margin-bottom: 0.5rem;
+  font-size: 14px;
+  margin-bottom: 0.5rem;
 }
 
 .bg-form-settings-txt {
-    color: $font-color;
-    font-family: $text-font;
-    font-size: 14px;
-    font-weight: 400;
+  color: $font-color;
+  font-family: $text-font;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .bg-form-check-label {
-    color: $main-heading;
-    font-family: $text-font;
-    font-size: 14px;
-    font-weight: 400;
+  color: $main-heading;
+  font-family: $text-font;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .form-check-input {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .form-check-input:checked {
-    background-color: $primary-color;
-    border: $primary-border;
-
+  background-color: $primary-color;
+  border: $primary-border;
 }
 
 .form-check-input:focus {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .bg-form-setting-ideabox {
-    padding: 0.6rem 1.2rem;
-    border-radius: 5px;
-    border: 1px solid $stroke-color;
-    opacity: 0.5;
-    width: fit-content;
-    display: flex;
-    align-items: center;
-    font-family: $text-font;
-    color: $font-color;
-    font-size: 14px;
-    font-weight: 400;
-    gap: 6px;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  border: 1px solid $stroke-color;
+  opacity: 0.5;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  font-family: $text-font;
+  color: $font-color;
+  font-size: 14px;
+  font-weight: 400;
+  gap: 6px;
 }
 
 .bg-checkbox-undertxt {
-    margin-left: 1.5rem;
+  margin-left: 1.5rem;
 }
 
 .bg-form-settings-configure {
-    float: right;
-    display: flex;
-    align-items: center;
-    padding: 0.5rem 1rem;
-    gap: 6px;
+  float: right;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  gap: 6px;
+  color: $primary-font;
+  font-weight: 600;
+}
+
+.bg-main-content_right-sidebar {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid $stroke-color;
+  height: 90vh;
+}
+
+.bg-main-content_right-sidebar {
+  i {
+    font-size: 20px;
     color: $primary-font;
-    font-weight: 600;
-}
-
-.bg-main-content_right-sidebar {
-    display: flex;
-    flex-direction: column;
-    border-left: 1px solid $stroke-color;
-    height: 90vh;
-}
-
-.bg-main-content_right-sidebar {
-    i {
-        font-size: 20px;
-        color: $primary-font;
-        margin-left: 1rem;
-        margin-top: 1rem;
-    }
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
 }
 
 .table-responsive {
-    max-width: 100%;
-    overflow-x: auto;
+  max-width: 100%;
+  overflow-x: auto;
 }
 
 #bg-main-section {
-    display: flex;
-
+  display: flex;
 }
 
 .bg-form-settings_content {
-    height: 84vh;
-    overflow-y: auto;
+  height: 84vh;
+  overflow-y: auto;
 }
 
 .bg-form-settings_content {
-    .bg-form-settings_tab {
-        margin-bottom: 0px;
-        padding: 0.8rem 1rem;
-        color: $primary-font;
-        border: none;
-        border-radius: 0px;
-    }
+  .bg-form-settings_tab {
+    margin-bottom: 0px;
+    padding: 0.8rem 1rem;
+    color: $primary-font;
+    border: none;
+    border-radius: 0px;
+  }
 
-    .bg-form-settings_tab:hover,
-    .bg-form-settings_tab.active {
-        color: $primary-color;
-        background-color: $secondary-color;
-        border-bottom: 1.5px solid $primary-color;
-    }
+  .bg-form-settings_tab:hover,
+  .bg-form-settings_tab.active {
+    color: $primary-color;
+    background-color: $secondary-color;
+    border-bottom: 1.5px solid $primary-color;
+  }
 }
-
 
 .bg-overlay {
-    background-color: rgba(0, 0, 0, 0.24);
-    width: 100%;
-    height: 100%;
-    z-index: 9;
-    position: fixed;
-    top: 0px;
-    display: none;
-
+  background-color: rgba(0, 0, 0, 0.24);
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  position: fixed;
+  top: 0px;
+  display: none;
 }
 
 .bg-mob-search_container {
-    position: fixed;
-    padding: 1rem;
-    width: 100%;
-    background-color: $secondary-color;
-    top: 68px;
-    left: 0px;
-    display: none;
+  position: fixed;
+  padding: 1rem;
+  width: 100%;
+  background-color: $secondary-color;
+  top: 68px;
+  left: 0px;
+  display: none;
 }
 
 .navbar-nav {
-.bg-mob-search-box{
+  .bg-mob-search-box {
     background-color: $white;
+  }
 }
-}
-
-
-
 
 //....................................................................................................
 
-@media(max-width:768px) {
-    .bg-left-sidebar {
-        width: 0%;
-        z-index: 99;
-        position: absolute;
-        padding: 0px;
-        transition: width 0.3s ease;
-    }
+@media (max-width: 768px) {
+  .bg-left-sidebar {
+    width: 0%;
+    z-index: 99;
+    position: absolute;
+    padding: 0px;
+    transition: width 0.3s ease;
+  }
 
-    .bg-sidebar-collapse {
-        display: none;
-    }
+  .bg-sidebar-collapse {
+    display: none;
+  }
 
-    .bg-left-sidebar.sidebar-open {
-        display: none;
-    }
+  .bg-left-sidebar.sidebar-open {
+    display: none;
+  }
 
-    .bg-left-sidebar.show {
+  .bg-left-sidebar.show {
+    width: 50%;
+  }
 
-        width: 50%;
-    }
-
-    .bg-overlay.show {
-        display: block;
-    }
-
+  .bg-overlay.show {
+    display: block;
+  }
 }
