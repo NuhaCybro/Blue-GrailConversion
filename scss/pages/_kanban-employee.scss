@@ -129,7 +129,7 @@
 .bg-left-sidebar {
   background-color: #fff;
   border-right: 2px solid #f2f2f4;
-  height: 90vh;
+  height: 84vh;
   overflow-y: auto;
   padding-left: 0px;
   padding-right: 0px;
@@ -279,12 +279,12 @@
 }
 
 .main-card-box__container {
-  height: 76vh;
+  height: 84vh;
   overflow-y: auto;
 }
 
 .bg-card-container {
-  border-radius: 10px;
+  border-radius: 2px;
   box-shadow: 0px 0.5px 2px 0px rgba(0, 0, 0, 0.1);
   border: 1px solid $stroke-color;
   background: #fff;
@@ -333,13 +333,7 @@
   outline: 0;
 }
 
-.bg-card-active:hover {
-  color: $primary-font;
-}
 
-.bg-card-view:hover {
-  color: #fff;
-}
 .navbar-nav .bg-custom-search {
   min-height: 45px;
 }

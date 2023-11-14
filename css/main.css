@@ -11,7 +11,7 @@ body {
 }
 
 .bg-button-stroke {
-  border-radius: 6px;
+  border-radius: 2px;
   border-top: 1px solid #dfdfdf;
   border-right: 1px solid #dfdfdf;
   border-bottom: 2px solid #dfdfdf;
@@ -45,15 +45,18 @@ body {
 }
 
 .bg-button-primary-stroke {
-  border-radius: 6px;
-  border-top: 1px solid #2A3779;
-  border-right: 1px solid #2A3779;
-  border-bottom: 1.5px solid #2A3779;
-  border-left: 1px solid #2A3779;
-  background: #151E4E;
+  border-radius: 2px;
+  border-top: 1px solid #4B9212;
+  border-right: 1px solid #4B9212;
+  border-bottom: 1px solid #4B9212;
+  border-left: 1px solid #4B9212;
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.15);
+  background: #5EB717;
   color: #fff;
   font-weight: 600;
   font-size: 13px;
+  text-shadow: 0.200000003px 0.200000003px 0px rgba(0, 0, 0, 0.25);
 }
 
 .bg-border-right {
@@ -148,7 +151,6 @@ a {
   background: #fff;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
-  min-height: 100vh;
 }
 
 .bg-search_modal-container {
@@ -394,7 +396,7 @@ a {
 .bg-left-sidebar {
   background-color: #fff;
   border-right: 2px solid #f2f2f4;
-  height: 90vh;
+  height: 84vh;
   overflow-y: auto;
   padding-left: 0px;
   padding-right: 0px;
@@ -554,12 +556,12 @@ a {
 }
 
 .main-card-box__container {
-  height: 76vh;
+  height: 84vh;
   overflow-y: auto;
 }
 
 .bg-card-container {
-  border-radius: 10px;
+  border-radius: 2px;
   -webkit-box-shadow: 0px 0.5px 2px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0.5px 2px 0px rgba(0, 0, 0, 0.1);
   border: 1px solid #dfdfdf;
@@ -609,14 +611,6 @@ a {
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: 0;
-}
-
-.bg-card-active:hover {
-  color: #505050;
-}
-
-.bg-card-view:hover {
-  color: #fff;
 }
 
 .navbar-nav .bg-custom-search {
@@ -786,10 +780,9 @@ a {
 }
 
 .bg-table_container {
-  max-height: 76vh;
+  max-height: 70vh;
   background-color: #fff;
   overflow: auto;
-  display: unset;
 }
 
 .bg-total-amt {
@@ -996,7 +989,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   border-left: 1px solid #dfdfdf;
-  height: 90vh;
+  height: 84vh;
 }
 
 .bg-main-content_right-sidebar i {
@@ -2212,14 +2205,15 @@ a {
   max-width: 180px;
 }
 .bg-form-view_table .bg-form_tax-col span {
-  color: #FFBFCA;
+  color: #222222;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   background-color: #FFE1DF;
   font-size: 12px;
   padding: 0.2rem 0.5rem;
-  border-radius: 40px;
+  border-radius: 3px;
+  font-weight: 600;
 }
 .bg-form-view_table .bg-form-view-links {
   color: #151E4E;

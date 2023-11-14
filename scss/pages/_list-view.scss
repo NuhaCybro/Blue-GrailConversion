@@ -6,6 +6,7 @@
   font-weight: 500;
   gap: 4px;
 }
+
 .nav-item.active .bg-navitem-list {
   color: $primary-font !important;
 
@@ -13,12 +14,15 @@
     color: $link-color !important;
   }
 }
+
 .nav-link.bg-navitem-list {
   color: rgba($primary-font, 0.6) !important;
 }
+
 .bg-navitem-list:hover {
   color: $link-color;
 }
+
 .bg-navigation-btn {
   color: $link-color;
   font-size: 14px;
@@ -28,6 +32,7 @@
   display: flex;
   align-items: center;
 }
+
 .bg-navigation-btn::after {
   content: "";
   display: inline-block;
@@ -37,11 +42,13 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+
 .bg-main-sectionhead {
   .bg-navigation-btn:not(:last-child) {
     color: $primary-font;
   }
 }
+
 .bg-main-sectionhead {
   .bg-navigation-btn:last-child:after {
     display: none;
@@ -169,10 +176,10 @@
 }
 
 .bg-table_container {
-  max-height: 76vh;
+  max-height: 70vh;
   background-color: $white;
   overflow: auto;
-  display: unset;
+ // display: unset;
 }
 
 .bg-total-amt {
@@ -183,6 +190,7 @@
 .bg-total-head-amt {
   text-align: right;
 }
+
 .bg-form-settings-main-content {
   padding-right: 0.7rem;
 }
@@ -190,9 +198,11 @@
 .profile-pic {
   border-radius: 3px;
 }
+
 .bg-profile-pic-container {
   position: relative;
 }
+
 .bg-profile-pic-container--online {
   &:after {
     content: "";
@@ -206,10 +216,12 @@
     background-color: $green-bg;
   }
 }
+
 .bg-nav-links {
   display: flex;
   align-items: center;
 }
+
 .bg-main {
   background-color: $background-color;
 }
