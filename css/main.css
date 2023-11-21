@@ -540,7 +540,7 @@ a {
 }
 
 .bg-sidebar-nav.active-sidebar {
-  background-color: F4F4F7;
+  background-color: #F4F4F7;
   border-radius: 0;
   color: #3E54D5;
 }
@@ -3682,4 +3682,269 @@ a {
 
 .bg-demand_sub-table {
   overflow: auto;
+}
+
+.bg-marketing-auto-sm_head {
+  font-size: 14px;
+  font-weight: 500;
+  color: #505050;
+}
+
+.bg-marketing-auto_tile {
+  border-radius: 2px;
+  border: 1px solid #dfdfdf;
+  position: relative;
+  background: #fff;
+  padding: 1rem 1.6rem;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+}
+
+.bg-marketing-auto_tile:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 4px;
+  border-radius: 1px 0px 0px 1px;
+  height: 100%;
+}
+
+.bg-marketing-tile_total:before {
+  background-color: #FFBFCA;
+}
+
+.bg-marketing-tile_running:before {
+  background-color: #F0D473;
+}
+
+.bg-marketing-tile_completed:before {
+  background-color: #8DF09C;
+}
+
+.bg-marketing-auto_tile-headline {
+  color: #222222;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.bg-marketing-auto_tile-state {
+  color: #222222;
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.bg-marketing-auto_tab-view {
+  background-color: #fff;
+  border-radius: 2px;
+  border: 1px solid #dfdfdf;
+  height: 100%;
+  overflow: auto;
+  width: 100%;
+}
+
+.bg-marketing-auto_tab-view .bg-marketing-auto-tab {
+  margin-bottom: 0px;
+  border-radius: 0px;
+  border-top: 0px;
+  border-bottom: 0px;
+  padding: 0.8rem 1.4rem;
+  color: #505050;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid #dfdfdf;
+}
+.bg-marketing-auto_tab-view .bg-marketing-auto-tab.active {
+  color: #5669DB;
+  border-bottom: 1.5px solid #3E54D5;
+}
+
+.bg-marketing-auto_list-box {
+  border-radius: 2px;
+  border: 1px solid #dfdfdf;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0.5px 2px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0.5px 2px 0px rgba(0, 0, 0, 0.1);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.bg-marketing-auto_icon-btn {
+  border-radius: 2px;
+  padding: 10px;
+  color: #fff;
+  border: none;
+  width: 36px;
+  height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bg-marketing-auto_mail-icon {
+  background-color: #3E54D5;
+}
+
+.bg-marketing-auto_edit-icon {
+  background-color: #5EB717;
+  border: 1px solid #4B9212;
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+.bg-active-btn {
+  position: relative;
+}
+
+.bg-active-btn:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: #7EC545;
+}
+
+.bg-marketing-auto_delete-icon {
+  background-color: #fff;
+  color: #FF4B4B;
+  border: 1px solid #dfdfdf;
+}
+
+.bg-marketing-auto_icon-active {
+  background-color: #fff;
+  color: #5EB717;
+}
+
+.bg-marketing-auto_icon-inactive {
+  color: #FF4B4B;
+  background-color: #fff;
+}
+
+.bg-marketing_auto-box_title {
+  color: #222222;
+  font-size: 12.8px;
+  font-weight: 500;
+}
+
+.bg-marketing_auto-box-subtitle {
+  color: #717684;
+  font-size: 10.3px;
+  font-weight: 400;
+}
+
+.bg-marketing-auto_list {
+  padding-left: 4rem;
+  position: relative;
+  list-style: none;
+}
+
+.bg-marketing-auto_list::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  left: 60px;
+  border-left: 3px dotted #E7E7E7;
+}
+
+.bg-marketing-auto_list-item {
+  padding: 2rem;
+}
+
+.bg-marketing-auto_timing {
+  position: absolute;
+  left: 0px;
+  top: 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.2rem;
+  color: #505050;
+  font-weight: 600;
+  font-size: 11px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bg-marketing-auto_timing:after {
+  content: "";
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  border: 2px solid #5669DB;
+  margin-left: 6px;
+  background-color: #fff;
+}
+
+.bg-marketing-auto_add-parent-container {
+  position: absolute;
+  border-radius: 2px;
+  border: 1px solid #dfdfdf;
+  background: #fff;
+  -webkit-box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.09);
+  right: 0px;
+  width: 100%;
+  top: 50px;
+  min-width: 300px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.bg-marketing-auto-dialog-head {
+  color: #222222;
+  font-size: 12.8px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.bg-marketing-auto-dialog-txt {
+  color: #222222;
+  font-size: 12.8px;
+  white-space: nowrap;
+}
+
+.bg-market-modal-selection-box {
+  font-size: 12.8px;
+  color: #505050;
+  font-weight: 400;
+}
+
+.bg-marketing-tab_container {
+  overflow: auto;
+}
+
+.bg-market-activity-btn {
+  text-shadow: none;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .bg-marketing-tile_row {
+    gap: 0.8rem;
+  }
+}
+
+.bg-marketing-tile-list:first-child {
+  padding: 0px;
+}
+
+.bg-marketing-tile-list {
+  padding-right: 0px;
+}
+@media (max-width: 768px) {
+  .bg-marketing-tile-list {
+    padding: 0px;
+  }
 }

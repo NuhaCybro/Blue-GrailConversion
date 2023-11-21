@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Automation</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-top-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand bg-logo-img" href="#">
+                <img src="images/BlueGrail.svg" alt="Logo" width="30" height="30"
+                    class="d-inline-block align-text-top" />
+                <span class="bg-navbar-title">Marketing Automation</span>
+            </a>
+            <ul class="navbar-nav bg-search_navbar-nav">
+                <li class="nav-item">
+                    <form class="d-flex">
+                        <div class="input-group bg-search-group">
+                            <i class="ri-search-line bg-search-icon"></i>
+                            <input class="form-control bg-custom-search" type="search"
+                                placeholder="Try searching for an app, user or a setting..." aria-label="Search" />
+                        </div>
+                    </form>
+                </li>
+            </ul>
+            <ul class="navbar-nav d-flex flex-row align-items-center">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle bg-dropdown-arrow" href="#" id="chatDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="ri-chat-3-line bg-icons"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="chatDropdown">
+                        <li><a class="dropdown-item" href="#">Chat Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Chat Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Chat Option 3</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle bg-dropdown-arrow bg-clock-container" href="#" id="clockDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="ri-time-line bg-icons"></i>
+                        <span class="badge badge-clock">21</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="clockDropdown">
+                        <li><a class="dropdown-item" href="#">Clock Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Clock Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Clock Option 3</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bg-nav-links" href="#">
+                        <span>Acme, Inc.</span>
+                        <div class="bg-profile-pic-container bg-profile-pic-container--online">
+                            <img src="images/user-profile.png" alt="Profile" class="profile-pic me-2" />
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 bg-breadcrumbs-titlebar">
+                <div class="row d-flex align-items-center py-2 bg-border-btm bg-breadcrumbs-bar">
+
+                    <div class="col d-flex align-items-center justify-content-between gap-2">
+                        <span class=" bg-marketing-auto-sm_head">New Activity</span>
+                        <span class=" bg-marketing-auto-sm_head">Activity</span>
+                        <div class="d-flex align-items-center gap-2">
+
+                            <button class="bg-button-primary-stroke py-1 px-4 bg-active-btn bg-market-activity-btn">
+                                Add Parent Activity
+                            </button>
+
+
+                            <div class="position-relative">
+                                <button id="bgdialogBtn" class="bg-button-stroke py-1 px-4 " type="button"
+                                data-bs-toggle="collapse" data-bs-target="#bg-dialogcontainer" aria-expanded="false"
+                                aria-controls="bg-dialogcontainer">
+                                    Launch Test
+                                </button>
+                                <div class="bg-marketing-auto_add-parent-container  collapse" id="bg-dialogcontainer">
+
+                                    <div class="bg-market-dialog-header p-3 bg-border-btm">
+                                        <h2 class="bg-marketing-auto-dialog-head">Launch Test</h2>
+                                    </div>
+                                    <form action="" class="p-3">
+                                        <label for="" class="bg-marketing-auto-dialog-txt">Pick or create a/an contact
+                                            to generate a test participant</label>
+                                        <div class="col-12  my-3">
+
+                                            <div class="dropdown">
+                                                <button
+                                                    class="btn dropdown-toggle bg-sale-forecast-dropdown bg-button-stroke w-100  bg-market-modal-selection-box"
+                                                    id="chatDropdown" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="true">
+                                                    Select participant
+                                                </button>
+                                                <ul class="dropdown-menu w-100 " aria-labelledby="chatDropdown"
+                                                    data-popper-placement="bottom-start"
+                                                    style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 36px, 0px);">
+                                                    <li><button class="dropdown-item bg-drop-down-item"
+                                                            href="#">Forecast Option
+                                                            1</button>
+                                                    </li>
+                                                    <li><button class="dropdown-item  bg-drop-down-item"
+                                                            href="#">Forecast
+                                                            Option
+                                                            2</button>
+                                                    </li>
+                                                    <li><button class="dropdown-item  bg-drop-down-item"
+                                                            href="#">Forecast
+                                                            Option
+                                                            3</button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                        <div class="d-flex gap-2 mt-3">
+                                            <button class="bg-button-primary-stroke py-2 px-4 bg-active-btn w-100 ">
+                                                Launch
+                                            </button>
+                                            <button class="bg-button-stroke py-2 px-4 w-100 ">
+                                                Cancel
+                                            </button>
+                                        </div>
+
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <nav class="col-md-3 col-lg-2 d-md-block bg-left-sidebar">
+                <div class="position-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link bg-sidebar-heading" href="#">
+                                Modules
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-chat-3-line bg-icons"></i>Discuss
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-calendar-line bg-icons"></i> Calendar
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-survey-line bg-icons"></i>
+                                To-do
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-contacts-book-line bg-icons"></i>
+                                Contacts
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-shake-hands-line bg-icons"></i>
+                                CRM
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav active-sidebar" href="#">
+                                <i class="ri-line-chart-line bg-icons"></i>
+                                Sales
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-dashboard-line bg-icons"></i>
+                                Dashboards
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-bank-card-line bg-icons"></i>
+                                Point of Sale
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-bill-line bg-icons"></i>
+                                Invoicing
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-projector-line bg-icons"></i>
+                                Project
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-timer-line bg-icons"></i>
+                                Timesheets
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-global-line bg-icons"></i>
+                                Website
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-graduation-cap-line  bg-icons"></i>
+                                eLearning
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-mail-open-line bg-icons"></i>
+                                Email Marketing
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-smartphone-line  bg-icons"></i>
+                                SMS Marketing
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-calendar-event-line bg-icons"></i>
+                                Events
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-checkbox-line  bg-icons"></i>
+                                Surveys
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-bank-card-2-line  bg-icons"></i>
+                                Purchase
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-archive-line  bg-icons"></i>
+                                Inventory
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="collapse-icon text-center bg-sidebar-collapse">
+                    <a href="#sidebarCollapse" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="sidebarCollapse">
+                        <i class="ri-arrow-left-s-line bg-icons  bg-collapse-icon"></i>
+                        Collapse Menu
+                    </a>
+                </div>
+            </nav>
+            <main class="col-md-9 ms-sm-auto col-lg-10 bg-main">
+                <div class="row my-3 mx-2 bg-marketing-tile_row">
+                    <div class="col-md-4 bg-marketing-tile-list">
+                        <div
+                            class=" d-flex justify-content-between align-items-center bg-marketing-auto_tile bg-marketing-tile_total">
+                            <span class="bg-marketing-auto_tile-headline">Total</span> <span
+                                class="bg-marketing-auto_tile-state">02</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 bg-marketing-tile-list">
+                        <div
+                            class=" d-flex justify-content-between align-items-center bg-marketing-auto_tile bg-marketing-tile_running">
+                            <span class="bg-marketing-auto_tile-headline">Running</span> <span
+                                class="bg-marketing-auto_tile-state">02</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 bg-marketing-tile-list">
+                        <div
+                            class="d-flex justify-content-between align-items-center bg-marketing-auto_tile bg-marketing-tile_completed">
+                            <span class="bg-marketing-auto_tile-headline">Completed</span> <span
+                                class="bg-marketing-auto_tile-state">00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-2 my-4">
+                    <div class="col bg-marketing-auto_tab-view p-0">
+                        <ul class=" nav nav-tabs mb-3 " id="ex1" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link bg-sidebar-nav bg-marketing-auto-tab active" id="ex3-tab-1"
+                                    data-bs-toggle="tab" href="#ex3-tabs-1" role="tab" aria-controls="ex3-tabs-1"
+                                    aria-selected="true">Activity #1</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link bg-sidebar-nav bg-marketing-auto-tab" id="ex3-tab-2"
+                                    data-bs-toggle="tab" href="#ex3-tabs-2" role="tab" aria-controls="ex3-tabs-2"
+                                    aria-selected="false">Activity
+                                    #2</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content bg-marketing-tab_container px-3" id="ex2-content">
+                            <div class="tab-pane fade show active" id="ex3-tabs-1" role="tabpanel"
+                                aria-labelledby="ex3-tab-1">
+                                <div class="bg-marketing-auto_tab--content p-3">
+
+
+
+                                    <ul class="bg-marketing-auto_list">
+                                        <li class="bg-marketing-auto_list-item">
+                                            <div class="bg-marketing-auto_list-box">
+                                                <div
+                                                    class="d-flex align-items-center justify-content-between bg-border-btm p-2 gap-4">
+
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <button
+                                                            class="bg-marketing-auto_icon-btn bg-marketing-auto_mail-icon"><i
+                                                                class="ri-mail-open-line"></i></button>
+
+                                                        <div>
+                                                            <p class="bg-marketing_auto-box_title mb-0">Activity #1</p>
+                                                            <span class="bg-marketing_auto-box-subtitle">Email</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <button
+                                                            class="bg-marketing-auto_icon-btn bg-marketing-auto_edit-icon bg-active-btn"><i
+                                                                class="ri-edit-box-line"></i></button>
+                                                        <button
+                                                            class="bg-marketing-auto_icon-btn bg-marketing-auto_delete-icon "><i
+                                                                class="ri-delete-bin-line"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-between p-2">
+                                                    <button
+                                                        class="bg-marketing-auto_icon-btn bg-marketing-auto_icon-active"><i
+                                                            class="ri-git-merge-line"></i></button>
+                                                    <button
+                                                        class="bg-marketing-auto_icon-btn  bg-marketing-auto_icon-active"><i
+                                                            class="ri-mail-open-line"></i></button>
+                                                    <button
+                                                        class="bg-marketing-auto_icon-btn  bg-marketing-auto_icon-inactive"><i
+                                                            class="ri-mail-open-line"></i></button>
+                                                    <button
+                                                        class="bg-marketing-auto_icon-btn  bg-marketing-auto_icon-active"><i
+                                                            class="ri-reply-line"></i></button>
+                                                    <button
+                                                        class="bg-marketing-auto_icon-btn  bg-marketing-auto_icon-inactive"><i
+                                                            class="ri-reply-line"></i></button>
+                                                    <button
+                                                        class="bg-marketing-auto_icon-btn  bg-marketing-auto_icon-inactive"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            viewBox="0 0 11 11" fill="none">
+                                                            <g clip-path="url(#clip0_3768_233)">
+                                                                <path
+                                                                    d="M10.4124 5.63772V5.52494C10.4124 4.8529 9.86568 4.30621 9.1937 4.30621C9.04193 4.30621 8.89665 4.33432 8.76248 4.38523C8.64846 3.83074 8.15653 3.41247 7.56872 3.41247C7.40909 3.41247 7.25672 3.44361 7.11692 3.49967C6.96942 2.98791 6.4796 2.59997 5.91665 2.59997C5.76509 2.59997 5.61895 2.62928 5.48332 2.68209V1.21874C5.48332 0.546699 4.93657 0 4.26458 0C3.5926 0 3.04585 0.546699 3.04585 1.21874V4.80773C2.83254 4.53533 2.57606 4.29792 2.27837 4.17556C1.94617 4.03906 1.59658 4.05536 1.26725 4.22279C0.661562 4.53078 0.411856 5.27302 0.710582 5.87746L2.22452 8.94125C2.26732 9.02532 3.29328 11 5.15074 11H7.31739C9.02578 11 10.4156 9.60284 10.4156 7.88512L10.414 5.63772H10.4124ZM7.31744 10.1875H5.15079C3.81278 10.1875 2.97922 8.63088 2.94916 8.57358L1.43901 5.51752C1.33479 5.30665 1.42113 5.05608 1.63558 4.94705C1.75377 4.88692 1.85663 4.8808 1.96913 4.9269C2.41768 5.11079 2.858 5.997 3.03003 6.51207L3.16057 6.90526L3.85839 6.65832V1.21874C3.85839 0.994707 4.04061 0.812492 4.26464 0.812492C4.48867 0.812492 4.67088 0.994707 4.67088 1.21874V5.90411H4.67825H5.48337H5.49074V3.84579C5.49074 3.619 5.69376 3.41247 5.9167 3.41247C6.14756 3.41247 6.35003 3.60232 6.35003 3.81871V4.6312V6.03952H7.16252V4.6312C7.16252 4.40717 7.34474 4.22496 7.56877 4.22496C7.7928 4.22496 7.97502 4.40717 7.97502 4.6312V5.52494V6.41868H8.78751V5.52494C8.78751 5.30091 8.96972 5.1187 9.19375 5.1187C9.41778 5.1187 9.6 5.30091 9.6 5.52494V6.10598H9.6019L9.60325 7.88545C9.6032 9.15483 8.57778 10.1875 7.31744 10.1875Z"
+                                                                    fill="#5EB717" />
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_3768_233">
+                                                                    <rect width="11" height="11" fill="white" />
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg></button>
+                                                    <button
+                                                        class="bg-marketing-auto_icon-btn  bg-marketing-auto_icon-active"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            viewBox="0 0 11 11" fill="none">
+                                                            <g clip-path="url(#clip0_3768_235)">
+                                                                <path
+                                                                    d="M10.4124 5.63772V5.52494C10.4124 4.8529 9.86568 4.30621 9.1937 4.30621C9.04193 4.30621 8.89665 4.33432 8.76248 4.38523C8.64846 3.83074 8.15653 3.41247 7.56872 3.41247C7.40909 3.41247 7.25672 3.44361 7.11692 3.49967C6.96942 2.98791 6.4796 2.59997 5.91665 2.59997C5.76509 2.59997 5.61895 2.62928 5.48332 2.68209V1.21874C5.48332 0.546699 4.93657 0 4.26458 0C3.5926 0 3.04585 0.546699 3.04585 1.21874V4.80773C2.83254 4.53533 2.57606 4.29792 2.27837 4.17556C1.94617 4.03906 1.59658 4.05536 1.26725 4.22279C0.661562 4.53078 0.411856 5.27302 0.710582 5.87746L2.22452 8.94125C2.26732 9.02532 3.29328 11 5.15074 11H7.31739C9.02578 11 10.4156 9.60284 10.4156 7.88512L10.414 5.63772H10.4124ZM7.31744 10.1875H5.15079C3.81278 10.1875 2.97922 8.63088 2.94916 8.57358L1.43901 5.51752C1.33479 5.30665 1.42113 5.05608 1.63558 4.94705C1.75377 4.88692 1.85663 4.8808 1.96913 4.9269C2.41768 5.11079 2.858 5.997 3.03003 6.51207L3.16057 6.90526L3.85839 6.65832V1.21874C3.85839 0.994707 4.04061 0.812492 4.26464 0.812492C4.48867 0.812492 4.67088 0.994707 4.67088 1.21874V5.90411H4.67825H5.48337H5.49074V3.84579C5.49074 3.619 5.69376 3.41247 5.9167 3.41247C6.14756 3.41247 6.35003 3.60232 6.35003 3.81871V4.6312V6.03952H7.16252V4.6312C7.16252 4.40717 7.34474 4.22496 7.56877 4.22496C7.7928 4.22496 7.97502 4.40717 7.97502 4.6312V5.52494V6.41868H8.78751V5.52494C8.78751 5.30091 8.96972 5.1187 9.19375 5.1187C9.41778 5.1187 9.6 5.30091 9.6 5.52494V6.10598H9.6019L9.60325 7.88545C9.6032 9.15483 8.57778 10.1875 7.31744 10.1875Z"
+                                                                    fill="#FF4B4B" />
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_3768_235">
+                                                                    <rect width="11" height="11" fill="white" />
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </button>
+                                                    <button
+                                                        class="bg-marketing-auto_icon-btn  bg-marketing-auto_icon-inactive"><i
+                                                            class="ri-information-line"></i></button>
+                                                </div>
+
+                                                <div class="bg-marketing-auto_timing"><span><i
+                                                            class="ri-time-line"></i></span>0 hour</div>
+
+                                            </div>
+
+                                            <ul class="bg-marketing-auto_list">
+                                                <li class="bg-marketing-auto_list-item">
+                                                    <div class="bg-marketing-auto_list-box">
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-between bg-border-btm p-2 gap-4">
+
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <button
+                                                                    class="bg-marketing-auto_icon-btn bg-marketing-auto_mail-icon"><i
+                                                                        class="ri-mail-open-line"></i></button>
+
+                                                                <div>
+                                                                    <p class="bg-marketing_auto-box_title mb-0">Activity
+                                                                        #1</p>
+                                                                    <span
+                                                                        class="bg-marketing_auto-box-subtitle">Email</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <button
+                                                                    class="bg-marketing-auto_icon-btn bg-marketing-auto_edit-icon bg-active-btn"><i
+                                                                        class="ri-edit-box-line"></i></button>
+                                                                <button
+                                                                    class="bg-marketing-auto_icon-btn bg-marketing-auto_delete-icon "><i
+                                                                        class="ri-delete-bin-line"></i></button>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-between p-2">
+                                                            <button
+                                                                class="bg-marketing-auto_icon-btn bg-marketing-auto_icon-active"><i
+                                                                    class="ri-git-merge-line"></i></button>
+                                                            <button
+                                                                class="bg-marketing-auto_icon-btn  bg-marketing-auto_icon-active"><i
+                                                                    class="ri-mail-open-line"></i></button>
+                                                            <button
+                                                                class="bg-marketing-auto_icon-btn  bg-marketing-auto_icon-inactive"><i
+                                                                    class="ri-mail-open-line"></i></button>
+                                                            <button
+                                                                class="bg-marketing-auto_icon-btn  bg-marketing-auto_icon-active"><i
+                                                                    class="ri-reply-line"></i></button>
+                                                            <button
+                                                                class="bg-marketing-auto_icon-btn  bg-marketing-auto_icon-inactive"><i
+                                                                    class="ri-reply-line"></i></button>
+                                                            <button
+                                                                class="bg-marketing-auto_icon-btn  bg-marketing-auto_icon-inactive"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" viewBox="0 0 11 11" fill="none">
+                                                                    <g clip-path="url(#clip0_3768_233)">
+                                                                        <path
+                                                                            d="M10.4124 5.63772V5.52494C10.4124 4.8529 9.86568 4.30621 9.1937 4.30621C9.04193 4.30621 8.89665 4.33432 8.76248 4.38523C8.64846 3.83074 8.15653 3.41247 7.56872 3.41247C7.40909 3.41247 7.25672 3.44361 7.11692 3.49967C6.96942 2.98791 6.4796 2.59997 5.91665 2.59997C5.76509 2.59997 5.61895 2.62928 5.48332 2.68209V1.21874C5.48332 0.546699 4.93657 0 4.26458 0C3.5926 0 3.04585 0.546699 3.04585 1.21874V4.80773C2.83254 4.53533 2.57606 4.29792 2.27837 4.17556C1.94617 4.03906 1.59658 4.05536 1.26725 4.22279C0.661562 4.53078 0.411856 5.27302 0.710582 5.87746L2.22452 8.94125C2.26732 9.02532 3.29328 11 5.15074 11H7.31739C9.02578 11 10.4156 9.60284 10.4156 7.88512L10.414 5.63772H10.4124ZM7.31744 10.1875H5.15079C3.81278 10.1875 2.97922 8.63088 2.94916 8.57358L1.43901 5.51752C1.33479 5.30665 1.42113 5.05608 1.63558 4.94705C1.75377 4.88692 1.85663 4.8808 1.96913 4.9269C2.41768 5.11079 2.858 5.997 3.03003 6.51207L3.16057 6.90526L3.85839 6.65832V1.21874C3.85839 0.994707 4.04061 0.812492 4.26464 0.812492C4.48867 0.812492 4.67088 0.994707 4.67088 1.21874V5.90411H4.67825H5.48337H5.49074V3.84579C5.49074 3.619 5.69376 3.41247 5.9167 3.41247C6.14756 3.41247 6.35003 3.60232 6.35003 3.81871V4.6312V6.03952H7.16252V4.6312C7.16252 4.40717 7.34474 4.22496 7.56877 4.22496C7.7928 4.22496 7.97502 4.40717 7.97502 4.6312V5.52494V6.41868H8.78751V5.52494C8.78751 5.30091 8.96972 5.1187 9.19375 5.1187C9.41778 5.1187 9.6 5.30091 9.6 5.52494V6.10598H9.6019L9.60325 7.88545C9.6032 9.15483 8.57778 10.1875 7.31744 10.1875Z"
+                                                                            fill="#5EB717" />
+                                                                    </g>
+                                                                    <defs>
+                                                                        <clipPath id="clip0_3768_233">
+                                                                            <rect width="11" height="11" fill="white" />
+                                                                        </clipPath>
+                                                                    </defs>
+                                                                </svg></button>
+                                                            <button
+                                                                class="bg-marketing-auto_icon-btn  bg-marketing-auto_icon-active"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" viewBox="0 0 11 11" fill="none">
+                                                                    <g clip-path="url(#clip0_3768_235)">
+                                                                        <path
+                                                                            d="M10.4124 5.63772V5.52494C10.4124 4.8529 9.86568 4.30621 9.1937 4.30621C9.04193 4.30621 8.89665 4.33432 8.76248 4.38523C8.64846 3.83074 8.15653 3.41247 7.56872 3.41247C7.40909 3.41247 7.25672 3.44361 7.11692 3.49967C6.96942 2.98791 6.4796 2.59997 5.91665 2.59997C5.76509 2.59997 5.61895 2.62928 5.48332 2.68209V1.21874C5.48332 0.546699 4.93657 0 4.26458 0C3.5926 0 3.04585 0.546699 3.04585 1.21874V4.80773C2.83254 4.53533 2.57606 4.29792 2.27837 4.17556C1.94617 4.03906 1.59658 4.05536 1.26725 4.22279C0.661562 4.53078 0.411856 5.27302 0.710582 5.87746L2.22452 8.94125C2.26732 9.02532 3.29328 11 5.15074 11H7.31739C9.02578 11 10.4156 9.60284 10.4156 7.88512L10.414 5.63772H10.4124ZM7.31744 10.1875H5.15079C3.81278 10.1875 2.97922 8.63088 2.94916 8.57358L1.43901 5.51752C1.33479 5.30665 1.42113 5.05608 1.63558 4.94705C1.75377 4.88692 1.85663 4.8808 1.96913 4.9269C2.41768 5.11079 2.858 5.997 3.03003 6.51207L3.16057 6.90526L3.85839 6.65832V1.21874C3.85839 0.994707 4.04061 0.812492 4.26464 0.812492C4.48867 0.812492 4.67088 0.994707 4.67088 1.21874V5.90411H4.67825H5.48337H5.49074V3.84579C5.49074 3.619 5.69376 3.41247 5.9167 3.41247C6.14756 3.41247 6.35003 3.60232 6.35003 3.81871V4.6312V6.03952H7.16252V4.6312C7.16252 4.40717 7.34474 4.22496 7.56877 4.22496C7.7928 4.22496 7.97502 4.40717 7.97502 4.6312V5.52494V6.41868H8.78751V5.52494C8.78751 5.30091 8.96972 5.1187 9.19375 5.1187C9.41778 5.1187 9.6 5.30091 9.6 5.52494V6.10598H9.6019L9.60325 7.88545C9.6032 9.15483 8.57778 10.1875 7.31744 10.1875Z"
+                                                                            fill="#FF4B4B" />
+                                                                    </g>
+                                                                    <defs>
+                                                                        <clipPath id="clip0_3768_235">
+                                                                            <rect width="11" height="11" fill="white" />
+                                                                        </clipPath>
+                                                                    </defs>
+                                                                </svg>
+                                                            </button>
+                                                            <button
+                                                                class="bg-marketing-auto_icon-btn  bg-marketing-auto_icon-inactive"><i
+                                                                    class="ri-information-line"></i></button>
+                                                        </div>
+                                                        <div class="bg-marketing-auto_timing"><span><i
+                                                                    class="ri-time-line"></i></span>0 hour</div>
+                                                    </div>
+
+                                                </li>
+
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="ex3-tabs-2" role="tabpanel" aria-labelledby="ex3-tab-2">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#bgdialogBtn').on('click', function () {
+
+                $('#bg-dialogcontainer').collapse('toggle');
+            });
+        });
+    </script>
+</body>
+
+</html>

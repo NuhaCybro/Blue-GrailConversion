@@ -1,0 +1,247 @@
+.bg-marketing-auto-sm_head {
+    font-size: 14px;
+    font-weight: 500;
+    color: $primary-font;
+}
+
+.bg-marketing-auto_tile {
+    border-radius: 2px;
+    border: 1px solid $stroke-color;
+    position: relative;
+    background: $white;
+    padding: 1rem 1.6rem;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+}
+
+.bg-marketing-auto_tile:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 4px;
+    border-radius: 1px 0px 0px 1px;
+
+    height: 100%;
+}
+
+.bg-marketing-tile_total:before {
+    background-color: $badge-bg;
+}
+
+.bg-marketing-tile_running:before {
+    background-color: $yellow-bg;
+}
+
+.bg-marketing-tile_completed:before {
+    background-color: $green-bg;
+}
+
+.bg-marketing-auto_tile-headline {
+    color: $main-heading;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.bg-marketing-auto_tile-state {
+    color: $main-heading;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.bg-marketing-auto_tab-view {
+    background-color: $white;
+    border-radius: 2px;
+    border: 1px solid $stroke-color;
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+
+.bg-marketing-auto_tab-view {
+    .bg-marketing-auto-tab {
+        margin-bottom: 0px;
+        border-radius: 0px;
+        border-top: 0px;
+        border-bottom: 0px;
+        padding: 0.8rem 1.4rem;
+        color: $primary-font;
+        font-size: 14px;
+        font-weight: 400;
+        border: 1px solid $stroke-color;
+    }
+
+    .bg-marketing-auto-tab.active {
+        color: $tab-link;
+        border-bottom: 1.5px solid $link-color;
+    }
+}
+
+.bg-marketing-auto_tab--content {}
+
+.bg-marketing-auto_list-box {
+    border-radius: 2px;
+    border: 1px solid $stroke-color;
+    background-color: $white;
+    box-shadow: 0px 0.5px 2px 0px rgba(0, 0, 0, 0.10);
+    width: fit-content;
+
+}
+
+.bg-marketing-auto_icon-btn {
+    border-radius: 2px;
+    padding: 10px;
+    color: $white;
+    border: none;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-marketing-auto_mail-icon {
+    background-color: $link-color;
+}
+
+.bg-marketing-auto_edit-icon {
+    background-color: $active-btn;
+    border: 1px solid $active-btn-border;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+.bg-active-btn {
+    position: relative;
+}
+
+.bg-active-btn:before {
+
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: $active-btn-line;
+}
+
+.bg-marketing-auto_delete-icon {
+    background-color: $white;
+    color: $danger;
+    border: 1px solid $stroke-color;
+}
+
+.bg-marketing-auto_icon-active {
+    background-color: $white;
+    color: $active-btn;
+}
+
+.bg-marketing-auto_icon-inactive {
+    color: $danger;
+    background-color: $white;
+}
+
+.bg-marketing_auto-box_title {
+    color: $main-heading;
+    font-size: 12.8px;
+    font-weight: 500;
+}
+
+.bg-marketing_auto-box-subtitle {
+    color: $font-color;
+    font-size: 10.30px;
+    font-weight: 400;
+
+}
+
+.bg-marketing-auto_list {
+    padding-left: 4rem;
+    position: relative;
+    list-style: none;
+}
+
+.bg-marketing-auto_list::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: 60px;
+    border-left: 3px dotted $light-shade;
+
+}
+
+.bg-marketing-auto_list-item {
+    padding: 2rem;
+
+}
+
+.bg-marketing-auto_timing {
+    position: absolute;
+    left: 0px;
+    top: 58px;
+    display: flex;
+    gap: 0.2rem;
+    color: $primary-font;
+    font-weight: 600;
+    font-size: 11px;
+    align-items: center;
+}
+
+.bg-marketing-auto_timing:after {
+    content: '';
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    border: 2px solid $tab-link;
+    margin-left: 6px;
+    background-color: $white;
+}
+
+.bg-marketing-auto_add-parent-container {
+    position: absolute;
+    border-radius: 2px;
+    border: 1px solid $stroke-color;
+    background: $white;
+    box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.09);
+    right: 0px;
+    width: 100%;
+    top: 50px;
+    min-width: 300px;
+    width: max-content;
+}
+.bg-marketing-auto-dialog-head{
+    color: $main-heading;
+    font-size: 12.8px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.bg-marketing-auto-dialog-txt{
+    color: $main-heading;
+    font-size: 12.8px;
+white-space: nowrap;
+}
+.bg-market-modal-selection-box{
+    font-size: 12.8px;
+    color: $primary-font;
+    font-weight: 400;
+}
+.bg-marketing-tab_container{
+    overflow: auto;
+}
+.bg-market-activity-btn{
+    text-shadow: none;
+    font-weight: 500;
+}
+.bg-marketing-tile_row{
+    @media (max-width:768px){
+        gap: 0.8rem;
+    }
+}
+.bg-marketing-tile-list:first-child{
+    padding: 0px;
+}
+.bg-marketing-tile-list{
+    padding-right: 0px;
+    @media (max-width:768px){
+        padding: 0px;
+    }
+}

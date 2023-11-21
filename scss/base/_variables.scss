@@ -8,7 +8,7 @@ $primary-border: #2A3779;
 $primary-border-light: #364590;
 $primary-light: #202B63;
 $primary-search-text: #5C6699;
-
+$tab-link:#5669DB;
 $secondary-color: #f7f7f7;
 $stroke-color: #dfdfdf;
 
@@ -16,11 +16,12 @@ $primary-font: #505050;
 $main-heading: #222222;
 
 $link-color: #3E54D5;
-$link-background-color: F4F4F7;
+$link-background-color: #F4F4F7;
 $sub-fonts: #afb7c9;
 $font-color: #717684;
 $background-color: #F0F5FA;
 $white: #fff;
+$light-shade:#E7E7E7;
 
 //fonts....................
 
@@ -44,3 +45,6 @@ $placeholder-color: hsl(216, 18%, 64%) !default;
 //............
 $active-btn:#5EB717;
 $active-btn-border: #4B9212;
+$active-btn-line:#7EC545;
+
+$danger:#FF4B4B;
