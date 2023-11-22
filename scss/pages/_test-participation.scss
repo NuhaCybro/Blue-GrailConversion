@@ -1,0 +1,78 @@
+
+.bg-test_participation--heading{
+    color: $main-heading;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+.bg-test_participation-label{
+    color: $blue;
+    font-weight: 600;
+    font-size: 12.8px;
+    min-width: 120px;
+}
+.bg-test_particiption-detail_value{
+    color: $main-heading;
+    font-size: 12.8px;
+    font-weight: 400;
+}
+.bg-test-participation_list-btn{
+    color: $placeholder-color;
+    text-transform: uppercase;
+    font-size: 12.8px;
+    padding: 0.4rem 1rem;
+    display: flex;
+    gap: 0.4rem;
+    border: none;
+    border-right: 1px solid $border-color;
+    background-color: $white;
+}
+.bg-test-participation_list-btn:last-child{
+    border-right: 0px;
+}
+.bg-test_particiption-tree_box-label{
+    color: $main-heading;
+    font-size: 9px;
+    background-color:$badge-bg ;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 2px;
+    margin: 0 8px;
+}
+.bg-text_participation-container{
+    gap: 6rem;
+}
+.bg-test_particiption-schedule-label{
+    background-color: $yellow-bg;
+}
+.bg-test_participation-timing{
+    flex-direction: column;
+    align-items: baseline;
+    left: -128px;
+}
+.bg-test_participation-list__item{
+    padding-left: 9rem;
+}
+.bg-test_participation-list__item::before{
+    left: 141px;
+}
+.bg-main_overflow{
+    height: 84vh;
+    overflow: auto;
+    @media (max-width:768px){
+        height: unset;
+    }
+}
+.bg-test_particiption-main__view{
+    overflow: auto;
+}
+
+.bg-main-sectionhead {
+    .bg-test-participation_path{
+
+        color: $blue;
+    }
+      .bg-test-participation_path:not(:last-child) {
+      color: $sub-fonts;
+    }
+}

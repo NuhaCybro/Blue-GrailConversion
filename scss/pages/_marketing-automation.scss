@@ -84,6 +84,7 @@
     background-color: $white;
     box-shadow: 0px 0.5px 2px 0px rgba(0, 0, 0, 0.10);
     width: fit-content;
+    margin-right: 1rem;
 
 }
 
@@ -144,6 +145,7 @@
     color: $main-heading;
     font-size: 12.8px;
     font-weight: 500;
+    white-space: nowrap;
 }
 
 .bg-marketing_auto-box-subtitle {
@@ -171,19 +173,21 @@
 
 .bg-marketing-auto_list-item {
     padding: 2rem;
+    position: relative;
 
 }
 
 .bg-marketing-auto_timing {
     position: absolute;
-    left: 0px;
+    left: -63px;
     top: 58px;
     display: flex;
     gap: 0.2rem;
     color: $primary-font;
     font-weight: 600;
     font-size: 11px;
-    align-items: center;
+ align-items: center;
+  
 }
 
 .bg-marketing-auto_timing:after {
@@ -194,6 +198,8 @@
     border: 2px solid $tab-link;
     margin-left: 6px;
     background-color: $white;
+    position: absolute;
+    right: -18px;
 }
 
 .bg-marketing-auto_add-parent-container {
