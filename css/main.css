@@ -3948,3 +3948,20 @@ a {
     padding: 0px;
   }
 }
+
+.bg-marketing-auto-sm_head:before {
+  position: absolute;
+  left: 0px;
+}
+
+.bg-marketing-auto_back {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.bg-main-sectionhead .bg-page_path {
+  color: #505050;
+}
+.bg-main-sectionhead .bg-page_path:not(:last-child) {
+  color: #3E54D5;
+}

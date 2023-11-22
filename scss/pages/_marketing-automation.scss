@@ -208,40 +208,68 @@
     min-width: 300px;
     width: max-content;
 }
-.bg-marketing-auto-dialog-head{
+
+.bg-marketing-auto-dialog-head {
     color: $main-heading;
     font-size: 12.8px;
     font-weight: 600;
     margin-bottom: 0;
 }
-.bg-marketing-auto-dialog-txt{
+
+.bg-marketing-auto-dialog-txt {
     color: $main-heading;
     font-size: 12.8px;
-white-space: nowrap;
+    white-space: nowrap;
 }
-.bg-market-modal-selection-box{
+
+.bg-market-modal-selection-box {
     font-size: 12.8px;
     color: $primary-font;
     font-weight: 400;
 }
-.bg-marketing-tab_container{
+
+.bg-marketing-tab_container {
     overflow: auto;
 }
-.bg-market-activity-btn{
+
+.bg-market-activity-btn {
     text-shadow: none;
     font-weight: 500;
 }
-.bg-marketing-tile_row{
-    @media (max-width:768px){
+
+.bg-marketing-tile_row {
+    @media (max-width:768px) {
         gap: 0.8rem;
     }
 }
-.bg-marketing-tile-list:first-child{
+
+.bg-marketing-tile-list:first-child {
     padding: 0px;
 }
-.bg-marketing-tile-list{
+
+.bg-marketing-tile-list {
     padding-right: 0px;
-    @media (max-width:768px){
+
+    @media (max-width:768px) {
         padding: 0px;
+    }
+}
+
+.bg-marketing-auto-sm_head:before {
+    position: absolute;
+    left: 0px;
+}
+
+.bg-marketing-auto_back {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.bg-main-sectionhead {
+    .bg-page_path{
+        color: $primary-font;
+    }
+    .bg-page_path:not(:last-child) {
+        color: $link-color;
     }
 }
