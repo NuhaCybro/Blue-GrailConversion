@@ -69,7 +69,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="row d-flex align-items-center py-2 bg-border-btm">
+            <div class=" d-flex align-items-center py-2 bg-border-btm">
                 <div class="col-md-3 bg-main-sectionhead d-flex">
                     <button class="bg-navigation-btn">Sales</button>
                     <button class="bg-navigation-btn">Quotations</button>
@@ -225,349 +225,365 @@
                 </div>
             </nav>
 
-            <main class="col-md-9 ms-sm-auto col-lg-10 ">
-                <div class="row pt-2">
-                    <div class="col bg-border-btm">
+            <main class="col-md-9 ms-sm-auto col-lg-10  bg-main bg-main_overflow">
+                <div class="bg-dashboard-container">
+                    <div class=" p-2 bg-border-btm">
+                        <div class="col ">
 
-                        <ul class="navbar-nav flex-row flex-wrap gap-4">
-                            <li class="nav-item active">
-                                <a class="nav-link bg-navitem-list" href="#"><i class="ri-add-line"></i>New </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link bg-navitem-list" href="#"><i class="ri-edit-box-line"></i>Edit</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link bg-navitem-list" href="#"><i
-                                        class="ri-file-copy-line"></i>Duplicate</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link bg-navitem-list" href="#"><i
-                                        class="ri-delete-bin-6-line"></i>Delete</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link bg-navitem-list" href="#">Generate Payment Link</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link bg-navitem-list" href="#">Mark Quotation as Sent</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link bg-navitem-list" href="#"><i class="ri-share-line"></i>Share</a>
-                            </li>
-                        </ul>
+                            <ul class="navbar-nav flex-row flex-wrap gap-4">
+                                <li class="nav-item active">
+                                    <a class="nav-link bg-navitem-list" href="#"><i class="ri-add-line"></i>New </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link bg-navitem-list" href="#"><i
+                                            class="ri-edit-box-line"></i>Edit</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link bg-navitem-list" href="#"><i
+                                            class="ri-file-copy-line"></i>Duplicate</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link bg-navitem-list" href="#"><i
+                                            class="ri-delete-bin-6-line"></i>Delete</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link bg-navitem-list" href="#">Generate Payment Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link bg-navitem-list" href="#">Mark Quotation as Sent</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link bg-navitem-list" href="#"><i class="ri-share-line"></i>Share</a>
+                                </li>
+                            </ul>
 
+                        </div>
                     </div>
-                </div>
 
 
-                <div class="row d-flex pt-3 bg-pipeline-main">
-                    <div class=" bg-pipeline-main_section">
-                        <div class=" col bg-pipeline-card-container">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h5 class=" bg-pipeline-title">Cipla</h5>
-                                <div class="d-flex align-items-center">
-
-                                    <i class="ri-add-line bg-pipeline-addicon"></i>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center gap-4 py-3">
-                                <div class="progress bg-pipeline_card-progress">
-                                    <div class="progress-bar bg-pipeline_progress_bar bg-quotion-progress"
-                                        role="progressbar" style="width: 70%" aria-valuenow="15" aria-valuemin="0"
-                                        aria-valuemax="100"></div>
-                                    <div class="progress-bar bg-pipeline_progress_bar bg-saleorder-progress"
-                                        role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0"
-                                        aria-valuemax="100"></div>
-                                </div>
-                                <span class="bg-pipeline-progress_count">3</span>
-                            </div>
-
-                            <div class="card bg-pipeline-boxcard ">
-                                <div class="d-flex justify-content-between align-items-center bg-border-btm pb-3">
-                                    <div>
+                    <div class=" d-flex ">
+                        <div class=" bg-pipeline-main_section">
+                            <div class=" col bg-pipeline-card-container">
+                                <div class="p-3 mb-3 bg-border-btm">
+                                    <div class="d-flex justify-content-between align-items-center">
                                         <h5 class=" bg-pipeline-title">Cipla</h5>
-                                        <p class="bg-pipeline-sub-title">BG00053</p>
-                                    </div>
-                                    <div class="bg-pipeline-amount">
-                                        $1,552.50
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center gap-4 mt-3">
-                                    <button class="bg-button-stroke py-2 px-4 ">
-                                        Activities
-                                    </button>
-                                    <div
-                                        class="d-flex align-items-center bg-pipleline-btn bg-saleorder-font justify-content-end">
-                                        <div class="bg-dot bg-saleorder-progress"></div>Sales Order
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card bg-pipeline-boxcard ">
-                                <div class="d-flex justify-content-between align-items-center bg-border-btm pb-2">
-                                    <div>
-                                        <h5 class=" bg-pipeline-title">Cipla</h5>
-                                        <p class="bg-pipeline-sub-title">BG00053</p>
-                                    </div>
-                                    <div class="bg-pipeline-amount">
-                                        $6,500.00
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center gap-2 mt-3">
-                                    <button class="bg-button-stroke py-2 px-4">
-                                        Activities
-                                    </button>
-                                    <div
-                                        class="d-flex align-items-center bg-pipleline-btn bg-quotation-font justify-content-end">
-                                        <div class="bg-dot bg-quotion-progress"></div>Quotation
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card bg-pipeline-boxcard ">
-                                <div class="d-flex justify-content-between align-items-center bg-border-btm pb-2">
-                                    <div>
-                                        <h5 class=" bg-pipeline-title">Cipla</h5>
-                                        <p class="bg-pipeline-sub-title">BG00053</p>
-                                    </div>
-                                    <div class="bg-pipeline-amount">
-                                        $999.99
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center gap-4 mt-3">
-                                    <button class="bg-button-stroke py-2 px-4 w-100">
-                                        Activities
-                                    </button>
-                                    <div
-                                        class="d-flex align-items-center bg-pipleline-btn bg-saleorder-font justify-content-end">
-                                        <div class="bg-dot bg-saleorder-progress"></div>Sales Order
-                                    </div>
-                                </div>
-                            </div>
+                                        <div class="d-flex align-items-center">
 
-                        </div>
-                        <div class="col bg-pipeline-card-container ">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h5 class=" bg-pipeline-title">Sun Pharma</h5>
-                                <div class="d-flex align-items-center">
-
-                                    <i class="ri-add-line bg-pipeline-addicon"></i>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center gap-4 py-3">
-                                <div class="progress bg-pipeline_card-progress">
-                                    <div class="progress-bar bg-pipeline_progress_bar bg-quotion-progress"
-                                        role="progressbar" style="width: 50%" aria-valuenow="15" aria-valuemin="0"
-                                        aria-valuemax="100"></div>
-                                    <div class="progress-bar bg-pipeline_progress_bar bg-quotion-sent-progress"
-                                        role="progressbar" style="width: 23%" aria-valuenow="30" aria-valuemin="0"
-                                        aria-valuemax="100"></div>
-                                </div>
-                                <span class="bg-pipeline-progress_count">2</span>
-                            </div>
-
-                            <div class="card bg-pipeline-boxcard ">
-                                <div class="d-flex justify-content-between align-items-center bg-border-btm pb-3">
-                                    <div>
-                                        <h5 class=" bg-pipeline-title">Sun Pharma</h5>
-                                        <p class="bg-pipeline-sub-title">BG00053</p>
-                                    </div>
-                                    <div class="bg-pipeline-amount">
-                                        $1,552.50
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center gap-4 mt-3">
-                                    <button class="bg-button-stroke py-2 px-4">
-                                        Activities
-                                    </button>
-                                    <div
-                                        class="d-flex align-items-center bg-pipleline-btn bg-quotion-sent-font justify-content-end">
-                                        <div class="bg-dot bg-quotion-sent-progress"></div>Quotation Sent
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card bg-pipeline-boxcard ">
-                                <div class="d-flex justify-content-between align-items-center bg-border-btm pb-3">
-                                    <div>
-                                        <h5 class=" bg-pipeline-title">Sun Pharma</h5>
-                                        <p class="bg-pipeline-sub-title">BG00053</p>
-                                    </div>
-                                    <div class="bg-pipeline-amount">
-                                        $1,552.50
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center gap-4 mt-3">
-                                    <button class="bg-button-stroke py-2 px-4">
-                                        Activities
-                                    </button>
-                                    <div
-                                        class="d-flex align-items-center bg-pipleline-btn bg-quotation-font justify-content-end">
-                                        <div class="bg-dot bg-quotion-progress"></div>Quotation
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col bg-pipeline-card-container">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h5 class=" bg-pipeline-title">AstraZeneca</h5>
-                                <div class="d-flex align-items-center">
-
-                                    <i class="ri-add-line bg-pipeline-addicon"></i>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center gap-4 py-3">
-                                <div class="progress bg-pipeline_card-progress">
-
-                                    <div class="progress-bar bg-pipeline_progress_bar bg-quotion-sent-progress"
-                                        role="progressbar" style="width: 23%" aria-valuenow="30" aria-valuemin="0"
-                                        aria-valuemax="100"></div>
-                                </div>
-                                <span class="bg-pipeline-progress_count">1</span>
-                            </div>
-
-                            <div class="card bg-pipeline-boxcard">
-                                <div class="d-flex justify-content-between align-items-center bg-border-btm pb-3">
-                                    <div>
-                                        <h5 class=" bg-pipeline-title">AstraZeneca</h5>
-                                        <p class="bg-pipeline-sub-title">BG00053</p>
-                                    </div>
-                                    <div class="bg-pipeline-amount">
-                                        $1,552.50
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center gap-4 mt-3">
-                                    <button class="bg-button-stroke py-2 px-4">
-                                        Activities
-                                    </button>
-                                    <div
-                                        class="d-flex align-items-center bg-pipleline-btn bg-quotion-sent-font justify-content-end">
-                                        <div class="bg-dot bg-quotion-sent-progress"></div>Quotation Sent
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col bg-pipeline-card-container ">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h5 class=" bg-pipeline-title">Sun Pharma</h5>
-                                <div class="d-flex align-items-center">
-
-                                    <i class="ri-add-line bg-pipeline-addicon"></i>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center gap-4 py-3">
-                                <div class="progress bg-pipeline_card-progress">
-                                    <div class="progress-bar bg-pipeline_progress_bar bg-quotion-progress"
-                                        role="progressbar" style="width: 50%" aria-valuenow="15" aria-valuemin="0"
-                                        aria-valuemax="100"></div>
-                                    <div class="progress-bar bg-pipeline_progress_bar bg-quotion-sent-progress"
-                                        role="progressbar" style="width: 23%" aria-valuenow="30" aria-valuemin="0"
-                                        aria-valuemax="100"></div>
-                                </div>
-                                <span class="bg-pipeline-progress_count">2</span>
-                            </div>
-
-                            <div class="card bg-pipeline-boxcard ">
-                                <div class="d-flex justify-content-between align-items-center bg-border-btm pb-3">
-                                    <div>
-                                        <h5 class=" bg-pipeline-title">Sun Pharma</h5>
-                                        <p class="bg-pipeline-sub-title">BG00053</p>
-                                    </div>
-                                    <div class="bg-pipeline-amount">
-                                        $1,552.50
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center gap-4 mt-3">
-                                    <button class="bg-button-stroke py-2 px-4">
-                                        Activities
-                                    </button>
-                                    <div
-                                        class="d-flex align-items-center bg-pipleline-btn bg-quotion-sent-font justify-content-end">
-                                        <div class="bg-dot bg-quotion-sent-progress"></div>Quotation Sent
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card bg-pipeline-boxcard ">
-                                <div class="d-flex justify-content-between align-items-center bg-border-btm pb-3">
-                                    <div>
-                                        <h5 class=" bg-pipeline-title">Sun Pharma</h5>
-                                        <p class="bg-pipeline-sub-title">BG00053</p>
-                                    </div>
-                                    <div class="bg-pipeline-amount">
-                                        $1,552.50
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center gap-4 mt-3">
-                                    <button class="bg-button-stroke py-2 px-4">
-                                        Activities
-                                    </button>
-                                    <div
-                                        class="d-flex align-items-center bg-pipleline-btn bg-quotation-font justify-content-end">
-                                        <div class="bg-dot bg-quotion-progress"></div>Quotation
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col bg-pipeline-card-container">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h5 class=" bg-pipeline-title">AstraZeneca</h5>
-                                <div class="d-flex align-items-center">
-
-                                    <i class="ri-add-line bg-pipeline-addicon"></i>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center gap-4 py-3">
-                                <div class="progress bg-pipeline_card-progress">
-
-                                    <div class="progress-bar bg-pipeline_progress_bar bg-quotion-sent-progress"
-                                        role="progressbar" style="width: 23%" aria-valuenow="30" aria-valuemin="0"
-                                        aria-valuemax="100"></div>
-                                </div>
-                                <span class="bg-pipeline-progress_count">1</span>
-                            </div>
-
-                            <div class="card bg-pipeline-boxcard ">
-                                <div class="d-flex justify-content-between align-items-center bg-border-btm pb-3">
-                                    <div>
-                                        <h5 class=" bg-pipeline-title">AstraZeneca</h5>
-                                        <p class="bg-pipeline-sub-title">BG00053</p>
-                                    </div>
-                                    <div class="bg-pipeline-amount">
-                                        $1,552.50
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center gap-4 mt-3">
-                                    <button class="bg-button-stroke py-2 px-4">
-                                        Activities
-                                    </button>
-                                    <div
-                                        class="d-flex align-items-center bg-pipleline-btn bg-quotion-sent-font justify-content-end">
-                                        <div class="bg-dot bg-quotion-sent-progress"></div>Quotation Sent
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col bg-pipelineadd_stage-section ">
-                            <div class=" bg-add_stage-container">
-                                <button
-                                    class="bg-button-stroke w-100 text-center d-flex align-items-center justify-content-center py-2">
-                                    <i class="ri-add-line"></i>
-                                    Add Stage
-                                </button>
-                                <div class="card bg-pipeline-boxcard bg-pipeline-addbox mt-2">
-                                    <form>
-                                        <div class="form-group">
-
-                                            <input type="text" class="form-control bg-add_inputbox" id="inputBox"
-                                                placeholder="customer">
+                                            <i class="ri-add-line bg-pipeline-addicon"></i>
                                         </div>
-                                        <button type="submit" class="bg-button-primary-stroke w-100 p-2">Add</button>
-
-                                    </form>
-
-
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center gap-4 py-3">
+                                        <div class="progress bg-pipeline_card-progress">
+                                            <div class="progress-bar bg-pipeline_progress_bar bg-quotion-progress"
+                                                role="progressbar" style="width: 70%" aria-valuenow="15"
+                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar bg-pipeline_progress_bar bg-saleorder-progress"
+                                                role="progressbar" style="width: 30%" aria-valuenow="30"
+                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="bg-pipeline-progress_count">3</span>
+                                    </div>
                                 </div>
-                                <p class="bg-esc-txt">Press <button>Esc</button> to discard</p>
+
+                                <div class="card bg-pipeline-boxcard ">
+                                    <div class="d-flex justify-content-between align-items-center bg-border-btm pb-3">
+                                        <div>
+                                            <h5 class=" bg-pipeline-title">Cipla</h5>
+                                            <p class="bg-pipeline-sub-title">BG00053</p>
+                                        </div>
+                                        <div class="bg-pipeline-amount">
+                                            $1,552.50
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center gap-4 mt-3">
+                                        <button class="bg-button-stroke py-2 px-4 ">
+                                            Activities
+                                        </button>
+                                        <div
+                                            class="d-flex align-items-center bg-pipleline-btn bg-saleorder-font justify-content-end">
+                                            <div class="bg-dot bg-saleorder-progress"></div>Sales Order
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card bg-pipeline-boxcard ">
+                                    <div class="d-flex justify-content-between align-items-center bg-border-btm pb-2">
+                                        <div>
+                                            <h5 class=" bg-pipeline-title">Cipla</h5>
+                                            <p class="bg-pipeline-sub-title">BG00053</p>
+                                        </div>
+                                        <div class="bg-pipeline-amount">
+                                            $6,500.00
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center gap-2 mt-3">
+                                        <button class="bg-button-stroke py-2 px-4">
+                                            Activities
+                                        </button>
+                                        <div
+                                            class="d-flex align-items-center bg-pipleline-btn bg-quotation-font justify-content-end">
+                                            <div class="bg-dot bg-quotion-progress"></div>Quotation
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card bg-pipeline-boxcard ">
+                                    <div class="d-flex justify-content-between align-items-center bg-border-btm pb-2">
+                                        <div>
+                                            <h5 class=" bg-pipeline-title">Cipla</h5>
+                                            <p class="bg-pipeline-sub-title">BG00053</p>
+                                        </div>
+                                        <div class="bg-pipeline-amount">
+                                            $999.99
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center gap-4 mt-3">
+                                        <button class="bg-button-stroke py-2 px-4 w-100">
+                                            Activities
+                                        </button>
+                                        <div
+                                            class="d-flex align-items-center bg-pipleline-btn bg-saleorder-font justify-content-end">
+                                            <div class="bg-dot bg-saleorder-progress"></div>Sales Order
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col bg-pipeline-card-container ">
+                                <div class="p-3 mb-3 bg-border-btm">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class=" bg-pipeline-title">Sun Pharma</h5>
+                                        <div class="d-flex align-items-center">
+
+                                            <i class="ri-add-line bg-pipeline-addicon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center gap-4 py-3">
+                                        <div class="progress bg-pipeline_card-progress">
+                                            <div class="progress-bar bg-pipeline_progress_bar bg-quotion-progress"
+                                                role="progressbar" style="width: 50%" aria-valuenow="15"
+                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar bg-pipeline_progress_bar bg-quotion-sent-progress"
+                                                role="progressbar" style="width: 23%" aria-valuenow="30"
+                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="bg-pipeline-progress_count">2</span>
+                                    </div>
+                                </div>
+
+                                <div class="card bg-pipeline-boxcard ">
+                                    <div class="d-flex justify-content-between align-items-center bg-border-btm pb-3">
+                                        <div>
+                                            <h5 class=" bg-pipeline-title">Sun Pharma</h5>
+                                            <p class="bg-pipeline-sub-title">BG00053</p>
+                                        </div>
+                                        <div class="bg-pipeline-amount">
+                                            $1,552.50
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center gap-4 mt-3">
+                                        <button class="bg-button-stroke py-2 px-4">
+                                            Activities
+                                        </button>
+                                        <div
+                                            class="d-flex align-items-center bg-pipleline-btn bg-quotion-sent-font justify-content-end">
+                                            <div class="bg-dot bg-quotion-sent-progress"></div>Quotation Sent
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card bg-pipeline-boxcard ">
+                                    <div class="d-flex justify-content-between align-items-center bg-border-btm pb-3">
+                                        <div>
+                                            <h5 class=" bg-pipeline-title">Sun Pharma</h5>
+                                            <p class="bg-pipeline-sub-title">BG00053</p>
+                                        </div>
+                                        <div class="bg-pipeline-amount">
+                                            $1,552.50
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center gap-4 mt-3">
+                                        <button class="bg-button-stroke py-2 px-4">
+                                            Activities
+                                        </button>
+                                        <div
+                                            class="d-flex align-items-center bg-pipleline-btn bg-quotation-font justify-content-end">
+                                            <div class="bg-dot bg-quotion-progress"></div>Quotation
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col bg-pipeline-card-container">
+                                <div class="p-3 mb-3 bg-border-btm">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class=" bg-pipeline-title">AstraZeneca</h5>
+                                        <div class="d-flex align-items-center">
+
+                                            <i class="ri-add-line bg-pipeline-addicon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center gap-4 py-3">
+                                        <div class="progress bg-pipeline_card-progress">
+
+                                            <div class="progress-bar bg-pipeline_progress_bar bg-quotion-sent-progress"
+                                                role="progressbar" style="width: 23%" aria-valuenow="30"
+                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="bg-pipeline-progress_count">1</span>
+                                    </div>
+                                </div>
+
+                                <div class="card bg-pipeline-boxcard">
+                                    <div class="d-flex justify-content-between align-items-center bg-border-btm pb-3">
+                                        <div>
+                                            <h5 class=" bg-pipeline-title">AstraZeneca</h5>
+                                            <p class="bg-pipeline-sub-title">BG00053</p>
+                                        </div>
+                                        <div class="bg-pipeline-amount">
+                                            $1,552.50
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center gap-4 mt-3">
+                                        <button class="bg-button-stroke py-2 px-4">
+                                            Activities
+                                        </button>
+                                        <div
+                                            class="d-flex align-items-center bg-pipleline-btn bg-quotion-sent-font justify-content-end">
+                                            <div class="bg-dot bg-quotion-sent-progress"></div>Quotation Sent
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col bg-pipeline-card-container ">
+                                <div class="p-3 mb-3 bg-border-btm">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class=" bg-pipeline-title">Sun Pharma</h5>
+                                        <div class="d-flex align-items-center">
+
+                                            <i class="ri-add-line bg-pipeline-addicon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center gap-4 py-3">
+                                        <div class="progress bg-pipeline_card-progress">
+                                            <div class="progress-bar bg-pipeline_progress_bar bg-quotion-progress"
+                                                role="progressbar" style="width: 50%" aria-valuenow="15"
+                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar bg-pipeline_progress_bar bg-quotion-sent-progress"
+                                                role="progressbar" style="width: 23%" aria-valuenow="30"
+                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="bg-pipeline-progress_count">2</span>
+                                    </div>
+                                </div>
+
+
+                                <div class="card bg-pipeline-boxcard ">
+                                    <div class="d-flex justify-content-between align-items-center bg-border-btm pb-3">
+                                        <div>
+                                            <h5 class=" bg-pipeline-title">Sun Pharma</h5>
+                                            <p class="bg-pipeline-sub-title">BG00053</p>
+                                        </div>
+                                        <div class="bg-pipeline-amount">
+                                            $1,552.50
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center gap-4 mt-3">
+                                        <button class="bg-button-stroke py-2 px-4">
+                                            Activities
+                                        </button>
+                                        <div
+                                            class="d-flex align-items-center bg-pipleline-btn bg-quotion-sent-font justify-content-end">
+                                            <div class="bg-dot bg-quotion-sent-progress"></div>Quotation Sent
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card bg-pipeline-boxcard ">
+                                    <div class="d-flex justify-content-between align-items-center bg-border-btm pb-3">
+                                        <div>
+                                            <h5 class=" bg-pipeline-title">Sun Pharma</h5>
+                                            <p class="bg-pipeline-sub-title">BG00053</p>
+                                        </div>
+                                        <div class="bg-pipeline-amount">
+                                            $1,552.50
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center gap-4 mt-3">
+                                        <button class="bg-button-stroke py-2 px-4">
+                                            Activities
+                                        </button>
+                                        <div
+                                            class="d-flex align-items-center bg-pipleline-btn bg-quotation-font justify-content-end">
+                                            <div class="bg-dot bg-quotion-progress"></div>Quotation
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col bg-pipeline-card-container">
+                                <div class="p-3 mb-3 bg-border-btm">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class=" bg-pipeline-title">AstraZeneca</h5>
+                                    <div class="d-flex align-items-center">
+
+                                        <i class="ri-add-line bg-pipeline-addicon"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center gap-4 py-3">
+                                    <div class="progress bg-pipeline_card-progress">
+
+                                        <div class="progress-bar bg-pipeline_progress_bar bg-quotion-sent-progress"
+                                            role="progressbar" style="width: 23%" aria-valuenow="30" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                    <span class="bg-pipeline-progress_count">1</span>
+                                </div>
+                                </div>
+
+                                <div class="card bg-pipeline-boxcard ">
+                                    <div class="d-flex justify-content-between align-items-center bg-border-btm pb-3">
+                                        <div>
+                                            <h5 class=" bg-pipeline-title">AstraZeneca</h5>
+                                            <p class="bg-pipeline-sub-title">BG00053</p>
+                                        </div>
+                                        <div class="bg-pipeline-amount">
+                                            $1,552.50
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center gap-4 mt-3">
+                                        <button class="bg-button-stroke py-2 px-4">
+                                            Activities
+                                        </button>
+                                        <div
+                                            class="d-flex align-items-center bg-pipleline-btn bg-quotion-sent-font justify-content-end">
+                                            <div class="bg-dot bg-quotion-sent-progress"></div>Quotation Sent
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col bg-pipelineadd_stage-section p-4 ">
+                                <div class=" bg-add_stage-container">
+                                    <button
+                                        class="bg-button-stroke w-100 text-center d-flex align-items-center justify-content-center py-2">
+                                        <i class="ri-add-line"></i>
+                                        Add Stage
+                                    </button>
+                                    <div class="card bg-pipeline-boxcard bg-pipeline-addbox mt-2">
+                                        <form>
+                                            <div class="form-group">
+
+                                                <input type="text" class="form-control bg-add_inputbox" id="inputBox"
+                                                    placeholder="customer">
+                                            </div>
+                                            <button type="submit"
+                                                class="bg-button-primary-stroke w-100 p-2">Add</button>
+
+                                        </form>
+
+
+                                    </div>
+                                    <p class="bg-esc-txt">Press <button>Esc</button> to discard</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
+
+                    </div>
 
                 </div>
 
