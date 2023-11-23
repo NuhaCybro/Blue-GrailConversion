@@ -3973,6 +3973,25 @@ a {
   color: #3E54D5;
 }
 
+.bg-kaban_activity-details {
+  color: #222222;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.bg-kaban_activity-details:not(:last-child) {
+  border-right: 1px solid hsl(213, 22%, 84%);
+}
+
+.bg-kaban_activity-details p {
+  margin-bottom: 0px;
+  color: #222222;
+  font-size: 18px;
+  font-weight: 500;
+}
+
 .bg-test_participation--heading {
   color: #222222;
   font-size: 1.5rem;

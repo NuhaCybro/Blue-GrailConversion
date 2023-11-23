@@ -279,3 +279,25 @@
         color: $link-color;
     }
 }
+
+//..........................................
+
+.bg-kaban_activity-details{
+    color: $main-heading;
+    font-size: 12px;
+    font-weight: 400;
+ margin:  0 auto;
+ padding: 0 auto;
+
+}
+.bg-kaban_activity-details:not(:last-child){
+    border-right: 1px solid $border-color;
+}
+.bg-kaban_activity-details{
+    p{
+        margin-bottom: 0px;
+        color: $main-heading;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
