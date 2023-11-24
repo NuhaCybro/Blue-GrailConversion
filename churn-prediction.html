@@ -201,238 +201,219 @@
                     </a>
                 </div>
             </nav>
-            <main class="col-md-9 ms-sm-auto col-lg-10 ">
-                <div class="row d-flex align-items-center py-2 bg-border-btm">
+            <main class="col-md-9 ms-sm-auto col-lg-10 bg-churn_prdict-main__container ">
+                <div class="row d-flex align-items-center py-2 bg-border-btm bg-sticky--header">
                     <div class="col bg-main-sectionhead d-flex align-items-center">
                         <span class="nav-link bg-template-title">Churn Prediction Dashboard</span>
                     </div>
                     <div class="col d-flex align-items-center justify-content-end gap-2 px-2">
                     </div>
                 </div>
-                <div class="row px-3 pt-3">
-                    <div class="col-4">
-                        <h5 class="bg-churn_predict-headline">
-                            Based on Lasr 4 Quarters
-                        </h5>
-                        <p class="bg-churn-predict_state-txt">
-                            Prediction is from 2022 to 2023
-                        </p>
-                    </div>
-                    <div class="col-8">
-                        <div class=" d-inline-flex justify-content-end flex-wrap w-100 gap-3">
-                            <div class="   bg-sheet_preview-input ">
-                                <input type="text" class="form-control bg-button-stroke" id="inputAddress"
-                                    placeholder="input">
-                            </div>
-                            <div class="dropdown">
-                                <button class="btn  bg-button-stroke dropdown-toggle" type="button"
-                                    data-bs-toggle="dropdown">
-                                    <input class="bg-search-box_input" type="search" placeholder="Select period">
-                                </button>
-                                <ul class="dropdown-menu bg-dashboard__dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Option 1</a></li>
-                                    <li><a class="dropdown-item" href="#">Option 2</a></li>
-                                    <li><a class="dropdown-item" href="#">Option 3</a></li>
-                                </ul>
-                            </div>
-                            <div class="dropdown">
-                                <button class="btn  bg-button-stroke dropdown-toggle" type="button"
-                                    data-bs-toggle="dropdown">
-                                    <input class="bg-search-box_input" type="search" placeholder="Country">
-                                </button>
-                                <ul class="dropdown-menu bg-dashboard__dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Option 1</a></li>
-                                    <li><a class="dropdown-item" href="#">Option 2</a></li>
-                                    <li><a class="dropdown-item" href="#">Option 3</a></li>
-                                </ul>
+                <div class="">
+                    <div class="row px-3 pt-3">
+                        <div class="col-4">
+                            <h5 class="bg-churn_predict-headline">
+                                Based on Last 4 Quarters
+                            </h5>
+                            <p class="bg-churn-predict_state-txt">
+                                Prediction is from 2022 to 2023
+                            </p>
+                        </div>
+                        <div class="col-8">
+                            <div class=" d-inline-flex justify-content-end flex-wrap w-100 gap-3">
+                                <div class="   bg-sheet_preview-input ">
+                                    <input type="text" class="form-control bg-button-stroke" id="inputAddress"
+                                        placeholder="input">
+                                </div>
+                                <div class="dropdown">
+                                    <button class="btn  bg-button-stroke dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown">
+                                        <input class="bg-search-box_input" type="search" placeholder="Select period">
+                                    </button>
+                                    <ul class="dropdown-menu bg-dashboard__dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="btn  bg-button-stroke dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown">
+                                        <input class="bg-search-box_input" type="search" placeholder="Country">
+                                    </button>
+                                    <ul class="dropdown-menu bg-dashboard__dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="row p-3 pb-3">
+                    <div class="row p-3 pb-3">
+                        <div class="col-lg-8">
+                            <div class="col">
+                                <div class="churn_prediction_selected_filter ">
 
-                    <div class="col-lg-8">
-                        <div class="col">
-                            <div class="churn_prediction_selected_filter ">
-
-                                <div class="row gap-3 px-3 pb-3 ">
-                                    <div class="col d-flex justify-content-center
+                                    <div class="row gap-3 px-3 pb-3 ">
+                                        <div class="col d-flex justify-content-center
                                     flex-column bg-churn_predict--tile bg-churn_predict-tile_total">
-                                        <p class="bg-dashboard_state"> Total Customer</p>
-                                        <h2 class="bg-dashboard_box-main-txt"> 100%</h2>
-                                    </div>
-
-                                    <div class=" col d-flex justify-content-center
-                                    flex-column bg-churn_predict--tile bg-churn_predict-tile_churn">
-                                        <p class="bg-dashboard_state"> Customers likely to be churn</p>
-                                        <h2 class="bg-dashboard_box-main-txt">56%</h2>
-                                    </div>
-
-                                    <div class="col d-flex justify-content-center
-                                    flex-column bg-churn_predict--tile bg-churn_predict-tile_notchurn">
-                                        <p class="bg-dashboard_state"> Customers likely to be not churn</p>
-                                        <h2 class="bg-dashboard_box-main-txt">65%</h2>
-
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col py-3">
-                            <div class="">
-                                <div class="col-6 table_heading bg-table_top--section">
-                                    <span class="note d-block ">
-                                        Note:Details shown in table is based on last quarter
-                                    </span>
-                                    
-                                    <form class="col-12 d-flex my-2 ">
-                                        <div class="input-group">
-                                            <span class="input-group-text bg-search bg-templates_search-icon">
-                                                <i class="ri-search-line bg-search-icon bg-sheet_font"></i>
-                                            </span>
-                                            <input class="form-control bg-custom-search bg-template_search-bar bg-sheet_font " type="search" placeholder="Search" aria-label="Search">
+                                            <p class="bg-dashboard_state"> Total Customer</p>
+                                            <h2 class="bg-dashboard_box-main-txt"> 100%</h2>
                                         </div>
-                                    </form>
+
+                                        <div class=" col d-flex justify-content-center
+                                    flex-column bg-churn_predict--tile bg-churn_predict-tile_churn">
+                                            <p class="bg-dashboard_state"> Customers likely to be churn</p>
+                                            <h2 class="bg-dashboard_box-main-txt">56%</h2>
+                                        </div>
+
+                                        <div class="col d-flex justify-content-center
+                                    flex-column bg-churn_predict--tile bg-churn_predict-tile_notchurn">
+                                            <p class="bg-dashboard_state"> Customers likely to be not churn</p>
+                                            <h2 class="bg-dashboard_box-main-txt">65%</h2>
+
+                                        </div>
+                                    </div>
+
                                 </div>
-                                <table class="table table-hover table-bordered mt-3">
-                                    <thead class="thead-dark">
-                                        <tr>
-                                            <th scope="col">Customers</th>
-                                            <th scope="col">Last Purchase Date</th>
-                                            <th scope="col">Total Sale Orders</th>
-                                            <th scope="col">Total Amount</th>
-                                            <th scope="col">Churn</th>
-                                            
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                           
-                                        </tr>
-                                        <tr>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                           
-                                        </tr>
-                                        <tr>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                           
-                                        </tr>
-                                        <tr>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                           
-                                        </tr>
-                                        <tr>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                        </tr>
-                                        <tr>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                        </tr>
-                                        <tr>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                        </tr>
-                                        <tr>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                        </tr>
-                                        <tr>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                        </tr>
-                                        <tr>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                            <td>demo</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            </div>
+                            <div class="col py-3">
+                                <div class="">
+                                    <div class="col-6 table_heading bg-table_top--section">
+                                        <span class="note d-block ">
+                                            Note:Details shown in table is based on last quarter
+                                        </span>
+
+                                        <form class="col-12 d-flex mt-2 mb-3 ">
+                                            <div class="input-group">
+                                                <span class="input-group-text bg-search bg-templates_search-icon  bg-churn_prdct--table-search">
+                                                    <i class="ri-search-line bg-search-icon "></i>
+                                                </span>
+                                                <input class="form-control bg-custom-search bg-template_search-bar  bg-churn_prdct--table-search"
+                                                    type="search" placeholder="Search" aria-label="Search">
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div class="col-12 bg-churn_prdict-table__container">
+                                        <table class="w-100 table-hover">
+                                            <thead class="bg-churnPrdict_table-head">
+                                                <tr>
+                                                    <th scope="col">Customers</th>
+                                                    <th scope="col">Last Purchase Date</th>
+                                                    <th scope="col">Total Sale Orders</th>
+                                                    <th scope="col">Total Amount</th>
+                                                    <th scope="col">Churn</th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Your company</td>
+                                                    <td>2022-12-11 00:00:00</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>yes</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Mitchell Admin</td>
+                                                    <td>2022-12-11 00:00:00</td>
+                                                    <td>1</td>
+                                                    <td>0</td>
+                                                    <td>No</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Marc Demo</td>
+                                                    <td>2022-12-11 00:00:00</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>yes</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Wood Corner</td>
+                                                    <td>2022-12-11 00:00:00</td>
+                                                    <td>2</td>
+                                                    <td>0</td>
+                                                    <td>yes</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Your company</td>
+                                                    <td>2022-12-11 00:00:00</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>yes</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Marc Demo</td>
+                                                    <td>2022-12-11 00:00:00</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>yes</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Marc Demo</td>
+                                                    <td>2022-12-11 00:00:00</td>
+                                                    <td>0</td>
+                                                    <td>3</td>
+                                                    <td>yes</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Marc Demo</td>
+                                                    <td>2022-12-11 00:00:00</td>
+                                                    <td>1</td>
+                                                    <td>0</td>
+                                                    <td>yes</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Your company</td>
+                                                    <td>2022-12-11 00:00:00</td>
+                                                    <td>2</td>
+                                                    <td>0</td>
+                                                    <td>yes</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Marc Demo</td>
+                                                    <td>2022-12-11 00:00:00</td>
+                                                    <td>4</td>
+                                                    <td>0</td>
+                                                    <td>yes</td>
+
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="side_graph_wrapper">
-                            <div class="side_graph">
-                                <div class="churn_prediction_graph mb-3">
-                                    <div class="grap_heading pt-3">
-                                        Overall Churn v/s Not Churn
+                        <div class="col-lg-4">
+                            <div class="">
+                                <div class="side_graph">
+                                    <div class="churn_prediction_graph mb-3">
+                                        <div class="grap_heading pt-3">
+                                            Overall Churn v/s Not Churn
+                                        </div>
+                                        <div class="churn_prediction-graph_img">
+                                            <img src="images/analytics-graph.png" alt="" class="bg-sheet-img">
+                                        </div>
                                     </div>
-                                    <div class="churn_prediction-graph_img">
-                                        <img src="images/analytics-graph.png" alt="" class="bg-sheet-img">
-                                    </div>
-                                </div>
-                                <div class="churn_prediction_graph mb-3">
-                                    <div class="grap_heading pt-3">
-                                        Customer wise Churn v/s Not Churn
-                                    </div>
-                                    <div class="churn_prediction-graph_img">
-                                        <img src="images/analytics-graph.png" alt="" class="bg-sheet-img">
+                                    <div class="churn_prediction_graph mb-3">
+                                        <div class="grap_heading pt-3">
+                                            Customer wise Churn v/s Not Churn
+                                        </div>
+                                        <div class="churn_prediction-graph_img">
+                                            <img src="images/analytics-graph.png" alt="" class="bg-sheet-img">
+                                        </div>
                                     </div>
                                 </div>
                             </div>

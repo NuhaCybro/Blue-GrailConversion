@@ -3472,7 +3472,7 @@ a {
   margin-right: auto;
   text-align: end;
   font-size: 12px;
-  color: #AFB7C9;
+  color: #717684;
 }
 .table_heading .table_header {
   border-radius: 6px;
@@ -3505,12 +3505,13 @@ a {
 
 .bg-churn_predict--tile:before {
   content: "";
-  background-color: #F0D473;
+  background-color: #FFBFCA;
   border-radius: 1px 0px 0px 1px;
   width: 4px;
   height: 100%;
   position: absolute;
   left: 0px;
+  top: 0px;
 }
 
 .bg-churn_predict-headline {
@@ -3524,6 +3525,53 @@ a {
 
 .bg-table_top--section {
   float: right;
+}
+
+.bg-churn_prdict-main__container {
+  height: 90vh;
+  overflow: auto;
+}
+
+.bg-sticky--header {
+  position: sticky;
+  top: 0px;
+  background: #fff;
+  z-index: 999;
+}
+
+.bg-churn_prdict-table__container {
+  max-height: 340px;
+  overflow: auto;
+  border-radius: 2px;
+}
+.bg-churn_prdict-table__container tbody tr:nth-child(even) {
+  background-color: #F7F7F7;
+}
+.bg-churn_prdict-table__container tr {
+  border: 1px solid hsl(213, 22%, 84%);
+}
+.bg-churn_prdict-table__container td {
+  padding: 0.8rem 0.6rem;
+  font-size: 14px;
+  color: #222222;
+}
+
+.bg-churnPrdict_table-head {
+  color: #222222;
+  border: 1px solid hsl(213, 22%, 84%);
+  font-size: 14px;
+  background-color: #F7F7F7;
+  position: sticky;
+  top: 0px;
+}
+.bg-churnPrdict_table-head th {
+  padding: 0.8rem 0.6rem;
+}
+
+.bg-churn_prdct--table-search {
+  font-size: 12.8px;
+  color: #717684;
+  border-color: #DFDFDF;
 }
 
 .bg-sales-cust_head {
@@ -3590,7 +3638,6 @@ a {
   border-bottom: 1px solid #DFDFDF;
   color: black;
   font-weight: 500;
-  padding: 0.4rem 0.2rem;
   font-size: 12px;
 }
 

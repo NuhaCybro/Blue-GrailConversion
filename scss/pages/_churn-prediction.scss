@@ -76,7 +76,8 @@
         margin-right: auto;
         text-align: end;
         font-size: 12px;
-        color: $sub-fonts;
+        color: $font-color;
+
     }
 
     .table_header {
@@ -111,20 +112,80 @@
 
 .bg-churn_predict--tile:before {
     content: '';
-    background-color: #F0D473;
+    background-color: #FFBFCA;
     border-radius: 1px 0px 0px 1px;
     width: 4px;
     height: 100%;
     position: absolute;
     left: 0px;
+    top: 0px;
 }
-.bg-churn_predict-headline{
+
+.bg-churn_predict-headline {
     font-weight: 600;
     font-size: 1.4rem;
 }
-.bg-churn-predict_state-txt{
+
+.bg-churn-predict_state-txt {
     color: $primary-font;
 }
-.bg-table_top--section{
+
+.bg-table_top--section {
     float: right;
+}
+
+.bg-churn_prdict-main__container {
+    height: 90vh;
+    overflow: auto;
+}
+
+.bg-sticky--header {
+    position: sticky;
+    top: 0px;
+    background: $white;
+    z-index: 999;
+}
+
+.bg-churn_prdict-table__container {
+    max-height: 340px;
+    overflow: auto;
+   
+    border-radius: 2px;
+
+    tbody {
+        tr:nth-child(even) {
+            background-color: $secondary-color;
+        }
+    }
+
+    tr {
+        border: 1px solid $border-color;
+    }
+
+    td {
+        padding: 0.8rem 0.6rem;
+        font-size: 14px;
+        color: $main-heading;
+
+    }
+}
+
+.bg-churnPrdict_table-head {
+    color: $main-heading ;
+    border: 1px solid $border-color;
+    font-size: 14px;
+    background-color: $secondary-color;
+    position: sticky;
+    top: 0px;
+
+    th {
+        padding: 0.8rem 0.6rem;
+
+    }
+
+}
+.bg-churn_prdct--table-search{
+    font-size: 12.8px;
+    color: $font-color;
+    border-color: $stroke-color;
 }
