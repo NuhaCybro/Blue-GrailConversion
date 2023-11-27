@@ -2268,6 +2268,12 @@ a {
   margin-right: 2.3rem;
 }
 
+.bg-sidebar__icon--style {
+  background-color: #f7f7f7;
+  padding: 4px 8px;
+  border-radius: 2px;
+}
+
 @media (max-width: 768px) {
   .bg-form-view_container:not(:last-child) {
     border-right: none;

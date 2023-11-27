@@ -31,9 +31,11 @@
 .bg-form-view_container {
     padding-left: 3rem;
 }
-.bg-form-view_container:first-child{
+
+.bg-form-view_container:first-child {
     padding-left: 0px;
 }
+
 .bg-form-view_data {
     font-size: 14px;
     font-family: $text-font;
@@ -162,11 +164,21 @@
     margin-right: 2.3rem;
 }
 
+.bg-sidebar__icon--style {
+    background-color: $secondary-color;
+    padding: 4px 8px;
+    border-radius: 2px;
+}
+.bg-subsidebar_nav{
+
+}
+
 @media (max-width:768px) {
     .bg-form-view_container:not(:last-child) {
         border-right: none;
 
     }
+
     .bg-form-view_container {
         padding-left: 0rem;
     }
