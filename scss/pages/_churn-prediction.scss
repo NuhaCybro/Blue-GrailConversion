@@ -56,6 +56,9 @@
 
     .grap_heading {
         text-align: center;
+        color: $primary-font;
+        font-size: 14px;
+
     }
 
     .churn_prediction-graph_img {
@@ -110,16 +113,7 @@
     position: relative;
 }
 
-.bg-churn_predict--tile:before {
-    content: '';
-    background-color: #FFBFCA;
-    border-radius: 1px 0px 0px 1px;
-    width: 4px;
-    height: 100%;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-}
+
 
 .bg-churn_predict-headline {
     font-weight: 600;
@@ -128,6 +122,7 @@
 
 .bg-churn-predict_state-txt {
     color: $primary-font;
+    font-size: 14px;
 }
 
 .bg-table_top--section {
@@ -149,30 +144,50 @@
 .bg-churn_prdict-table__container {
     max-height: 340px;
     overflow: auto;
-   
-    border-radius: 2px;
+
+    border-top: 1px solid $border-color;
 
     tbody {
         tr:nth-child(even) {
-            background-color: $secondary-color;
+           // background-color: $secondary-color;
         }
     }
 
     tr {
-        border: 1px solid $border-color;
+        border-bottom: 1px solid $stroke-color;
+     
     }
 
     td {
         padding: 0.8rem 0.6rem;
         font-size: 14px;
         color: $main-heading;
+        font-weight: 500;
+
+
+
+
 
     }
 }
 
+.bg-churn_prdict-table__container {
+
+
+    .bg-churn-ys {
+        color: $green-font;
+    }
+
+    .bg-churn-no {
+        color: $badge-bg;
+    }
+
+
+}
+
 .bg-churnPrdict_table-head {
     color: $main-heading ;
-    border: 1px solid $border-color;
+    // border: 1px solid $border-color;
     font-size: 14px;
     background-color: $secondary-color;
     position: sticky;
@@ -180,12 +195,58 @@
 
     th {
         padding: 0.8rem 0.6rem;
+        font-weight: 400;
+        color: $primary-color;
+        text-transform: uppercase;
 
     }
 
 }
-.bg-churn_prdct--table-search{
+
+.bg-churn_prdct--table-search {
     font-size: 12.8px;
     color: $font-color;
     border-color: $stroke-color;
+}
+
+.bg-churn_title--head {
+    color: $primary-color;
+    font-weight: 600;
+}
+
+.bg-churn_prdict--t-icon {
+    color: $font-color;
+    font-size: 1rem;
+    margin-right: 0.3rem;
+}
+
+.bg-churn_prdict-s-icon {
+    color: $green-font;
+    font-size: 1rem;
+    margin-right: 0.3rem;
+}
+
+.bg-churn_prdict-l-icon {
+    color: $badge-bg;
+    font-size: 1rem;
+    margin-right: 0.3rem;
+}
+
+.bg-churn_detail-table {
+    background-color: $secondary-color;
+    border: 1px solid $stroke-color;
+
+}
+
+.bg-churn_prdict-profile-pic {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50px;
+    margin-right: 0.3rem;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        object-fit: contain;
+    }
 }

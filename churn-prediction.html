@@ -8,6 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -252,35 +255,41 @@
                     </div>
 
                     <div class="row p-3 pb-3">
-                        <div class="col-lg-8">
+                        <div class="col-lg-9">
                             <div class="col">
                                 <div class="churn_prediction_selected_filter ">
 
                                     <div class="row gap-3 px-3 pb-3 ">
                                         <div class="col d-flex justify-content-center
-                                    flex-column bg-churn_predict--tile bg-churn_predict-tile_total">
-                                            <p class="bg-dashboard_state"> Total Customer</p>
-                                            <h2 class="bg-dashboard_box-main-txt"> 100%</h2>
+                                    flex-column bg-churn_predict--tile ">
+                                            <p class="bg-dashboard_state"><span class="bg-churn_prdict--t-icon"><i
+                                                        class="fa-solid fa-users"></i></span>
+                                                Total Customer</p>
+                                            <h2 class="bg-churn_title--head"> 100%</h2>
                                         </div>
 
                                         <div class=" col d-flex justify-content-center
                                     flex-column bg-churn_predict--tile bg-churn_predict-tile_churn">
-                                            <p class="bg-dashboard_state"> Customers likely to be churn</p>
-                                            <h2 class="bg-dashboard_box-main-txt">56%</h2>
+                                            <p class="bg-dashboard_state"><span class="bg-churn_prdict-s-icon"><i
+                                                        class="fa-solid fa-arrow-trend-up"></i></span> Customers likely
+                                                to be churn</p>
+                                            <h2 class="bg-churn_title--head">56%</h2>
                                         </div>
 
                                         <div class="col d-flex justify-content-center
                                     flex-column bg-churn_predict--tile bg-churn_predict-tile_notchurn">
-                                            <p class="bg-dashboard_state"> Customers likely to be not churn</p>
-                                            <h2 class="bg-dashboard_box-main-txt">65%</h2>
+                                            <p class="bg-dashboard_state"><span class="bg-churn_prdict-l-icon"><i
+                                                        class="fa-solid fa-arrow-trend-down"></i></span> Customers
+                                                likely to be not churn</p>
+                                            <h2 class="bg-churn_title--head">65%</h2>
 
                                         </div>
                                     </div>
 
                                 </div>
                             </div>
-                            <div class="col py-3">
-                                <div class="">
+                            <div class="col bg-churn_detail-table pt-3 mt-3">
+                                <div class="p-3">
                                     <div class="col-6 table_heading bg-table_top--section">
                                         <span class="note d-block ">
                                             Note:Details shown in table is based on last quarter
@@ -288,10 +297,12 @@
 
                                         <form class="col-12 d-flex mt-2 mb-3 ">
                                             <div class="input-group">
-                                                <span class="input-group-text bg-search bg-templates_search-icon  bg-churn_prdct--table-search">
+                                                <span
+                                                    class="input-group-text  bg-templates_search-icon  bg-churn_prdct--table-search">
                                                     <i class="ri-search-line bg-search-icon "></i>
                                                 </span>
-                                                <input class="form-control bg-custom-search bg-template_search-bar  bg-churn_prdct--table-search"
+                                                <input
+                                                    class="form-control bg-custom-search bg-template_search-bar  bg-churn_prdct--table-search"
                                                     type="search" placeholder="Search" aria-label="Search">
                                             </div>
                                         </form>
@@ -311,82 +322,141 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>Your company</td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="bg-churn_prdict-profile-pic"><img
+                                                                    src="images/user-profile.png" alt=""></div>Your
+                                                            company
+                                                        </div>
+                                                    </td>
                                                     <td>2022-12-11 00:00:00</td>
                                                     <td>0</td>
                                                     <td>0</td>
-                                                    <td>yes</td>
+                                                    <td class="bg-churn-ys"> yes</td>
 
                                                 </tr>
                                                 <tr>
-                                                    <td>Mitchell Admin</td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="bg-churn_prdict-profile-pic"><img
+                                                                    src="images/user-profile-2.png" alt=""></div>Your
+                                                            company
+                                                        </div>
+                                                    </td>
                                                     <td>2022-12-11 00:00:00</td>
                                                     <td>1</td>
                                                     <td>0</td>
-                                                    <td>No</td>
+                                                    <td class="bg-churn-no">No</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Marc Demo</td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="bg-churn_prdict-profile-pic"><img
+                                                                    src="images/image 11.png" alt=""></div>
+                                                            Marc Demo
+                                                        </div>
+                                                    </td>
                                                     <td>2022-12-11 00:00:00</td>
                                                     <td>0</td>
                                                     <td>0</td>
-                                                    <td>yes</td>
+                                                    <td class="bg-churn-ys">yes</td>
 
                                                 </tr>
                                                 <tr>
-                                                    <td>Wood Corner</td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="bg-churn_prdict-profile-pic"><img
+                                                                    src="images/image 63 (2).png" alt=""></div>
+                                                            Wood Corner
+                                                        </div>
+                                                    </td>
                                                     <td>2022-12-11 00:00:00</td>
                                                     <td>2</td>
                                                     <td>0</td>
-                                                    <td>yes</td>
+                                                    <td class="bg-churn-ys">yes</td>
 
                                                 </tr>
                                                 <tr>
-                                                    <td>Your company</td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="bg-churn_prdict-profile-pic"><img
+                                                                    src="images/image 11.png" alt=""></div>Your company
+                                                        </div>
+                                                    </td>
                                                     <td>2022-12-11 00:00:00</td>
                                                     <td>0</td>
                                                     <td>0</td>
-                                                    <td>yes</td>
+                                                    <td class="bg-churn-no">No</td>
 
                                                 </tr>
                                                 <tr>
-                                                    <td>Marc Demo</td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="bg-churn_prdict-profile-pic"><img
+                                                                    src="images/image 11.png" alt=""></div>
+                                                            Marc Demo
+                                                        </div>
+                                                    </td>
                                                     <td>2022-12-11 00:00:00</td>
                                                     <td>0</td>
                                                     <td>0</td>
-                                                    <td>yes</td>
+                                                    <td class="bg-churn-no">No</td>
 
                                                 </tr>
                                                 <tr>
-                                                    <td>Marc Demo</td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="bg-churn_prdict-profile-pic"><img
+                                                                    src="images/image 11.png" alt=""></div>
+                                                            Marc Demo
+                                                        </div>
+                                                    </td>
                                                     <td>2022-12-11 00:00:00</td>
                                                     <td>0</td>
                                                     <td>3</td>
-                                                    <td>yes</td>
+                                                    <td class="bg-churn-no">yes</td>
 
                                                 </tr>
                                                 <tr>
-                                                    <td>Marc Demo</td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="bg-churn_prdict-profile-pic"><img
+                                                                    src="images/image 11.png" alt=""></div>
+                                                            Marc Demo
+                                                        </div>
+                                                    </td>
                                                     <td>2022-12-11 00:00:00</td>
                                                     <td>1</td>
                                                     <td>0</td>
-                                                    <td>yes</td>
+                                                    <td class="bg-churn-ys">yes</td>
 
                                                 </tr>
                                                 <tr>
-                                                    <td>Your company</td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="bg-churn_prdict-profile-pic"><img
+                                                                    src="images/user-profile.png" alt=""></div>Your
+                                                            company
+                                                        </div>
+                                                    </td>
                                                     <td>2022-12-11 00:00:00</td>
                                                     <td>2</td>
                                                     <td>0</td>
-                                                    <td>yes</td>
+                                                    <td class="bg-churn-ys">yes</td>
 
                                                 </tr>
                                                 <tr>
-                                                    <td>Marc Demo</td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="bg-churn_prdict-profile-pic"><img
+                                                                    src="images/user-profile.png" alt=""></div>Your
+                                                            company
+                                                        </div>
+                                                    </td>
                                                     <td>2022-12-11 00:00:00</td>
                                                     <td>4</td>
                                                     <td>0</td>
-                                                    <td>yes</td>
+                                                    <td class="bg-churn-ys">yes</td>
 
                                                 </tr>
                                             </tbody>
@@ -396,7 +466,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
                             <div class="">
                                 <div class="side_graph">
                                     <div class="churn_prediction_graph mb-3">

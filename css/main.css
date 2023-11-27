@@ -3456,6 +3456,8 @@ a {
 }
 .churn_prediction_graph .grap_heading {
   text-align: center;
+  color: #505050;
+  font-size: 14px;
 }
 .churn_prediction_graph .churn_prediction-graph_img {
   height: 240px;
@@ -3503,17 +3505,6 @@ a {
   position: relative;
 }
 
-.bg-churn_predict--tile:before {
-  content: "";
-  background-color: #FFBFCA;
-  border-radius: 1px 0px 0px 1px;
-  width: 4px;
-  height: 100%;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-
 .bg-churn_predict-headline {
   font-weight: 600;
   font-size: 1.4rem;
@@ -3521,6 +3512,7 @@ a {
 
 .bg-churn-predict_state-txt {
   color: #505050;
+  font-size: 14px;
 }
 
 .bg-table_top--section {
@@ -3542,23 +3534,27 @@ a {
 .bg-churn_prdict-table__container {
   max-height: 340px;
   overflow: auto;
-  border-radius: 2px;
-}
-.bg-churn_prdict-table__container tbody tr:nth-child(even) {
-  background-color: #F7F7F7;
+  border-top: 1px solid hsl(213, 22%, 84%);
 }
 .bg-churn_prdict-table__container tr {
-  border: 1px solid hsl(213, 22%, 84%);
+  border-bottom: 1px solid #DFDFDF;
 }
 .bg-churn_prdict-table__container td {
   padding: 0.8rem 0.6rem;
   font-size: 14px;
   color: #222222;
+  font-weight: 500;
+}
+
+.bg-churn_prdict-table__container .bg-churn-ys {
+  color: #1EC39A;
+}
+.bg-churn_prdict-table__container .bg-churn-no {
+  color: #FF8982;
 }
 
 .bg-churnPrdict_table-head {
   color: #222222;
-  border: 1px solid hsl(213, 22%, 84%);
   font-size: 14px;
   background-color: #F7F7F7;
   position: sticky;
@@ -3566,12 +3562,56 @@ a {
 }
 .bg-churnPrdict_table-head th {
   padding: 0.8rem 0.6rem;
+  font-weight: 400;
+  color: #0E3A5D;
+  text-transform: uppercase;
 }
 
 .bg-churn_prdct--table-search {
   font-size: 12.8px;
   color: #717684;
   border-color: #DFDFDF;
+}
+
+.bg-churn_title--head {
+  color: #0E3A5D;
+  font-weight: 600;
+}
+
+.bg-churn_prdict--t-icon {
+  color: #717684;
+  font-size: 1rem;
+  margin-right: 0.3rem;
+}
+
+.bg-churn_prdict-s-icon {
+  color: #1EC39A;
+  font-size: 1rem;
+  margin-right: 0.3rem;
+}
+
+.bg-churn_prdict-l-icon {
+  color: #FF8982;
+  font-size: 1rem;
+  margin-right: 0.3rem;
+}
+
+.bg-churn_detail-table {
+  background-color: #F7F7F7;
+  border: 1px solid #DFDFDF;
+}
+
+.bg-churn_prdict-profile-pic {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50px;
+  margin-right: 0.3rem;
+  overflow: hidden;
+}
+.bg-churn_prdict-profile-pic img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .bg-sales-cust_head {
