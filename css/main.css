@@ -3688,6 +3688,45 @@ a {
   color: black;
 }
 
+.bg-customer_analysis-quarter {
+  color: #0E3A5D;
+  font-weight: 500;
+}
+
+.bg-sale_analysis-custmer-table__container {
+  border: 1px solid #DFDFDF;
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+}
+
+.bg-sale_analysis-customer--main {
+  height: 83vh;
+  overflow: auto;
+}
+
+.bg-churn_accordian-container {
+  background-color: #fff;
+  border: 1px solid #DFDFDF;
+}
+
+.bg-churn_accordian-item {
+  background-color: transparent;
+}
+
+.bg-churn_accordian--btn {
+  background-color: transparent;
+  color: #0E3A5D;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.bg-churn_accordian--btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .bg-demand-prdt_sm-head {
   font-size: 14px;
   color: #222222;

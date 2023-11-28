@@ -64,7 +64,7 @@
     border-bottom: 1px solid $stroke-color;
     color: black;
     font-weight: 500;
-   
+
     font-size: 12px;
 
 }
@@ -74,5 +74,43 @@
     font-weight: 600;
     padding: 0.4rem 0;
     color: black;
+
+}
+
+.bg-customer_analysis-quarter {
+    color: $primary-color;
+    font-weight: 500;
+}
+
+.bg-sale_analysis-custmer-table__container {
+    border: 1px solid $stroke-color;
+    border-radius: 2px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 2px;
+}
+
+.bg-sale_analysis-customer--main {
+    height: 83vh;
+    overflow: auto;
+}
+
+.bg-churn_accordian-container {
+    background-color: $white;
+    border: 1px solid $stroke-color;
+}
+
+.bg-churn_accordian-item {
+    background-color: transparent;
+}
+
+.bg-churn_accordian--btn {
+    background-color: transparent;
+    color: $primary-color;
+    font-weight: 600;
+    padding: 1rem;
+   // border-bottom: 1px solid $stroke-color;
+}
+.bg-churn_accordian--btn:focus {
+    box-shadow: none;
 
 }
