@@ -11,6 +11,7 @@
     border: 1px solid $stroke-color;
     width: 100%;
     border-radius: 4px;
+    background-color: $white;
 }
 
 .bg-sale-cust_tile {
@@ -64,7 +65,7 @@
     border-bottom: 1px solid $stroke-color;
     color: black;
     font-weight: 500;
-    padding: 0.4rem 0.2rem;
+
     font-size: 12px;
 
 }
@@ -75,4 +76,10 @@
     padding: 0.4rem 0;
     color: black;
 
+}
+.bg-churn_accordion--item{
+    background-color: transparent;
+}
+.bg-churn_accordion-btn{
+    background-color: transparent;
 }

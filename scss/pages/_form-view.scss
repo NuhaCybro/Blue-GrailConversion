@@ -161,7 +161,7 @@
 }
 
 .bg-form-view__main {
-    margin-right: 2.3rem;
+    margin-right: 5rem;
 }
 
 .bg-sidebar__icon--style {
@@ -169,8 +169,23 @@
     padding: 4px 8px;
     border-radius: 2px;
 }
-.bg-subsidebar_nav{
 
+.bg-right_smart-btn-data{
+    font-size: 11px;
+    font-weight: 500;
+    color: $main-heading;
+    padding: 0px 6px;
+    text-align: center;
+    max-width: 80px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    span{
+        max-width: 90px;
+    }
+}
+.bg-smart_btn-dashboard-container{
+    padding-right: 0px;
 }
 
 @media (max-width:768px) {
