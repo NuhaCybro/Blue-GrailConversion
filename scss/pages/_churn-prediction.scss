@@ -46,7 +46,7 @@
 }
 
 .bg-churn_tile-toChurn {
-    background-color: $danger ;
+    background-color:$link-color ;
 }
 
 .bg-churn_tile-notChurn {
@@ -54,7 +54,7 @@
 }
 .bg-churn_table{
     overflow: auto;
-    max-height: 438px;
+   
     
 }
 
@@ -149,10 +149,13 @@
  
 }
 .bg-churn_graph{
-    width: 300px;
+    width: 295px;
 
     img{
         width: 100%;
         height: auto;
     }
+}
+.bg-churn_tile-activeChurn{
+    background-color: $danger;
 }

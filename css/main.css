@@ -2285,10 +2285,6 @@ a {
   color: #222222;
   padding: 0px 6px;
   text-align: center;
-  max-width: 80px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 .bg-right_smart-btn-data span {
   max-width: 90px;
@@ -3541,7 +3537,7 @@ a {
 }
 
 .bg-churn_tile-toChurn {
-  background-color: #FF4B4B;
+  background-color: #3E54D5;
 }
 
 .bg-churn_tile-notChurn {
@@ -3550,7 +3546,6 @@ a {
 
 .bg-churn_table {
   overflow: auto;
-  max-height: 438px;
 }
 
 .bg-churn_table--container {
@@ -3648,11 +3643,15 @@ a {
 }
 
 .bg-churn_graph {
-  width: 300px;
+  width: 295px;
 }
 .bg-churn_graph img {
   width: 100%;
   height: auto;
+}
+
+.bg-churn_tile-activeChurn {
+  background-color: #FF4B4B;
 }
 
 .bg-sales-cust_head {

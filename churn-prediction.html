@@ -220,22 +220,25 @@
                                     <p class="bg-churn-sub_head">Prediction is from 2022 to 2023</p>
                                 </div>
                                 <div class="position-relative">
-                                    <button id="bgdialogBtn" class="btn bg-button-primary-stroke bg-active-btn bg-market-activity-btn" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#bg-dialogcontainer" aria-expanded="false"
-                                        aria-controls="bg-dialogcontainer">
+                                    <button id="bgdialogBtn"
+                                        class="btn bg-button-primary-stroke bg-active-btn bg-market-activity-btn"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#bg-dialogcontainer"
+                                        aria-expanded="false" aria-controls="bg-dialogcontainer">
                                         Filters
                                     </button>
-                                    <div class="bg-marketing-auto_add-parent-container  collapse" id="bg-dialogcontainer">
-    
+                                    <div class="bg-marketing-auto_add-parent-container  collapse"
+                                        id="bg-dialogcontainer">
+
                                         <div class="bg-market-dialog-header p-3 bg-border-btm">
                                             <h2 class="bg-marketing-auto-dialog-head">Churn Filters</h2>
                                         </div>
                                         <form action="" class="p-3">
                                             <label for="" class="bg-marketing-auto-dialog-txt">Input</label>
                                             <div class="col-12">
-                                                <input type="text" class="bg-button-stroke w-100 p-1  bg-market-modal-selection-box">
+                                                <input type="text"
+                                                    class="bg-button-stroke w-100 p-1  bg-market-modal-selection-box">
                                             </div>
-                                          
+
                                             <div class="col-12  my-3">
                                                 <label for="" class="bg-marketing-auto-dialog-txt">Period</label>
                                                 <div class="dropdown">
@@ -264,9 +267,9 @@
                                                         </li>
                                                     </ul>
                                                 </div>
-    
+
                                             </div>
-                                              
+
                                             <div class="col-12  my-3">
                                                 <label for="" class="bg-marketing-auto-dialog-txt">Current Date</label>
                                                 <div class="dropdown">
@@ -295,57 +298,63 @@
                                                         </li>
                                                     </ul>
                                                 </div>
-    
+
                                             </div>
                                             <div class="d-flex gap-2 mt-3">
                                                 <button class="bg-button-primary-stroke py-2 px-4 bg-active-btn w-100 ">
                                                     Apply Filter
                                                 </button>
-                                              
+
                                             </div>
-    
+
                                         </form>
-    
+
                                     </div>
                                 </div>
-                               
+
                             </div>
                         </div>
                     </div>
-
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <div class="d-flex flex-wrap gap-2 mb-3">
-                                <div class="col bg-churn_tile d-flex justify-content-center
-                                    flex-column">
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <i class="ri-team-fill bg-churn_tile--icon"></i>
-                                        <p class="bg-churn_tile-text"> Total Customer</p>
-                                    </div>
-                                    <h2 class="bg-churn_tile--perc"> 100%</h2>
-
+                   
+                    <div class="row ">
+                        <div class="d-flex flex-wrap gap-2 mb-4">
+                            <div class="col bg-churn_tile d-flex justify-content-center
+                                flex-column">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <i class="ri-team-fill bg-churn_tile--icon"></i>
+                                    <p class="bg-churn_tile-text"> Total Customer</p>
                                 </div>
-                                <div class="col bg-churn_tile d-flex justify-content-center
-                                    flex-column">
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <i
-                                            class="ri-arrow-right-down-line bg-churn_tile--icon bg-churn_tile-toChurn"></i>
-                                        <p class="bg-churn_tile-text">Customers likely to be not churn</p>
-                                    </div>
-                                    <h2 class="bg-churn_tile--perc">56%</h2>
-
-                                </div>
-                                <div class="col  bg-churn_tile d-flex justify-content-center
-                                    flex-column">
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <i
-                                            class="ri-arrow-right-up-line bg-churn_tile--icon bg-churn_tile-notChurn"></i>
-                                        <p class="bg-churn_tile-text">Customers likely to be churn</p>
-                                    </div>
-                                    <h2 class="bg-churn_tile--perc">65%</h2>
-                                </div>
+                                <h2 class="bg-churn_tile--perc"> 100%</h2>
+    
                             </div>
-
+                            <div class="col bg-churn_tile d-flex justify-content-center
+                                flex-column">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <i class="ri-check-fill bg-churn_tile--icon bg-churn_tile-activeChurn"></i>
+                                    <p class="bg-churn_tile-text">Active</p>
+                                </div>
+                                <h2 class="bg-churn_tile--perc">86%</h2>
+    
+                            </div>
+                            <div class="col  bg-churn_tile d-flex justify-content-center
+                                flex-column">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <i class="ri-arrow-right-down-line bg-churn_tile--icon bg-churn_tile-notChurn "></i>
+                                    <p class="bg-churn_tile-text">Customers likely to be not churn</p>
+                                </div>
+                                <h2 class="bg-churn_tile--perc">65%</h2>
+                            </div>
+                            <div class="col  bg-churn_tile d-flex justify-content-center
+                            flex-column">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <i class="ri-arrow-right-up-line bg-churn_tile--icon bg-churn_tile-toChurn"></i>
+                                    <p class="bg-churn_tile-text">Customers likely to be churn</p>
+                                </div>
+                                <h2 class="bg-churn_tile--perc">65%</h2>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-8">
 
                             <div class="bg-churn_table--container">
 
@@ -370,7 +379,7 @@
 
                                     </div>
 
-                                </div >
+                                </div>
                                 <div class="bg-churn_table">
                                     <table class="bg-listView-table bg-churn_predict--table">
                                         <thead class="bg-listview-head bg-churn-prdt_thead">
@@ -455,6 +464,42 @@
                                                 <td>08/03/2023 09:10:01</td>
                                                 <td>0</td>
                                                 <td>1</td>
+                                                <td><span class="bg-churn__success">Yes</span></td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="bg-ps_profile bg-ps_profile-jd">JD</span>Jane
+                                                    Doe
+                                                </td>
+                                                <td>08/03/2023 09:10:01</td>
+                                                <td>0</td>
+                                                <td>1</td>
+                                                <td><span class="bg-churn__success">Yes</span></td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="bg-ps_profile bg-ps_profile-sr">sr</span>Sean
+                                                    Rogers
+                                                </td>
+                                                <td>08/03/2023 09:10:01</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td><span class="bg-churn__success bg-churn__failed">No</span></td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="bg-ps_profile bg-ps_profile-sr">sr</span>Sean
+                                                    Rogers
+                                                </td>
+                                                <td>08/03/2023 10:22:44</td>
+                                                <td>1</td>
+                                                <td>0</td>
                                                 <td><span class="bg-churn__success">Yes</span></td>
 
 
