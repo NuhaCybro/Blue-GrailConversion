@@ -45,6 +45,7 @@
     //  overflow: auto;
     overflow: hidden;
     margin: 1rem 0;
+    background-color: $white;
 }
 
 .bg-demand_prediction-table_list {
@@ -65,6 +66,9 @@
     list-style: none;
     height: 68vh;
     overflow-y: auto;
+    background-color: $white;
+    padding: 0.8rem;
+    margin-top: 1rem;
 }
 
 .bg-demand_predict-list_item {

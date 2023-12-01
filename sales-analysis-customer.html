@@ -207,24 +207,27 @@
                 </div>
             </nav>
             <main class="col-md-9 ms-sm-auto col-lg-10 bg-main ">
-               
+
                 <div class="row px-3 pt-3">
 
                     <div class="col-md-6 col-lg-8 pb-4">
-                        <h2 class="bg-sale-analysis_head">Joel Willis</h2>
-                        <div class="d-flex flex-wrap gap-3 pt-4">
-                            <div class="col bg-sales-analysis__tile  py-4">
+                        <h2 class="bg-churn-main_head">Joel Willis</h2>
+                        <div class="d-flex flex-wrap gap-3 pt-2">
+                            <div class="col bg-churn_tile  py-3">
 
-                                <h2 class="bg-sales-cust_head">Churn:01</h2>
+                                <h2 class="bg-churn_tile-text">Churn</h2>
+                                <span class="bg-churn_tile--perc">01</span>
 
                             </div>
 
-                            <div class="col bg-sales-analysis__tile  py-4">
-                                <h2 class="bg-sales-cust_head">Probabilty of Churn:0.01</h2>
+                            <div class="col bg-churn_tile  py-3">
+                                <h2 class="bg-churn_tile-text">Probabilty of Churn</h2>
+                                <span class="bg-churn_tile--perc">0.01</span>
                             </div>
 
-                            <div class="col bg-sales-analysis__tile  py-4">
-                                <h2 class="bg-sales-cust_head">Probabilty of Churn:0.99</h2>
+                            <div class="col bg-churn_tile  py-3">
+                                <h2 class="bg-churn_tile-text">Probabilty of Churn</h2>
+                                <span class="bg-churn_tile--perc">0.99</span>
                             </div>
                         </div>
 
@@ -238,9 +241,9 @@
                                     <div class="bg-sales-analysis_custom-headline">Start date</div>
                                     <div class="bg-sales-analysis_custom-headline">End date</div>
                                 </div>
-                                <div class="d-flex  justify-content-around">
+                                <div class="d-flex  justify-content-around bg-sales-analysis_table-row">
                                     <div class="bg-dashboard_cell">
-                                        <p>Quarter-1</p>
+                                        <p class="bg-sale-analysis-cust_highlight-txt">Quarter-1</p>
                                     </div>
                                     <div class="bg-dashboard_cell">
                                         <p>2022-10-01</p>
@@ -249,9 +252,9 @@
                                         <p>2022-12-31</p>
                                     </div>
                                 </div>
-                                <div class="d-flex  justify-content-around">
+                                <div class="d-flex  justify-content-around bg-sales-analysis_table-row">
                                     <div class="bg-dashboard_cell">
-                                        <p>Quarter-1</p>
+                                        <p class="bg-sale-analysis-cust_highlight-txt">Quarter-1</p>
                                     </div>
                                     <div class="bg-dashboard_cell">
                                         <p>2022-10-01</p>
@@ -260,9 +263,9 @@
                                         <p>2022-12-31</p>
                                     </div>
                                 </div>
-                                <div class="d-flex  justify-content-around">
+                                <div class="d-flex  justify-content-around bg-sales-analysis_table-row">
                                     <div class="bg-dashboard_cell">
-                                        <p>Quarter-1</p>
+                                        <p class="bg-sale-analysis-cust_highlight-txt">Quarter-1</p>
                                     </div>
                                     <div class="bg-dashboard_cell">
                                         <p>2022-10-01</p>
@@ -271,9 +274,9 @@
                                         <p>2022-12-31</p>
                                     </div>
                                 </div>
-                                <div class="d-flex  justify-content-around">
+                                <div class="d-flex  justify-content-around bg-sales-analysis_table-row">
                                     <div class="bg-dashboard_cell">
-                                        <p>Quarter-1</p>
+                                        <p class="bg-sale-analysis-cust_highlight-txt">Quarter-1</p>
                                     </div>
                                     <div class="bg-dashboard_cell">
                                         <p>2022-10-01</p>
@@ -282,9 +285,9 @@
                                         <p>2022-12-31</p>
                                     </div>
                                 </div>
-                                <div class="d-flex  justify-content-around">
+                                <div class="d-flex  justify-content-around bg-sales-analysis_table-row">
                                     <div class="bg-dashboard_cell">
-                                        <p>Quarter-1</p>
+                                        <p class="bg-sale-analysis-cust_highlight-txt">Quarter-1</p>
                                     </div>
                                     <div class="bg-dashboard_cell">
                                         <p>2022-10-01</p>
@@ -293,9 +296,9 @@
                                         <p>2022-12-31</p>
                                     </div>
                                 </div>
-                                <div class="d-flex  justify-content-around">
+                                <div class="d-flex  justify-content-around bg-sales-analysis_table-row">
                                     <div class="bg-dashboard_cell">
-                                        <p>Quarter-1</p>
+                                        <p class="bg-sale-analysis-cust_highlight-txt">Quarter-1</p>
                                     </div>
                                     <div class="bg-dashboard_cell">
                                         <p>2022-10-01</p>
@@ -304,9 +307,9 @@
                                         <p>2022-12-31</p>
                                     </div>
                                 </div>
-                                <div class="d-flex  justify-content-around">
+                                <div class="d-flex  justify-content-around bg-sales-analysis_table-row">
                                     <div class="bg-dashboard_cell">
-                                        <p>Quarter-1</p>
+                                        <p class="bg-sale-analysis-cust_highlight-txt">Quarter-1</p>
                                     </div>
                                     <div class="bg-dashboard_cell">
                                         <p>2022-10-01</p>
@@ -323,54 +326,159 @@
                     <div class="d-flex flex-wrap">
                         <div class="col-12 col-md-6 p-2">
 
-                            <div class="bg-sale_cust--img-container ">
-                                <p class="bg-sale_cust-graph-title">Total Sales Order</p>
-                                <img src="images/bar-graph.png" alt="" class="bg-sheet-img">
+                            <div class="bg-button-stroke ">
+                                <div class="bg-border-btm p-3">
+                                    <h2 class="bg-churn_tile-text">Total Sales Amount</h2>
+                                </div>
+                                <div class="p-3">
+                                    <img src="images/bar-graph.png" alt="" class="bg-sheet-img">
+                                </div>
+
                             </div>
                         </div>
                         <div class="col-12 col-md-6 p-2">
-                            <div class="bg-sale_cust--img-container ">
-                                <p class="bg-sale_cust-graph-title">Total Sales Amount</p>
-                                <img src="images/bar-graph.png" alt="" class="bg-sheet-img">
+                            <div class="bg-button-stroke ">
+                                <div class="bg-border-btm p-3">
+                                    <h2 class="bg-churn_tile-text">Total Sales Amount</h2>
+                                </div>
+                                <div class="p-3">
+                                    <img src="images/bar-graph.png" alt="" class="bg-sheet-img">
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col my-4">
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class=" bg-button-stroke p-3 accordion-flush" id="accordionFlushExample">
                             <div class="accordion-item bg-churn_accordion--item">
-                              <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed bg-churn_accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                  Quarter 1
-                                </button>
-                              </h2>
-                              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                              </div>
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed bg-churn_accordion-btn" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                        aria-expanded="false" aria-controls="flush-collapseOne">
+                                        Quarter 1
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="bg-churn_table bg-button-stroke">
+                                            <table class="bg-listView-table bg-churn_predict--table">
+                                                <thead class="bg-listview-head bg-churn-prdt_thead">
+                                                    <tr>
+
+                                                        <th>Order Number</th>
+                                                        <th>Date</th>
+                                                        <th>Salesperson</th>
+                                                        <th>Untaxed Amount</th>
+                                                        <th>Total</th>
+                                                        <th>Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            S01956
+                                                        </td>
+                                                        <td>08/03/2023 10:22:44</td>
+                                                        <td>Mitchell Admin</td>
+                                                        <td>27263.7</td>
+                                                        <td>31353.49</td>
+                                                        <td>Sale</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="accordion-item bg-churn_accordion--item">
-                              <h2 class="accordion-header" id="flush-headingTwo">
-                                <button class="accordion-button collapsed bg-churn_accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                 Quarter 2
-                                </button>
-                              </h2>
-                              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                              </div>
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed bg-churn_accordion-btn" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                        aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        Quarter 2
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="bg-churn_table bg-button-stroke">
+                                            <table class="bg-listView-table bg-churn_predict--table">
+                                                <thead class="bg-listview-head bg-churn-prdt_thead">
+                                                    <tr>
+
+                                                        <th>Order Number</th>
+                                                        <th>Date</th>
+                                                        <th>Salesperson</th>
+                                                        <th>Untaxed Amount</th>
+                                                        <th>Total</th>
+                                                        <th>Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            S01956
+                                                        </td>
+                                                        <td>08/03/2023 10:22:44</td>
+                                                        <td>Mitchell Admin</td>
+                                                        <td>27263.7</td>
+                                                        <td>31353.49</td>
+                                                        <td>Sale</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="accordion-item bg-churn_accordion--item">
-                              <h2 class="accordion-header" id="flush-headingThree">
-                                <button class="accordion-button collapsed bg-churn_accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                    Quarter 3
-                                </button>
-                              </h2>
-                              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                              </div>
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed bg-churn_accordion-btn" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                        aria-expanded="false" aria-controls="flush-collapseThree">
+                                        Quarter 3
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="bg-churn_table bg-button-stroke">
+                                            <table class="bg-listView-table bg-churn_predict--table">
+                                                <thead class="bg-listview-head bg-churn-prdt_thead">
+                                                    <tr>
+
+                                                        <th>Order Number</th>
+                                                        <th>Date</th>
+                                                        <th>Salesperson</th>
+                                                        <th>Untaxed Amount</th>
+                                                        <th>Total</th>
+                                                        <th>Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            S01956
+                                                        </td>
+                                                        <td>08/03/2023 10:22:44</td>
+                                                        <td>Mitchell Admin</td>
+                                                        <td>27263.7</td>
+                                                        <td>31353.49</td>
+                                                        <td>Sale</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
+                        </div>
                     </div>
-                    
+
 
                 </div>
 

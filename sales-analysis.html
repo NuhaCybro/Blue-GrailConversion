@@ -207,6 +207,75 @@
                             <div class="d-flex align-items-center gap-3">
                                 <div class="bg-sales-analysis_date">Start date</div>
                                 <div class="bg-sales-analysis_date">29-1-2023</div>
+                                <div class="position-relative">
+                                    <button id="bgdialogBtn"
+                                        class="btn bg-button-primary-stroke bg-active-btn bg-market-activity-btn"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#bg-dialogcontainer"
+                                        aria-expanded="false" aria-controls="bg-dialogcontainer">
+                                        Filters
+                                    </button>
+                                    <div class="bg-marketing-auto_add-parent-container  collapse"
+                                        id="bg-dialogcontainer">
+
+                                        <div class="bg-market-dialog-header p-3 bg-border-btm">
+                                            <h2 class="bg-marketing-auto-dialog-head">Sales Analysis Filters</h2>
+                                        </div>
+                                        <form action="" class="p-3">
+                                            <label for="" class="bg-marketing-auto-dialog-txt">User</label>
+                                            <div class="col-12">
+                                                <input type="text"
+                                                    class="bg-button-stroke w-100 p-1  bg-market-modal-selection-box">
+                                            </div>
+                                            <label for="" class="bg-marketing-auto-dialog-txt">Company</label>
+                                            <div class="col-12">
+                                                <input type="text"
+                                                    class="bg-button-stroke w-100 p-1  bg-market-modal-selection-box">
+                                            </div>
+
+
+                                            <div class="col-12  my-3">
+                                                <label for="" class="bg-marketing-auto-dialog-txt">Time frame</label>
+                                                <div class="dropdown">
+                                                    <button
+                                                        class="btn dropdown-toggle bg-sale-forecast-dropdown bg-button-stroke w-100  bg-market-modal-selection-box"
+                                                        id="chatDropdown" role="button" data-bs-toggle="dropdown"
+                                                        aria-expanded="true">
+                                                        Select period
+                                                    </button>
+                                                    <ul class="dropdown-menu w-100 " aria-labelledby="chatDropdown"
+                                                        data-popper-placement="bottom-start"
+                                                        style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 36px, 0px);">
+                                                        <li><button class="dropdown-item bg-drop-down-item"
+                                                                href="#">Forecast Option
+                                                                1</button>
+                                                        </li>
+                                                        <li><button class="dropdown-item  bg-drop-down-item"
+                                                                href="#">Forecast
+                                                                Option
+                                                                2</button>
+                                                        </li>
+                                                        <li><button class="dropdown-item  bg-drop-down-item"
+                                                                href="#">Forecast
+                                                                Option
+                                                                3</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+                                            
+                                            <div class="d-flex gap-2 mt-3">
+                                                <button class="bg-button-primary-stroke py-2 px-4 bg-active-btn w-100 ">
+                                                    Apply Filter
+                                                </button>
+
+                                            </div>
+
+                                        </form>
+
+                                    </div>
+                                </div>
                                 <a href="" class="bg-cofigr-btn"><i class="ri-add-circle-line bg-icons"></i></a>
                             </div>
                             <div class="d-flex">
@@ -261,7 +330,7 @@
                                 <div class="col-lg-4  ">
                                     <div class="row flex-column">
                                         <div class="col mb-3">
-                                            <div class="bg-sale-amalysis_graph-container">
+                                            <div class="bg-button-stroke p-3">
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="bg-sale-team-name">Sales Team</span>
                                                     <div class="nav-item dropdown">
@@ -282,7 +351,7 @@
                                             </div>
                                         </div>
                                         <div class="col mb-3">
-                                            <div class="bg-sale-amalysis_graph-container">
+                                            <div class="bg-button-stroke p-3">
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="bg-sale-team-name">Sales Team</span>
                                                     <div class="nav-item dropdown">
@@ -308,7 +377,7 @@
                                 <div class="col-lg-4 ">
                                     <div class="row flex-column">
                                         <div class="col mb-3">
-                                            <div class="bg-sale-amalysis_graph-container">
+                                            <div class="bg-button-stroke p-3">
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="bg-sale-team-name">Sales Team</span>
                                                     <div class="nav-item dropdown">
@@ -330,7 +399,7 @@
                                         </div>
 
                                         <div class="col mb-3">
-                                            <div class="bg-sale-amalysis_graph-container">
+                                            <div class="bg-button-stroke p-3">
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="bg-sale-team-name">Sales Team</span>
                                                     <div class="nav-item dropdown">
@@ -357,7 +426,7 @@
                                 <div class=" col-lg-4 ">
                                     <div class="row h-100">
                                         <div class="col h-100 mb-3">
-                                            <div class="bg-sale-amalysis_graph-container h-100">
+                                            <div class="bg-button-stroke p-3 h-100">
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="bg-sale-team-name">Sales Team</span>
                                                     <div class="nav-item dropdown">

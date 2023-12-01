@@ -25,25 +25,30 @@
 }
 
 .bg-sale-custom_detial-table {
-    height: 150px;
+    height: 160px;
     overflow-y: auto;
     display: block;
 
     @media (max-width:992px) {
-        height: 340px;
+        height: fit-content;
     }
 
     @media (max-width:768px) {
-        height: 260px;
+        height: fit-content;
 
     }
 }
 
 .bg-sale-custom_detial-table {
+
     tbody {
         td {
             padding: 0.2rem 2rem;
         }
+    }
+
+    .bg-sales-analysis_table-row:nth-child(even) {
+        background-color: $secondary-bg;
     }
 }
 
@@ -77,9 +82,30 @@
     color: black;
 
 }
-.bg-churn_accordion--item{
+
+.bg-churn_accordion--item {
     background-color: transparent;
 }
-.bg-churn_accordion-btn{
+
+.bg-churn_accordion-btn {
     background-color: transparent;
+}
+
+.bg-sale-analysis-cust_highlight-txt {
+    color: $blue;
+    font-weight: 500;
+}
+
+.bg-churn_accordion-btn {
+    color: #222222;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0px;
+    
+    &:hover,
+    &:focus {
+        box-shadow: none;
+        background-color: $secondary-bg;
+        color: $link-color;
+    }
 }

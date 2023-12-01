@@ -3342,6 +3342,7 @@ a {
   border-radius: 6px;
   font-weight: 500;
   height: 36px;
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3361,7 +3362,8 @@ a {
 .bg-sales-analysis__tile {
   padding: 1rem 1.2rem;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 2px;
+  border: 1px solid #dfdfdf;
   -webkit-box-shadow: 0px 0.5px 2px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0.5px 2px 0px rgba(0, 0, 0, 0.1);
 }
@@ -3683,23 +3685,30 @@ a {
 }
 
 .bg-sale-custom_detial-table {
-  height: 150px;
+  height: 160px;
   overflow-y: auto;
   display: block;
 }
 @media (max-width: 992px) {
   .bg-sale-custom_detial-table {
-    height: 340px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 @media (max-width: 768px) {
   .bg-sale-custom_detial-table {
-    height: 260px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 
 .bg-sale-custom_detial-table tbody td {
   padding: 0.2rem 2rem;
+}
+.bg-sale-custom_detial-table .bg-sales-analysis_table-row:nth-child(even) {
+  background-color: #FAFAFA;
 }
 
 .bg-dashboard_cell {
@@ -3735,6 +3744,24 @@ a {
 
 .bg-churn_accordion-btn {
   background-color: transparent;
+}
+
+.bg-sale-analysis-cust_highlight-txt {
+  color: #0E3A5D;
+  font-weight: 500;
+}
+
+.bg-churn_accordion-btn {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.bg-churn_accordion-btn:hover, .bg-churn_accordion-btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #FAFAFA;
+  color: #3E54D5;
 }
 
 .bg-demand-prdt_sm-head {
@@ -3783,6 +3810,7 @@ a {
   position: relative;
   overflow: hidden;
   margin: 1rem 0;
+  background-color: #fff;
 }
 
 .bg-demand_prediction-table_list {
@@ -3803,6 +3831,9 @@ a {
   list-style: none;
   height: 68vh;
   overflow-y: auto;
+  background-color: #fff;
+  padding: 0.8rem;
+  margin-top: 1rem;
 }
 
 .bg-demand_predict-list_item {
@@ -4052,6 +4083,7 @@ a {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  z-index: 9;
 }
 
 .bg-marketing-auto-dialog-head {
@@ -4393,4 +4425,68 @@ a {
 
 .bg-userdashboard_system-detail {
   min-width: 100px;
+}
+
+.bg-sidebar-nav:hover {
+  color: #3E54D5;
+}
+
+.bg-sidebar-nav.bg-active-nav .bg-sidebar__icon--style {
+  color: #3E54D5;
+}
+
+.bg-sub_nav {
+  list-style: none;
+  border-left: 1.2px solid #3E54D5;
+  padding: 0px;
+  margin-left: 3rem;
+}
+
+.bg-notification {
+  border-radius: 2px;
+  border: 1px solid #dfdfdf;
+  background: #fff;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+  min-width: 320px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0px;
+  margin: 0.9rem;
+}
+
+.bg-notifi_state {
+  padding: 0.8rem;
+  font-weight: 500;
+  color: #fff;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bg-noti_success {
+  background-color: #5EB717;
+}
+
+.bg-notifi_msg {
+  padding: 0.8rem;
+  font-size: 14px;
+  color: #222222;
+  font-weight: 400;
+}
+
+.bg-noti_failed {
+  background-color: #FF4B4B;
+}
+
+.bg-noti_warning {
+  background-color: #FFC107;
 }

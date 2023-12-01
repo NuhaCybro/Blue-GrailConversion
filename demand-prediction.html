@@ -16,27 +16,20 @@
         <div class="container-fluid">
             <a class="navbar-brand bg-logo-img" href="#">
                 <img src="images/BlueGrail.svg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                <span class="bg-navbar-title">Sales</span>
             </a>
             <ul class="navbar-nav bg-search_navbar-nav">
                 <li class="nav-item">
                     <form class="d-flex">
-                        <div class="input-group">
-                            <span class="input-group-text bg-search">
-                                <i class="ri-search-line bg-search-icon"></i>
-                            </span>
-                            <input class="form-control bg-custom-search " type="search" placeholder="Search"
-                                aria-label="Search">
-                            <span class="input-group-text bg-search_property">
-                                <i class="ri-command-line bg-search-icon bg-searchbox-K bg-button-stroke"></i>
-                            </span>
-                            <span class="input-group-text bg-search_property">
-                                <a href="" class="bg-searchbox-K bg-button-stroke"> K</a>
-                            </span>
+                        <div class="input-group bg-search-group">
+                            <i class="ri-search-line bg-search-icon"></i>
+                            <input class="form-control bg-custom-search" type="search"
+                                placeholder="Try searching for an app, user or a setting..." aria-label="Search">
                         </div>
                     </form>
                 </li>
             </ul>
-            <ul class="navbar-nav d-flex flex-row ms-auto align-items-center">
+            <ul class="navbar-nav d-flex flex-row align-items-center">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle bg-dropdown-arrow" href="#" id="chatDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
@@ -48,7 +41,6 @@
                         <li><a class="dropdown-item" href="#">Chat Option 3</a></li>
                     </ul>
                 </li>
-
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle bg-dropdown-arrow bg-clock-container" href="#" id="clockDropdown"
@@ -65,7 +57,9 @@
                 <li class="nav-item">
                     <a class="nav-link bg-nav-links" href="#">
                         <span>Acme, Inc.</span>
-                        <img src="images/user-profile.png" alt="Profile" class="profile-pic rounded-circle me-2">
+                        <div class="bg-profile-pic-container bg-profile-pic-container--online">
+                            <img src="images/user-profile.png" alt="Profile" class="profile-pic me-2">
+                        </div>
                     </a>
                 </li>
             </ul>
@@ -205,62 +199,70 @@
                 </div>
             </nav>
 
-            <main class="col-md-9 ms-sm-auto col-lg-10 ">
+            <main class="col-md-9 ms-sm-auto col-lg-10 bg-main">
                 <div class="row py-2">
                     <div class="d-flex py-2 gap-3">
                         <span class="bg-demand-predit_head">Demand Prediction</span>
-                        <div class="d-flex flex-wrap flex-lg-nowrap align-items-center justify-content-end gap-3">
-                            <div>
-                                <p class="bg-demand-prdt_sm-head">Actual Sales</p>
-                                <div class="d-flex">
-                                    <div class="d-flex align-items-center">
-                                        <span class="bg-demand-prdt_label">Start Date:</span><input type="text"
-                                            class="form-control bg-button-stroke bg-demand_predit-input"
-                                            id="inputAddress" placeholder="">
+                        <div class="d-flex flex-wrap flex-lg-nowrap align-items-center justify-content-end gap-3 w-100">
+                           
+                            <div class="position-relative">
+                                <button id="bgdialogBtn" class="btn bg-button-primary-stroke bg-active-btn bg-market-activity-btn" type="button" data-bs-toggle="collapse" data-bs-target="#bg-dialogcontainer" aria-expanded="false" aria-controls="bg-dialogcontainer">
+                                    Filters
+                                </button>
+                                <div class="bg-marketing-auto_add-parent-container  collapse" id="bg-dialogcontainer">
 
+                                    <div class="bg-market-dialog-header p-3 bg-border-btm">
+                                        <h2 class="bg-marketing-auto-dialog-head">Demand Prediction Filters</h2>
                                     </div>
-                                    <div class="d-flex align-items-center">
-                                        <span class="bg-demand-prdt_label">End Date:</span><input type="text"
-                                            class="form-control bg-button-stroke  bg-demand_predit-input"
-                                            id="inputAddress" placeholder="">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div>
-                                <p class="bg-demand-prdt_sm-head">Predicted Sales</p>
-                                <div class="d-flex">
-                                    <div class="d-flex align-items-center">
-                                        <span class="bg-demand-prdt_label">Future Periods:</span><input type="text"
-                                            class="form-control bg-button-stroke  bg-demand_predit-input"
-                                            id="inputAddress" placeholder="">
-
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <span class="bg-demand-prdt_label">Frequency:</span>
-                                        <div class="dropdown">
-                                            <button
-                                                class="btn dropdown-toggle bg-sale-forecast-dropdown bg-button-stroke w-100  bg-demand_predit-input"
-                                                id="chatDropdown" role="button" data-bs-toggle="dropdown"
-                                                aria-expanded="false">
-                                                Day
-                                            </button>
-                                            <ul class="dropdown-menu w-100" aria-labelledby="chatDropdown">
-                                                <li><button class="dropdown-item bg-drop-down-item" href="#">Forecast
-                                                        Option
-                                                        1</button>
-                                                </li>
-                                                <li><button class="dropdown-item  bg-drop-down-item" href="#">Forecast
-                                                        Option
-                                                        2</button>
-                                                </li>
-                                                <li><button class="dropdown-item  bg-drop-down-item" href="#">Forecast
-                                                        Option
-                                                        3</button>
-                                                </li>
-                                            </ul>
+                                    <form action="" class="p-3">
+                                        <p class="mb-2">Actual Sales</p>
+                                        <label for="" class="bg-marketing-auto-dialog-txt">start date</label>
+                                        <div class="col-12">
+                                            <input type="text" class="bg-button-stroke w-100 p-1  bg-market-modal-selection-box">
                                         </div>
-                                    </div>
+                                        <label for="" class="bg-marketing-auto-dialog-txt">End date</label>
+                                        <div class="col-12">
+                                            <input type="text" class="bg-button-stroke w-100 p-1  bg-market-modal-selection-box">
+                                        </div>
+                                        <p class="mb-2">Predicted Sales</p>
+                                        <label for="" class="bg-marketing-auto-dialog-txt">Future periods</label>
+                                        <div class="col-12">
+                                            <input type="text" class="bg-button-stroke w-100 p-1  bg-market-modal-selection-box">
+                                        </div>
+                                       
+                                        <div class="col-12  my-3 mt-1">
+                                            <label for="" class="bg-marketing-auto-dialog-txt">Frequency</label>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle bg-sale-forecast-dropdown bg-button-stroke w-100  bg-market-modal-selection-box" id="chatDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                                                    Select period
+                                                </button>
+                                                <ul class="dropdown-menu w-100 " aria-labelledby="chatDropdown" data-popper-placement="bottom-start" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 36px, 0px);">
+                                                    <li><button class="dropdown-item bg-drop-down-item" href="#">Forecast Option
+                                                            1</button>
+                                                    </li>
+                                                    <li><button class="dropdown-item  bg-drop-down-item" href="#">Forecast
+                                                            Option
+                                                            2</button>
+                                                    </li>
+                                                    <li><button class="dropdown-item  bg-drop-down-item" href="#">Forecast
+                                                            Option
+                                                            3</button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+
+                                        
+                                        <div class="d-flex gap-2 mt-3">
+                                            <button class="bg-button-primary-stroke py-2 px-4 bg-active-btn w-100 ">
+                                                Apply Filter
+                                            </button>
+
+                                        </div>
+
+                                    </form>
+
                                 </div>
                             </div>
 
@@ -289,8 +291,8 @@
                 <div class="row">
                     <div class="col-md-3 col-lg-2 ">
 
-                        <p class="bg-demand-prdt_sm-head text-center">Product/Services</p>
-                        <ul class="bg-demand_predict-list">
+                        <p class="bg-churn_tile-text text-center">Product/Services</p>
+                        <ul class="bg-demand_predict-list bg-button-stroke">
                             <li class="bg-sheet-draggable-btn text-center mb-2"><span>6 seated Fabric Sofa
                                     set</span></li>
                             <li class=" bg-sheet-draggable-btn text-center mb-2"><span>Acoustic Bloc Screen</span>
@@ -322,7 +324,7 @@
 
                     </div>
                     <div class="col-md-9 col-lg-10">
-                        <span class="bg-demand-prdt_sm-head">Product: Armchair</span>
+                        <span class="bg-churn_tile-text">Product: Armchair</span>
 
                         <div class="row bg-demand_prediction-table flex-nowrap">
                             <div class="col-8 p-0 bg-demand_sub-table">

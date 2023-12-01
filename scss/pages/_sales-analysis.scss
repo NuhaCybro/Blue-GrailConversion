@@ -24,7 +24,7 @@
     border-radius: 6px;
     font-weight: 500;
     height: 36px;
-
+    background-color: $white;
     display: flex;
     align-items: center;
 
@@ -39,7 +39,8 @@
 .bg-sales-analysis__tile {
     padding: 1rem 1.2rem;
     background-color: $white;
-    border-radius: 5px;
+    border-radius: 2px;
+    border: 1px solid $stroke-color;
     box-shadow: 0px 0.5px 2px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -87,6 +88,7 @@
     color: $main-heading;
     font-weight: 500;
 }
-.bg-kpi_modal-container{
-display: none;
+
+.bg-kpi_modal-container {
+    display: none;
 }

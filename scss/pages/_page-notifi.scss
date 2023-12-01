@@ -1,0 +1,56 @@
+
+.bg-sidebar-nav{
+   
+    &:hover{
+        color: $link-color;
+      
+    }
+}
+
+.bg-sidebar-nav.bg-active-nav{
+    .bg-sidebar__icon--style{
+        color: $link-color;
+    }
+}
+
+.bg-sub_nav{
+    list-style: none;
+    border-left: 1.2px solid $link-color;
+    padding: 0px;
+    margin-left: 3rem;
+}
+.bg-notification{
+    border-radius: 2px;
+    border: 1px solid #dfdfdf;
+    background: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+    min-width: 320px;
+    width: max-content;
+    padding: 0px;
+    margin: 0.9rem;
+   
+}
+.bg-notifi_state{
+    padding: 0.8rem;
+    font-weight: 500;
+    color: $white;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bg-noti_success{
+    background-color: $active-btn;
+}
+.bg-notifi_msg{
+    padding: 0.8rem;
+    font-size: 14px;
+    color: $main-heading;
+    font-weight: 400;
+}
+.bg-noti_failed{
+    background-color: $danger;
+}
+.bg-noti_warning{
+    background-color: #FFC107;
+}
