@@ -226,49 +226,79 @@
                     </a>
                 </div>
             </nav>
-            <main class="col-md-9 ms-sm-auto col-lg-10 bg-main main-card-box__container">
+            <main class="col-md-9 ms-sm-auto col-lg-10 bg-main main-card-box__container p-0">
+                <div class="wrapper bg-main_wrapper">
 
-                <div class="row p-3 pb-3">
+                    <div class="row p-3 pb-3">
 
-                    <div class="bg-notification">
-                        <div class="bg-notifi_state bg-noti_success">
-                            <span class="d-flex align-items-center gap-2"><i class="ri-check-line"></i> Success</span>
-                            <span><i class="ri-close-line"></i></span>
+                        <div class="bg-notification">
+                            <div class="bg-notifi_state bg-noti_success">
+                                <span class="d-flex align-items-center gap-2"><i class="ri-check-line"></i>
+                                    Success</span>
+                                <span><i class="ri-close-line"></i></span>
+                            </div>
+                            <div class="bg-notifi_msg">
+                                <span>Message Sent</span>
+                            </div>
                         </div>
-                        <div class="bg-notifi_msg">
-                            <span>Message Sent</span>
+
+                        <div class="bg-notification">
+                            <div class="bg-notifi_state bg-noti_failed">
+                                <span class="d-flex align-items-center gap-2"><i
+                                        class="ri-error-warning-line"></i>Error</span>
+                                <span><i class="ri-close-line"></i></span>
+                            </div>
+                            <div class="bg-notifi_msg">
+                                <span>Message Not Sent</span>
+                            </div>
                         </div>
+                        <div class="bg-notification">
+                            <div class="bg-notifi_state bg-noti_warning">
+                                <span class="d-flex align-items-center gap-2"><i
+                                        class="ri-alarm-warning-line"></i>Warning</span>
+                                <span><i class="ri-close-line"></i></span>
+                            </div>
+                            <div class="bg-notifi_msg">
+                                <span>Message Not Sent</span>
+                            </div>
+                        </div>
+                  
+                        
                     </div>
 
-                    <div class="bg-notification">
-                        <div class="bg-notifi_state bg-noti_failed">
-                            <span class="d-flex align-items-center gap-2"><i class="ri-error-warning-line"></i>Error</span>
-                            <span><i class="ri-close-line"></i></span>
-                        </div>
-                        <div class="bg-notifi_msg">
-                            <span>Message  Not Sent</span>
-                        </div>
-                    </div>
-                    <div class="bg-notification">
-                        <div class="bg-notifi_state bg-noti_warning">
-                            <span class="d-flex align-items-center gap-2"><i class="ri-alarm-warning-line"></i>Warning</span>
-                            <span><i class="ri-close-line"></i></span>
-                        </div>
-                        <div class="bg-notifi_msg">
-                            <span>Message  Not Sent</span>
-                        </div>
-                    </div>
-
+                    <nav id="sidebar" class="bg-smartBtn_container position-relative">
+                        <ul class="bg-smartBtn-list">
+                            <li><button class="btn bg-smartBtn"><i class="ri-list-check"></i><span class="bg-smartBtm-name">checklist</span></li></button>
+                            <li><button class="btn bg-smartBtn"><i class="ri-arrow-left-right-line"></i></button></li>
+                            <li><button class="btn bg-smartBtn"><i class="ri-flask-line"></i></button></li>
+                            <li><button class="btn bg-smartBtn"><i class="ri-lifebuoy-line"></i></button></li>
+                            <li><button class="btn bg-smartBtn"><i class="ri-calendar-check-line"></i></button></li>
+                            <li><button class="btn bg-smartBtn"><i class="ri-calendar-check-line"></i></button></li>
+                            <button class="btn bg-button-stroke bg-smartBtn-toggler" type="button" id="sidebarCollapse"><i
+                                    class="ri-arrow-drop-left-line"></i></button>
+                        </ul>
+                    </nav>
                 </div>
-
+            </main>
         </div>
     </div>
-    </main>
-    </div>
-    </div>
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var sidebarCollapseButton = document.getElementById('sidebarCollapse');
+            var sidebar = document.getElementById('sidebar');
+
+            sidebarCollapseButton.addEventListener('click', function () {
+
+                sidebar.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 
 </html>

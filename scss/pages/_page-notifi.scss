@@ -1,25 +1,25 @@
+.bg-sidebar-nav {
 
-.bg-sidebar-nav{
-   
-    &:hover{
+    &:hover {
         color: $link-color;
-      
+
     }
 }
 
-.bg-sidebar-nav.bg-active-nav{
-    .bg-sidebar__icon--style{
+.bg-sidebar-nav.bg-active-nav {
+    .bg-sidebar__icon--style {
         color: $link-color;
     }
 }
 
-.bg-sub_nav{
+.bg-sub_nav {
     list-style: none;
     border-left: 1.2px solid $link-color;
     padding: 0px;
     margin-left: 3rem;
 }
-.bg-notification{
+
+.bg-notification {
     border-radius: 2px;
     border: 1px solid #dfdfdf;
     background: #fff;
@@ -28,9 +28,10 @@
     width: max-content;
     padding: 0px;
     margin: 0.9rem;
-   
+    height: fit-content;
 }
-.bg-notifi_state{
+
+.bg-notifi_state {
     padding: 0.8rem;
     font-weight: 500;
     color: $white;
@@ -39,18 +40,97 @@
     align-items: center;
     justify-content: space-between;
 }
-.bg-noti_success{
+
+.bg-noti_success {
     background-color: $active-btn;
 }
-.bg-notifi_msg{
+
+.bg-notifi_msg {
     padding: 0.8rem;
     font-size: 14px;
     color: $main-heading;
     font-weight: 400;
 }
-.bg-noti_failed{
+
+.bg-noti_failed {
     background-color: $danger;
 }
-.bg-noti_warning{
+
+.bg-noti_warning {
     background-color: #FFC107;
+}
+
+.bg-main_wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+#sidebar {
+    min-width: 100px;
+    max-width: 100px;
+    background-color: $white;
+    color: $primary-font;
+    height: 83vh;
+    border-left:1px solid $stroke-color;
+}
+
+#sidebar.active {
+    margin-right: -100px;
+    .bg-smartBtn-toggler{
+        background-color: $blue;
+        color: $white;
+    }
+
+}
+
+.bg-smartBtn-toggler {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2px;
+    background-color: $white;
+    color: $primary-font;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -1.3rem;
+    bottom: 100px;
+
+    &:hover{
+        background-color:$secondary-color ;
+    }
+}
+
+.bg-smartBtn-list {
+    list-style: none;
+    margin: 1rem 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bg-smartBtn {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+
+    &:hover {
+        background-color: $link-background-color;
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.bg-smartBtm-name {
+    font-size: 12.8px;
 }
