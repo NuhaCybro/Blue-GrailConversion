@@ -121,6 +121,7 @@
     display: flex;
     align-items: center;
     gap: 0.2rem;
+    flex-direction: column;
 
     &:hover {
         background-color: $link-background-color;
@@ -132,5 +133,10 @@
 }
 
 .bg-smartBtm-name {
-    font-size: 12.8px;
+    font-size: 12px;
+}
+.bg-smartBtm-count{
+    font-size: 14px;
+    color: $blue;
+    font-weight: 500;
 }
