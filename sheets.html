@@ -456,10 +456,10 @@
                             <form class="d-flex align-items-center my-2 position-relative">
                                 <!--<span class="position-absolute bg-sheet_select-box-search"><i class="ri-search-line"></i></span>-->
                                 <select id="mySelect" multiple="multiple"
-                                    class="js-example-placeholder-multiple js-states form-control"
+                                    class="bg-cust-select_box"
                                     aria-placeholder="search">
-                                    <option value="" selected>Option</option>
-                                    <option value="option1">Option 1</option>
+                                   
+                                    <option class="" value="option1">Option 1</option>
                                     <option value="option2">Option 2</option>
                                     <option value="option3">Option 3</option>
 
@@ -908,11 +908,11 @@
         $(document).ready(function () {
 
 
-            $('#mySelect').select2();
-        });
-        $(".js-example-placeholder-multiple").select2({
+            $('#mySelect').select2({
             placeholder: "Select a state"
         });
+        });
+
     </script>
 
 

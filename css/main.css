@@ -3292,6 +3292,22 @@ a {
   color: #505050;
 }
 
+.select2-container--default .select2-results__option {
+  background-color: #fff;
+}
+
+/* Customize the background color for selected options */
+.select2-container--default .select2-results__option[aria-selected=true] {
+  background-color: #F7F7F7;
+  color: #222222;
+}
+
+/* Customize the background color on hover */
+.select2-container--default .select2-results__option:hover {
+  background-color: #F7F7F7 !important;
+  color: #222222;
+}
+
 .bg-sheet_select-box-search {
   z-index: 1111;
   padding: 5px;
