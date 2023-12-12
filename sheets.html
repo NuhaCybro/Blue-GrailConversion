@@ -274,7 +274,7 @@
                                 </div>
                                 <div class="col-12 mb-3 bg-button-stroke px-3 ">
                                     <div class="py-2 ">
-                                        <span>Measures</span>
+                                        <span class="bg-sheet_dragging-btn-header">Measures</span>
                                         <form class="d-flex my-2 ">
                                             <div class="input-group">
                                                 <span class="input-group-text bg-search bg-templates_search-icon">
@@ -455,8 +455,10 @@
                         <div class="col-6  mb-3 bg-sheet_preview-input ">
                             <form class="d-flex align-items-center my-2 position-relative">
                                 <!--<span class="position-absolute bg-sheet_select-box-search"><i class="ri-search-line"></i></span>-->
-                                <select id="mySelect" multiple="multiple" class="js-example-placeholder-multiple js-states form-control"  aria-placeholder="search">
-                                    <option value=""  selected>option</option>
+                                <select id="mySelect" multiple="multiple"
+                                    class="js-example-placeholder-multiple js-states form-control"
+                                    aria-placeholder="search">
+                                    <option value="" selected>Option</option>
                                     <option value="option1">Option 1</option>
                                     <option value="option2">Option 2</option>
                                     <option value="option3">Option 3</option>
@@ -904,13 +906,13 @@
         crossorigin="anonymous"></script>
     <script>
         $(document).ready(function () {
-     
-           
+
+
             $('#mySelect').select2();
         });
         $(".js-example-placeholder-multiple").select2({
-    placeholder: "Select a state"
-});
+            placeholder: "Select a state"
+        });
     </script>
 
 
@@ -962,10 +964,10 @@
         }
 
 
-        
+
 
     </script>
- 
+
 
 </body>
 

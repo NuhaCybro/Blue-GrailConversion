@@ -355,7 +355,7 @@
         &.select2-container {
             width: 100% !important;
             border: 1px solid $stroke-color;
-            border-radius: 2px;
+            border-radius: 4px;
         }
     }
 
@@ -368,21 +368,21 @@
         background-color: $secondary-color;
         border: 1px solid $stroke-color;
         border-radius: 30px;
-        padding: 2px;
+      
     }
 
     .select2-container--default .select2-selection--multiple .select2-selection__choice__display {
         font-size: 12.8px;
         color: $primary-font;
         font-weight: 500;
-        padding-left: 20px;
+      
 
     }
 
     .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
         border-right: 0px;
         color: $primary-font;
-        padding: 2px 6px;
+      
     }
 }
 
