@@ -2627,6 +2627,7 @@ a {
 .bg-template_search-bar {
   border-left: 0px;
   padding-left: 0px;
+  border-color: #DFDFDF;
 }
 
 .bg-template_container {
@@ -2963,13 +2964,19 @@ a {
 }
 
 .bg-sheet-draggable-btn {
-  background-color: #F7F7F7;
+  background-color: rgba(247, 247, 247, 0.6392156863);
   cursor: -webkit-grabbing;
   cursor: grabbing;
   position: relative;
   padding: 0.5rem;
-  color: #0E3A5D;
+  color: #505050;
   font-size: 12.8px;
+  font-weight: 400;
+  text-align: left;
+  border-radius: 2px;
+  border: 1px solid #DFDFDF;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
 }
 
 .bg-sheet-draggable-btn:hover {
@@ -3031,7 +3038,8 @@ a {
 
 .bg-sheet-tag {
   background-color: #F7F7F7;
-  color: hsl(216, 18%, 64%);
+  color: #505050;
+  font-weight: 500;
 }
 
 .bg-sheet-filter_state.active {
@@ -3252,6 +3260,45 @@ a {
   padding: 0.375rem 1.25rem 0.375rem 0.75rem;
   background-size: 13px 9px;
   background-position: right 0.4rem center;
+}
+
+.bg-sheet_dragging-btn-header {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #DFDFDF;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.bg-sheets-previewContainer span.select2-container {
+  width: 100% !important;
+  border: 1px solid #DFDFDF;
+  border-radius: 2px;
+}
+.bg-sheets-previewContainer .select2-container--default .select2-selection--multiple {
+  border: none;
+}
+.bg-sheets-previewContainer .select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: #F7F7F7;
+  border: 1px solid #DFDFDF;
+  border-radius: 30px;
+  padding: 2px;
+}
+.bg-sheets-previewContainer .select2-container--default .select2-selection--multiple .select2-selection__choice__display {
+  font-size: 12.8px;
+  color: #505050;
+  font-weight: 500;
+  padding-left: 20px;
+}
+.bg-sheets-previewContainer .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  border-right: 0px;
+  color: #505050;
+  padding: 2px 6px;
+}
+
+.bg-sheet_select-box-search {
+  z-index: 1111;
+  padding: 5px;
+  color: #505050;
 }
 
 .bg-sale-analysis-title {

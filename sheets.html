@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sheet</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -22,7 +25,7 @@
             </a>
             <ul class="navbar-nav bg-search_navbar-nav">
                 <li class="nav-item">
-                    <form class="d-flex">
+                    <form class="d-flex bg-sheet_selection-box">
                         <div class="input-group">
                             <span class="input-group-text bg-search">
                                 <i class="ri-search-line bg-search-icon"></i>
@@ -233,10 +236,10 @@
                                     <input type="text" class="form-control bg-button-stroke" id="inputAddress"
                                         placeholder="Tables">
                                 </div>
-                                <div class="col-12 mb-3 bg-button-stroke px-3 ">
+                                <div class="col-12 mb-3 bg-button-stroke px-3 bg-sheet_box-maincontainer">
                                     <div class="py-2 ">
-                                        <span>Dimensions</span>
-                                        <form class="d-flex my-2 ">
+                                        <span class="bg-sheet_dragging-btn-header ">Dimensions</span>
+                                        <form class="d-flex my-2 mt-3">
                                             <div class="input-group">
                                                 <span class="input-group-text bg-search bg-templates_search-icon">
                                                     <i class="ri-search-line bg-search-icon bg-sheet_font"></i>
@@ -248,22 +251,22 @@
                                         </form>
                                     </div>
                                     <div class="bg-sheet-selection_box">
-                                        <div class="col-12 mb-3 text-center  bg-sheet-draggable-btn">
+                                        <div class="col-12 mb-2  bg-sheet-draggable-btn">
                                             <span>Name</span>
                                         </div>
-                                        <div class="col-12 mb-3 text-center  bg-sheet-draggable-btn">
+                                        <div class="col-12 mb-2  bg-sheet-draggable-btn">
                                             <span>User Id</span>
                                         </div>
-                                        <div class="col-12 mb-3 text-center  bg-sheet-draggable-btn">
+                                        <div class="col-12 mb-2  bg-sheet-draggable-btn">
                                             <span>State</span>
                                         </div>
-                                        <div class="col-12 mb-3 text-center  bg-sheet-draggable-btn">
+                                        <div class="col-12 mb-2  bg-sheet-draggable-btn">
                                             <span>Name</span>
                                         </div>
-                                        <div class="col-12 mb-3 text-center  bg-sheet-draggable-btn">
+                                        <div class="col-12 mb-2  bg-sheet-draggable-btn">
                                             <span>User Id</span>
                                         </div>
-                                        <div class="col-12 mb-3 text-center  bg-sheet-draggable-btn">
+                                        <div class="col-12 mb-2  bg-sheet-draggable-btn">
                                             <span>State</span>
                                         </div>
                                     </div>
@@ -284,22 +287,22 @@
                                         </form>
                                     </div>
                                     <div class="bg-sheet-selection_box">
-                                        <div class="col-12 mb-3 text-center  bg-sheet-draggable-btn">
+                                        <div class="col-12 mb-3  bg-sheet-draggable-btn">
                                             <span>Amount Total</span>
                                         </div>
-                                        <div class="col-12 mb-3 text-center  bg-sheet-draggable-btn">
+                                        <div class="col-12 mb-3  bg-sheet-draggable-btn">
                                             <span>Price Subtotal</span>
                                         </div>
-                                        <div class="col-12 mb-3 text-center  bg-sheet-draggable-btn">
+                                        <div class="col-12 mb-3  bg-sheet-draggable-btn">
                                             Tax Amount
                                         </div>
-                                        <div class="col-12 mb-3 text-center  bg-sheet-draggable-btn">
+                                        <div class="col-12 mb-3  bg-sheet-draggable-btn">
                                             <span>Amount Total</span>
                                         </div>
-                                        <div class="col-12 mb-3 text-center  bg-sheet-draggable-btn">
+                                        <div class="col-12 mb-3   bg-sheet-draggable-btn">
                                             <span>Price Subtotal</span>
                                         </div>
-                                        <div class="col-12 mb-3 text-center  bg-sheet-draggable-btn">
+                                        <div class="col-12 mb-3   bg-sheet-draggable-btn">
                                             Tax Amount
                                         </div>
                                     </div>
@@ -449,16 +452,24 @@
 
                     </div>
                     <div class="col-lg-7 bg-sheets-previewContainer pt-3 px-4">
-                        <!--<div class="col-4  mb-3 bg-sheet_preview-input ">
-                            <input type="text" class="form-control bg-button-stroke" id="inputAddress"
-                                placeholder="input">
-                        </div>-->
+                        <div class="col-6  mb-3 bg-sheet_preview-input ">
+                            <form class="d-flex align-items-center my-2 position-relative">
+                                <!--<span class="position-absolute bg-sheet_select-box-search"><i class="ri-search-line"></i></span>-->
+                                <select id="mySelect" multiple="multiple" class="js-example-placeholder-multiple js-states form-control"  aria-placeholder="search">
+                                    <option value=""  selected>option</option>
+                                    <option value="option1">Option 1</option>
+                                    <option value="option2">Option 2</option>
+                                    <option value="option3">Option 3</option>
 
-                        <!-- <div class="bg-sheet-graph_preview">
+                                </select>
+                            </form>
+                        </div>
 
-                             <img src="images/bar-graph.png" alt="" class="bg-sheet-img">
-                        </div>-->
-                        <div class="d-flex">
+                        <div class="bg-sheet-graph_preview">
+
+                            <img src="images/bar-graph.png" alt="" class="bg-sheet-img">
+                        </div>
+                        <!--<div class="d-flex">
                             <div class="bg-sheet_progress-card">
 
                                 <div class="d-flex align-items-center gap-2 justify-content-end">
@@ -690,7 +701,7 @@
                                         rows="8"></textarea>
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
 
 
                         <div class="col-12 mb-3">
@@ -700,7 +711,7 @@
 
 
 
-                        <!--<div class="col-12 mb-3">
+                        <div class="col-12 mb-3">
                             <input type="text" class="form-control text-center bg-sheet-draggable-input"
                                 id="inputAddress" placeholder="Y Axis:Price Subtotal,Tax Amount">
                         </div>
@@ -712,7 +723,7 @@
                                     <button class="bg-chat__send-btn">Send</button>
                                 </div>
                             </form>
-                        </div>-->
+                        </div>
                         <div>
 
                         </div>
@@ -885,10 +896,24 @@
         </main>
     </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+     
+           
+            $('#mySelect').select2();
+        });
+        $(".js-example-placeholder-multiple").select2({
+    placeholder: "Select a state"
+});
+    </script>
+
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             var chatLinks = document.querySelectorAll(".bg-sheetfilter-btn");
@@ -918,21 +943,29 @@
             var iconSelectionBox = document.querySelector('.bg-sheet_icon-selection-box');
             var closeBtn = document.getElementById('closeBtn');
 
-            iconSelectionBtn.addEventListener('click', function () {
-                iconSelectionBox.classList.toggle('show');
-            });
+            if (iconSelectionBox) {
+                iconSelectionBtn.addEventListener('click', function () {
+                    iconSelectionBox.classList.toggle('show');
+                });
 
-            closeBtn.addEventListener('click', function () {
-                iconSelectionBox.classList.remove('show');
-            });
+                closeBtn.addEventListener('click', function () {
+                    iconSelectionBox.classList.remove('show');
+                });
+            }
         });
 
         function selectIcon(iconClass) {
             var selectedIconDiv = document.querySelector('.bg-selected_icon');
-            selectedIconDiv.innerHTML = '<div class=""><i class="' + iconClass + ' bg-icons"></i></div>';
+            if (selectedIconDiv) {
+                selectedIconDiv.innerHTML = '<div class=""><i class="' + iconClass + ' bg-icons"></i></div>';
+            }
         }
 
+
+        
+
     </script>
+ 
 
 </body>
 
