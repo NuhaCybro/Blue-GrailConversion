@@ -387,19 +387,20 @@
 
 }
 
-.select2-container--default .select2-results__option{
+.select2-container--default .select2-results__option {
     background-color: $white;
 }
+
 /* Customize the background color for selected options */
 .select2-container--default .select2-results__option[aria-selected=true] {
-    background-color:$secondary-color;
+    background-color: $secondary-color;
     color: $main-heading;
 }
 
 /* Customize the background color on hover */
 .select2-container--default .select2-results__option:hover {
     background-color: $secondary-color !important;
-      color: $main-heading;
+    color: $main-heading;
 }
 
 
