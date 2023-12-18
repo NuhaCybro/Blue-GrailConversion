@@ -525,11 +525,122 @@
                                         <input type="text" class="form-control bg-button-stroke" id="inputAddress"
                                             placeholder="Acme, Inc.">
                                     </div>
-                                    <div class="col-12  mb-2">
-                                        <label for="inputAddress" class="form-label  bg-modal-form_label">KPI
-                                            Icon</label>
-                                        <input type="text" class="form-control bg-button-stroke" id="inputAddress"
-                                            placeholder="">
+                                    <div class="col-12  mb-2 position-relative">
+                                        <label for="inputAddress" class="form-label  bg-modal-form_label">KPI Icon</label>
+                                        <button class="bg-sheet_icon-selection"><i
+                                                class="ri-image-2-line bg-icons"></i></button>
+    
+                                        <div class="bg-sheet_icon-selection-box position-absolute">
+                                            <div class="modal-content bg-sheet_icon-selectBox">
+                                                <div
+                                                    class="modal-header bg-sheet_selection-box-head  d-flex align-items-center">
+                                                    <h5 class=" bg-sheet_selection-heading-txt">Select Icon</h5>
+                                                    <span id="closeBtn" class="bg-icons bg-social_cmnt-closebtn"><i
+                                                            class="ri-close-line"></i></span>
+                                                </div>
+    
+                                                <div class="modal-body pt-0">
+                                                    <ul
+                                                        class="d-flex align-items-start gap-3 flex-wrap bg-selection_icon-list py-2">
+                                                        <li>
+                                                            <div class="bg-icon_box-item"
+                                                                onclick="selectIcon('ri-bar-chart-box-line')"><i
+                                                                    class="ri-bar-chart-box-line bg-icons"></i></div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="bg-icon_box-item"
+                                                                onclick="selectIcon('ri-donut-chart-line')"><i
+                                                                    class="ri-donut-chart-line bg-icons"></i></div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="bg-icon_box-item"
+                                                                onclick="selectIcon('ri-bar-chart-box-line')"><i
+                                                                    class="ri-bar-chart-box-line bg-icons"></i></div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="bg-icon_box-item"
+                                                                onclick="selectIcon('ri-donut-chart-line')"><i
+                                                                    class="ri-donut-chart-line bg-icons"></i></div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="bg-icon_box-item"
+                                                                onclick="selectIcon('ri-bar-chart-box-line')"><i
+                                                                    class="ri-bar-chart-box-line bg-icons"></i></div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="bg-icon_box-item"
+                                                                onclick="selectIcon('ri-donut-chart-line')"><i
+                                                                    class="ri-donut-chart-line bg-icons"></i></div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="bg-icon_box-item"
+                                                                onclick="selectIcon('ri-bar-chart-box-line')"><i
+                                                                    class="ri-bar-chart-box-line bg-icons"></i></div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="bg-icon_box-item"
+                                                                onclick="selectIcon('ri-donut-chart-line')"><i
+                                                                    class="ri-donut-chart-line bg-icons"></i></div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="bg-icon_box-item"
+                                                                onclick="selectIcon('ri-bar-chart-box-line')"><i
+                                                                    class="ri-bar-chart-box-line bg-icons"></i></div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="bg-icon_box-item"
+                                                                onclick="selectIcon('ri-donut-chart-line')"><i
+                                                                    class="ri-donut-chart-line bg-icons"></i></div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="bg-icon_box-item"
+                                                                onclick="selectIcon('ri-bar-chart-box-line')"><i
+                                                                    class="ri-bar-chart-box-line bg-icons"></i></div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="bg-icon_box-item"
+                                                                onclick="selectIcon('ri-donut-chart-line')"><i
+                                                                    class="ri-donut-chart-line bg-icons"></i></div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="bg-icon_box-item"
+                                                                onclick="selectIcon('ri-bar-chart-box-line')"><i
+                                                                    class="ri-bar-chart-box-line bg-icons"></i></div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="bg-icon_box-item"
+                                                                onclick="selectIcon('ri-donut-chart-line')"><i
+                                                                    class="ri-donut-chart-line bg-icons"></i></div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="bg-icon_box-item"
+                                                                onclick="selectIcon('ri-bar-chart-box-line')"><i
+                                                                    class="ri-bar-chart-box-line bg-icons"></i></div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="bg-icon_box-item"
+                                                                onclick="selectIcon('ri-donut-chart-line')"><i
+                                                                    class="ri-donut-chart-line bg-icons"></i></div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="bg-icon_box-item"
+                                                                onclick="selectIcon('ri-bar-chart-box-line')"><i
+                                                                    class="ri-bar-chart-box-line bg-icons"></i></div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="bg-icon_box-item"
+                                                                onclick="selectIcon('ri-donut-chart-line')"><i
+                                                                    class="ri-donut-chart-line bg-icons"></i></div>
+                                                        </li>
+                                                    </ul>
+    
+                                                </div>
+    
+                                            </div>
+                                        </div>
+    
+                                        <div class="bg-selected_icon">
+                                        </div>
                                     </div>
                                     <div class="col-12  mb-2">
                                         <label for="inputAddress" class="form-label  bg-modal-form_label">KPI
@@ -780,10 +891,10 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
+       document.addEventListener("DOMContentLoaded", function () {
             var chatLinks = document.querySelectorAll(".bg-sheetfilter-btn");
             var modalContainer = document.querySelector(".bg-kpi_modal-container ");
-            var closeButton = document.querySelector(".bg-social_cmnt-closebtn");
+            var closeButton = document.getElementById("sheet_filter_close");
 
             chatLinks.forEach(function (link) {
                 link.addEventListener("click", function (event) {
@@ -801,6 +912,32 @@
                 modalContainer.style.display = "none";
             });
         });
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var iconSelectionBtn = document.querySelector('.bg-sheet_icon-selection');
+            var iconSelectionBox = document.querySelector('.bg-sheet_icon-selection-box');
+            var closeBtn = document.getElementById('closeBtn');
+
+            if (iconSelectionBox) {
+                iconSelectionBtn.addEventListener('click', function () {
+                    iconSelectionBox.classList.toggle('show');
+                });
+
+                closeBtn.addEventListener('click', function () {
+                    iconSelectionBox.classList.remove('show');
+                });
+            }
+        });
+
+        function selectIcon(iconClass) {
+            var selectedIconDiv = document.querySelector('.bg-selected_icon');
+            if (selectedIconDiv) {
+                selectedIconDiv.innerHTML = '<div class=""><i class="' + iconClass + ' bg-icons"></i></div>';
+            }
+        }
+
+
     </script>
 
 </body>
