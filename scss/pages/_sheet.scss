@@ -115,6 +115,7 @@
 .bg-sheet-tag {
     background-color: $secondary-color;
     color: $placeholder-color;
+    font-weight: 400;
 }
 
 .bg-sheet-filter_state.active {
@@ -133,9 +134,8 @@
 
 .bg-sheet_progress-card {
     padding: 1rem;
-    background-color: $badge-bg;
-    border-radius: 6px;
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    background-color: $badge-red-bg;
+
     margin: 0rem 1rem 1rem 0;
     color: $white;
     width: 100%;
@@ -254,4 +254,7 @@
 .bg-dashboard_tab-list.active {
     background-color: $secondary-color;
     color:$primary-color ;
+}
+.bg-sheet_search{
+    top: 7px;
 }

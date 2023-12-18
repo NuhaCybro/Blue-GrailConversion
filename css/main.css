@@ -3176,6 +3176,7 @@ a {
 .bg-sheet-tag {
   background-color: #f7f7f7;
   color: hsl(216, 18%, 64%);
+  font-weight: 400;
 }
 
 .bg-sheet-filter_state.active {
@@ -3192,10 +3193,7 @@ a {
 
 .bg-sheet_progress-card {
   padding: 1rem;
-  background-color: #FFBFCA;
-  border-radius: 6px;
-  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  background-color: #FF8982;
   margin: 0rem 1rem 1rem 0;
   color: #fff;
   width: 100%;
@@ -3316,6 +3314,10 @@ a {
 .bg-dashboard_tab-list.active {
   background-color: #f7f7f7;
   color: #151E4E;
+}
+
+.bg-sheet_search {
+  top: 7px;
 }
 
 .bg-sale-analysis-title {
