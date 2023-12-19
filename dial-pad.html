@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dial pad</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-top-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand bg-logo-img" href="#">
+                <img src="images/BlueGrail.svg" alt="Logo" width="30" height="30"
+                    class="d-inline-block align-text-top" />
+                <span class="bg-navbar-title">Sales</span>
+            </a>
+            <ul class="navbar-nav bg-search_navbar-nav">
+                <li class="nav-item">
+                    <form class="d-flex">
+                        <div class="input-group bg-search-group">
+                            <i class="ri-search-line bg-search-icon"></i>
+                            <input class="form-control bg-custom-search" type="search"
+                                placeholder="Try searching for an app, user or a setting..." aria-label="Search" />
+                        </div>
+                    </form>
+                </li>
+            </ul>
+            <ul class="navbar-nav d-flex flex-row align-items-center">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle bg-dropdown-arrow" href="#" id="chatDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="ri-chat-3-line bg-icons"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="chatDropdown">
+                        <li><a class="dropdown-item" href="#">Chat Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Chat Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Chat Option 3</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle bg-dropdown-arrow bg-clock-container" href="#" id="clockDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="ri-time-line bg-icons"></i>
+                        <span class="badge badge-clock">21</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="clockDropdown">
+                        <li><a class="dropdown-item" href="#">Clock Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Clock Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Clock Option 3</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bg-nav-links" href="#">
+                        <span>Acme, Inc.</span>
+                        <div class="bg-profile-pic-container bg-profile-pic-container--online">
+                            <img src="images/user-profile.png" alt="Profile" class="profile-pic me-2" />
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class=" d-flex align-items-center py-2 bg-border-btm">
+                <div class="col-md-3 bg-main-sectionhead d-flex">
+                    <button class="bg-navigation-btn">Sales</button>
+                    <button class="bg-navigation-btn">Quotations</button>
+
+                </div>
+                <div class="col-md-9 d-flex align-items-center justify-content-end gap-2">
+                    <div class="bg-page-count">
+                        1/3
+                    </div>
+
+                    <div class=" bg-aligned-icons bg-navigation-icon-box">
+
+                        <i class="ri-arrow-left-s-line bg-navigation-icon"></i>
+
+                        <i class="ri-arrow-right-s-line  bg-navigation-icon active"></i>
+                    </div>
+
+                    <div class="bg-aligned-icons ">
+                        <i class="ri-align-justify"></i>
+                        <i class="ri-bar-chart-2-fill"></i>
+                        <i class="ri-time-line"></i>
+                    </div>
+                </div>
+            </div>
+            <nav class="col-md-3 col-lg-2 d-md-block bg-left-sidebar">
+                <div class="position-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link bg-sidebar-heading" href="#">
+                                Modules
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-chat-3-line bg-icons bg-sidebar__icon--style"></i>Discuss
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-calendar-line bg-icons bg-sidebar__icon--style"></i> Calendar
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav bg-active-nav" href="#">
+                                <i class="ri-survey-line bg-icons bg-sidebar__icon--style"></i>
+                                To-do
+                            </a>
+                            <ul class="bg-sub_nav">
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav active-sidebar"
+                                        href="#">
+                                        To-do Item 1
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                        To-do Item 1
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                        To-do Item 1
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-contacts-book-line bg-icons bg-sidebar__icon--style"></i>
+                                Contacts
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-shake-hands-line bg-icons bg-sidebar__icon--style"></i>
+                                CRM
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav " href="#">
+                                <i class="ri-line-chart-line bg-icons bg-sidebar__icon--style"></i>
+                                Sales
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-dashboard-line bg-icons bg-sidebar__icon--style"></i>
+                                Dashboards
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-bank-card-line bg-icons bg-sidebar__icon--style"></i>
+                                Point of Sale
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-bill-line bg-icons bg-sidebar__icon--style"></i>
+                                Invoicing
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                <i class="ri-projector-line bg-icons bg-sidebar__icon--style"></i>
+                                Project
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-timer-line bg-icons bg-sidebar__icon--style"></i>
+                                Timesheets
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-global-line bg-icons bg-sidebar__icon--style"></i>
+                                Website
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-graduation-cap-line  bg-icons bg-sidebar__icon--style"></i>
+                                eLearning
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-mail-open-line bg-icons bg-sidebar__icon--style"></i>
+                                Email Marketing
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-smartphone-line  bg-icons bg-sidebar__icon--style"></i>
+                                SMS Marketing
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-calendar-event-line bg-icons bg-sidebar__icon--style"></i>
+                                Events
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-checkbox-line  bg-icons bg-sidebar__icon--style"></i>
+                                Surveys
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-bank-card-2-line  bg-icons bg-sidebar__icon--style"></i>
+                                Purchase
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
+                                <i class="ri-archive-line  bg-icons bg-sidebar__icon--style"></i>
+                                Inventory
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="collapse-icon text-center bg-sidebar-collapse">
+                    <a href="#sidebarCollapse" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="sidebarCollapse">
+                        <i class="ri-arrow-left-s-line bg-icons  bg-collapse-icon"></i>
+                        Collapse Menu
+                    </a>
+                </div>
+            </nav>
+            <main class="col-md-9 ms-sm-auto col-lg-10  bg-main bg-main_overflow">
+
+
+                <div class="bg-dial__pad">
+                    <div class="bg-dial__pad-action">
+                        <button class="bg-dial-actionbtn"><i class="ri-fullscreen-line"></i></button>
+                        <button class="bg-dial-actionbtn"><i class="ri-close-line"></i></button>
+                    </div>
+
+                    <div class="bg-dial_input--container"> <input type="" class="bg-dial-input"
+                            placeholder="Enter the number"><button class="btn bg-dial_clearbtn">C</button></div>
+
+                    <div class="bg-dial_additional-buttons">
+                        <button class="btn bg-dial_additional-btn bg-button-primary-stroke bg-recent-bn">Recent</button>
+                        <button class="btn bg-dial_additional-btn bg-button-primary-stroke bg-contant-btn">Contact</button>
+                    </div>
+                    <div class="bg-dial_pad-numbers">
+                        <button class=" btn bg-dialing-nmbr">1</button>
+                        <button class="btn bg-dialing-nmbr">2</button>
+                        <button class="btn bg-dialing-nmbr">3</button>
+                        <button class="btn bg-dialing-nmbr">4</button>
+                        <button class="btn bg-dialing-nmbr">5</button>
+                        <button class="btn bg-dialing-nmbr">6</button>
+                        <button class="btn bg-dialing-nmbr">7</button>
+                        <button class="btn bg-dialing-nmbr">8</button>
+                        <button class="btn bg-dialing-nmbr">9</button>
+                        <button class="btn bg-dialing-nmbr">*</button>
+                        <button class="btn bg-dialing-nmbr">0</button>
+                        <button class="btn bg-dialing-nmbr">#</button>
+                    </div>
+                    <div class="bg-dial_pad-callprocess">
+                        <button class="btn bg-dial-process-btn bg-call-btn "><i class="ri-phone-fill"></i></button>
+                        <button class="btn bg-dial-process-btn bg-callend-btn"><i
+                                class="ri-phone-fill bg-callend-icon"></i></button>
+                    </div>
+
+
+                </div>
+
+                <div class="bg-dial__pad bg-recent_contants">
+                    <div class="bg-dial__pad-action">
+                        <button class="bg-dial-actionbtn"><i class="ri-fullscreen-line"></i></button>
+                        <button class="bg-dial-actionbtn"><i class="ri-close-line"></i></button>
+                    </div>
+                    <div class="bg-recent__container">
+                        <div class="bg-dial_search-box">
+                            <i class="ri-search-line bg-dial-search__icon"></i>
+                            <input type="search" class="bg-search_input" placeholder="search contacts">
+                        </div>
+
+                        <div class="bg-dial__recent-list">
+                            <div class="bg-recent__list-item">
+                                <div>
+                                    <span class="bg-dial_pad-recent-number"><i
+                                            class="ri-arrow-right-up-line bg-outgoing_icon"></i>+91 84567658</span>
+                                    <span class="bg-dial_recent--timing">2023-11-23</span> <span
+                                        class="bg-dial_recent--timing">11:44:03</span>
+                                </div>
+
+                                <span class="bg-dial_recent--timing">00:30s</span>
+                            </div>
+                            <div class="bg-recent__list-item">
+                                <div>
+                                    <span class="bg-dial_pad-recent-number"><i
+                                            class="ri-arrow-right-up-line bg-outgoing_icon"></i>+91 84567658</span>
+                                    <span class="bg-dial_recent--timing">2023-11-23</span> <span
+                                        class="bg-dial_recent--timing">11:44:03</span>
+                                </div>
+
+                                <span class="bg-dial_recent--timing">00:30s</span>
+                            </div>
+                            <div class="bg-recent__list-item">
+                                <div>
+                                    <span class="bg-dial_pad-recent-number"><i
+                                            class="ri-arrow-right-up-line bg-outgoing_icon"></i>+91 84567658</span>
+                                    <span class="bg-dial_recent--timing">2023-11-23</span> <span
+                                        class="bg-dial_recent--timing">11:44:03</span>
+                                </div>
+
+                                <span class="bg-dial_recent--timing">00:30s</span>
+                            </div>
+                            <div class="bg-recent__list-item">
+                                <div>
+                                    <span class="bg-dial_pad-recent-number"><i
+                                            class="ri-arrow-right-up-line bg-outgoing_icon"></i>+91 84567658</span>
+                                    <span class="bg-dial_recent--timing">2023-11-23</span> <span
+                                        class="bg-dial_recent--timing">11:44:03</span>
+                                </div>
+
+                                <span class="bg-dial_recent--timing">00:30s</span>
+                            </div>
+                            <div class="bg-recent__list-item">
+                                <div>
+                                    <span class="bg-dial_pad-recent-number"><i
+                                            class="ri-arrow-right-up-line bg-outgoing_icon"></i>+91 84567658</span>
+                                    <span class="bg-dial_recent--timing">2023-11-23</span> <span
+                                        class="bg-dial_recent--timing">11:44:03</span>
+                                </div>
+
+                                <span class="bg-dial_recent--timing">00:30s</span>
+                            </div>
+                            <div class="bg-recent__list-item">
+                                <div>
+                                    <span class="bg-dial_pad-recent-number"><i
+                                            class="ri-arrow-right-up-line bg-outgoing_icon"></i>+91 84567658</span>
+                                    <span class="bg-dial_recent--timing">2023-11-23</span> <span
+                                        class="bg-dial_recent--timing">11:44:03</span>
+                                </div>
+
+                                <span class="bg-dial_recent--timing">00:30s</span>
+                            </div>
+                            <div class="bg-recent__list-item">
+                                <div>
+                                    <span class="bg-dial_pad-recent-number"><i
+                                            class="ri-arrow-right-up-line bg-outgoing_icon"></i>+91 84567658</span>
+                                    <span class="bg-dial_recent--timing">2023-11-23</span> <span
+                                        class="bg-dial_recent--timing">11:44:03</span>
+                                </div>
+
+                                <span class="bg-dial_recent--timing">00:30s</span>
+                            </div>
+                            <div class="bg-recent__list-item">
+                                <div>
+                                    <span class="bg-dial_pad-recent-number"><i
+                                            class="ri-arrow-right-up-line bg-outgoing_icon"></i>+91 84567658</span>
+                                    <span class="bg-dial_recent--timing">2023-11-23</span> <span
+                                        class="bg-dial_recent--timing">11:44:03</span>
+                                </div>
+
+                                <span class="bg-dial_recent--timing">00:30s</span>
+                            </div>
+
+                        </div>
+
+                        <div class="bg-dial_footer--btns">
+                            <button type="button" class="bg-dial_footer-btn-item "><i
+                                    class="ri-keyboard-line"></i></button>
+                            <button type="button" class="bg-dial_footer-btn-item  "><i
+                                    class="ri-contacts-book-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-dial__pad bg-contact_account">
+                    <div class="bg-dial__pad-action">
+                        <button class="bg-dial-actionbtn"><i class="ri-fullscreen-line"></i></button>
+                        <button class="bg-dial-actionbtn"><i class="ri-close-line"></i></button>
+                    </div>
+                    <div class="bg-account__container">
+
+                        <div class="bg-dialer__contact-profile">
+                            <button class="btn bg-dial_backbtn"><i class="ri-arrow-left-s-line"></i></button>
+                            <div class="bg-dialer_contact-profileimg">
+                                <img src="images/user-img.png" alt="" class="bg-dialer_contact-img">
+                            </div>
+                            <h4>Azure Interior</h4>
+                            <span>(807)-931-0505</span>
+
+                        </div>
+
+
+
+                        <div class="bg-dial_footer--btns">
+                            <button type="button" class="bg-dial_footer-btn-item "><i
+                                    class="ri-keyboard-line"></i></button>
+                            <button type="button" class="bg-dial_footer-btn-item  "><i
+                                    class="ri-contacts-book-line"></i></button>
+                            <button type="button" class="bg-dial_footer-btn-item  "><i
+                                    class="ri-phone-fill"></i></button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </main>
+        </div>
+
+
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const recentButton = document.querySelector('.bg-recent-bn');
+            const recentContacts = document.querySelector('.bg-recent_contants');
+            const contactButton = document.querySelector('.bg-contant-btn');
+            const contactsAccount = document.querySelector('.bg-contact_account');
+            
+            recentButton.addEventListener('click', function () {
+                recentContacts.classList.toggle('show-recent-contacts');
+            });
+            contactButton.addEventListener('click', function () {
+                contactsAccount.classList.toggle('show-recent-contacts');
+            });
+        });
+    </script>
+</body>
+
+</html>

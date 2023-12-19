@@ -1,0 +1,235 @@
+.bg-dial__pad {
+    position: fixed;
+    background-color: $white;
+    bottom: 0px;
+    right: 0px;
+    padding: 1.4rem 1rem;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    z-index: 22;
+    min-width: 320px;
+    margin: 1rem;
+}
+
+.bg-dial_pad-numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5rem;
+}
+
+.bg-dialing-nmbr {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: $main-heading;
+    padding: 0.5rem;
+
+    &:hover {
+        background-color: $link-background-color;
+        color: $link-color;
+    }
+    &:focus{
+        box-shadow: none;
+    }
+}
+
+.bg-dial_pad-callprocess {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+
+}
+
+.bg-call-btn {
+    background-color: $active-btn ;
+    color: $white;
+}
+
+.bg-callend-btn {
+    background-color: $danger ;
+    color: $white;
+    transform: rotate(140deg);
+}
+
+.bg-dial-process-btn {
+    border-radius: 50px;
+
+    &:hover {
+        color: $white;
+    }
+}
+
+.bg-dial-input {
+    width: 100%;
+    border: none;
+    padding: 0.35rem;
+
+    &:focus {
+        outline: none;
+        border-bottom: 1px solid $stroke-color;
+    }
+}
+
+.bg-dial_clearbtn {
+    background-color: $link-background-color;
+    color: $main-heading;
+    font-weight: 500;
+}
+
+.bg-dial_additional-buttons {
+    width: 100%;
+    display: flex;
+    margin-bottom: 1rem;
+    gap: 0.5rem;
+}
+
+.bg-dial_additional-btn {
+    width: 100%;
+}
+
+.bg-dial_input--container {
+    display: flex;
+    margin: 1rem 0;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.bg-dial__pad-action {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.bg-dial-actionbtn {
+    background: transparent;
+    color: $black;
+    border: none;
+}
+
+.bg-dial_search-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 1rem 0;
+
+}
+
+.bg-dial-search__icon {
+    position: absolute;
+    left: 8px;
+}
+
+.bg-search_input {
+    border: none;
+    padding: 8px 8px 8px 28px;
+    width: 100%;
+    background-color: $link-background-color;
+    border-radius: 2px;
+    color: $main-heading;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.bg-dial_pad-recent-number {
+    display: block;
+    color: $main-heading;
+}
+
+.bg-outgoing_icon {
+    color: $active-btn;
+}
+
+.bg-recent__list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 0.2rem;
+    border-bottom: 1px solid $stroke-color;
+}
+
+.bg-dial_recent--timing {
+    color: $primary-font;
+    font-size: 0.8rem;
+}
+
+.bg-dial__recent-list {
+    height: 283px;
+    overflow-y: auto;
+
+}
+
+.bg-recent__container {
+    // position: relative;
+    margin-bottom: 3rem;
+}
+
+.bg-dial_footer--btns {
+    position: absolute;
+    bottom: 0px;
+    padding: 0.75rem;
+    display: flex;
+    background-color: $white;
+    width: 100%;
+    left: 0px;
+}
+
+.bg-dial_footer-btn-item {
+    color: $link-color;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    padding: 0.5rem;
+
+    &:hover {
+        background-color: $link-background-color;
+    }
+}
+
+.bg-recent_contants {
+    display: none;
+}
+
+.bg-contact_account {
+    display: none;
+}
+
+.show-recent-contacts {
+    display: block;
+}
+
+
+.bg-account__container {
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+.bg-dialer__contact-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding: 3.5rem 0;
+}
+
+.bg-dialer_contact-profileimg {
+    width: 120px;
+    height: 120px;
+    border-radius: 2px;
+    margin-bottom: 2rem;
+}
+
+.bg-dialer_contact-img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.bg-dial_backbtn {
+    border: none;
+    background-color: $link-background-color;
+    position: absolute;
+    left: -16px;
+    top: 0px;
+}
