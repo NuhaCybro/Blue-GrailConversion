@@ -3439,13 +3439,20 @@ a {
   border: 1px solid #dfdfdf;
   border-radius: 4px;
 }
+.bg-sheets-previewContainer .select2-search__field {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 12.8px;
+}
+.bg-sheets-previewContainer .select2-container--default .select2-search--inline .select2-search__field {
+  font-size: 12.8px;
+}
 .bg-sheets-previewContainer .select2-container--default .select2-selection--multiple {
   border: none;
 }
 .bg-sheets-previewContainer .select2-container--default .select2-selection--multiple .select2-selection__choice {
   background-color: #f7f7f7;
   border: 1px solid #dfdfdf;
-  border-radius: 30px;
+  border-radius: 2px;
 }
 .bg-sheets-previewContainer .select2-container--default .select2-selection--multiple .select2-selection__choice__display {
   font-size: 12.8px;

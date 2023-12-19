@@ -367,6 +367,14 @@
             border-radius: 4px;
         }
     }
+    .select2-search__field{
+        font-family: $text-font;
+        font-size: 12.8px;
+    }
+    .select2-container--default .select2-search--inline .select2-search__field {
+        font-family: $text-font;
+        font-size: 12.8px;
+    }
 
     .select2-container--default .select2-selection--multiple {
         border: none;
@@ -376,7 +384,7 @@
     .select2-container--default .select2-selection--multiple .select2-selection__choice {
         background-color: $secondary-color;
         border: 1px solid $stroke-color;
-        border-radius: 30px;
+        border-radius: 2px;
 
     }
 
