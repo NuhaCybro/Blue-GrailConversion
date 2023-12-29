@@ -7,6 +7,8 @@
 
 }
 
+
+
 .bg-sale-analysis_head {
     font-weight: 600;
     font-size: 1.2rem;
@@ -91,4 +93,33 @@
 
 .bg-kpi_modal-container {
     display: none;
+}
+
+.bg-dbselection_dropdowm-btn::after {
+    margin-left: 2.35rem;
+}
+
+.bg-dashboard_selection-dropdown {
+    height: 180px;
+    overflow: auto;
+    width: 100%;
+}
+
+.custom-dasboardselect {
+    position: relative;
+
+}
+
+.custom-dasboardselect .bg-dbselection_dropdowm-btn option {
+    display: block;
+    width: 100%;
+    padding: 0.35rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: $main-heading;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: $white;
+    border: 0;
 }

@@ -205,8 +205,38 @@
                         <span class=" bg-template-title bg-sale-analysis_head">Sales Analysis</span>
                         <div class="d-flex  align-items-center">
                             <div class="d-flex align-items-center gap-3">
-                                <div class="bg-sales-analysis_date">Start date</div>
-                                <div class="bg-sales-analysis_date">29-1-2023</div>
+                                <div class="nav-item dropdown">
+                                    <button id="bgdialogBtn"
+                                        class="btn bg-button-primary-stroke bg-active-btn  dropdown-toggle bg-dbselection_dropdowm-btn"
+                                        type="button" id="dashboardDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Select Dashboard
+                                    </button>
+
+                                    <ul class="dropdown-menu bg-dashboard_selection-dropdown"
+                                        aria-labelledby="dashboardDropdown">
+                                        <li><a class="dropdown-item" href="#">Dashboard 1</a></li>
+                                        <li><a class="dropdown-item" href="#">Dashboard 2</a></li>
+                                        <li><a class="dropdown-item" href="#">Dashboard 3</a></li>
+                                        <li><a class="dropdown-item" href="#">Dashboard 4</a></li>
+                                        <li><a class="dropdown-item" href="#">Dashboard 5</a></li>
+                                        <li><a class="dropdown-item" href="#">Dashboard 6</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="custom-dasboardselect">
+                                    <select class="btn bg-button-primary-stroke bg-active-btn  bg-dbselection_dropdowm-btn">
+                                        <option value="0">Select dashboard</option>
+                                        <option value="1">Dashboard 1</option>
+                                        <option value="2">Dashboard 2</option>
+                                        <option value="3">Dashboard 3</option>
+                                        <option value="4">Dashboard 4</option>
+                                        <option value="5">Dashboard 5</option>
+                                        <option value="6">Dashboard 6</option>
+                                        <option value="7">Dashboard 7</option>
+                                    </select>
+                                </div>
+
                                 <div class="position-relative">
                                     <button id="bgdialogBtn"
                                         class="btn bg-button-primary-stroke bg-active-btn bg-market-activity-btn"

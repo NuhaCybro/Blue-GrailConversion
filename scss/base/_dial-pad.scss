@@ -26,7 +26,8 @@
         background-color: $link-background-color;
         color: $link-color;
     }
-    &:focus{
+
+    &:focus {
         box-shadow: none;
     }
 }
