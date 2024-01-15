@@ -74,7 +74,8 @@
     color: $primary-color;
     font-weight: 500;
 }
-.bg-soical-marketing_post{
+
+.bg-soical-marketing_post {
     min-height: 220px;
 }
 
@@ -127,7 +128,7 @@
 
 .bg-social_postingSection {
     overflow: auto;
-    height: 67vh;
+    height: 57vh;
 }
 
 .bg-social_postHead {
@@ -224,11 +225,14 @@
     padding: 0.8rem 0;
     min-width: 150px;
     background-clip: padding-box;
-    border: 1px solid rgba(0,0,0,.15);
+    border: 1px solid rgba(0, 0, 0, .15);
     border-radius: 0.25rem;
     font-size: 14px;
 }
 
 .menu-list-dropdown.show {
     display: block;
+}
+.bg-media_icon{
+    color: $link-color;
 }

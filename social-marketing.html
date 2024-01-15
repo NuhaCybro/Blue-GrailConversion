@@ -16,31 +16,21 @@
         <div class="container-fluid">
             <a class="navbar-brand bg-logo-img" href="#">
                 <img src="images/BlueGrail.svg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                <span class="bg-navbar-title">Soical Marketing</span>
             </a>
             <ul class="navbar-nav bg-search_navbar-nav">
                 <li class="nav-item">
                     <form class="d-flex">
-                        <div class="input-group">
-                            <span class="input-group-text bg-search">
-                                <i class="ri-search-line bg-search-icon"></i>
-                            </span>
-                            <input class="form-control bg-custom-search" type="search" placeholder="Search"
-                                aria-label="Search">
-                            <span class="input-group-text bg-search_property">
-                                <i class="ri-command-line bg-search-icon bg-searchbox-K bg-button-stroke"></i>
-                            </span>
-                            <span class="input-group-text bg-search_property">
-                                <a href="" class="bg-searchbox-K bg-button-stroke">K</a>
-                            </span>
+                        <div class="input-group bg-search-group">
+                            <i class="ri-search-line bg-search-icon"></i>
+                            <input class="form-control bg-custom-search" type="search" placeholder="Try searching for an app, user or a setting..." aria-label="Search">
                         </div>
                     </form>
                 </li>
             </ul>
-
-            <ul class="navbar-nav d-flex flex-row ms-auto align-items-center">
+            <ul class="navbar-nav d-flex flex-row align-items-center">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle bg-dropdown-arrow" href="#" id="chatDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle bg-dropdown-arrow" href="#" id="chatDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="ri-chat-3-line bg-icons"></i>
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="chatDropdown">
@@ -50,10 +40,8 @@
                     </ul>
                 </li>
 
-
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle bg-dropdown-arrow bg-clock-container" href="#" id="clockDropdown"
-                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle bg-dropdown-arrow bg-clock-container" href="#" id="clockDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="ri-time-line bg-icons"></i>
                         <span class="badge badge-clock">21</span>
                     </a>
@@ -66,15 +54,25 @@
                 <li class="nav-item">
                     <a class="nav-link bg-nav-links" href="#">
                         <span>Acme, Inc.</span>
-                        <img src="images/user-profile.png" alt="Profile" class="profile-pic rounded-circle me-2">
+                        <div class="bg-profile-pic-container bg-profile-pic-container--online">
+                            <img src="images/user-profile.png" alt="Profile" class="profile-pic me-2">
+                        </div>
                     </a>
                 </li>
             </ul>
         </div>
     </nav>
-
     <div class="container-fluid">
         <div class="row">
+            <div class="col-12 bg-breadcrumbs-titlebar">
+                <div class="row d-flex align-items-center py-2 bg-border-btm">
+                    <div class="col bg-main-sectionhead d-flex align-items-center">
+                        <span class="nav-link bg-template-title"> Dashboard</span>
+                    </div>
+                    <div class="col d-flex align-items-center justify-content-end gap-2 px-2">
+                    </div>
+                </div>
+            </div>
             <nav class="col-md-3 col-lg-2 d-md-block bg-left-sidebar">
                 <div class="position-sticky">
                     <ul class="nav flex-column">
@@ -85,412 +83,803 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
-                                <i class="ri-chat-3-line bg-icons"></i>Discuss
+                                <i class="ri-chat-3-line bg-icons bg-sidebar__icon--style"></i>Discuss
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
-                                <i class="ri-calendar-line bg-icons"></i> Calendar
+                                <i class="ri-calendar-line bg-icons bg-sidebar__icon--style"></i> Calendar
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
-                                <i class="ri-survey-line bg-icons"></i>
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav bg-active-nav" href="#">
+                                <i class="ri-survey-line bg-icons bg-sidebar__icon--style"></i>
                                 To-do
                             </a>
+                            <ul class="bg-sub_nav">
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav active-sidebar" href="#">
+                                        To-do Item 1
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                        To-do Item 1
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                        To-do Item 1
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
-                                <i class="ri-contacts-book-line bg-icons"></i>
+                                <i class="ri-contacts-book-line bg-icons bg-sidebar__icon--style"></i>
                                 Contacts
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
-                                <i class="ri-shake-hands-line bg-icons"></i>
+                                <i class="ri-shake-hands-line bg-icons bg-sidebar__icon--style"></i>
                                 CRM
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav active-sidebar" href="#">
-                                <i class="ri-line-chart-line bg-icons"></i>
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav " href="#">
+                                <i class="ri-line-chart-line bg-icons bg-sidebar__icon--style"></i>
                                 Sales
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
-                                <i class="ri-dashboard-line bg-icons"></i>
+                                <i class="ri-dashboard-line bg-icons bg-sidebar__icon--style"></i>
                                 Dashboards
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
-                                <i class="ri-bank-card-line bg-icons"></i>
+                                <i class="ri-bank-card-line bg-icons bg-sidebar__icon--style"></i>
                                 Point of Sale
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
-                                <i class="ri-bill-line bg-icons"></i>
+                                <i class="ri-bill-line bg-icons bg-sidebar__icon--style"></i>
                                 Invoicing
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
-                                <i class="ri-projector-line bg-icons"></i>
+                                <i class="ri-projector-line bg-icons bg-sidebar__icon--style"></i>
                                 Project
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
-                                <i class="ri-timer-line bg-icons"></i>
+                                <i class="ri-timer-line bg-icons bg-sidebar__icon--style"></i>
                                 Timesheets
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
-                                <i class="ri-global-line bg-icons"></i>
+                                <i class="ri-global-line bg-icons bg-sidebar__icon--style"></i>
                                 Website
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
-                                <i class="ri-graduation-cap-line  bg-icons"></i>
+                                <i class="ri-graduation-cap-line  bg-icons bg-sidebar__icon--style"></i>
                                 eLearning
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
-                                <i class="ri-mail-open-line bg-icons"></i>
+                                <i class="ri-mail-open-line bg-icons bg-sidebar__icon--style"></i>
                                 Email Marketing
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
-                                <i class="ri-smartphone-line  bg-icons"></i>
+                                <i class="ri-smartphone-line  bg-icons bg-sidebar__icon--style"></i>
                                 SMS Marketing
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
-                                <i class="ri-calendar-event-line bg-icons"></i>
+                                <i class="ri-calendar-event-line bg-icons bg-sidebar__icon--style"></i>
                                 Events
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
-                                <i class="ri-checkbox-line  bg-icons"></i>
+                                <i class="ri-checkbox-line  bg-icons bg-sidebar__icon--style"></i>
                                 Surveys
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
-                                <i class="ri-bank-card-2-line  bg-icons"></i>
+                                <i class="ri-bank-card-2-line  bg-icons bg-sidebar__icon--style"></i>
                                 Purchase
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
-                                <i class="ri-archive-line  bg-icons"></i>
+                                <i class="ri-archive-line  bg-icons bg-sidebar__icon--style"></i>
                                 Inventory
                             </a>
                         </li>
                     </ul>
                 </div>
                 <div class="collapse-icon text-center bg-sidebar-collapse">
-                    <a href="#sidebarCollapse" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                        aria-controls="sidebarCollapse">
+                    <a href="#sidebarCollapse" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCollapse">
                         <i class="ri-arrow-left-s-line bg-icons  bg-collapse-icon"></i>
                         Collapse Menu
                     </a>
                 </div>
             </nav>
-            <main class="col-md-9 ms-sm-auto col-lg-10">
-                <div class="row py-2">
-                    <div class="col d-flex justify-content-between bg-border-btm">
-                        <ul class="navbar-nav flex-row flex-wrap gap-4">
-
-                            <li class="nav-item active">
-                                <a class="nav-link bg-navitem-list" href="#"><i class="ri-add-circle-line"></i>Add a
-                                    Stream</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link bg-navitem-list" href="#"><i class="ri-add-line"></i>New Post</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link bg-navitem-list" href="#">Synchronize</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link bg-navitem-list" href="#">Feed</a>
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
-                <div class="row d-flex align-items-center py-2 bg-border-btm">
-                    <div class="col-md-3 bg-main-sectionhead">
-                        Social Marketing
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="d-flex p-0 bg-border-btm bg-social_maketing-topSection">
-                        <div class="col py-3 bg-social-market_box  bg-border-right">
-                            <div class="d-flex align-items-center gap-2 bg-social-market_tophead">
-                                <img src="images/Vector (6).png" alt="">
-                                Acme, Inc.
-                            </div>
-                            <div class="d-flex align-items-center gap-3 bg-soical-market_glancecontainer">
-                                <div class="d-flex align-items-center gap-2 pt-2 ">
-                                    <i class="ri-focus-2-line bg-icons"></i>
-                                    <p class="bg-soical-market_txt ">1,836</p>
-                                    <div class=" bg-soical-market_dropdown">
-                                        <span class="dropdown-toggle" type="button"
-                                            id="percentageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                            15%
-                                        </span>
-                                        <ul class="dropdown-menu"
-                                            aria-labelledby="percentageDropdown">
-                                            <li><a class="dropdown-item" href="#">15%</a></li>
-                                            <li><a class="dropdown-item" href="#">20%</a></li>
-                                            <li><a class="dropdown-item" href="#">25%</a></li>
-
-                                        </ul>
-                                    </div>
-
-                                </div>
-                                <div class="d-flex align-items-center gap-2 pt-2">
-                                    <i class="ri-focus-2-line bg-icons"></i>
-                                    <p class="bg-soical-market_txt">1,836</p>
-                                    <div class=" bg-soical-market_dropdown ">
-                                        <span class="dropdown-toggle" type="button" id="percentageDropdown"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            4%
-                                        </span>
-                                        <ul class=" dropdown-menu " aria-labelledby="percentageDropdown">
-                                            <li><a class="dropdown-item" href="#">15%</a></li>
-                                            <li><a class="dropdown-item" href="#">20%</a></li>
-                                            <li><a class="dropdown-item" href="#">25%</a></li>
-
-                                        </ul>
-                                    </div>
-
-                                </div>
-                                <div class="d-flex align-items-center gap-2 pt-2">
-                                    <i class="ri-book-line bg-icons"></i>
-                                    <p class="bg-soical-market_txt">1,836</p>
-                                    <div class=" bg-soical-market_dropdown">
-                                        <span class="dropdown-toggle" type="button"
-                                            id="percentageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                            -3%
-                                        </span>
-                                        <ul class="dropdown-menu "
-                                            aria-labelledby="percentageDropdown">
-                                            <li><a class="dropdown-item" href="#">15%</a></li>
-                                            <li><a class="dropdown-item" href="#">20%</a></li>
-                                            <li><a class="dropdown-item" href="#">25%</a></li>
-
-                                        </ul>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col py-3 bg-social-market_box  bg-border-right">
-                            <div class="d-flex align-items-center gap-2 bg-social-market_tophead">
-                                <img src="images/twitter-fill.png" alt="">
-                                Acme, Inc.
-                            </div>
-                            <div class="d-flex align-items-center gap-3 bg-soical-market_glancecontainer">
-                                <div class="d-flex align-items-center gap-2 pt-2">
-                                    <i class="ri-focus-2-line bg-icons"></i>
-                                    <p class="bg-soical-market_txt ">1,836</p>
-                                    <div class=" bg-soical-market_dropdown ">
-                                        <span class="dropdown-toggle " type="button"
-                                            id="percentageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                            15%
-                                        </span>
-                                        <ul class="dropdown-menu"
-                                            aria-labelledby="percentageDropdown">
-                                            <li><a class="dropdown-item" href="#">15%</a></li>
-                                            <li><a class="dropdown-item" href="#">20%</a></li>
-                                            <li><a class="dropdown-item" href="#">25%</a></li>
-
-                                        </ul>
-                                    </div>
-
-                                </div>
-                                <div class="d-flex align-items-center gap-2 pt-2">
-                                    <i class="ri-focus-2-line bg-icons"></i>
-                                    <p class="bg-soical-market_txt">1,836</p>
-                                    <div class=" bg-soical-market_dropdown">
-                                        <span class="dropdown-toggle" type="button"
-                                            id="percentageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                            4%
-                                        </span>
-                                        <ul class="dropdown-menu"
-                                            aria-labelledby="percentageDropdown">
-                                            <li><a class="dropdown-item" href="#">15%</a></li>
-                                            <li><a class="dropdown-item" href="#">20%</a></li>
-                                            <li><a class="dropdown-item" href="#">25%</a></li>
-
-                                        </ul>
-                                    </div>
-
-                                </div>
-                                <div class="d-flex align-items-center gap-2 pt-2">
-                                    <i class="ri-book-line bg-icons"></i>
-                                    <p class="bg-soical-market_txt">1,836</p>
-                                    <div class=" bg-soical-market_dropdown">
-                                        <span class="dropdown-toggle " type="button"
-                                            id="percentageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                            -3%
-                                        </span>
-                                        <ul class="dropdown-menu"
-                                            aria-labelledby="percentageDropdown">
-                                            <li><a class="dropdown-item" href="#">15%</a></li>
-                                            <li><a class="dropdown-item" href="#">20%</a></li>
-                                            <li><a class="dropdown-item" href="#">25%</a></li>
-
-                                        </ul>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col py-3 bg-social-market_box  bg-border-right">
-                            <div class="d-flex align-items-center gap-2 bg-social-market_tophead">
-                                <img src="images/linkedin.png" alt="">
-                                Acme, Inc.
-                            </div>
-                            <div class="d-flex align-items-center gap-3 bg-soical-market_glancecontainer">
-                                <div class="d-flex align-items-center gap-2 pt-2">
-                                    <i class="ri-focus-2-line bg-icons"></i>
-                                    <p class="bg-soical-market_txt">1,836</p>
-                                    <div class=" bg-soical-market_dropdown">
-                                        <span class="dropdown-toggle" type="button"
-                                            id="percentageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                            15%
-                                        </span>
-                                        <ul class="dropdown-menu"
-                                            aria-labelledby="percentageDropdown">
-                                            <li><a class="dropdown-item" href="#">15%</a></li>
-                                            <li><a class="dropdown-item" href="#">20%</a></li>
-                                            <li><a class="dropdown-item" href="#">25%</a></li>
-
-                                        </ul>
-                                    </div>
-
-                                </div>
-                                <div class="d-flex align-items-center gap-2 pt-2">
-                                    <i class="ri-focus-2-line bg-icons"></i>
-                                    <p class="bg-soical-market_txt">1,836</p>
-                                    <div class=" bg-soical-market_dropdown">
-                                        <span class="dropdown-toggle  navbarDropdown" type="button"
-                                            id="percentageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                            4%
-                                        </span>
-                                        <ul class="dropdown-menu"
-                                            aria-labelledby="percentageDropdown">
-                                            <li><a class="dropdown-item" href="#">15%</a></li>
-                                            <li><a class="dropdown-item" href="#">20%</a></li>
-                                            <li><a class="dropdown-item" href="#">25%</a></li>
-
-                                        </ul>
-                                    </div>
-
-                                </div>
-                                <div class="d-flex align-items-center gap-2 pt-2">
-                                    <i class="ri-book-line bg-icons"></i>
-                                    <p class="bg-soical-market_txt">1,836</p>
-                                    <div class=" bg-soical-market_dropdown">
-                                        <span class="dropdown-toggle  navbarDropdown" type="button"
-                                            id="percentageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                            -3%
-                                        </span>
-                                        <ul class="dropdown-menu"
-                                            aria-labelledby="percentageDropdown">
-                                            <li><a class="dropdown-item" href="#">15%</a></li>
-                                            <li><a class="dropdown-item" href="#">20%</a></li>
-                                            <li><a class="dropdown-item" href="#">25%</a></li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col py-3 bg-social-market_box bg-border-right">
-                            <div class="d-flex align-items-center gap-2 bg-social-market_tophead">
-                                <img src="images/Vector (6).png" alt="">
-                                Acme, Inc.
-                            </div>
-                            <div class="d-flex align-items-center gap-3 bg-soical-market_glancecontainer">
-                                <div class="d-flex align-items-center gap-2 pt-2">
-                                    <i class="ri-focus-2-line bg-icons"></i>
-                                    <p class="bg-soical-market_txt">1,836</p>
-                                    <div class=" bg-soical-market_dropdown">
-                                        <span class="dropdown-toggle" type="button"
-                                            id="percentageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                            15%
-                                        </span>
-                                        <ul class="dropdown-menu"
-                                            aria-labelledby="percentageDropdown">
-                                            <li><a class="dropdown-item" href="#">15%</a></li>
-                                            <li><a class="dropdown-item" href="#">20%</a></li>
-                                            <li><a class="dropdown-item" href="#">25%</a></li>
-
-                                        </ul>
-                                    </div>
-
-                                </div>
-                                <div class="d-flex align-items-center gap-2 pt-2">
-                                    <i class="ri-focus-2-line bg-icons"></i>
-                                    <p class="bg-soical-market_txt">1,836</p>
-                                    <div class=" bg-soical-market_dropdown ">
-                                        <span class="dropdown-toggle " type="button"
-                                            id="percentageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                            4%
-                                        </span>
-                                        <ul class="dropdown-menu"
-                                            aria-labelledby="percentageDropdown">
-                                            <li><a class="dropdown-item" href="#">15%</a></li>
-                                            <li><a class="dropdown-item" href="#">20%</a></li>
-                                            <li><a class="dropdown-item" href="#">25%</a></li>
-
-                                        </ul>
-                                    </div>
-
-                                </div>
-                                <div class="d-flex align-items-center gap-2 pt-2">
-                                    <i class="ri-book-line bg-icons"></i>
-                                    <p class="bg-soical-market_txt">1,836</p>
-                                    <div class=" bg-soical-market_dropdown">
-                                        <span class="dropdown-toggle" type="button"
-                                            id="percentageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                            -3%
-                                        </span>
-                                        <ul class="dropdown-menu"
-                                            aria-labelledby="percentageDropdown">
-                                            <li><a class="dropdown-item" href="#">15%</a></li>
-                                            <li><a class="dropdown-item" href="#">20%</a></li>
-                                            <li><a class="dropdown-item" href="#">25%</a></li>
-
-                                        </ul>
-                                    </div>
-
-                                </div>
-                            </div>
+            <main class="col-md-9 ms-sm-auto col-lg-10 bg-main">
+                <div class="bg-dashboard-container mb-2">
+                    <div class="col-12 ">
+                        <div class="d-flex justify-content-between bg-border-btm p-2">
+                            <ul class="navbar-nav flex-row flex-wrap gap-4">
+    
+                                <li class="nav-item active">
+                                    <a class="nav-link bg-navitem-list" href="#"><i class="ri-add-circle-line"></i>Add a
+                                        Stream</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link bg-navitem-list" href="#"><i class="ri-add-line"></i>New Post</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link bg-navitem-list" href="#">Synchronize</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link bg-navitem-list" href="#">Feed</a>
+                                </li>
+                            </ul>
+    
                         </div>
                     </div>
-                    <div class="d-flex p-0 bg-social_maketing-topSection bg-social_postingSection">
-                        <div class="col-lg-3  bg-social-marketing-col position-relative">
-                            <div>
-                                <div class="bg-social-market_box bg-border-btm py-3 bg-social_postHead  ">
+               
+    
+                    <div class="col-12">
+                        <div class="d-flex p-0 bg-border-btm bg-social_maketing-topSection">
+                            <div class="col py-3 bg-social-market_box  bg-border-right">
+                                <div class="d-flex align-items-center gap-2 bg-social-market_tophead">
+                                    <img src="images/Vector (6).png" alt="">
+                                    Acme, Inc.
+                                </div>
+                                <div class="d-flex align-items-center gap-3 bg-soical-market_glancecontainer">
+                                    <div class="d-flex align-items-center gap-2 pt-2 ">
+                                        <i class="ri-focus-2-line bg-icons "></i>
+                                        <p class="bg-soical-market_txt ">1,836</p>
+                                        <div class=" bg-soical-market_dropdown">
+                                            <span class="dropdown-toggle" type="button"
+                                                id="percentageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                15%
+                                            </span>
+                                            <ul class="dropdown-menu"
+                                                aria-labelledby="percentageDropdown">
+                                                <li><a class="dropdown-item" href="#">15%</a></li>
+                                                <li><a class="dropdown-item" href="#">20%</a></li>
+                                                <li><a class="dropdown-item" href="#">25%</a></li>
+    
+                                            </ul>
+                                        </div>
+    
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2 pt-2">
+                                        <i class="ri-focus-2-line bg-icons"></i>
+                                        <p class="bg-soical-market_txt">1,836</p>
+                                        <div class=" bg-soical-market_dropdown ">
+                                            <span class="dropdown-toggle" type="button" id="percentageDropdown"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                4%
+                                            </span>
+                                            <ul class=" dropdown-menu " aria-labelledby="percentageDropdown">
+                                                <li><a class="dropdown-item" href="#">15%</a></li>
+                                                <li><a class="dropdown-item" href="#">20%</a></li>
+                                                <li><a class="dropdown-item" href="#">25%</a></li>
+    
+                                            </ul>
+                                        </div>
+    
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2 pt-2">
+                                        <i class="ri-book-line bg-icons"></i>
+                                        <p class="bg-soical-market_txt">1,836</p>
+                                        <div class=" bg-soical-market_dropdown">
+                                            <span class="dropdown-toggle" type="button"
+                                                id="percentageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                -3%
+                                            </span>
+                                            <ul class="dropdown-menu "
+                                                aria-labelledby="percentageDropdown">
+                                                <li><a class="dropdown-item" href="#">15%</a></li>
+                                                <li><a class="dropdown-item" href="#">20%</a></li>
+                                                <li><a class="dropdown-item" href="#">25%</a></li>
+    
+                                            </ul>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col py-3 bg-social-market_box  bg-border-right">
+                                <div class="d-flex align-items-center gap-2 bg-social-market_tophead">
+                                    <img src="images/twitter-fill.png" alt="">
+                                    Acme, Inc.
+                                </div>
+                                <div class="d-flex align-items-center gap-3 bg-soical-market_glancecontainer">
+                                    <div class="d-flex align-items-center gap-2 pt-2">
+                                        <i class="ri-focus-2-line bg-icons"></i>
+                                        <p class="bg-soical-market_txt ">1,836</p>
+                                        <div class=" bg-soical-market_dropdown ">
+                                            <span class="dropdown-toggle " type="button"
+                                                id="percentageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                15%
+                                            </span>
+                                            <ul class="dropdown-menu"
+                                                aria-labelledby="percentageDropdown">
+                                                <li><a class="dropdown-item" href="#">15%</a></li>
+                                                <li><a class="dropdown-item" href="#">20%</a></li>
+                                                <li><a class="dropdown-item" href="#">25%</a></li>
+    
+                                            </ul>
+                                        </div>
+    
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2 pt-2">
+                                        <i class="ri-focus-2-line bg-icons"></i>
+                                        <p class="bg-soical-market_txt">1,836</p>
+                                        <div class=" bg-soical-market_dropdown">
+                                            <span class="dropdown-toggle" type="button"
+                                                id="percentageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                4%
+                                            </span>
+                                            <ul class="dropdown-menu"
+                                                aria-labelledby="percentageDropdown">
+                                                <li><a class="dropdown-item" href="#">15%</a></li>
+                                                <li><a class="dropdown-item" href="#">20%</a></li>
+                                                <li><a class="dropdown-item" href="#">25%</a></li>
+    
+                                            </ul>
+                                        </div>
+    
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2 pt-2">
+                                        <i class="ri-book-line bg-icons"></i>
+                                        <p class="bg-soical-market_txt">1,836</p>
+                                        <div class=" bg-soical-market_dropdown">
+                                            <span class="dropdown-toggle " type="button"
+                                                id="percentageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                -3%
+                                            </span>
+                                            <ul class="dropdown-menu"
+                                                aria-labelledby="percentageDropdown">
+                                                <li><a class="dropdown-item" href="#">15%</a></li>
+                                                <li><a class="dropdown-item" href="#">20%</a></li>
+                                                <li><a class="dropdown-item" href="#">25%</a></li>
+    
+                                            </ul>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col py-3 bg-social-market_box  bg-border-right">
+                                <div class="d-flex align-items-center gap-2 bg-social-market_tophead">
+                                    <img src="images/linkedin.png" alt="">
+                                    Acme, Inc.
+                                </div>
+                                <div class="d-flex align-items-center gap-3 bg-soical-market_glancecontainer">
+                                    <div class="d-flex align-items-center gap-2 pt-2">
+                                        <i class="ri-focus-2-line bg-icons"></i>
+                                        <p class="bg-soical-market_txt">1,836</p>
+                                        <div class=" bg-soical-market_dropdown">
+                                            <span class="dropdown-toggle" type="button"
+                                                id="percentageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                15%
+                                            </span>
+                                            <ul class="dropdown-menu"
+                                                aria-labelledby="percentageDropdown">
+                                                <li><a class="dropdown-item" href="#">15%</a></li>
+                                                <li><a class="dropdown-item" href="#">20%</a></li>
+                                                <li><a class="dropdown-item" href="#">25%</a></li>
+    
+                                            </ul>
+                                        </div>
+    
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2 pt-2">
+                                        <i class="ri-focus-2-line bg-icons"></i>
+                                        <p class="bg-soical-market_txt">1,836</p>
+                                        <div class=" bg-soical-market_dropdown">
+                                            <span class="dropdown-toggle  navbarDropdown" type="button"
+                                                id="percentageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                4%
+                                            </span>
+                                            <ul class="dropdown-menu"
+                                                aria-labelledby="percentageDropdown">
+                                                <li><a class="dropdown-item" href="#">15%</a></li>
+                                                <li><a class="dropdown-item" href="#">20%</a></li>
+                                                <li><a class="dropdown-item" href="#">25%</a></li>
+    
+                                            </ul>
+                                        </div>
+    
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2 pt-2">
+                                        <i class="ri-book-line bg-icons"></i>
+                                        <p class="bg-soical-market_txt">1,836</p>
+                                        <div class=" bg-soical-market_dropdown">
+                                            <span class="dropdown-toggle  navbarDropdown" type="button"
+                                                id="percentageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                -3%
+                                            </span>
+                                            <ul class="dropdown-menu"
+                                                aria-labelledby="percentageDropdown">
+                                                <li><a class="dropdown-item" href="#">15%</a></li>
+                                                <li><a class="dropdown-item" href="#">20%</a></li>
+                                                <li><a class="dropdown-item" href="#">25%</a></li>
+                                            </ul>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col py-3 bg-social-market_box bg-border-right">
+                                <div class="d-flex align-items-center gap-2 bg-social-market_tophead">
+                                    <img src="images/Vector (6).png" alt="">
+                                    Acme, Inc.
+                                </div>
+                                <div class="d-flex align-items-center gap-3 bg-soical-market_glancecontainer">
+                                    <div class="d-flex align-items-center gap-2 pt-2">
+                                        <i class="ri-focus-2-line bg-icons"></i>
+                                        <p class="bg-soical-market_txt">1,836</p>
+                                        <div class=" bg-soical-market_dropdown">
+                                            <span class="dropdown-toggle" type="button"
+                                                id="percentageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                15%
+                                            </span>
+                                            <ul class="dropdown-menu"
+                                                aria-labelledby="percentageDropdown">
+                                                <li><a class="dropdown-item" href="#">15%</a></li>
+                                                <li><a class="dropdown-item" href="#">20%</a></li>
+                                                <li><a class="dropdown-item" href="#">25%</a></li>
+    
+                                            </ul>
+                                        </div>
+    
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2 pt-2">
+                                        <i class="ri-focus-2-line bg-icons"></i>
+                                        <p class="bg-soical-market_txt">1,836</p>
+                                        <div class=" bg-soical-market_dropdown ">
+                                            <span class="dropdown-toggle " type="button"
+                                                id="percentageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                4%
+                                            </span>
+                                            <ul class="dropdown-menu"
+                                                aria-labelledby="percentageDropdown">
+                                                <li><a class="dropdown-item" href="#">15%</a></li>
+                                                <li><a class="dropdown-item" href="#">20%</a></li>
+                                                <li><a class="dropdown-item" href="#">25%</a></li>
+    
+                                            </ul>
+                                        </div>
+    
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2 pt-2">
+                                        <i class="ri-book-line bg-icons"></i>
+                                        <p class="bg-soical-market_txt">1,836</p>
+                                        <div class=" bg-soical-market_dropdown">
+                                            <span class="dropdown-toggle" type="button"
+                                                id="percentageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                -3%
+                                            </span>
+                                            <ul class="dropdown-menu"
+                                                aria-labelledby="percentageDropdown">
+                                                <li><a class="dropdown-item" href="#">15%</a></li>
+                                                <li><a class="dropdown-item" href="#">20%</a></li>
+                                                <li><a class="dropdown-item" href="#">25%</a></li>
+    
+                                            </ul>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex p-0 bg-social_maketing-topSection bg-social_postingSection">
+                            <div class="col-lg-3  bg-social-marketing-col position-relative">
+                                <div>
+                                    <div class="bg-social-market_box bg-border-btm py-3 bg-social_postHead  ">
+                                        <div class="d-flex align-items-center gap-2 bg-social-market_tophead">
+                                            <img src="images/Vector (6).png" alt="">
+                                            Page Posts: Acme, Inc.
+                                        </div>
+    
+                                    </div>
+                                    <div class="py-2  bg-social-market_box bg-border-btm ">
+                                        <div class="d-flex gap-2 pt-3">
+                                            <div class="bg-social-market_profile rounded-circle">
+                                                <img src="images/Screenshot 2023-09-13 at 4.58 1.png" alt="">
+                                            </div>
+                                            <div>
+                                                <p class="bg-social-market_subhead">Acme, Inc.</p>
+                                                <span class="bg-social-market_sm-head">09/13/2023</span>
+                                            </div>
+                                        </div>
+                                        <p class="bg-soical-market_content">To celebrate the new year, we have a gift for
+                                            you :
+                                            Learn how to build your own chair!</p>
+                                        <a href=""
+                                            class="bg-soical_marketing-link">https://www.youtube.com/watch?v-kmt-oVAB6hU</a>
+    
+    
+                                        <div class="row bg-soical-marketing_post m-0 py-2">
+                                            <div class="col-6 p-0">
+                                                <img src="images/grey-comfortable-armchair-isolated-white-background.jpg"
+                                                    alt="" class="img-fluid">
+                                            </div>
+                                            <div class="col-6  p-0 ">
+                                                <div class="row m-0 h-50">
+                                                    <div class="col-8  p-0">
+                                                        <img src="images/guy-shows-document-girl-group-young-freelancers-office-have-conversation-working (1).jpg"
+                                                            alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="col-4  p-0">
+                                                        <img src="images/team-working-together-project.jpg" alt=""
+                                                            class="img-fluid">
+                                                    </div>
+                                                </div>
+                                                <div class="row m-0 h-50">
+                                                    <div class="col-4  p-0">
+                                                        <img src="images/medium-shot-people-working-construction.jpg" alt=""
+                                                            class="img-fluid">
+                                                    </div>
+                                                    <div class="col-8  p-0 position-relative">
+                                                        <img src="images/medium-shot-plus-size-woman-working-construction.jpg"
+                                                            alt="" class="img-fluid">
+                                                        <a href="" class="position-absolute bg-social-marketing_ovelay">
+                                                            +6
+                                                        </a>
+                                                    </div>
+    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center bg-soical-market_glancecontainer py-2">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <a href="" class="d-flex align-items-center gap-1">
+                                                    <i class="ri-heart-line bg-icons bg-media_icon"></i>
+                                                    <p class="bg-soical-market_txt">5,672</p>
+                                                </a>
+                                                <a href="" class="d-flex align-items-center gap-1 bg-soical-market_comment">
+                                                    <i class="ri-chat-3-line  bg-icons bg-media_icon "></i>
+                                                    <p class="bg-soical-market_txt">5,672</p>
+                                                </a>
+                                            </div>
+    
+                                            <div class="d-flex align-items-center gap-2">
+                                                <a href="" class="d-flex align-items-center gap-1">
+                                                    <i class="ri-eye-line  bg-icons bg-media_icon"></i>
+                                                    <p class="bg-soical-market_txt">5,672</p>
+                                                </a>
+                                                <a href="" class="d-flex align-items-center gap-1">
+                                                    <i class="ri-share-line  bg-icons bg-media_icon"></i>
+                                                    <p class="bg-soical-market_txt">5,672</p>
+                                                </a>
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+                                    <div class="py-2  bg-social-market_box bg-border-btm ">
+                                        <div class="d-flex gap-2 pt-3">
+                                            <div class="bg-social-market_profile rounded-circle">
+                                                <img src="images/image 11.png" alt="">
+                                            </div>
+                                            <div>
+                                                <p class="bg-social-market_subhead">Acme, Inc.</p>
+                                                <span class="bg-social-market_sm-head">09/13/2023</span>
+                                            </div>
+                                        </div>
+                                        <p class="bg-soical-market_content">To celebrate the new year, we have a gift for
+                                            you :
+                                            Learn how to build your own chair!</p>
+                                        <a href=""
+                                            class="bg-soical_marketing-link">https://www.youtube.com/watch?v-kmt-oVAB6hU</a>
+    
+                                        <div
+                                            class="d-flex justify-content-between align-items-center bg-soical-market_glancecontainer py-2">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <a class="d-flex align-items-center gap-1">
+                                                    <i class="ri-heart-line bg-icons bg-media_icon"></i>
+                                                    <p class="bg-soical-market_txt">5,672</p>
+                                                </a>
+                                                <a class="d-flex align-items-center gap-1  bg-soical-market_comment">
+                                                    <i class="ri-chat-3-line  bg-icons bg-media_icon"></i>
+                                                    <p class="bg-soical-market_txt">5,672</p>
+                                                </a>
+                                            </div>
+    
+                                            <div class="d-flex align-items-center gap-2">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <i class="ri-eye-line  bg-icons bg-media_icon"></i>
+                                                    <p class="bg-soical-market_txt">5,672</p>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <i class="ri-share-line  bg-icons bg-media_icon"></i>
+                                                    <p class="bg-soical-market_txt">5,672</p>
+                                                </div>
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+                                    <div class="py-2  bg-social-market_box bg-border-btm ">
+                                        <div class="d-flex gap-2 pt-3">
+                                            <div class="bg-social-market_profile rounded-circle">
+                                                <img src="images/Screenshot 2023-09-13 at 4.58 1.png" alt="">
+                                            </div>
+                                            <div>
+                                                <p class="bg-social-market_subhead">Acme, Inc.</p>
+                                                <span class="bg-social-market_sm-head">09/13/2023</span>
+                                            </div>
+                                        </div>
+                                        <p class="bg-soical-market_content">To celebrate the new year, we have a gift for
+                                            you :
+                                            Learn how to build your own chair!</p>
+                                        <a href=""
+                                            class="bg-soical_marketing-link">https://www.youtube.com/watch?v-kmt-oVAB6hU</a>
+    
+    
+                                        <div class="row bg-soical-marketing_post m-0 py-2">
+                                            <div class="col-12 p-0">
+                                                <img src="images/guy-shows-document-girl-group-young-freelancers-office-have-conversation-working (1).jpg"
+                                                    alt="" class="img-fluid">
+                                            </div>
+    
+                                        </div>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center bg-soical-market_glancecontainer py-2">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <a href="" class="d-flex align-items-center gap-1">
+                                                    <i class="ri-heart-line bg-icons bg-media_icon"></i>
+                                                    <p class="bg-soical-market_txt">5,672</p>
+                                                </a>
+                                                <a href=""
+                                                    class="d-flex align-items-center gap-1  bg-soical-market_comment">
+                                                    <i class="ri-chat-3-line  bg-icons bg-media_icon"></i>
+                                                    <p class="bg-soical-market_txt">5,672</p>
+                                                </a>
+                                            </div>
+    
+                                            <div class="d-flex align-items-center gap-2">
+                                                <a href="" class="d-flex align-items-center gap-1">
+                                                    <i class="ri-eye-line  bg-icons bg-media_icon"></i>
+                                                    <p class="bg-soical-market_txt">5,672</p>
+                                                </a>
+                                                <a class="d-flex align-items-center gap-1">
+                                                    <i class="ri-share-line  bg-icons bg-media_icon"></i>
+                                                    <p class="bg-soical-market_txt">5,672</p>
+                                                </a>
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3  bg-social-marketing-col position-relative">
+                                <div>
+                                    <div class="bg-social-market_box bg-border-btm py-3  bg-social_postHead ">
+                                        <div class="d-flex align-items-center gap-2 bg-social-market_tophead">
+                                            <img src="images/Vector (6).png" alt="">
+                                            Page Posts: Acme, Inc.
+                                        </div>
+    
+                                    </div>
+                                    <div class="py-2  bg-social-market_box  bg-border-btm">
+                                        <div class="d-flex gap-2 pt-3">
+                                            <div class="bg-social-market_profile rounded-circle">
+                                                <img src="images/image 11.png" alt="">
+                                            </div>
+                                            <div>
+                                                <p class="bg-social-market_subhead">Acme, Inc.</p>
+                                                <span class="bg-social-market_sm-head">09/13/2023</span>
+                                            </div>
+                                        </div>
+                                        <p class="bg-soical-market_content">To celebrate the new year, we have a gift for
+                                            you :
+                                            Learn how to build your own chair!</p>
+                                        <a href=""
+                                            class="bg-soical_marketing-link">https://www.youtube.com/watch?v-kmt-oVAB6hU</a>
+    
+                                        <div
+                                            class="d-flex justify-content-between align-items-center bg-soical-market_glancecontainer py-2">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <a href="" class="d-flex align-items-center gap-1">
+                                                    <i class="ri-heart-line bg-icons bg-media_icon"></i>
+                                                    <p class="bg-soical-market_txt">5,672</p>
+                                                </a>
+                                                <a href=""
+                                                    class="d-flex align-items-center gap-1  bg-soical-market_comment">
+                                                    <i class="ri-chat-3-line  bg-icons bg-media_icon"></i>
+                                                    <p class="bg-soical-market_txt">5,672</p>
+                                                </a>
+                                            </div>
+    
+                                            <div class="d-flex align-items-center gap-2">
+                                                <a href="" class="d-flex align-items-center gap-1">
+                                                    <i class="ri-eye-line  bg-icons bg-media_icon"></i>
+                                                    <p class="bg-soical-market_txt">5,672</p>
+                                                </a>
+                                                <a href="" class="d-flex align-items-center gap-1">
+                                                    <i class="ri-share-line  bg-icons bg-media_icon"></i>
+                                                    <p class="bg-soical-market_txt">5,672</p>
+                                                </a>
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+                                    <div class="py-2  bg-social-market_box  bg-border-btm">
+                                        <div class="d-flex gap-2 pt-3">
+                                            <div class="bg-social-market_profile rounded-circle">
+                                                <img src="images/Screenshot 2023-09-13 at 4.58 1.png" alt="">
+                                            </div>
+                                            <div>
+                                                <p class="bg-social-market_subhead">Acme, Inc.</p>
+                                                <span class="bg-social-market_sm-head">09/13/2023</span>
+                                            </div>
+                                        </div>
+                                        <p class="bg-soical-market_content">To celebrate the new year, we have a gift for
+                                            you :
+                                            Learn how to build your own chair!</p>
+                                        <a href=""
+                                            class="bg-soical_marketing-link">https://www.youtube.com/watch?v-kmt-oVAB6hU</a>
+    
+    
+                                        <div class="row bg-soical-marketing_post m-0 py-2">
+                                            <div class="col-12 p-0">
+                                                <img src="images/guy-shows-document-girl-group-young-freelancers-office-have-conversation-working (1).jpg"
+                                                    alt="" class="img-fluid">
+                                            </div>
+    
+                                        </div>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center bg-soical-market_glancecontainer py-2">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <a href="" class="d-flex align-items-center gap-1">
+                                                    <i class="ri-heart-line bg-icons bg-media_icon"></i>
+                                                    <p class="bg-soical-market_txt">5,672</p>
+                                                </a>
+                                                <a href=""
+                                                    class="d-flex align-items-center gap-1  bg-soical-market_comment">
+                                                    <i class="ri-chat-3-line  bg-icons bg-media_icon"></i>
+                                                    <p class="bg-soical-market_txt">5,672</p>
+                                                </a>
+                                            </div>
+    
+                                            <div class="d-flex align-items-center gap-2">
+                                                <a href="" class="d-flex align-items-center gap-1">
+                                                    <i class="ri-eye-line  bg-icons bg-media_icon"></i>
+                                                    <p class="bg-soical-market_txt">5,672</p>
+                                                </a>
+                                                <a href="" class="d-flex align-items-center gap-1">
+                                                    <i class="ri-share-line  bg-icons bg-media_icon"></i>
+                                                    <p class="bg-soical-market_txt">5,672</p>
+                                                </a>
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+                                    <div class="py-2  bg-social-market_box  bg-border-btm">
+                                        <div class="d-flex gap-2 pt-3">
+                                            <div class="bg-social-market_profile rounded-circle">
+                                                <img src="images/image 11.png" alt="">
+                                            </div>
+                                            <div>
+                                                <p class="bg-social-market_subhead">Acme, Inc.</p>
+                                                <span class="bg-social-market_sm-head">09/13/2023</span>
+                                            </div>
+                                        </div>
+                                        <p class="bg-soical-market_content">To celebrate the new year, we have a gift for
+                                            you :
+                                            Learn how to build your own chair!</p>
+                                        <a href=""
+                                            class="bg-soical_marketing-link">https://www.youtube.com/watch?v-kmt-oVAB6hU</a>
+    
+                                        <div
+                                            class="d-flex justify-content-between align-items-center bg-soical-market_glancecontainer py-2">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <a href="" class="d-flex align-items-center gap-1">
+                                                    <i class="ri-heart-line bg-icons bg-media_icon"></i>
+                                                    <p class="bg-soical-market_txt">5,672</p>
+                                                </a>
+                                                <a href=""
+                                                    class="d-flex align-items-center gap-1  bg-soical-market_comment">
+                                                    <i class="ri-chat-3-line  bg-icons bg-media_icon"></i>
+                                                    <p class="bg-soical-market_txt">5,672</p>
+                                                </a>
+                                            </div>
+    
+    
+                                            <div class="d-flex align-items-center gap-2">
+                                                <a href="" class="d-flex align-items-center gap-1">
+                                                    <i class="ri-eye-line  bg-icons bg-media_icon"></i>
+                                                    <p class="bg-soical-market_txt">5,672</p>
+                                                </a>
+                                                <a href="" class="d-flex align-items-center gap-1">
+                                                    <i class="ri-share-line  bg-icons bg-media_icon"></i>
+                                                    <p class="bg-soical-market_txt">5,672</p>
+                                                </a>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                    <div class="py-2  bg-social-market_box  bg-border-btm ">
+                                        <div class="d-flex gap-2 pt-3">
+                                            <div class="bg-social-market_profile rounded-circle">
+                                                <img src="images/Screenshot 2023-09-13 at 4.58 1.png" alt="">
+                                            </div>
+                                            <div>
+                                                <p class="bg-social-market_subhead">Acme, Inc.</p>
+                                                <span class="bg-social-market_sm-head">09/13/2023</span>
+                                            </div>
+                                        </div>
+                                        <p class="bg-soical-market_content">To celebrate the new year, we have a gift for
+                                            you :
+                                            Learn how to build your own chair!</p>
+                                        <a href=""
+                                            class="bg-soical_marketing-link">https://www.youtube.com/watch?v-kmt-oVAB6hU</a>
+    
+    
+    
+                                        <div
+                                            class="d-flex justify-content-between align-items-center bg-soical-market_glancecontainer py-2">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <a href="" class="d-flex align-items-center gap-1">
+                                                    <i class="ri-heart-line bg-icons bg-media_icon"></i>
+                                                    <p class="bg-soical-market_txt">5,672</p>
+                                                </a>
+                                                <a href=""
+                                                    class="d-flex align-items-center gap-1  bg-soical-market_comment">
+                                                    <i class="ri-chat-3-line  bg-icons bg-media_icon"></i>
+                                                    <p class="bg-soical-market_txt">5,672</p>
+                                                </a>
+                                            </div>
+    
+                                            <div class="d-flex align-items-center gap-2">
+                                                <a href="" class="d-flex align-items-center gap-1">
+                                                    <i class="ri-eye-line  bg-icons bg-media_icon"></i>
+                                                    <p class="bg-soical-market_txt">5,672</p>
+                                                </a>
+                                                <a href="" class="d-flex align-items-center gap-1">
+                                                    <i class="ri-share-line  bg-icons bg-media_icon"></i>
+                                                    <p class="bg-soical-market_txt">5,672</p>
+                                                </a>
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3  bg-social-marketing-col position-relative">
+                                <div class="bg-social-market_box bg-border-btm py-3  bg-social_postHead ">
                                     <div class="d-flex align-items-center gap-2 bg-social-market_tophead">
                                         <img src="images/Vector (6).png" alt="">
                                         Page Posts: Acme, Inc.
                                     </div>
-
+    
                                 </div>
                                 <div class="py-2  bg-social-market_box bg-border-btm ">
                                     <div class="d-flex gap-2 pt-3">
@@ -502,17 +891,16 @@
                                             <span class="bg-social-market_sm-head">09/13/2023</span>
                                         </div>
                                     </div>
-                                    <p class="bg-soical-market_content">To celebrate the new year, we have a gift for
-                                        you :
+                                    <p class="bg-soical-market_content">To celebrate the new year, we have a gift for you :
                                         Learn how to build your own chair!</p>
                                     <a href=""
                                         class="bg-soical_marketing-link">https://www.youtube.com/watch?v-kmt-oVAB6hU</a>
-
-
+    
+    
                                     <div class="row bg-soical-marketing_post m-0 py-2">
                                         <div class="col-6 p-0">
-                                            <img src="images/grey-comfortable-armchair-isolated-white-background.jpg"
-                                                alt="" class="img-fluid">
+                                            <img src="images/grey-comfortable-armchair-isolated-white-background.jpg" alt=""
+                                                class="img-fluid">
                                         </div>
                                         <div class="col-6  p-0 ">
                                             <div class="row m-0 h-50">
@@ -537,7 +925,7 @@
                                                         +6
                                                     </a>
                                                 </div>
-
+    
                                             </div>
                                         </div>
                                     </div>
@@ -545,28 +933,28 @@
                                         class="d-flex justify-content-between align-items-center bg-soical-market_glancecontainer py-2">
                                         <div class="d-flex align-items-center gap-2">
                                             <a href="" class="d-flex align-items-center gap-1">
-                                                <i class="ri-heart-line bg-icons"></i>
+                                                <i class="ri-heart-line bg-icons bg-media_icon"></i>
                                                 <p class="bg-soical-market_txt">5,672</p>
                                             </a>
-                                            <a href="" class="d-flex align-items-center gap-1 bg-soical-market_comment">
-                                                <i class="ri-chat-3-line  bg-icons "></i>
+                                            <a href="" class="d-flex align-items-center gap-1  bg-soical-market_comment">
+                                                <i class="ri-chat-3-line  bg-icons bg-media_icon"></i>
                                                 <p class="bg-soical-market_txt">5,672</p>
                                             </a>
                                         </div>
-
+    
                                         <div class="d-flex align-items-center gap-2">
                                             <a href="" class="d-flex align-items-center gap-1">
-                                                <i class="ri-eye-line  bg-icons"></i>
+                                                <i class="ri-eye-line  bg-icons bg-media_icon"></i>
                                                 <p class="bg-soical-market_txt">5,672</p>
                                             </a>
                                             <a href="" class="d-flex align-items-center gap-1">
-                                                <i class="ri-share-line  bg-icons"></i>
+                                                <i class="ri-share-line  bg-icons bg-media_icon"></i>
                                                 <p class="bg-soical-market_txt">5,672</p>
                                             </a>
                                         </div>
-
+    
                                     </div>
-
+    
                                 </div>
                                 <div class="py-2  bg-social-market_box bg-border-btm ">
                                     <div class="d-flex gap-2 pt-3">
@@ -578,38 +966,37 @@
                                             <span class="bg-social-market_sm-head">09/13/2023</span>
                                         </div>
                                     </div>
-                                    <p class="bg-soical-market_content">To celebrate the new year, we have a gift for
-                                        you :
+                                    <p class="bg-soical-market_content">To celebrate the new year, we have a gift for you :
                                         Learn how to build your own chair!</p>
                                     <a href=""
                                         class="bg-soical_marketing-link">https://www.youtube.com/watch?v-kmt-oVAB6hU</a>
-
+    
                                     <div
                                         class="d-flex justify-content-between align-items-center bg-soical-market_glancecontainer py-2">
                                         <div class="d-flex align-items-center gap-2">
-                                            <a class="d-flex align-items-center gap-1">
-                                                <i class="ri-heart-line bg-icons"></i>
+                                            <a href="" class="d-flex align-items-center gap-1">
+                                                <i class="ri-heart-line bg-icons bg-media_icon"></i>
                                                 <p class="bg-soical-market_txt">5,672</p>
                                             </a>
                                             <a class="d-flex align-items-center gap-1  bg-soical-market_comment">
-                                                <i class="ri-chat-3-line  bg-icons"></i>
+                                                <i class="ri-chat-3-line  bg-icons bg-media_icon"></i>
                                                 <p class="bg-soical-market_txt">5,672</p>
                                             </a>
                                         </div>
-
+    
                                         <div class="d-flex align-items-center gap-2">
-                                            <div class="d-flex align-items-center gap-1">
-                                                <i class="ri-eye-line  bg-icons"></i>
+                                            <a class="d-flex align-items-center gap-1">
+                                                <i class="ri-eye-line  bg-icons bg-media_icon"></i>
                                                 <p class="bg-soical-market_txt">5,672</p>
-                                            </div>
-                                            <div class="d-flex align-items-center gap-1">
-                                                <i class="ri-share-line  bg-icons"></i>
+                                            </a>
+                                            <a class="d-flex align-items-center gap-1">
+                                                <i class="ri-share-line  bg-icons bg-media_icon"></i>
                                                 <p class="bg-soical-market_txt">5,672</p>
-                                            </div>
+                                            </a>
                                         </div>
-
+    
                                     </div>
-
+    
                                 </div>
                                 <div class="py-2  bg-social-market_box bg-border-btm ">
                                     <div class="d-flex gap-2 pt-3">
@@ -621,60 +1008,56 @@
                                             <span class="bg-social-market_sm-head">09/13/2023</span>
                                         </div>
                                     </div>
-                                    <p class="bg-soical-market_content">To celebrate the new year, we have a gift for
-                                        you :
+                                    <p class="bg-soical-market_content">To celebrate the new year, we have a gift for you :
                                         Learn how to build your own chair!</p>
                                     <a href=""
                                         class="bg-soical_marketing-link">https://www.youtube.com/watch?v-kmt-oVAB6hU</a>
-
-
+    
+    
                                     <div class="row bg-soical-marketing_post m-0 py-2">
                                         <div class="col-12 p-0">
                                             <img src="images/guy-shows-document-girl-group-young-freelancers-office-have-conversation-working (1).jpg"
                                                 alt="" class="img-fluid">
                                         </div>
-
+    
                                     </div>
                                     <div
                                         class="d-flex justify-content-between align-items-center bg-soical-market_glancecontainer py-2">
                                         <div class="d-flex align-items-center gap-2">
                                             <a href="" class="d-flex align-items-center gap-1">
-                                                <i class="ri-heart-line bg-icons"></i>
+                                                <i class="ri-heart-line bg-icons bg-media_icon"></i>
                                                 <p class="bg-soical-market_txt">5,672</p>
                                             </a>
-                                            <a href=""
-                                                class="d-flex align-items-center gap-1  bg-soical-market_comment">
-                                                <i class="ri-chat-3-line  bg-icons"></i>
+                                            <a href="" class="d-flex align-items-center gap-1  bg-soical-market_comment">
+                                                <i class="ri-chat-3-line  bg-icons bg-media_icon"></i>
                                                 <p class="bg-soical-market_txt">5,672</p>
                                             </a>
                                         </div>
-
+    
                                         <div class="d-flex align-items-center gap-2">
                                             <a href="" class="d-flex align-items-center gap-1">
-                                                <i class="ri-eye-line  bg-icons"></i>
+                                                <i class="ri-eye-line  bg-icons bg-media_icon"></i>
                                                 <p class="bg-soical-market_txt">5,672</p>
                                             </a>
                                             <a class="d-flex align-items-center gap-1">
-                                                <i class="ri-share-line  bg-icons"></i>
+                                                <i class="ri-share-line  bg-icons bg-media_icon"></i>
                                                 <p class="bg-soical-market_txt">5,672</p>
                                             </a>
                                         </div>
-
+    
                                     </div>
-
+    
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3  bg-social-marketing-col position-relative">
-                            <div>
+                            <div class="col-lg-3 bg-social-marketing-col position-relative">
                                 <div class="bg-social-market_box bg-border-btm py-3  bg-social_postHead ">
                                     <div class="d-flex align-items-center gap-2 bg-social-market_tophead">
                                         <img src="images/Vector (6).png" alt="">
                                         Page Posts: Acme, Inc.
                                     </div>
-
+    
                                 </div>
-                                <div class="py-2  bg-social-market_box  bg-border-btm">
+                                <div class="py-2  bg-social-market_box bg-border-btm ">
                                     <div class="d-flex gap-2 pt-3">
                                         <div class="bg-social-market_profile rounded-circle">
                                             <img src="images/image 11.png" alt="">
@@ -684,41 +1067,39 @@
                                             <span class="bg-social-market_sm-head">09/13/2023</span>
                                         </div>
                                     </div>
-                                    <p class="bg-soical-market_content">To celebrate the new year, we have a gift for
-                                        you :
+                                    <p class="bg-soical-market_content">To celebrate the new year, we have a gift for you :
                                         Learn how to build your own chair!</p>
                                     <a href=""
                                         class="bg-soical_marketing-link">https://www.youtube.com/watch?v-kmt-oVAB6hU</a>
-
+    
                                     <div
                                         class="d-flex justify-content-between align-items-center bg-soical-market_glancecontainer py-2">
                                         <div class="d-flex align-items-center gap-2">
                                             <a href="" class="d-flex align-items-center gap-1">
-                                                <i class="ri-heart-line bg-icons"></i>
+                                                <i class="ri-heart-line bg-icons bg-media_icon"></i>
                                                 <p class="bg-soical-market_txt">5,672</p>
                                             </a>
-                                            <a href=""
-                                                class="d-flex align-items-center gap-1  bg-soical-market_comment">
+                                            <a href="" class="d-flex align-items-center gap-1  bg-soical-market_comment">
                                                 <i class="ri-chat-3-line  bg-icons"></i>
                                                 <p class="bg-soical-market_txt">5,672</p>
                                             </a>
                                         </div>
-
+    
                                         <div class="d-flex align-items-center gap-2">
                                             <a href="" class="d-flex align-items-center gap-1">
-                                                <i class="ri-eye-line  bg-icons"></i>
+                                                <i class="ri-eye-line  bg-icons bg-media_icon"></i>
                                                 <p class="bg-soical-market_txt">5,672</p>
                                             </a>
                                             <a href="" class="d-flex align-items-center gap-1">
-                                                <i class="ri-share-line  bg-icons"></i>
+                                                <i class="ri-share-line  bg-icons bg-media_icon"></i>
                                                 <p class="bg-soical-market_txt">5,672</p>
                                             </a>
                                         </div>
-
+    
                                     </div>
-
+    
                                 </div>
-                                <div class="py-2  bg-social-market_box  bg-border-btm">
+                                <div class="py-2  bg-social-market_box bg-border-btm ">
                                     <div class="d-flex gap-2 pt-3">
                                         <div class="bg-social-market_profile rounded-circle">
                                             <img src="images/Screenshot 2023-09-13 at 4.58 1.png" alt="">
@@ -728,49 +1109,47 @@
                                             <span class="bg-social-market_sm-head">09/13/2023</span>
                                         </div>
                                     </div>
-                                    <p class="bg-soical-market_content">To celebrate the new year, we have a gift for
-                                        you :
+                                    <p class="bg-soical-market_content">To celebrate the new year, we have a gift for you :
                                         Learn how to build your own chair!</p>
                                     <a href=""
                                         class="bg-soical_marketing-link">https://www.youtube.com/watch?v-kmt-oVAB6hU</a>
-
-
+    
+    
                                     <div class="row bg-soical-marketing_post m-0 py-2">
                                         <div class="col-12 p-0">
                                             <img src="images/guy-shows-document-girl-group-young-freelancers-office-have-conversation-working (1).jpg"
                                                 alt="" class="img-fluid">
                                         </div>
-
+    
                                     </div>
                                     <div
                                         class="d-flex justify-content-between align-items-center bg-soical-market_glancecontainer py-2">
                                         <div class="d-flex align-items-center gap-2">
                                             <a href="" class="d-flex align-items-center gap-1">
-                                                <i class="ri-heart-line bg-icons"></i>
+                                                <i class="ri-heart-line bg-icons bg-media_icon"></i>
                                                 <p class="bg-soical-market_txt">5,672</p>
                                             </a>
-                                            <a href=""
-                                                class="d-flex align-items-center gap-1  bg-soical-market_comment">
-                                                <i class="ri-chat-3-line  bg-icons"></i>
+                                            <a href="" class="d-flex align-items-center gap-1  bg-soical-market_comment">
+                                                <i class="ri-chat-3-line  bg-icons bg-media_icon"></i>
                                                 <p class="bg-soical-market_txt">5,672</p>
                                             </a>
                                         </div>
-
+    
                                         <div class="d-flex align-items-center gap-2">
                                             <a href="" class="d-flex align-items-center gap-1">
-                                                <i class="ri-eye-line  bg-icons"></i>
+                                                <i class="ri-eye-line  bg-icons bg-media_icon"></i>
                                                 <p class="bg-soical-market_txt">5,672</p>
                                             </a>
                                             <a href="" class="d-flex align-items-center gap-1">
-                                                <i class="ri-share-line  bg-icons"></i>
+                                                <i class="ri-share-line  bg-icons bg-media_icon"></i>
                                                 <p class="bg-soical-market_txt">5,672</p>
                                             </a>
                                         </div>
-
+    
                                     </div>
-
+    
                                 </div>
-                                <div class="py-2  bg-social-market_box  bg-border-btm">
+                                <div class="py-2  bg-social-market_box bg-border-btm ">
                                     <div class="d-flex gap-2 pt-3">
                                         <div class="bg-social-market_profile rounded-circle">
                                             <img src="images/image 11.png" alt="">
@@ -780,41 +1159,38 @@
                                             <span class="bg-social-market_sm-head">09/13/2023</span>
                                         </div>
                                     </div>
-                                    <p class="bg-soical-market_content">To celebrate the new year, we have a gift for
-                                        you :
+                                    <p class="bg-soical-market_content">To celebrate the new year, we have a gift for you :
                                         Learn how to build your own chair!</p>
                                     <a href=""
                                         class="bg-soical_marketing-link">https://www.youtube.com/watch?v-kmt-oVAB6hU</a>
-
+    
                                     <div
                                         class="d-flex justify-content-between align-items-center bg-soical-market_glancecontainer py-2">
                                         <div class="d-flex align-items-center gap-2">
                                             <a href="" class="d-flex align-items-center gap-1">
-                                                <i class="ri-heart-line bg-icons"></i>
+                                                <i class="ri-heart-line bg-icons bg-media_icon"></i>
                                                 <p class="bg-soical-market_txt">5,672</p>
                                             </a>
-                                            <a href=""
-                                                class="d-flex align-items-center gap-1  bg-soical-market_comment">
-                                                <i class="ri-chat-3-line  bg-icons"></i>
+                                            <a href="" class="d-flex align-items-center gap-1  bg-soical-market_comment">
+                                                <i class="ri-chat-3-line  bg-icons bg-media_icon"></i>
                                                 <p class="bg-soical-market_txt">5,672</p>
-                                            </a>
                                         </div>
-
-
+    
+    
                                         <div class="d-flex align-items-center gap-2">
                                             <a href="" class="d-flex align-items-center gap-1">
-                                                <i class="ri-eye-line  bg-icons"></i>
+                                                <i class="ri-eye-line  bg-icons bg-media_icon"></i>
                                                 <p class="bg-soical-market_txt">5,672</p>
                                             </a>
                                             <a href="" class="d-flex align-items-center gap-1">
-                                                <i class="ri-share-line  bg-icons"></i>
+                                                <i class="ri-share-line  bg-icons bg-media_icon"></i>
                                                 <p class="bg-soical-market_txt">5,672</p>
                                             </a>
                                         </div>
                                     </div>
-
+    
                                 </div>
-                                <div class="py-2  bg-social-market_box  bg-border-btm ">
+                                <div class="py-2  bg-social-market_box bg-border-btm ">
                                     <div class="d-flex gap-2 pt-3">
                                         <div class="bg-social-market_profile rounded-circle">
                                             <img src="images/Screenshot 2023-09-13 at 4.58 1.png" alt="">
@@ -824,14 +1200,138 @@
                                             <span class="bg-social-market_sm-head">09/13/2023</span>
                                         </div>
                                     </div>
-                                    <p class="bg-soical-market_content">To celebrate the new year, we have a gift for
-                                        you :
+                                    <p class="bg-soical-market_content">To celebrate the new year, we have a gift for you :
                                         Learn how to build your own chair!</p>
                                     <a href=""
                                         class="bg-soical_marketing-link">https://www.youtube.com/watch?v-kmt-oVAB6hU</a>
-
-
-
+    
+                                    <div
+                                        class="d-flex justify-content-between align-items-center bg-soical-market_glancecontainer py-2">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <a href="" class="d-flex align-items-center gap-1">
+                                                <i class="ri-heart-line bg-icons bg-media_icon"></i>
+                                                <p class="bg-soical-market_txt">5,672</p>
+                                            </a>
+                                            <a href="" class="d-flex align-items-center gap-1  bg-soical-market_comment">
+                                                <i class="ri-chat-3-line  bg-icons bg-media_icon"></i>
+                                                <p class="bg-soical-market_txt">5,672</p>
+                                            </a>
+                                        </div>
+    
+                                        <div class="d-flex align-items-center gap-2">
+                                            <a href="" class="d-flex align-items-center gap-1">
+                                                <i class="ri-eye-line  bg-icons bg-media_icon"></i>
+                                                <p class="bg-soical-market_txt">5,672</p>
+                                            </a>
+                                            <a href="" class="d-flex align-items-center gap-1">
+                                                <i class="ri-share-line  bg-icons bg-media_icon"></i>
+                                                <p class="bg-soical-market_txt">5,672</p>
+                                            </a>
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+                            <div class="col-lg-3  bg-social-marketing-col position-relative">
+                                <div class="bg-social-market_box bg-border-btm py-3  bg-social_postHead ">
+                                    <div class="d-flex align-items-center gap-2 bg-social-market_tophead">
+                                        <img src="images/Vector (6).png" alt="">
+                                        Page Posts: Acme, Inc.
+                                    </div>
+    
+                                </div>
+                                <div class="py-2  bg-social-market_box bg-border-btm ">
+                                    <div class="d-flex gap-2 pt-3">
+                                        <div class="bg-social-market_profile rounded-circle">
+                                            <img src="images/Screenshot 2023-09-13 at 4.58 1.png" alt="">
+                                        </div>
+                                        <div>
+                                            <p class="bg-social-market_subhead">Acme, Inc.</p>
+                                            <span class="bg-social-market_sm-head">09/13/2023</span>
+                                        </div>
+                                    </div>
+                                    <p class="bg-soical-market_content">To celebrate the new year, we have a gift for you :
+                                        Learn how to build your own chair!</p>
+                                    <a href=""
+                                        class="bg-soical_marketing-link">https://www.youtube.com/watch?v-kmt-oVAB6hU</a>
+    
+    
+                                    <div class="row bg-soical-marketing_post m-0 py-2">
+                                        <div class="col-6 p-0">
+                                            <img src="images/grey-comfortable-armchair-isolated-white-background.jpg" alt=""
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="col-6  p-0 ">
+                                            <div class="row m-0 h-50">
+                                                <div class="col-8  p-0">
+                                                    <img src="images/guy-shows-document-girl-group-young-freelancers-office-have-conversation-working (1).jpg"
+                                                        alt="" class="img-fluid">
+                                                </div>
+                                                <div class="col-4  p-0">
+                                                    <img src="images/team-working-together-project.jpg" alt=""
+                                                        class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="row m-0 h-50">
+                                                <div class="col-4  p-0">
+                                                    <img src="images/medium-shot-people-working-construction.jpg" alt=""
+                                                        class="img-fluid">
+                                                </div>
+                                                <div class="col-8  p-0 position-relative">
+                                                    <img src="images/medium-shot-plus-size-woman-working-construction.jpg"
+                                                        alt="" class="img-fluid">
+                                                    <a href="" class="position-absolute bg-social-marketing_ovelay">
+                                                        +6
+                                                    </a>
+                                                </div>
+    
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="d-flex justify-content-between align-items-center bg-soical-market_glancecontainer py-2">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <a href="" class="d-flex align-items-center gap-1">
+                                                <i class="ri-heart-line bg-icons bg-media_icon"></i>
+                                                <p class="bg-soical-market_txt">5,672</p>
+                                            </a>
+                                            <a href="" class="d-flex align-items-center gap-1  bg-soical-market_comment">
+                                                <i class="ri-chat-3-line  bg-icons bg-media_icon"></i>
+                                                <p class="bg-soical-market_txt">5,672</p>
+                                            </a>
+                                        </div>
+    
+                                        <div class="d-flex align-items-center gap-2">
+                                            <a href="" class="d-flex align-items-center gap-1">
+                                                <i class="ri-eye-line  bg-icons bg-media_icon"></i>
+                                                <p class="bg-soical-market_txt">5,672</p>
+                                            </a>
+                                            <a href="" class="d-flex align-items-center gap-1">
+                                                <i class="ri-share-line  bg-icons bg-media_icon"></i>
+                                                <p class="bg-soical-market_txt">5,672</p>
+                                            </a>
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+                                <div class="py-2  bg-social-market_box bg-border-btm ">
+                                    <div class="d-flex gap-2 pt-3">
+                                        <div class="bg-social-market_profile rounded-circle">
+                                            <img src="images/image 11.png" alt="">
+                                        </div>
+                                        <div>
+                                            <p class="bg-social-market_subhead">Acme, Inc.</p>
+                                            <span class="bg-social-market_sm-head">09/13/2023</span>
+                                        </div>
+                                    </div>
+                                    <p class="bg-soical-market_content">To celebrate the new year, we have a gift for you :
+                                        Learn how to build your own chair!</p>
+                                    <a href=""
+                                        class="bg-soical_marketing-link">https://www.youtube.com/watch?v-kmt-oVAB6hU</a>
+    
                                     <div
                                         class="d-flex justify-content-between align-items-center bg-soical-market_glancecontainer py-2">
                                         <div class="d-flex align-items-center gap-2">
@@ -839,640 +1339,153 @@
                                                 <i class="ri-heart-line bg-icons"></i>
                                                 <p class="bg-soical-market_txt">5,672</p>
                                             </a>
-                                            <a href=""
-                                                class="d-flex align-items-center gap-1  bg-soical-market_comment">
-                                                <i class="ri-chat-3-line  bg-icons"></i>
+                                            <a class="d-flex align-items-center gap-1  bg-soical-market_comment">
+                                                <i class="ri-chat-3-line  bg-icons bg-media_icon"></i>
                                                 <p class="bg-soical-market_txt">5,672</p>
                                             </a>
                                         </div>
-
+    
+                                        <div class="d-flex align-items-center gap-2">
+                                            <a class="d-flex align-items-center gap-1">
+                                                <i class="ri-eye-line  bg-icons bg-media_icon"></i>
+                                                <p class="bg-soical-market_txt">5,672</p>
+                                            </a>
+                                            <a class="d-flex align-items-center gap-1">
+                                                <i class="ri-share-line  bg-icons bg-media_icon"></i>
+                                                <p class="bg-soical-market_txt">5,672</p>
+                                            </a>
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+                                <div class="py-2  bg-social-market_box bg-border-btm ">
+                                    <div class="d-flex gap-2 pt-3">
+                                        <div class="bg-social-market_profile rounded-circle">
+                                            <img src="images/Screenshot 2023-09-13 at 4.58 1.png" alt="">
+                                        </div>
+                                        <div>
+                                            <p class="bg-social-market_subhead">Acme, Inc.</p>
+                                            <span class="bg-social-market_sm-head">09/13/2023</span>
+                                        </div>
+                                    </div>
+                                    <p class="bg-soical-market_content">To celebrate the new year, we have a gift for you :
+                                        Learn how to build your own chair!</p>
+                                    <a href=""
+                                        class="bg-soical_marketing-link">https://www.youtube.com/watch?v-kmt-oVAB6hU</a>
+    
+    
+                                    <div class="row bg-soical-marketing_post m-0 py-2">
+                                        <div class="col-12 p-0">
+                                            <img src="images/guy-shows-document-girl-group-young-freelancers-office-have-conversation-working (1).jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+    
+                                    </div>
+                                    <div
+                                        class="d-flex justify-content-between align-items-center bg-soical-market_glancecontainer py-2">
                                         <div class="d-flex align-items-center gap-2">
                                             <a href="" class="d-flex align-items-center gap-1">
-                                                <i class="ri-eye-line  bg-icons"></i>
+                                                <i class="ri-heart-line bg-icons bg-media_icon"></i>
                                                 <p class="bg-soical-market_txt">5,672</p>
                                             </a>
+                                            <a href="" class="d-flex align-items-center gap-1  bg-soical-market_comment">
+                                                <i class="ri-chat-3-line  bg-icons bg-media_icon"></i>
+                                                <p class="bg-soical-market_txt">5,672</p>
+                                            </a>
+                                        </div>
+    
+                                        <div class="d-flex align-items-center gap-2">
                                             <a href="" class="d-flex align-items-center gap-1">
-                                                <i class="ri-share-line  bg-icons"></i>
+                                                <i class="ri-eye-line  bg-icons bg-media_icon"></i>
+                                                <p class="bg-soical-market_txt">5,672</p>
+                                            </a>
+                                            <a class="d-flex align-items-center gap-1">
+                                                <i class="ri-share-line  bg-icons bg-media_icon"></i>
                                                 <p class="bg-soical-market_txt">5,672</p>
                                             </a>
                                         </div>
-
+    
                                     </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3  bg-social-marketing-col position-relative">
-                            <div class="bg-social-market_box bg-border-btm py-3  bg-social_postHead ">
-                                <div class="d-flex align-items-center gap-2 bg-social-market_tophead">
-                                    <img src="images/Vector (6).png" alt="">
-                                    Page Posts: Acme, Inc.
-                                </div>
-
-                            </div>
-                            <div class="py-2  bg-social-market_box bg-border-btm ">
-                                <div class="d-flex gap-2 pt-3">
-                                    <div class="bg-social-market_profile rounded-circle">
-                                        <img src="images/Screenshot 2023-09-13 at 4.58 1.png" alt="">
-                                    </div>
-                                    <div>
-                                        <p class="bg-social-market_subhead">Acme, Inc.</p>
-                                        <span class="bg-social-market_sm-head">09/13/2023</span>
-                                    </div>
-                                </div>
-                                <p class="bg-soical-market_content">To celebrate the new year, we have a gift for you :
-                                    Learn how to build your own chair!</p>
-                                <a href=""
-                                    class="bg-soical_marketing-link">https://www.youtube.com/watch?v-kmt-oVAB6hU</a>
-
-
-                                <div class="row bg-soical-marketing_post m-0 py-2">
-                                    <div class="col-6 p-0">
-                                        <img src="images/grey-comfortable-armchair-isolated-white-background.jpg" alt=""
-                                            class="img-fluid">
-                                    </div>
-                                    <div class="col-6  p-0 ">
-                                        <div class="row m-0 h-50">
-                                            <div class="col-8  p-0">
-                                                <img src="images/guy-shows-document-girl-group-young-freelancers-office-have-conversation-working (1).jpg"
-                                                    alt="" class="img-fluid">
-                                            </div>
-                                            <div class="col-4  p-0">
-                                                <img src="images/team-working-together-project.jpg" alt=""
-                                                    class="img-fluid">
-                                            </div>
-                                        </div>
-                                        <div class="row m-0 h-50">
-                                            <div class="col-4  p-0">
-                                                <img src="images/medium-shot-people-working-construction.jpg" alt=""
-                                                    class="img-fluid">
-                                            </div>
-                                            <div class="col-8  p-0 position-relative">
-                                                <img src="images/medium-shot-plus-size-woman-working-construction.jpg"
-                                                    alt="" class="img-fluid">
-                                                <a href="" class="position-absolute bg-social-marketing_ovelay">
-                                                    +6
-                                                </a>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="d-flex justify-content-between align-items-center bg-soical-market_glancecontainer py-2">
-                                    <div class="d-flex align-items-center gap-2">
-                                        <a href="" class="d-flex align-items-center gap-1">
-                                            <i class="ri-heart-line bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                        <a href="" class="d-flex align-items-center gap-1  bg-soical-market_comment">
-                                            <i class="ri-chat-3-line  bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                    </div>
-
-                                    <div class="d-flex align-items-center gap-2">
-                                        <a href="" class="d-flex align-items-center gap-1">
-                                            <i class="ri-eye-line  bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                        <a href="" class="d-flex align-items-center gap-1">
-                                            <i class="ri-share-line  bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <div class="py-2  bg-social-market_box bg-border-btm ">
-                                <div class="d-flex gap-2 pt-3">
-                                    <div class="bg-social-market_profile rounded-circle">
-                                        <img src="images/image 11.png" alt="">
-                                    </div>
-                                    <div>
-                                        <p class="bg-social-market_subhead">Acme, Inc.</p>
-                                        <span class="bg-social-market_sm-head">09/13/2023</span>
-                                    </div>
-                                </div>
-                                <p class="bg-soical-market_content">To celebrate the new year, we have a gift for you :
-                                    Learn how to build your own chair!</p>
-                                <a href=""
-                                    class="bg-soical_marketing-link">https://www.youtube.com/watch?v-kmt-oVAB6hU</a>
-
-                                <div
-                                    class="d-flex justify-content-between align-items-center bg-soical-market_glancecontainer py-2">
-                                    <div class="d-flex align-items-center gap-2">
-                                        <a href="" class="d-flex align-items-center gap-1">
-                                            <i class="ri-heart-line bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                        <a class="d-flex align-items-center gap-1  bg-soical-market_comment">
-                                            <i class="ri-chat-3-line  bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                    </div>
-
-                                    <div class="d-flex align-items-center gap-2">
-                                        <a class="d-flex align-items-center gap-1">
-                                            <i class="ri-eye-line  bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                        <a class="d-flex align-items-center gap-1">
-                                            <i class="ri-share-line  bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <div class="py-2  bg-social-market_box bg-border-btm ">
-                                <div class="d-flex gap-2 pt-3">
-                                    <div class="bg-social-market_profile rounded-circle">
-                                        <img src="images/Screenshot 2023-09-13 at 4.58 1.png" alt="">
-                                    </div>
-                                    <div>
-                                        <p class="bg-social-market_subhead">Acme, Inc.</p>
-                                        <span class="bg-social-market_sm-head">09/13/2023</span>
-                                    </div>
-                                </div>
-                                <p class="bg-soical-market_content">To celebrate the new year, we have a gift for you :
-                                    Learn how to build your own chair!</p>
-                                <a href=""
-                                    class="bg-soical_marketing-link">https://www.youtube.com/watch?v-kmt-oVAB6hU</a>
-
-
-                                <div class="row bg-soical-marketing_post m-0 py-2">
-                                    <div class="col-12 p-0">
-                                        <img src="images/guy-shows-document-girl-group-young-freelancers-office-have-conversation-working (1).jpg"
-                                            alt="" class="img-fluid">
-                                    </div>
-
-                                </div>
-                                <div
-                                    class="d-flex justify-content-between align-items-center bg-soical-market_glancecontainer py-2">
-                                    <div class="d-flex align-items-center gap-2">
-                                        <a href="" class="d-flex align-items-center gap-1">
-                                            <i class="ri-heart-line bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                        <a href="" class="d-flex align-items-center gap-1  bg-soical-market_comment">
-                                            <i class="ri-chat-3-line  bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                    </div>
-
-                                    <div class="d-flex align-items-center gap-2">
-                                        <a href="" class="d-flex align-items-center gap-1">
-                                            <i class="ri-eye-line  bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                        <a class="d-flex align-items-center gap-1">
-                                            <i class="ri-share-line  bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-lg-3 bg-social-marketing-col position-relative">
-                            <div class="bg-social-market_box bg-border-btm py-3  bg-social_postHead ">
-                                <div class="d-flex align-items-center gap-2 bg-social-market_tophead">
-                                    <img src="images/Vector (6).png" alt="">
-                                    Page Posts: Acme, Inc.
-                                </div>
-
-                            </div>
-                            <div class="py-2  bg-social-market_box bg-border-btm ">
-                                <div class="d-flex gap-2 pt-3">
-                                    <div class="bg-social-market_profile rounded-circle">
-                                        <img src="images/image 11.png" alt="">
-                                    </div>
-                                    <div>
-                                        <p class="bg-social-market_subhead">Acme, Inc.</p>
-                                        <span class="bg-social-market_sm-head">09/13/2023</span>
-                                    </div>
-                                </div>
-                                <p class="bg-soical-market_content">To celebrate the new year, we have a gift for you :
-                                    Learn how to build your own chair!</p>
-                                <a href=""
-                                    class="bg-soical_marketing-link">https://www.youtube.com/watch?v-kmt-oVAB6hU</a>
-
-                                <div
-                                    class="d-flex justify-content-between align-items-center bg-soical-market_glancecontainer py-2">
-                                    <div class="d-flex align-items-center gap-2">
-                                        <a href="" class="d-flex align-items-center gap-1">
-                                            <i class="ri-heart-line bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                        <a href="" class="d-flex align-items-center gap-1  bg-soical-market_comment">
-                                            <i class="ri-chat-3-line  bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                    </div>
-
-                                    <div class="d-flex align-items-center gap-2">
-                                        <a href="" class="d-flex align-items-center gap-1">
-                                            <i class="ri-eye-line  bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                        <a href="" class="d-flex align-items-center gap-1">
-                                            <i class="ri-share-line  bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <div class="py-2  bg-social-market_box bg-border-btm ">
-                                <div class="d-flex gap-2 pt-3">
-                                    <div class="bg-social-market_profile rounded-circle">
-                                        <img src="images/Screenshot 2023-09-13 at 4.58 1.png" alt="">
-                                    </div>
-                                    <div>
-                                        <p class="bg-social-market_subhead">Acme, Inc.</p>
-                                        <span class="bg-social-market_sm-head">09/13/2023</span>
-                                    </div>
-                                </div>
-                                <p class="bg-soical-market_content">To celebrate the new year, we have a gift for you :
-                                    Learn how to build your own chair!</p>
-                                <a href=""
-                                    class="bg-soical_marketing-link">https://www.youtube.com/watch?v-kmt-oVAB6hU</a>
-
-
-                                <div class="row bg-soical-marketing_post m-0 py-2">
-                                    <div class="col-12 p-0">
-                                        <img src="images/guy-shows-document-girl-group-young-freelancers-office-have-conversation-working (1).jpg"
-                                            alt="" class="img-fluid">
-                                    </div>
-
-                                </div>
-                                <div
-                                    class="d-flex justify-content-between align-items-center bg-soical-market_glancecontainer py-2">
-                                    <div class="d-flex align-items-center gap-2">
-                                        <a href="" class="d-flex align-items-center gap-1">
-                                            <i class="ri-heart-line bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                        <a href="" class="d-flex align-items-center gap-1  bg-soical-market_comment">
-                                            <i class="ri-chat-3-line  bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                    </div>
-
-                                    <div class="d-flex align-items-center gap-2">
-                                        <a href="" class="d-flex align-items-center gap-1">
-                                            <i class="ri-eye-line  bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                        <a href="" class="d-flex align-items-center gap-1">
-                                            <i class="ri-share-line  bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <div class="py-2  bg-social-market_box bg-border-btm ">
-                                <div class="d-flex gap-2 pt-3">
-                                    <div class="bg-social-market_profile rounded-circle">
-                                        <img src="images/image 11.png" alt="">
-                                    </div>
-                                    <div>
-                                        <p class="bg-social-market_subhead">Acme, Inc.</p>
-                                        <span class="bg-social-market_sm-head">09/13/2023</span>
-                                    </div>
-                                </div>
-                                <p class="bg-soical-market_content">To celebrate the new year, we have a gift for you :
-                                    Learn how to build your own chair!</p>
-                                <a href=""
-                                    class="bg-soical_marketing-link">https://www.youtube.com/watch?v-kmt-oVAB6hU</a>
-
-                                <div
-                                    class="d-flex justify-content-between align-items-center bg-soical-market_glancecontainer py-2">
-                                    <div class="d-flex align-items-center gap-2">
-                                        <a href="" class="d-flex align-items-center gap-1">
-                                            <i class="ri-heart-line bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                        <a href="" class="d-flex align-items-center gap-1  bg-soical-market_comment">
-                                            <i class="ri-chat-3-line  bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                    </div>
-
-
-                                    <div class="d-flex align-items-center gap-2">
-                                        <a href="" class="d-flex align-items-center gap-1">
-                                            <i class="ri-eye-line  bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                        <a href="" class="d-flex align-items-center gap-1">
-                                            <i class="ri-share-line  bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="py-2  bg-social-market_box bg-border-btm ">
-                                <div class="d-flex gap-2 pt-3">
-                                    <div class="bg-social-market_profile rounded-circle">
-                                        <img src="images/Screenshot 2023-09-13 at 4.58 1.png" alt="">
-                                    </div>
-                                    <div>
-                                        <p class="bg-social-market_subhead">Acme, Inc.</p>
-                                        <span class="bg-social-market_sm-head">09/13/2023</span>
-                                    </div>
-                                </div>
-                                <p class="bg-soical-market_content">To celebrate the new year, we have a gift for you :
-                                    Learn how to build your own chair!</p>
-                                <a href=""
-                                    class="bg-soical_marketing-link">https://www.youtube.com/watch?v-kmt-oVAB6hU</a>
-
-                                <div
-                                    class="d-flex justify-content-between align-items-center bg-soical-market_glancecontainer py-2">
-                                    <div class="d-flex align-items-center gap-2">
-                                        <a href="" class="d-flex align-items-center gap-1">
-                                            <i class="ri-heart-line bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                        <a href="" class="d-flex align-items-center gap-1  bg-soical-market_comment">
-                                            <i class="ri-chat-3-line  bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                    </div>
-
-                                    <div class="d-flex align-items-center gap-2">
-                                        <a href="" class="d-flex align-items-center gap-1">
-                                            <i class="ri-eye-line  bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                        <a href="" class="d-flex align-items-center gap-1">
-                                            <i class="ri-share-line  bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div class="col-lg-3  bg-social-marketing-col position-relative">
-                            <div class="bg-social-market_box bg-border-btm py-3  bg-social_postHead ">
-                                <div class="d-flex align-items-center gap-2 bg-social-market_tophead">
-                                    <img src="images/Vector (6).png" alt="">
-                                    Page Posts: Acme, Inc.
-                                </div>
-
-                            </div>
-                            <div class="py-2  bg-social-market_box bg-border-btm ">
-                                <div class="d-flex gap-2 pt-3">
-                                    <div class="bg-social-market_profile rounded-circle">
-                                        <img src="images/Screenshot 2023-09-13 at 4.58 1.png" alt="">
-                                    </div>
-                                    <div>
-                                        <p class="bg-social-market_subhead">Acme, Inc.</p>
-                                        <span class="bg-social-market_sm-head">09/13/2023</span>
-                                    </div>
-                                </div>
-                                <p class="bg-soical-market_content">To celebrate the new year, we have a gift for you :
-                                    Learn how to build your own chair!</p>
-                                <a href=""
-                                    class="bg-soical_marketing-link">https://www.youtube.com/watch?v-kmt-oVAB6hU</a>
-
-
-                                <div class="row bg-soical-marketing_post m-0 py-2">
-                                    <div class="col-6 p-0">
-                                        <img src="images/grey-comfortable-armchair-isolated-white-background.jpg" alt=""
-                                            class="img-fluid">
-                                    </div>
-                                    <div class="col-6  p-0 ">
-                                        <div class="row m-0 h-50">
-                                            <div class="col-8  p-0">
-                                                <img src="images/guy-shows-document-girl-group-young-freelancers-office-have-conversation-working (1).jpg"
-                                                    alt="" class="img-fluid">
-                                            </div>
-                                            <div class="col-4  p-0">
-                                                <img src="images/team-working-together-project.jpg" alt=""
-                                                    class="img-fluid">
-                                            </div>
-                                        </div>
-                                        <div class="row m-0 h-50">
-                                            <div class="col-4  p-0">
-                                                <img src="images/medium-shot-people-working-construction.jpg" alt=""
-                                                    class="img-fluid">
-                                            </div>
-                                            <div class="col-8  p-0 position-relative">
-                                                <img src="images/medium-shot-plus-size-woman-working-construction.jpg"
-                                                    alt="" class="img-fluid">
-                                                <a href="" class="position-absolute bg-social-marketing_ovelay">
-                                                    +6
-                                                </a>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="d-flex justify-content-between align-items-center bg-soical-market_glancecontainer py-2">
-                                    <div class="d-flex align-items-center gap-2">
-                                        <a href="" class="d-flex align-items-center gap-1">
-                                            <i class="ri-heart-line bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                        <a href="" class="d-flex align-items-center gap-1  bg-soical-market_comment">
-                                            <i class="ri-chat-3-line  bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                    </div>
-
-                                    <div class="d-flex align-items-center gap-2">
-                                        <a href="" class="d-flex align-items-center gap-1">
-                                            <i class="ri-eye-line  bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                        <a href="" class="d-flex align-items-center gap-1">
-                                            <i class="ri-share-line  bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <div class="py-2  bg-social-market_box bg-border-btm ">
-                                <div class="d-flex gap-2 pt-3">
-                                    <div class="bg-social-market_profile rounded-circle">
-                                        <img src="images/image 11.png" alt="">
-                                    </div>
-                                    <div>
-                                        <p class="bg-social-market_subhead">Acme, Inc.</p>
-                                        <span class="bg-social-market_sm-head">09/13/2023</span>
-                                    </div>
-                                </div>
-                                <p class="bg-soical-market_content">To celebrate the new year, we have a gift for you :
-                                    Learn how to build your own chair!</p>
-                                <a href=""
-                                    class="bg-soical_marketing-link">https://www.youtube.com/watch?v-kmt-oVAB6hU</a>
-
-                                <div
-                                    class="d-flex justify-content-between align-items-center bg-soical-market_glancecontainer py-2">
-                                    <div class="d-flex align-items-center gap-2">
-                                        <a href="" class="d-flex align-items-center gap-1">
-                                            <i class="ri-heart-line bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                        <a class="d-flex align-items-center gap-1  bg-soical-market_comment">
-                                            <i class="ri-chat-3-line  bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                    </div>
-
-                                    <div class="d-flex align-items-center gap-2">
-                                        <a class="d-flex align-items-center gap-1">
-                                            <i class="ri-eye-line  bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                        <a class="d-flex align-items-center gap-1">
-                                            <i class="ri-share-line  bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <div class="py-2  bg-social-market_box bg-border-btm ">
-                                <div class="d-flex gap-2 pt-3">
-                                    <div class="bg-social-market_profile rounded-circle">
-                                        <img src="images/Screenshot 2023-09-13 at 4.58 1.png" alt="">
-                                    </div>
-                                    <div>
-                                        <p class="bg-social-market_subhead">Acme, Inc.</p>
-                                        <span class="bg-social-market_sm-head">09/13/2023</span>
-                                    </div>
-                                </div>
-                                <p class="bg-soical-market_content">To celebrate the new year, we have a gift for you :
-                                    Learn how to build your own chair!</p>
-                                <a href=""
-                                    class="bg-soical_marketing-link">https://www.youtube.com/watch?v-kmt-oVAB6hU</a>
-
-
-                                <div class="row bg-soical-marketing_post m-0 py-2">
-                                    <div class="col-12 p-0">
-                                        <img src="images/guy-shows-document-girl-group-young-freelancers-office-have-conversation-working (1).jpg"
-                                            alt="" class="img-fluid">
-                                    </div>
-
-                                </div>
-                                <div
-                                    class="d-flex justify-content-between align-items-center bg-soical-market_glancecontainer py-2">
-                                    <div class="d-flex align-items-center gap-2">
-                                        <a href="" class="d-flex align-items-center gap-1">
-                                            <i class="ri-heart-line bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                        <a href="" class="d-flex align-items-center gap-1  bg-soical-market_comment">
-                                            <i class="ri-chat-3-line  bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                    </div>
-
-                                    <div class="d-flex align-items-center gap-2">
-                                        <a href="" class="d-flex align-items-center gap-1">
-                                            <i class="ri-eye-line  bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                        <a class="d-flex align-items-center gap-1">
-                                            <i class="ri-share-line  bg-icons"></i>
-                                            <p class="bg-soical-market_txt">5,672</p>
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-onboard_modal-container bg-social_comment_modal">
-
-                    <div class="modal-dialog bg-onboarding_modalbox">
-                        <div class="modal-content bg-modal_content">
-                            <div class="modal-header  bg-social_commentHead d-flex  pt-4">
-                                <h5 class="bg-social_maketing-title">Instagram Comments</h5>
-                                <span class="bg-icons bg-social_cmnt-closebtn"><i class="ri-close-line"></i></span>
-                            </div>
-
-                            <div class="modal-body pt-0 bg-modal_main-body">
-                                <form>
-                                    <div class="form-group py-3 ">
-                                        <textarea class="form-control bg-button-stroke" id="exampleFormControlTextarea1"
-                                            rows="5" placeholder="Write a comment...."></textarea>
-                                    </div>
-                                </form>
-                                <div class="d-flex justify-content-end">
-                                    <button class="btn bg-button-primary-stroke text-end">POST</button>
-                                </div>
-                                <div class="bg-social_market-commentReply">
-                                    <div class="bg-social_marketComment-box">
-                                        <div class="d-flex justify-content-between">
-                                            <div class="d-flex align-items-center gap-2">
-                                                <span><a href="" class="bg-main-sectionhead ">aiswaryajp27</a></span>
-                                                <span class="bg-soical-comment_txt">13/9/2023</span>
-                                            </div>
-                                            <div class="d-flex align-items-center gap-2 ">
-                                                <span class="bg-soical-market-count_txt">2</span>
-                                                <span class="bg-soical-market-count_txt"><i
-                                                        class="ri-heart-line"></i></span>
-                                            </div>
-                                        </div>
-                                        <p class="bg-soical-market-cmnttile">FIRST COMMENT</p>
-                                        <div class="d-flex align-items-center gap-1">
-                                            <span><i class="ri-chat-3-line bg-cmt_rply-icon"></i></i></span>
-                                            <span class="bg-cmt_rply">Reply</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="bg-social_market-commentReply">
-                                    <div class="bg-social_marketComment-box">
-                                        <div class="d-flex justify-content-between">
-                                            <div class="d-flex align-items-center gap-2">
-                                                <span><a href="" class="bg-main-sectionhead ">aiswaryajp27</a></span>
-                                                <span class="bg-soical-comment_txt">13/9/2023</span>
-                                            </div>
-                                            <div class="d-flex align-items-center gap-2 ">
-                                                <span class="bg-soical-market-count_txt">2</span>
-                                                <span class="bg-soical-market-count_txt"><i
-                                                        class="ri-heart-line"></i></span>
-                                            </div>
-                                        </div>
-                                        <p class="bg-soical-market-cmnttile">SECOND COMMENT</p>
-                                        <div class="d-flex align-items-center gap-1">
-                                            <span><i class="ri-chat-3-line bg-cmt_rply-icon"></i></i></span>
-                                            <span class="bg-cmt_rply">Reply</span>
-                                        </div>
-                                        <input class="form-control bg-button-stroke mt-2" type="text"
-                                            placeholder="Write a reply..." name="" id="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-modal_footer bg-social_cmnt-footer">
-                                <div class="d-flex justify-content-end">
-                                    <button class="btn bg-button-primary-stroke ">OK</button>
+    
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
+                    <div class="bg-onboard_modal-container bg-social_comment_modal">
+    
+                        <div class="modal-dialog bg-onboarding_modalbox">
+                            <div class="modal-content bg-modal_content">
+                                <div class="modal-header  bg-social_commentHead d-flex  pt-4">
+                                    <h5 class="bg-social_maketing-title">Instagram Comments</h5>
+                                    <span class="bg-icons bg-social_cmnt-closebtn"><i class="ri-close-line"></i></span>
+                                </div>
+    
+                                <div class="modal-body pt-0 bg-modal_main-body">
+                                    <form>
+                                        <div class="form-group py-3 ">
+                                            <textarea class="form-control bg-button-stroke" id="exampleFormControlTextarea1"
+                                                rows="5" placeholder="Write a comment...."></textarea>
+                                        </div>
+                                    </form>
+                                    <div class="d-flex justify-content-end">
+                                        <button class="btn bg-button-primary-stroke text-end">POST</button>
+                                    </div>
+                                    <div class="bg-social_market-commentReply">
+                                        <div class="bg-social_marketComment-box">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <span><a href="" class="bg-main-sectionhead ">aiswaryajp27</a></span>
+                                                    <span class="bg-soical-comment_txt">13/9/2023</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2 ">
+                                                    <span class="bg-soical-market-count_txt">2</span>
+                                                    <span class="bg-soical-market-count_txt"><i
+                                                            class="ri-heart-line"></i></span>
+                                                </div>
+                                            </div>
+                                            <p class="bg-soical-market-cmnttile">FIRST COMMENT</p>
+                                            <div class="d-flex align-items-center gap-1">
+                                                <span><i class="ri-chat-3-line bg-cmt_rply-icon"></i></i></span>
+                                                <span class="bg-cmt_rply">Reply</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-social_market-commentReply">
+                                        <div class="bg-social_marketComment-box">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <span><a href="" class="bg-main-sectionhead ">aiswaryajp27</a></span>
+                                                    <span class="bg-soical-comment_txt">13/9/2023</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2 ">
+                                                    <span class="bg-soical-market-count_txt">2</span>
+                                                    <span class="bg-soical-market-count_txt"><i
+                                                            class="ri-heart-line"></i></span>
+                                                </div>
+                                            </div>
+                                            <p class="bg-soical-market-cmnttile">SECOND COMMENT</p>
+                                            <div class="d-flex align-items-center gap-1">
+                                                <span><i class="ri-chat-3-line bg-cmt_rply-icon"></i></i></span>
+                                                <span class="bg-cmt_rply">Reply</span>
+                                            </div>
+                                            <input class="form-control bg-button-stroke mt-2" type="text"
+                                                placeholder="Write a reply..." name="" id="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-modal_footer bg-social_cmnt-footer">
+                                    <div class="d-flex justify-content-end">
+                                        <button class="btn bg-button-primary-stroke ">OK</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                    </div>
                 </div>
+               
             </main>
         </div>
     </div>
