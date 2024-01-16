@@ -1,0 +1,99 @@
+.bg-fully-sidebar {
+  height: 90vh;
+}
+
+.bg-rental_product {
+  width: 240px;
+  height: 190px;
+}
+
+.bg-rental-img {
+  width: 100%;
+  height: 100%;
+}
+
+.bg-rental__section {
+  height: 82vh;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width:768px) {
+    height: auto;
+
+  }
+}
+
+.bg-rcard-text {
+  margin-bottom: 0;
+  padding-bottom: 0.6rem;
+}
+
+.bg-recard-title {
+  min-width: 50px;
+}
+
+.bg-rcard-text {
+  color: $primary-color;
+  font-size: 14px;
+}
+
+.bg-selected-rental_product {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 0;
+}
+
+.bg-rental_product--name {
+  color: $main-heading;
+  font-size: 27px;
+
+}
+
+.bg-rental-breadcrumbs {
+  color: $font-color;
+
+  .bg-rental-link {
+    color: $link-color;
+  }
+
+}
+.bg-rental_selected-charge{
+  background-color: $background-color;
+  padding: 1rem;
+}
+
+.bg-rental_product--details {
+  padding: 1rem 0;
+}
+
+
+.bg-helpdesk-ticket_input[readonly] {
+  background-color: $white;
+
+}
+
+#datepicker>span:hover {
+  cursor: pointer;
+}
+
+.bg-rental__datepicker {
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 11px;
+  top: 13px;
+z-index: 111;
+  border-radius: 2px;
+}
+.bg-rental-charge{
+  color: $green-font;
+  font-weight: 600;
+}
+.bg-selected-rental_img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Help desk ticket</title>
+    <title>Rental</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -20,7 +20,7 @@
         <div class="container-fluid">
             <a class="navbar-brand bg-logo-img" href="#">
                 <img src="images/BlueGrail.svg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
-                <span class="bg-navbar-title">Sheet</span>
+                <span class="bg-navbar-title">Rental</span>
             </a>
             <ul class="navbar-nav bg-search_navbar-nav">
                 <li class="nav-item">
@@ -72,7 +72,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            <nav class="col-md-3 col-lg-2 d-md-block bg-left-sidebar ">
+            <nav class="col-md-3 col-lg-2 d-md-block bg-left-sidebar bg-fully-sidebar">
                 <div class="position-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
@@ -223,76 +223,121 @@
 
             <main class="col-md-9 ms-sm-auto col-lg-10  bg-main">
                 <div class="bg-dashboard-container">
-
-                    <div class=" bg-helpdesk-ticket_container m-0">
-                        <h5 class="bg-churn-main_head bg-helpdesk-ticket_heading">Helpdesk Ticket</h5>
-
-                        <form class="bg-helpdesk-ticket_form">
-                            <div class="row">
-                                <div class="col-12">
-                                    <label for="Name" class="bg-helpdesk_ticket-label">
-                                        Name</label>
-                                    <input type="text" class="form-control bg-helpdesk-ticket_input" id="name"
-                                        placeholder="Acme, Inc.">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <label for="inputAddress" class="bg-helpdesk_ticket-label">
-                                        Email</label>
-                                    <input type="text" class="form-control bg-helpdesk-ticket_input" id="address"
-                                        placeholder="admin@yourcompany.example.com">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <label for="number" class="bg-helpdesk_ticket-label">
-                                        Phone</label>
-                                    <input type="number" class="form-control bg-helpdesk-ticket_input" id="address"
-                                        placeholder="+1 55 555 555">
-                                </div>
-                                <div class="col-12">
-                                    <label for="Name" class="bg-helpdesk_ticket-label">
-                                        Ticket Subject</label>
-                                    <input type="text" class="form-control bg-helpdesk-ticket_input" id="name"
-                                        placeholder="">
-                                </div>
-                                <div class="col-12">
-                                    <label for="Name" class="bg-helpdesk_ticket-label">
-                                        Description</label>
-                                    <textarea class="form-control bg-helpdesk-ticket_input" id="name"
-                                        placeholder=""></textarea>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <label for="category" class="bg-helpdesk_ticket-label">
-                                        Ticket Category</label>
-                                    <input type="text" class="form-control bg-helpdesk-ticket_input" id="address"
-                                        placeholder="Odoo Installation">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <label for="category" class="bg-helpdesk_ticket-label ">
-                                        Sale Order</label>
-                                    <input type="text" class="form-control bg-helpdesk-ticket_input " id="address"
-                                        placeholder="S000">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <label for="category" class="bg-helpdesk_ticket-label ">
-                                        Dead Line</label>
-                                    <input type="text" class="form-control bg-helpdesk-ticket_input " id="address"
-                                        placeholder="">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <label for="category" class="bg-helpdesk_ticket-label ">
-                                        Dead Line</label>
-                                    <select name="" id=""
-                                        class="form-control bg-helpdesk-ticket_input bg-slection-input">
-                                        <option value="volvo">select 1</option>
-                                        <option value="saab">Select 2</option>
-                                    </select>
+                    <div class="row bg-rental__section">
+                        <div class="row">
+                            <nav class="col-md-3 col-lg-2 d-md-block bg-mainsub--sidebar">
+                                <div class="position-sticky">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link bg-sidebar-heading" href="#">
+                                                Companies
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav active-sidebar"
+                                                href="#">
+                                                All Rental Products
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav"
+                                                href="#">
+                                                Cars
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav"
+                                                href="#">
+                                                Homely Items
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav"
+                                                href="#">
+                                                Others
+                                            </a>
+                                        </li>
+                                    </ul>
 
                                 </div>
-                                <div class="d-flex justify-content-end">
-                                    <button class="btn bg-button-primary-stroke bg-helpdesk_submit" type="submit">Submit</button>
+                            </nav>
+                            <div class="col-md-9 col-lg-10">
+                                <div class="card-container py-4">
+                                    <div class="row">
+                                        <div class=" col-md-6">
+                                            <div class="card mb-4 bg-card-container">
+                                                <div class="card-body">
+                                                    <div class="d-flex bg-rental_card">
+                                                        <div class="bg-rental_product">
+                                                            <img src="images/car.jpg" alt="rental product image"
+                                                                class="bg-rental-img">
+                                                        </div>
+
+                                                        <div class="ms-3">
+                                                            <h5 class="card-title bg-card-name">Car</h5>
+                                                            <p class="bg-rcard-text ">Rental Charge</p>
+                                                            <div class="d-flex align-items-center gap-2 "><span
+                                                                    class="bg-recard-title bg-card-text">Hours:</span><span
+                                                                    class="bg-card-text">100.0</span>
+                                                            </div>
+                                                            <div class="d-flex align-items-center gap-2 "><span
+                                                                    class="bg-recard-title bg-card-text">Days:</span><span
+                                                                    class="bg-card-text">2000.0</span>
+                                                            </div>
+                                                            <div class="d-flex align-items-center gap-2 "><span
+                                                                    class="bg-recard-title bg-card-text">Months:</span><span
+                                                                    class="bg-card-text">3000.0</span>
+                                                            </div>
+                                                            <div class="d-flex align-items-center gap-2 "><span
+                                                                    class="bg-recard-title bg-card-text">Years:</span><span
+                                                                    class="bg-card-text">10000.0</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" col-md-6">
+                                            <div class="card mb-4 bg-card-container">
+                                                <div class="card-body">
+                                                    <div class="d-flex bg-rental_card">
+                                                        <div class="bg-rental_product">
+                                                            <img src="images/washing-machine.jpg" alt="rental product image"
+                                                                class="bg-rental-img">
+                                                        </div>
+
+                                                        <div class="ms-3">
+                                                            <h5 class="card-title bg-card-name">Washing Machine</h5>
+                                                            <p class="bg-rcard-text ">Rental Charge</p>
+                                                            <div class="d-flex align-items-center gap-2 "><span
+                                                                    class="bg-recard-title bg-card-text">Hours:</span><span
+                                                                    class="bg-card-text">100.0</span>
+                                                            </div>
+                                                            <div class="d-flex align-items-center gap-2 "><span
+                                                                    class="bg-recard-title bg-card-text">Days:</span><span
+                                                                    class="bg-card-text">2000.0</span>
+                                                            </div>
+                                                            <div class="d-flex align-items-center gap-2 "><span
+                                                                    class="bg-recard-title bg-card-text">Months:</span><span
+                                                                    class="bg-card-text">3000.0</span>
+                                                            </div>
+                                                            <div class="d-flex align-items-center gap-2 "><span
+                                                                    class="bg-recard-title bg-card-text">Years:</span><span
+                                                                    class="bg-card-text">10000.0</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
                                 </div>
                             </div>
-
-                        </form>
+                        </div>
 
                     </div>
                 </div>
