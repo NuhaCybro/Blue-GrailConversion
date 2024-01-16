@@ -30,12 +30,20 @@
 
 .bg-social-market_box {
     padding: 1rem;
+   
+
+}
+.bg-social_market-glancebox{
+    margin: 0.5rem;
+    &:hover{
+        background-color: $link-background-color;
+    }
 }
 
 .bg-social-market_profile {
     width: 45px;
     height: 45px;
-    border-radius: 50px;
+    border-radius: 2px;
     overflow: hidden;
 }
 
@@ -51,7 +59,7 @@
 .bg-social-market_subhead {
     font-family: $mainhead-font;
     font-size: 14px;
-    color: $primary-color;
+    color: $primary-border;
     font-weight: 600;
     margin-bottom: 0px;
 }
@@ -59,7 +67,7 @@
 .bg-social-market_sm-head {
     color: $primary-font;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .bg-soical-market_content {
@@ -67,11 +75,12 @@
     font-size: 12.8px;
     padding: 1rem 0 0.4rem 0;
     margin: 0px;
+    font-weight: 500;
 }
 
 .bg-soical_marketing-link {
     font-size: 12.8px;
-    color: $primary-color;
+    color: $link-color;
     font-weight: 500;
 }
 
@@ -89,7 +98,7 @@
 }
 
 .bg-soical_marketing-link:hover {
-    color: $primary-color;
+    color: $primary-light;
 }
 
 .bg-social-marketing_ovelay {
@@ -126,10 +135,15 @@
     /* Firefox */
 }
 
-.bg-social_postingSection {
-    overflow: auto;
-    height: 57vh;
+.bg-soical-marketing__dashboard{
+    height: 78vh;
+    overflow-y: auto;
+    @media (max-width:768px) {
+        height: auto;
+        
+    }
 }
+
 
 .bg-social_postHead {
     position: sticky;
@@ -142,7 +156,9 @@
 .bg-social-marketing-col {
     height: max-content;
     border: 1px solid $stroke-color;
+    min-width:320px;
 }
+
 
 .bg-social_comment_modal {
     display: none;
@@ -208,9 +224,6 @@
     color: $primary-color;
 }
 
-
-
-
 .custom-dropdown {
     position: relative;
     display: inline-block;
@@ -233,6 +246,27 @@
 .menu-list-dropdown.show {
     display: block;
 }
-.bg-media_icon{
+
+.bg-media_icon {
+    color: $primary-font;
+
+    &:hover {
+        color: $link-color;
+    }
+}
+
+
+
+.bg-soical_marketing-glance_heading{
+    font-size: 14px;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: $link-background-color;
     color: $link-color;
+    border-radius: 2px;
+    padding: 1rem;
+}
+.bg-social_glance-container{
+   min-width: 300px;
+   background-color: $white;
 }
