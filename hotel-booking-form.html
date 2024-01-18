@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="bg-website_body">
+    <nav class="navbar navbar-expand-lg bg-top-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand bg-logo-img" href="#">
+                <img src="images/BlueGrail.svg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                <span class="bg-navbar-title">Hotel</span>
+            </a>
+            <ul class="navbar-nav bg-search_navbar-nav">
+                <li class="nav-item">
+                    <form class="d-flex">
+                        <div class="input-group bg-search-group">
+                            <i class="ri-search-line bg-search-icon"></i>
+                            <input class="form-control bg-custom-search" type="search"
+                                placeholder="Try searching for an app, user or a setting..." aria-label="Search">
+                        </div>
+                    </form>
+                </li>
+            </ul>
+            <ul class="navbar-nav d-flex flex-row align-items-center">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle bg-dropdown-arrow" href="#" id="chatDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="ri-chat-3-line bg-icons"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="chatDropdown">
+                        <li><a class="dropdown-item" href="#">Chat Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Chat Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Chat Option 3</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle bg-dropdown-arrow bg-clock-container" href="#" id="clockDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="ri-time-line bg-icons"></i>
+                        <span class="badge badge-clock">21</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="clockDropdown">
+                        <li><a class="dropdown-item" href="#">Clock Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Clock Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Clock Option 3</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bg-nav-links" href="#">
+                        <span>Acme, Inc.</span>
+                        <div class="bg-profile-pic-container bg-profile-pic-container--online">
+                            <img src="images/user-profile.png" alt="Profile" class="profile-pic me-2">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container bg-main">
+        <div class="card-container py-4">
+            <div class="row bg-hotel_website-container m-0">
+
+                <form class=" p-4">
+                    <h2 class="bg-rental_product--name mb-3">Fill Your Details</h2>
+                    <div class="row ">
+                       
+                            <div class="col-12 ">
+                                <label for="category" class="bg-helpdesk_ticket-label">
+                                    Company</label>
+
+                                <input class="form-control bg-helpdesk-ticket_input" type="text" />
+                            </div>
+                            <div class="col-12 ">
+                                <label for="category" class="bg-helpdesk_ticket-label">
+                                    Customer</label>
+                                <input class="form-control bg-helpdesk-ticket_input" type="text" />
+                            </div>
+                            <div class="col-12 col-sm-6 ">
+                                <label for="category" class="bg-helpdesk_ticket-label">
+                                    Phone</label>
+
+                                <input class="form-control bg-helpdesk-ticket_input" type="text" />
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <label for="category" class="bg-helpdesk_ticket-label">
+                                    Email</label>
+                                <input class="form-control bg-helpdesk-ticket_input" type="text" />
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <label for="category" class="bg-helpdesk_ticket-label ">
+                                   Country</label>
+                                <input type="text" class="form-control bg-helpdesk-ticket_input " id="address" placeholder="">
+                            </div>
+                            
+                            <div class="col-12 col-sm-6">
+                                <label for="category" class="bg-helpdesk_ticket-label ">
+                                   State</label>
+                                <input type="text" class="form-control bg-helpdesk-ticket_input " id="address" placeholder="">
+                            </div>
+
+                            <div class="col-lg-12  d-flex justify-content-end">
+                                <button class="btn bg-button-primary-stroke bg-helpdesk_submit"
+                                    type="submit">Submit</button>
+                            </div>
+                           
+                        
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+
+
+
+</body>
+
+</html>

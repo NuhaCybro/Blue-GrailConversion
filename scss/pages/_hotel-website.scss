@@ -1,0 +1,140 @@
+.bg-website_body {
+    background-color: $background-color;
+}
+
+.bg-hotel_booking-hero {
+    background-color: $link-color;
+    background: linear-gradient(0deg, rgba(21, 30, 78, 1) 0%, rgba(62, 84, 213, 1) 50%);
+    height: 260px;
+    width: 100%;
+
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.bg-hotel_card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.bg-hotel_booking-content {
+    background-color: $white;
+    padding: 1rem;
+    border-radius: 2px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    display: flex;
+}
+
+.bg-hotel_search-btn {
+    white-space: nowrap;
+    margin: 0.3rem;
+}
+
+.bg-hotel_booking-heading {
+    color: $white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.bg-hotel_card--name {
+    color: $primary-color;
+}
+
+.bg-hotel-room_img {
+    width: 100%;
+    height: 160px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.bg-hotel_room-pricing {
+    font-weight: 700;
+    display: block;
+    color: $primary-color;
+    font-size: 1.2rem;
+}
+
+.bg-hotel_room--details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bg-hotel__pricing-detail {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.bg-hotel_text {
+    color: $primary-font;
+    display: block;
+}
+
+.bg-hotel_website-container {
+    background-color: $white;
+}
+
+.bg-website_back {
+    color: $link-color;
+    margin: 1rem 0;
+    display: flex;
+    transition: all 0.3s;
+
+    &:focus {
+        box-shadow: none;
+        background: $background-color;
+    }
+}
+
+.bg-selected-hotel_room {
+    width: 100%;
+    height: auto;
+}
+
+.bg-hotel__checkbox--container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    white-space: nowrap;
+    flex-wrap: wrap;
+}
+
+.bg-hotel__checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.bg-hotel__check-input {
+    margin-top: 0px;
+    width: 0.9rem;
+    height: 0.9rem;
+}
+
+.bg-hotel_sub-header {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid $border-light-color;
+    margin-bottom: 0.6rem;
+}
+
+.bg-hotel_rooms--details {}
+
+.bg-hotel_total-price {
+    font-weight: 700;
+    color: $green-font;
+    font-size: 1.25rem;
+}
+
+.bg-hotel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
