@@ -68,11 +68,13 @@ body {
     background-color: $active-btn-line;
     left: 0px;
   }
+
   &:focus {
     outline: none;
   }
 
 }
+
 .bg-border-right {
   border-right: 1px solid $stroke-color;
 }
@@ -146,9 +148,7 @@ a {
 
 .bg-toolbar {
   background: $white;
-  position: sticky;
-  top: 124px;
-  z-index: 9;
+
 
   &::after {
     content: "";
@@ -173,4 +173,342 @@ a {
   background: $white;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   //min-height: 100vh;
+}
+
+
+//...............................................................
+.navbar-nav {
+  .bg-custom-search {
+    background-color: $primary-light;
+    border-radius: 2px !important;
+    border: none;
+    padding-left: 30px;
+    color: $sub-fonts;
+    font-size: 14px;
+    font-weight: 400;
+    width: 55vw;
+    position: relative;
+    max-width: 100%;
+
+    &::placeholder {
+      color: $primary-search-text;
+    }
+
+    &:focus {
+      background-color: $primary-focus;
+      border-color: $white;
+      z-index: 0 !important;
+    }
+  }
+}
+
+.bg-custom-search::placeholder {
+  color: $sub-fonts;
+}
+
+.bg-custom-search:focus {
+  color: $sub-fonts;
+  background-color: $secondary-color;
+  border-color: $stroke-color;
+  outline: 0;
+  box-shadow: none;
+}
+
+.bg-search-group {
+  position: relative;
+}
+
+.bg-search-icon {
+  color: $primary-search-text;
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  z-index: 1;
+}
+
+.bg-searchbox-K {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 500;
+  color: $sub-fonts;
+}
+
+.bg-search_property {
+  background-color: $primary-light;
+  border: 1px solid $primary-border;
+  border-radius: 3px;
+  padding: 3px;
+}
+
+.navbar-nav {
+  .nav-item {
+    .bg-search_property:last-child {
+      border-left: 0px;
+      padding-right: 10px;
+    }
+  }
+}
+
+.bg-top-navbar .bg-icons {
+  color: $black;
+  font-size: 20px;
+}
+
+.bg-nav-links {
+  color: $main-heading;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: $text-font;
+}
+
+.bg-nav-links:hover {
+  color: $main-heading;
+}
+
+.bg-nav-links {
+  span {
+    padding: 0 0.6rem;
+  }
+}
+
+.bg-top-navbar {
+  background-color: $white;
+  border-bottom: 1px solid $stroke-color;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+
+  span {
+    color: $black;
+  }
+}
+
+.bg-dropdown-arrow::after {
+  display: none;
+}
+
+.bg-top-navbar {
+  .badge-clock {
+    background-color: $badge-red-bg;
+    position: absolute;
+    top: 5px;
+    right: -4px;
+    font-size: 9px;
+    padding: 3px;
+    border-radius: 50px;
+    border: 2px solid $white;
+    font-weight: 600;
+    color: $white;
+    
+  }
+}
+
+.bg-clock-container {
+  position: relative;
+}
+
+.bg-left-sidebar {
+  background-color: $sidebar-bg;
+  border-right: 2px solid #f2f2f4;
+  height: 100vh;
+  overflow-y: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+  border-radius: 0;
+
+  position: fixed;
+}
+
+.bg-sidebar-nav {
+  font-size: 14px;
+  font-family: $mainhead-font;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: $sidebar-color;
+  font-weight: 400;
+}
+
+.bg-sidebar-nav:hover {
+  color: $primary-font;
+  background-color: $secondary-cyllobg;
+  border-radius: 0;
+}
+
+.bg-sidebar-nav {
+  .bg-icons {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+.bg-sidebar-heading {
+  color: $sub-fonts;
+  font-family: $text-font;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  padding-left: 30px;
+}
+
+.bg-sidebar-heading:hover {
+  color: $sub-fonts;
+}
+
+.bg-logo-img {
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.bg-sidebar-collapse {
+  position: sticky;
+  bottom: 0px;
+  padding: 1rem;
+  background-color: $secondary-cyllobg;
+}
+
+.bg-sidebar-collapse {
+  a {
+    color: $white;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: $text-font;
+    font-weight: 500;
+    align-items: center;
+    display: flex;
+  }
+}
+
+.bg-sidebar-collapse {
+  a {
+    .bg-collapse-icon {
+
+      border-radius: 50px;
+      padding: 0 0.2rem;
+      margin-right: 9px;
+    }
+  }
+}
+
+.bg-new-btn {
+  color: $primary-font;
+  font-weight: 500;
+  padding: 0.6rem 0rem;
+  font-size: 14px;
+  font-family: $text-font;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.bg-new-btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.bg-page-count {
+  font-size: 12px;
+  color: $primary-font;
+}
+
+.bg-navigation-icon {
+  color: $sub-fonts;
+}
+
+.bg-navigation-icon.active {
+  color: $primary-font;
+}
+
+.bg-aligned-icons {
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  padding: 0 0.2rem;
+
+}
+
+
+.bg-main-sectionhead {
+  font-size: 14px;
+  color: $primary-color;
+  font-weight: 500;
+  font-family: $text-font;
+}
+
+.bg-aligned-icons i {
+  font-size: 14px;
+  padding: 5px 8px;
+  cursor: pointer;
+
+  &.active,
+  &:hover {
+    background-color: $secondary-color;
+    color: $primary-color;
+  }
+
+}
+
+
+
+.bg-sidebar-nav.active-sidebar {
+  background-color: $secondary-cyllobg;
+  border-radius: 0;
+  color: $link-color;
+}
+
+.bg-profile-img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid $stroke-color;
+  border-radius: 10px;
+  object-fit: cover;
+  padding: 2px;
+}
+
+.main-card-box__container {
+  height: 83vh;
+  overflow-y: auto;
+}
+
+.bg-sidebar__icon--style {
+  background-color: $secondary-cyllobg;
+  padding: 4px 8px;
+  border-radius: 2px;
+}
+
+
+.bg-sidebar-nav.bg-active-nav {
+  .bg-sidebar__icon--style {
+    color: $link-color;
+  }
+}
+.bg-cyllo_back{
+  background-color: $primary-color;
+  color: $white;
+  padding: 4px 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  border-radius: 3px;
+  
+}
+.bg-cyllo__back-btn{
+  color: $sidebar-color;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  
+  gap: 0.8rem;
+  font-size: 14px;
+  padding: 0 30px;
+  &:hover{
+    color: $sidebar-color;
+  }
 }
