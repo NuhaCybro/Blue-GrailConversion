@@ -1,0 +1,39 @@
+.bg-giftcard__hero{
+    height: 240px;
+}
+.bg-giftcard__name{
+    margin-top: 0.2rem;
+    color:$black;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.bg-giftcard_text{
+    color: $primary-font;
+    font-size: 1rem;
+}
+.bg-giftcard_type{
+    color: $active-btn;
+    padding: 0 0.3rem;
+}
+.bg-giftcard_validate{
+    margin: 2rem 0 1rem 0;
+}
+.bg-giftcard_validate--date{
+    padding-top: 0.2rem;
+    font-size: 1.2rem;
+  
+    display: block;
+    color: $primary-color;
+}
+.bg-giftcard_container{
+    position: relative;
+
+    &:before{
+        content: '';
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 4px;
+        background-color: $primary-color;
+    }
+}

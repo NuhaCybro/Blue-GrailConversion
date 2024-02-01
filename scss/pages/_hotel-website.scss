@@ -4,7 +4,7 @@
 
 .bg-hotel_booking-hero {
     background-color: $link-color;
-    background: linear-gradient(0deg, rgba(21, 30, 78, 1) 0%, rgba(62, 84, 213, 1) 50%);
+    background: linear-gradient(0deg, $active-btn 0%, rgb(158 167 0 / 77%) 50%);
     height: 260px;
     width: 100%;
 
@@ -32,6 +32,7 @@
 .bg-hotel_search-btn {
     white-space: nowrap;
     margin: 0.3rem;
+    border-radius: 30px;
 }
 
 .bg-hotel_booking-heading {
@@ -80,6 +81,9 @@
 
 .bg-hotel_website-container {
     background-color: $white;
+    box-shadow: 0px 0.5px 2px 0px rgba(0, 0, 0, 0.1);
+    border: 1px solid $stroke-color;
+
 }
 
 .bg-website_back {
@@ -125,7 +129,7 @@
     margin-bottom: 0.6rem;
 }
 
-.bg-hotel_rooms--details {}
+
 
 .bg-hotel_total-price {
     font-weight: 700;
