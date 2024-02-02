@@ -11,7 +11,7 @@ body {
 }
 
 .bg-button-stroke {
-  border-radius: 2px;
+  border-radius: 25px;
   border-top: 1px solid #dfdfdf;
   border-right: 1px solid #dfdfdf;
   border-bottom: 1px solid #dfdfdf;
@@ -20,7 +20,23 @@ body {
   color: $primary-font;
   font-weight: 500;
   font-size: 13px;
-  //box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+}
+
+.bg-box_container {
+  border-radius: 2px;
+  
+  background-color: $white;
+  color: $primary-font;
+  border: 1px solid $stroke-color;
+  font-size: 13px;
+
+  &:focus{
+    box-shadow: none;
+    border-color: $stroke-color;
+
+  }
+
 }
 
 .bg-button-stroke:focus {
@@ -46,7 +62,7 @@ body {
 }
 
 .bg-button-primary-stroke {
-  border-radius: 30px;
+  border-radius: 25px;
   border: 1px solid $primary-color;
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.15);
   background: $primary-color;

@@ -1,5 +1,5 @@
 .bg-userdashboard_user-container {
-    width: 186px;
+    width: 100%;
     border-radius: 2px;
     overflow: hidden;
 }
@@ -14,17 +14,16 @@
     font-size: 0.9rem;
     font-weight: 400;
 }
-.bg-user_form-content{
-    @media (max-width:768px){
-        width:100%;
-    }
+
+.bg-user_form-content {
+
+        width: 100%;
 }
 
 .bg-userdashboard_dropdwn {
-    width: 240px;
-    @media (max-width:768px){
-        width:100%;
-    }
+    
+        width: 100%;
+
 }
 
 .bg-userdashboard_label {
@@ -46,7 +45,7 @@
     white-space: nowrap;
     margin: 0.4rem;
 
-    
+
     @media (max-width:768px) {
         width: 139px;
         font-size: 0.8rem;
@@ -97,23 +96,6 @@
     margin-right: 1rem;
 }
 
-.bg-userdashboard_weather-details {
-    background-color: $background-color ;
-    padding: 1rem;
-    border: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 200px;
-    height: fit-content;
-
-    @media (max-width:992px) {
-        width: 100%;
-        margin-top: 1rem;
-    }
-
-}
-
 .bg-userdashboard-weather-head {
     font-size: 18px;
     font-weight: 600;
@@ -125,11 +107,13 @@
     color: $yellow-font;
     margin-right: 0.2rem;
 }
-.bg-userdashboard_btn-container{
-    width: 50%;
-    @media (max-width:768px){
+
+.bg-userdashboard_btn-container {
+
         width: 100%;
     }
+
+
+.bg-userdashboard_system-detail {
+    min-width: 100px;
 }
-.bg-userdashboard_system-detail{
-min-width: 100px;}
