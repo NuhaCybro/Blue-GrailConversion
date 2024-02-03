@@ -2,27 +2,31 @@
     width: 100%;
     border-radius: 2px;
     overflow: hidden;
+    height: 280px;
+    .bg-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+
 }
 
-.bg-img {
-    width: 100%;
-    height: auto;
-}
 
 .bg-userdashboard_md-txt {
     color: $primary-font;
-    font-size: 0.9rem;
+    font-size: 11px;
     font-weight: 400;
 }
 
 .bg-user_form-content {
 
-        width: 100%;
+    width: 100%;
 }
 
 .bg-userdashboard_dropdwn {
-    
-        width: 100%;
+
+    width: 100%;
 
 }
 
@@ -54,15 +58,26 @@
 
 .bg-userdashboard_sm-head {
     color: $blue;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 12.8px;
     margin-bottom: 0.4rem;
+
+    th {
+        font-weight: 500;
+        font-size: 14px;
+        padding-bottom: 0.5rem;
+    }
+
+    td {
+        color: $primary-font;
+    }
 }
 
 .bg-userdashboard--detail {
-    color: $main-heading;
-    font-size: 14px;
+    color: $primary-font;
+    font-size: 12.8px;
     font-weight: 400;
+    margin-bottom: 0.4rem;
 }
 
 .bg-userdashboard_upcoming-detail {
@@ -81,12 +96,12 @@
 .bg-userdashboard__upcoming-txt {
     color: $main-heading;
     margin-bottom: 0.2rem;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1rem;
 }
 
 .bg-userdashboard__upcoming-box-count {
-    color: $main-heading;
+    color: $active-btn;
 }
 
 .bg-userdashboard_upcoming-vsm-txt {
@@ -110,10 +125,77 @@
 
 .bg-userdashboard_btn-container {
 
-        width: 100%;
-    }
+    width: 100%;
+}
 
 
 .bg-userdashboard_system-detail {
     min-width: 100px;
+}
+
+.bg-userdasboard_system-monitor {
+    padding: 1rem 0;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.bg-userdashboard_system-container {
+    padding: 1.5rem 1rem;
+    background-color: $seconday-cyllo;
+    border-radius: 6px;
+    width: 160px;
+    display: flex;
+
+    justify-content: center;
+    flex-direction: column;
+
+    @media (max-width:768px){
+        width: 144px; 
+    }
+}
+
+.bg-userdashboard_system-size {
+    font-size: 1.3rem;
+    color: $active-btn;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.bg-userdashboard_system-name {
+    color: $primary-font;
+    font-size: 0.9rem;
+}
+
+.bg-userdashboard-system_label {
+    color: $active-btn;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.bg-userdashboard-system_content {
+    color: $main-heading;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.bg-userdashboard__upcoming-container {
+
+    padding-left: 0.8rem;
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 3px;
+        border-radius: 3px;
+        background-color: $primary-color;
+        left: -0.2rem;
+    }
+}
+.bg-userdashboard-name{
+    color: $main-heading;
+    font-size: 1.4rem;
+    font-weight: 600;
 }
