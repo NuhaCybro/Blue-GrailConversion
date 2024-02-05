@@ -25,13 +25,13 @@ body {
 
 .bg-box_container {
   border-radius: 2px;
-  
+
   background-color: $white;
   color: $primary-font;
   border: 1px solid $stroke-color;
   font-size: 13px;
 
-  &:focus{
+  &:focus {
     box-shadow: none;
     border-color: $stroke-color;
 
@@ -464,6 +464,35 @@ a {
   background-color: $secondary-cyllobg;
   border-radius: 0;
   color: $link-color;
+}
+
+.bg-sidebar_main-page-nav {
+  font-size: 14px;
+  font-family: $mainhead-font;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: $primary-font;
+  font-weight: 400;
+  font-weight: 500;
+}
+
+.bg-sidebar_main-page-nav:hover {
+  color: $primary-color;
+  background-color: $secondary-bg;
+  border-radius: 0;
+}
+
+.bg-sidebar_main-page-nav {
+  .bg-icons {
+    font-size: 18px;
+    font-weight: 00;
+  }
+}
+
+.bg-sidebar_main-page-nav.active-sidebar {
+  background-color: $seconday-cyllo;
+  border-radius: 0;
+  color: $active-btn;
 }
 
 .bg-profile-img {
