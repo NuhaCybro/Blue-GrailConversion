@@ -227,12 +227,15 @@
 .cyllo_chat-container {
   max-width: 65%;
   margin: 2rem auto;
+  min-height: 67vh;
   @media (max-width:992px) {
     max-width: 75%;
   }
 
   @media (max-width:768px) {
-    max-width: 96%;
+    max-width: 96%; 
+     height:auto;
+
   }
 }
 
