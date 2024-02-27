@@ -12,64 +12,13 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-top-navbar">
-        <div class="container-fluid">
-            <a class="navbar-brand bg-logo-img" href="#">
-                <img src="images/BlueGrail.svg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
-                <span class="bg-navbar-title">Sales</span>
-            </a>
-            <ul class="navbar-nav bg-search_navbar-nav">
-                <li class="nav-item">
-                    <form class="d-flex">
-                        <div class="input-group bg-search-group">
-                            <i class="ri-search-line bg-search-icon"></i>
-                            <input class="form-control bg-custom-search" type="search"
-                                placeholder="Try searching for an app, user or a setting..." aria-label="Search">
-                        </div>
-                    </form>
-                </li>
-            </ul>
-            <ul class="navbar-nav d-flex flex-row align-items-center">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle bg-dropdown-arrow" href="#" id="chatDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="ri-chat-3-line bg-icons"></i>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="chatDropdown">
-                        <li><a class="dropdown-item" href="#">Chat Option 1</a></li>
-                        <li><a class="dropdown-item" href="#">Chat Option 2</a></li>
-                        <li><a class="dropdown-item" href="#">Chat Option 3</a></li>
-                    </ul>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle bg-dropdown-arrow bg-clock-container" href="#" id="clockDropdown"
-                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="ri-time-line bg-icons"></i>
-                        <span class="badge badge-clock">21</span>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="clockDropdown">
-                        <li><a class="dropdown-item" href="#">Clock Option 1</a></li>
-                        <li><a class="dropdown-item" href="#">Clock Option 2</a></li>
-                        <li><a class="dropdown-item" href="#">Clock Option 3</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link bg-nav-links" href="#">
-                        <span>Acme, Inc.</span>
-                        <div class="bg-profile-pic-container bg-profile-pic-container--online">
-                            <img src="images/user-profile.png" alt="Profile" class="profile-pic me-2">
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
 
     <div class="container-fluid">
         <div class="row">
             <nav class="col-md-3 col-lg-2 d-md-block bg-left-sidebar">
                 <div class="position-sticky">
+                    <a href="" class="bg-cyllo__back-btn"><span class="bg-cyllo_back"><i
+                                class="ri-arrow-left-s-line"></i></span>Back to Home</a>
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a class="nav-link bg-sidebar-heading" href="#">
@@ -78,113 +27,131 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
-                                <i class="ri-chat-3-line bg-icons"></i>Discuss
+                                <i class="ri-chat-3-line bg-icons bg-sidebar__icon--style"></i>Discuss
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
-                                <i class="ri-calendar-line bg-icons"></i> Calendar
+                                <i class="ri-calendar-line bg-icons bg-sidebar__icon--style"></i> Calendar
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
-                                <i class="ri-survey-line bg-icons"></i>
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav bg-active-nav" href="#">
+                                <i class="ri-survey-line bg-icons bg-sidebar__icon--style"></i>
                                 To-do
                             </a>
+                            <ul class="bg-sub_nav">
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav active-sidebar"
+                                        href="#">
+                                        To-do Item 1
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                        To-do Item 1
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
+                                        To-do Item 1
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
-                                <i class="ri-contacts-book-line bg-icons"></i>
+                                <i class="ri-contacts-book-line bg-icons bg-sidebar__icon--style"></i>
                                 Contacts
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
-                                <i class="ri-shake-hands-line bg-icons"></i>
+                                <i class="ri-shake-hands-line bg-icons bg-sidebar__icon--style"></i>
                                 CRM
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav active-sidebar" href="#">
-                                <i class="ri-line-chart-line bg-icons"></i>
+                            <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav " href="#">
+                                <i class="ri-line-chart-line bg-icons bg-sidebar__icon--style"></i>
                                 Sales
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
-                                <i class="ri-dashboard-line bg-icons"></i>
+                                <i class="ri-dashboard-line bg-icons bg-sidebar__icon--style"></i>
                                 Dashboards
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
-                                <i class="ri-bank-card-line bg-icons"></i>
+                                <i class="ri-bank-card-line bg-icons bg-sidebar__icon--style"></i>
                                 Point of Sale
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
-                                <i class="ri-bill-line bg-icons"></i>
+                                <i class="ri-bill-line bg-icons bg-sidebar__icon--style"></i>
                                 Invoicing
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2  bg-sidebar-nav" href="#">
-                                <i class="ri-projector-line bg-icons"></i>
+                                <i class="ri-projector-line bg-icons bg-sidebar__icon--style"></i>
                                 Project
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
-                                <i class="ri-timer-line bg-icons"></i>
+                                <i class="ri-timer-line bg-icons bg-sidebar__icon--style"></i>
                                 Timesheets
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
-                                <i class="ri-global-line bg-icons"></i>
+                                <i class="ri-global-line bg-icons bg-sidebar__icon--style"></i>
                                 Website
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
-                                <i class="ri-graduation-cap-line  bg-icons"></i>
+                                <i class="ri-graduation-cap-line  bg-icons bg-sidebar__icon--style"></i>
                                 eLearning
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
-                                <i class="ri-mail-open-line bg-icons"></i>
+                                <i class="ri-mail-open-line bg-icons bg-sidebar__icon--style"></i>
                                 Email Marketing
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
-                                <i class="ri-smartphone-line  bg-icons"></i>
+                                <i class="ri-smartphone-line  bg-icons bg-sidebar__icon--style"></i>
                                 SMS Marketing
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
-                                <i class="ri-calendar-event-line bg-icons"></i>
+                                <i class="ri-calendar-event-line bg-icons bg-sidebar__icon--style"></i>
                                 Events
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
-                                <i class="ri-checkbox-line  bg-icons"></i>
+                                <i class="ri-checkbox-line  bg-icons bg-sidebar__icon--style"></i>
                                 Surveys
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
-                                <i class="ri-bank-card-2-line  bg-icons"></i>
+                                <i class="ri-bank-card-2-line  bg-icons bg-sidebar__icon--style"></i>
                                 Purchase
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2 bg-sidebar-nav" href="#">
-                                <i class="ri-archive-line  bg-icons"></i>
+                                <i class="ri-archive-line  bg-icons bg-sidebar__icon--style"></i>
                                 Inventory
                             </a>
                         </li>
@@ -200,13 +167,66 @@
             </nav>
 
             <main class="col-md-9 ms-sm-auto col-lg-10 bg-main">
-                <div class="row py-2">
+                <nav class="row navbar navbar-expand-lg bg-top-navbar">
+                    <div class="container-fluid">
+                        <ul class="navbar-nav bg-search_navbar-nav">
+                            <li class="nav-item">
+                                <form class="d-flex">
+                                    <div class="input-group bg-search-group">
+                                        <i class="ri-search-line bg-search-icon"></i>
+                                        <input class="form-control bg-custom-search" type="search"
+                                            placeholder="Try searching for an app, user or a setting..."
+                                            aria-label="Search" />
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav d-flex flex-row align-items-center">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle bg-dropdown-arrow" href="#" id="chatDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="ri-chat-3-line bg-icons"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="chatDropdown">
+                                    <li><a class="dropdown-item" href="#">Chat Option 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Chat Option 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Chat Option 3</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle bg-dropdown-arrow bg-clock-container" href="#"
+                                    id="clockDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="ri-time-line bg-icons"></i>
+                                    <span class="badge badge-clock">21</span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="clockDropdown">
+                                    <li><a class="dropdown-item" href="#">Clock Option 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Clock Option 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Clock Option 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link bg-nav-links" href="#">
+                                    <span>Acme, Inc.</span>
+                                    <div class="bg-profile-pic-container bg-profile-pic-container--online">
+                                        <img src="images/user-profile.png" alt="Profile" class="profile-pic me-2" />
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="px-0 py-2">
                     <div class="d-flex py-2 gap-3">
                         <span class="bg-demand-predit_head">Demand Prediction</span>
                         <div class="d-flex flex-wrap flex-lg-nowrap align-items-center justify-content-end gap-3 w-100">
-                           
+
                             <div class="position-relative">
-                                <button id="bgdialogBtn" class="btn bg-button-primary-stroke bg-active-btn bg-market-activity-btn" type="button" data-bs-toggle="collapse" data-bs-target="#bg-dialogcontainer" aria-expanded="false" aria-controls="bg-dialogcontainer">
+                                <button id="bgdialogBtn"
+                                    class="btn bg-button-primary-stroke bg-active-btn bg-market-activity-btn"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#bg-dialogcontainer"
+                                    aria-expanded="false" aria-controls="bg-dialogcontainer">
                                     Filters
                                 </button>
                                 <div class="bg-marketing-auto_add-parent-container  collapse" id="bg-dialogcontainer">
@@ -218,33 +238,44 @@
                                         <p class="mb-2">Actual Sales</p>
                                         <label for="" class="bg-marketing-auto-dialog-txt">start date</label>
                                         <div class="col-12">
-                                            <input type="text" class="bg-box_container w-100 p-1  bg-market-modal-selection-box">
+                                            <input type="text"
+                                                class="bg-box_container w-100 p-1  bg-market-modal-selection-box">
                                         </div>
                                         <label for="" class="bg-marketing-auto-dialog-txt">End date</label>
                                         <div class="col-12">
-                                            <input type="text" class="bg-box_container w-100 p-1  bg-market-modal-selection-box">
+                                            <input type="text"
+                                                class="bg-box_container w-100 p-1  bg-market-modal-selection-box">
                                         </div>
                                         <p class="mb-2">Predicted Sales</p>
                                         <label for="" class="bg-marketing-auto-dialog-txt">Future periods</label>
                                         <div class="col-12">
-                                            <input type="text" class="bg-box_container w-100 p-1  bg-market-modal-selection-box">
+                                            <input type="text"
+                                                class="bg-box_container w-100 p-1  bg-market-modal-selection-box">
                                         </div>
-                                       
+
                                         <div class="col-12  my-3 mt-1">
                                             <label for="" class="bg-marketing-auto-dialog-txt">Frequency</label>
                                             <div class="dropdown">
-                                                <button class="btn dropdown-toggle bg-sale-forecast-dropdown bg-box_container w-100  bg-market-modal-selection-box" id="chatDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                                                <button
+                                                    class="btn dropdown-toggle bg-sale-forecast-dropdown bg-box_container w-100  bg-market-modal-selection-box"
+                                                    id="chatDropdown" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="true">
                                                     Select period
                                                 </button>
-                                                <ul class="dropdown-menu w-100 " aria-labelledby="chatDropdown" data-popper-placement="bottom-start" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 36px, 0px);">
-                                                    <li><button class="dropdown-item bg-drop-down-item" href="#">Forecast Option
+                                                <ul class="dropdown-menu w-100 " aria-labelledby="chatDropdown"
+                                                    data-popper-placement="bottom-start"
+                                                    style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 36px, 0px);">
+                                                    <li><button class="dropdown-item bg-drop-down-item"
+                                                            href="#">Forecast Option
                                                             1</button>
                                                     </li>
-                                                    <li><button class="dropdown-item  bg-drop-down-item" href="#">Forecast
+                                                    <li><button class="dropdown-item  bg-drop-down-item"
+                                                            href="#">Forecast
                                                             Option
                                                             2</button>
                                                     </li>
-                                                    <li><button class="dropdown-item  bg-drop-down-item" href="#">Forecast
+                                                    <li><button class="dropdown-item  bg-drop-down-item"
+                                                            href="#">Forecast
                                                             Option
                                                             3</button>
                                                     </li>
@@ -253,7 +284,7 @@
 
                                         </div>
 
-                                        
+
                                         <div class="d-flex gap-2 mt-3">
                                             <button class="bg-button-primary-stroke py-2 px-4 bg-active-btn w-100 ">
                                                 Apply Filter
@@ -284,46 +315,45 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
-                <div class="row">
-                    <div class="col-md-3 col-lg-2 ">
+                <div class="row bg-demand_prdt_main">
 
-                        <p class="bg-churn_tile-text text-center">Product/Services</p>
+                    <div class="col-md-3 col-lg-2 p-0">
+
                         <ul class="bg-demand_predict-list bg-box_container">
-                            <li class="bg-sheet-draggable-btn text-center mb-2"><span>6 seated Fabric Sofa
+                            <li class="bg-sheet-draggable-btn bg-demand_prdct--tab "><span>6 seated Fabric Sofa
                                     set</span></li>
-                            <li class=" bg-sheet-draggable-btn text-center mb-2"><span>Acoustic Bloc Screen</span>
+                            <li class=" bg-sheet-draggable-btn bg-demand_prdct--tab "><span>Acoustic Bloc Screen</span>
                             </li>
-                            <li class="bg-sheet-draggable-btn text-center mb-2"><span>Armchair</span></li>
-                            <li class="bg-sheet-draggable-btn text-center mb-2"><span>Cabninet with </span></li>
-                            <li class="bg-sheet-draggable-btn text-center mb-2"><span>6 seated Fabric Sofa
+                            <li class="bg-sheet-draggable-btn bg-demand_prdct--tab "><span>Armchair</span></li>
+                            <li class="bg-sheet-draggable-btn bg-demand_prdct--tab "><span>Cabninet with </span></li>
+                            <li class="bg-sheet-draggable-btn bg-demand_prdct--tab "><span>6 seated Fabric Sofa
                                     set</span></li>
-                            <li class="bg-sheet-draggable-btn text-center mb-2"><span>Acoustic Bloc Screen</span>
+                            <li class="bg-sheet-draggable-btn bg-demand_prdct--tab active"><span>Acoustic Bloc
+                                    Screen</span>
                             </li>
-                            <li class="bg-sheet-draggable-btn text-center mb-2"><span>Armchair</span></li>
-                            <li class="bg-sheet-draggable-btn text-center mb-2"><span>Cabninet with </span></li>
-                            <li class="bg-sheet-draggable-btn text-center mb-2"><span>6 seated Fabric Sofa
+                            <li class="bg-sheet-draggable-btn bg-demand_prdct--tab "><span>Armchair</span></li>
+                            <li class="bg-sheet-draggable-btn bg-demand_prdct--tab "><span>Cabninet with </span></li>
+                            <li class="bg-sheet-draggable-btn bg-demand_prdct--tab "><span>6 seated Fabric Sofa
                                     set</span></li>
-                            <li class="bg-sheet-draggable-btn text-center mb-2"><span>Acoustic Bloc Screen</span>
+                            <li class="bg-sheet-draggable-btn bg-demand_prdct--tab "><span>Acoustic Bloc Screen</span>
                             </li>
-                            <li class="bg-sheet-draggable-btn text-center mb-2"><span>Armchair</span></li>
-                            <li class="bg-sheet-draggable-btn text-center mb-2"><span>Cabninet with </span></li>
-                            <li class="bg-sheet-draggable-btn text-center mb-2"><span>Armchair</span></li>
-                            <li class="bg-sheet-draggable-btn text-center mb-2"><span>Cabninet with </span></li>
-                            <li class="bg-sheet-draggable-btn text-center mb-2"><span>6 seated Fabric Sofa
+                            <li class="bg-sheet-draggable-btn bg-demand_prdct--tab "><span>Armchair</span></li>
+                            <li class="bg-sheet-draggable-btn bg-demand_prdct--tab "><span>Cabninet with </span></li>
+                            <li class="bg-sheet-draggable-btn bg-demand_prdct--tab "><span>Armchair</span></li>
+                            <li class="bg-sheet-draggable-btn bg-demand_prdct--tab "><span>Cabninet with </span></li>
+                            <li class="bg-sheet-draggable-btn bg-demand_prdct--tab active"><span>6 seated Fabric Sofa
                                     set</span></li>
-                            <li class="bg-sheet-draggable-btn text-center mb-2"><span>Acoustic Bloc Screen</span>
+                            <li class="bg-sheet-draggable-btn bg-demand_prdct--tab "><span>Acoustic Bloc Screen</span>
                             </li>
-                            <li class="bg-sheet-draggable-btn text-center mb-2"><span>Armchair</span></li>
-                            <li class="bg-sheet-draggable-btn text-center mb-2"><span>Cabninet with </span></li>
+                            <li class="bg-sheet-draggable-btn bg-demand_prdct--tab "><span>Armchair</span></li>
+                            <li class="bg-sheet-draggable-btn bg-demand_prdct--tab "><span>Cabninet with </span></li>
                         </ul>
 
-
                     </div>
-                    <div class="col-md-9 col-lg-10">
+
+                    <div class="col-md-9 col-lg-10 pl-0" style="background-color: #fff;padding: 1rem;">
                         <span class="bg-churn_tile-text">Product: Armchair</span>
 
                         <div class="row bg-demand_prediction-table flex-nowrap">
@@ -361,7 +391,7 @@
                                             <td>26</td>
                                         </tr>
                                         <tr>
-                                            <th class="bg-demand-prdt_sm-head ">Average Sales Price</th>
+                                            <th class="bg-demand-prdt_sm-head">Average Sales Price</th>
                                             <td>Data 1</td>
                                             <td>Data 2</td>
                                             <td>Data 3</td>
@@ -372,7 +402,7 @@
                                             <td>Data 8</td>
                                         </tr>
                                         <tr>
-                                            <th class="bg-demand-prdt_sm-head ">Revenue</th>
+                                            <th class="bg-demand-prdt_sm-head">Revenue</th>
                                             <td>Data 1</td>
                                             <td>Data 2</td>
                                             <td>Data 3</td>
@@ -462,12 +492,11 @@
 
                     </div>
                 </div>
-
             </main>
         </div>
 
     </div>
-    </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
