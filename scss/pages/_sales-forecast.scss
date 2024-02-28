@@ -36,9 +36,10 @@
 }
 
 .bg-sale-forecast_graph-container {
-    height: 600px;
+    
     width: 100%;
     padding: 1rem;
+    margin-bottom: 1rem;
 }
 
 .bg-sales-forecast-img {
@@ -61,7 +62,7 @@
     font-size: 1.3rem;
     font-weight: 600;
     color: $main-heading;
-    white-space: nowrap;
+   
 }
 
 .cyllo-graphtype-selection {
@@ -86,4 +87,12 @@
         background-color: $primary-color;
         color: $white;
     }
+}
+.cyllo-sales-forcasting_graph{
+   width: 260px; 
+
+   img{
+    width: 100%;
+    height: auto;
+   }
 }
