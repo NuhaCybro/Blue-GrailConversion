@@ -219,30 +219,29 @@
                     </div>
                 </nav>
                 <div class="row py-3">
-                    <div class="mb-3">
-                        <div class="bg-box_container bg-useradmin-dashboard--main p-3  h-100">
-                            <div class=" cyllo-useradmin-profile ">
+                    <div class="col-lg-3">
+                        <div class="bg-box_container p-3  h-100">
+                            <div class="bg-userdashboard_user-container mb-3">
                                 <img src="images/user-img.png" class="bg-img" alt="">
                             </div>
                             <div class="bg-userdashboard_user-detail w-100">
-                                <div
-                                    class="d-flex justify-content-between align-items-start cyllo-useradmin__nameheader">
+                                <div class="d-flex justify-content-between align-items-start">
                                     <div>
-                                        <h2 class="bg-userdashboard-name cyllo-useradmin__name mb-1">Mitchell Admin</h2>
-                                        <p class=" cyllo_useradmin-md--txt d-flex align-items-center gap-1"><i
+                                        <h2 class="bg-userdashboard-name mb-1">Mitchell Admin</h2>
+                                        <p class="bg-userdashboard_md-txt d-flex align-items-center gap-1"><i
                                                 class="ri-mail-fill"></i>admin@yourcompany.example.com</p>
                                     </div>
                                     <div class="d-flex align-items-center mb-2"><i
                                             class="ri-cloud-fill bg-cloud-icon"></i><span
-                                            class="cyllo_useradmin-md--txt"> 26 <span>&#176;</span>C</span></div>
+                                            class="bg-userdashboard_md-txt"> 26 <span>&#176;</span>C</span></div>
                                 </div>
 
-                                <form action="" class="d-flex gap-2 cyllo_useradmin_detail-box">
+                                <form action="" class="d-flex gap-2 flex-wrap w-100">
                                     <div class="bg-user_form-content">
-                                        <label for="" class=" cyllo_useradmin--label">Language</label>
+                                        <label for="" class="bg-userdashboard_label">Language</label>
                                         <div class="dropdown bg-userdashboard_dropdwn">
                                             <button
-                                                class="btn dropdown-toggle bg-sale-forecast-dropdown bg-box_container w-100 cyllo-useradmindashboard-input bg-market-modal-selection-box"
+                                                class="btn dropdown-toggle bg-sale-forecast-dropdown bg-box_container w-100  bg-market-modal-selection-box"
                                                 id="chatDropdown" role="button" data-bs-toggle="dropdown"
                                                 aria-expanded="true">
                                                 English (US)
@@ -266,10 +265,10 @@
                                         </div>
                                     </div>
                                     <div class="bg-user_form-content">
-                                        <label for="" class=" cyllo_useradmin--label">Timezone</label>
+                                        <label for="" class="bg-userdashboard_label">Timezone</label>
                                         <div class="dropdown bg-userdashboard_dropdwn">
                                             <button
-                                                class="btn dropdown-toggle bg-sale-forecast-dropdown bg-box_container w-100 cyllo-useradmindashboard-input  bg-market-modal-selection-box"
+                                                class="btn dropdown-toggle bg-sale-forecast-dropdown bg-box_container w-100  bg-market-modal-selection-box"
                                                 id="chatDropdown" role="button" data-bs-toggle="dropdown"
                                                 aria-expanded="true">
                                                 English (US)
@@ -293,12 +292,12 @@
                                         </div>
                                     </div>
                                 </form>
-                                <div class="d-flex gap-2 mt-4 bg-userdashboard_btn-container cyllo_useradmin_btn-group">
-                                    <button class="btn bg-button-stroke w-100 text-nowrap cyllo-useradmin__btn"
-                                        type="button">
+                                <div class="d-flex gap-2 mt-4 bg-userdashboard_btn-container">
+                                    <button class="btn bg-button-stroke w-100 text-nowrap" type="button">
                                         Permissions
                                     </button>
-                                    <button class="btn bg-button-primary-stroke w-100  text-nowrap cyllo-useradmin__btn"
+                                    <button
+                                        class="btn bg-button-primary-stroke w-100 bg-active-btn bg-market-activity-btn text-nowrap"
                                         type="button">
                                         Change password
                                     </button>
@@ -307,11 +306,26 @@
                             </div>
                         </div>
                     </div>
-                    <div class="">
-                        <div class="row bg-box_container m-0 mb-3">
-                            <div class=" px-4 my-4 ">
+                    <div class="col-lg-9">
+                        <div class="row bg-box_container m-0">
+                            <div class="col-lg-6 px-4 my-4 bg-border-right">
+                            
                                 <div>
-                                    <div class="bg-border-btm pb-3 mb-2">
+                                    <div class="bg-border-btm pb-3 mb-3">
+                                        <h2 class="bg-churn_tile-text">Personal Details</h2>
+                                    </div>
+                                    <div>
+                                        <div class="cyllo-user-dashboard_ps-container">
+                                            <label for=""></label>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+
+                            </div>
+                            <div class="col-lg-6 p-4">
+                                <div>
+                                    <div class="bg-border-btm pb-3 ">
                                         <h2 class="bg-churn_tile-text">Your Shortcuts</h2>
                                     </div>
                                     <div class="d-flex flex-wrap py-3">
@@ -328,60 +342,33 @@
                                             report</button>
                                     </div>
                                 </div>
-
-                            </div>
-
-                        </div>
-                        <div class="row bg-box_container m-0 mb-3">
-                            <div class="d-flex flex-wrap gap-4 align-items-start px-4 my-4 ">
-                                <form action="
-                              ">
-                                    <div class="d-flex ">
-                                        <label for=""
-                                            class=" cyllo_useradmin--detail--text cyllo_useradmin--label">Email
-                                            Signature</label>
-                                        <p class="cyllo_useradmin_sm-txt">Mr Demo</p>
-                                    </div>
-
-                                    <div class="d-flex ">
-                                        <label for="" class=" cyllo_useradmin--detail--text cyllo_useradmin--label">Home
-                                            Action</label>
-                                        <p class="cyllo_useradmin_sm-txt">Apps</p>
-                                    </div>
-                                    <div class="d-flex">
-                                        <label for=""
-                                            class=" cyllo_useradmin--detail--text cyllo_useradmin--label">Default
-                                            Company</label>
-                                        <p class="cyllo_useradmin_sm-txt">Your Company</p>
-                                    </div>
-                                    <div class="d-flex ">
-                                        <label for=""
-                                            class=" cyllo_useradmin--detail--text cyllo_useradmin--label">Allowed
-                                            Companies</label>
-                                        <div class="d-flex flex-wrap">
-                                            <span class="cyllo_useradmin--badge">Company 2</span>
-                                            <span class="cyllo_useradmin--badge">Your Company</span>
-                                        </div>
-                                    </div>
-                                </form>
-                                <div class="cyllo_state_btns">
-                                    <div class="bg-box_container cyllo_useradmin-state--btn">
-                                        <i class="ri-group-fill cyllo_useradmin--icon"></i>
-                                        <span>Groups</span>
-                                    </div>
-                                    <div class="bg-box_container cyllo_useradmin-state--btn">
-                                        <i class="ri-folders-fill cyllo_useradmin--icon"></i>
-                                        <span>Access Right</span>
-                                    </div>
-                                    <div class="bg-box_container cyllo_useradmin-state--btn">
-                                        <i class="ri-stack-fill cyllo_useradmin--icon"></i>
-                                        <span>Record Rules</span>
-                                    </div>
+                                <div class="bg-border-btm pb-3 mb-2">
+                                    <h2 class="bg-churn_tile-text">Upcoming Activities</h2>
                                 </div>
 
+                                <div class="d-flex align-items-center justify-content-between mt-3 bg-userdashboard__upcoming-container">
+                                    <div class="d-flex align-items-center gap-2">
 
+                                        <div>
+                                            <p class="bg-userdashboard__upcoming-txt">Sales Order</p>
+                                            <span class="bg-userdashboard_upcoming-vsm-txt">0 late</span>
+                                            <span>1 Today</span>
+                                        </div>
+                                    </div>
+                                    <span class="bg-userdashboard__upcoming-box-count">3 Future</span>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mt-3 bg-userdashboard__upcoming-container">
+                                    <div class="d-flex align-items-center gap-2">
+
+                                        <div>
+                                            <p class="bg-userdashboard__upcoming-txt">Journal Entry</p>
+                                            <span class="bg-userdashboard_upcoming-vsm-txt">0 late</span>
+                                            <span>1 Today</span>
+                                        </div>
+                                    </div>
+                                    <span class="bg-userdashboard__upcoming-box-count">3 Future</span>
+                                </div>
                             </div>
-
                         </div>
                     </div>
                 </div>

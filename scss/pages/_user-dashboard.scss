@@ -168,14 +168,15 @@
 }
 
 .bg-userdashboard-system_label {
-    color: $active-btn;
-    font-weight: 500;
+    color:$black;
+    font-weight: 600;
     font-size: 0.9rem;
+    display: block;
 }
 
 .bg-userdashboard-system_content {
-    color: $main-heading;
-    font-weight: 500;
+    color: $primary-font;
+    font-weight: 400;
     font-size: 0.9rem;
 }
 
@@ -241,6 +242,7 @@
     width: fit-content;
     @media (max-width:575px){
         flex-wrap: wrap;
+        width: 100%;
     }
 }
 .cyllo-useradmin__btn{
@@ -325,4 +327,20 @@
     color:$active-btn;
     font-size: 18px;
     margin: 0.2rem;
+}
+
+.cyllo-userdashboard__list{
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cyllo_main-dashboard-icon{
+    color: $primary-color;
+    font-size: 1.3rem;
+}
+.cyllo-admindashboard-detail-mainbox{
+    @media (max-width:575px){
+        flex-wrap: wrap;
+    }
 }

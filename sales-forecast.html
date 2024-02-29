@@ -218,12 +218,15 @@
                     </div>
                 </nav>
                 <div class="d-flex justify-content-between py-3">
-                    <h2 class="cyllo_dashboard-head">Sales Prediction Dashboard</h2>
+                    <div>
+                        <h2 class="cyllo_dashboard-head">Sales Prediction Dashboard</h2>
+                        <span class="cyll_dahboard--head_info"><i class="ri-information-line me-1"></i>Actual sale is
+                            from 2023-09-13 to 2024-08-04</span>
+                    </div>
 
-                    <div class="d-flex align-items-start gap-2">
+                    <div class="d-flex align-items-start ">
                         <div class="position-relative">
-                            <button id="bgdialogBtn"
-                                class="btn" type="button"
+                            <button id="bgdialogBtn" class="btn cyllo-dashboard_secondary-btn" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#bg-dialogcontainer" aria-expanded="false"
                                 aria-controls="bg-dialogcontainer">
                                 <i class="ri-filter-3-line"></i> Filters
@@ -233,56 +236,113 @@
                                 <div class="bg-market-dialog-header p-3 bg-border-btm">
                                     <h2 class="bg-marketing-auto-dialog-head">Sales Filters</h2>
                                 </div>
-                                <form action="" class="p-3">
-                                    <p class="mb-2">Actual Sales</p>
-                                    <label for="" class="bg-marketing-auto-dialog-txt">start date</label>
-                                    <div class="col-12">
-                                        <input type="text"
-                                            class="bg-box_container w-100 p-1  bg-market-modal-selection-box">
-                                    </div>
-                                    <label for="" class="bg-marketing-auto-dialog-txt">End date</label>
-                                    <div class="col-12">
-                                        <input type="text"
-                                            class="bg-box_container w-100 p-1  bg-market-modal-selection-box">
-                                    </div>
-                                    <p class="mb-2">Predicted Sales</p>
-                                    <label for="" class="bg-marketing-auto-dialog-txt">Future periods</label>
-                                    <div class="col-12">
-                                        <input type="text"
-                                            class="bg-box_container w-100 p-1  bg-market-modal-selection-box">
-                                    </div>
+                                <form action="" class=" cyllo_filter--content">
+                                    <div class="p-3 pb-0">
+                                        <div class="col-12  mb-2">
+                                            <label for="" class="bg-marketing-auto-dialog-txt">Forcast Type</label>
+                                            <div class="dropdown">
+                                                <button
+                                                    class="btn dropdown-toggle bg-sale-forecast-dropdown bg-box_container w-100  bg-market-modal-selection-box"
+                                                    id="chatDropdown" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="true">
+                                                    Select period
+                                                </button>
+                                                <ul class="dropdown-menu w-100 " aria-labelledby="chatDropdown"
+                                                    data-popper-placement="bottom-start"
+                                                    style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 36px, 0px);">
+                                                    <li><button class="dropdown-item bg-drop-down-item" href="#">
+                                                            AMIR</button>
+                                                    </li>
+                                                    <li><button class="dropdown-item  bg-drop-down-item"
+                                                            href="#">Forecast
+                                                            Option
+                                                            2</button>
+                                                    </li>
+                                                    <li><button class="dropdown-item  bg-drop-down-item"
+                                                            href="#">Forecast
+                                                            Option
+                                                            3</button>
+                                                    </li>
+                                                </ul>
+                                            </div>
 
-                                    <div class="col-12  my-3 mt-1">
-                                        <label for="" class="bg-marketing-auto-dialog-txt">Frequency</label>
-                                        <div class="dropdown">
-                                            <button
-                                                class="btn dropdown-toggle bg-sale-forecast-dropdown bg-box_container w-100  bg-market-modal-selection-box"
-                                                id="chatDropdown" role="button" data-bs-toggle="dropdown"
-                                                aria-expanded="true">
-                                                Select period
-                                            </button>
-                                            <ul class="dropdown-menu w-100 " aria-labelledby="chatDropdown"
-                                                data-popper-placement="bottom-start"
-                                                style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 36px, 0px);">
-                                                <li><button class="dropdown-item bg-drop-down-item" href="#">Forecast
-                                                        Option
-                                                        1</button>
-                                                </li>
-                                                <li><button class="dropdown-item  bg-drop-down-item" href="#">Forecast
-                                                        Option
-                                                        2</button>
-                                                </li>
-                                                <li><button class="dropdown-item  bg-drop-down-item" href="#">Forecast
-                                                        Option
-                                                        3</button>
-                                                </li>
-                                            </ul>
                                         </div>
 
+                                        <label for="" class="bg-marketing-auto-dialog-txt">Start date</label>
+                                        <div class="col-12 mb-2">
+                                            <input type="date"
+                                                class="bg-box_container w-100 p-1  bg-market-modal-selection-box">
+                                        </div>
+                                        <label for="" class="bg-marketing-auto-dialog-txt">End date</label>
+                                        <div class="col-12 mb-2">
+                                            <input type="date"
+                                                class="bg-box_container w-100 p-1  bg-market-modal-selection-box">
+                                        </div>
+
+                                        <label for="" class="bg-marketing-auto-dialog-txt">Future periods</label>
+                                        <div class="col-12 mb-2">
+                                            <input type="text"
+                                                class="bg-box_container w-100 p-1  bg-market-modal-selection-box">
+                                        </div>
+
+                                        <div class="col-12  my-3 mt-1">
+
+                                            <label for="" class="bg-marketing-auto-dialog-txt">Frequency</label>
+                                            <div class="dropdown">
+                                                <button
+                                                    class="btn dropdown-toggle bg-sale-forecast-dropdown bg-box_container w-100  bg-market-modal-selection-box"
+                                                    id="chatDropdown" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="true">
+                                                    Day
+                                                </button>
+                                                <ul class="dropdown-menu w-100 " aria-labelledby="chatDropdown"
+                                                    data-popper-placement="bottom-start"
+                                                    style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 36px, 0px);">
+                                                    <li><button class="dropdown-item bg-drop-down-item"
+                                                            href="#">Forecast
+                                                            Day</button>
+                                                    </li>
+                                                    <li><button class="dropdown-item  bg-drop-down-item"
+                                                            href="#">Forecast
+                                                            Option
+                                                            2</button>
+                                                    </li>
+                                                    <li><button class="dropdown-item  bg-drop-down-item"
+                                                            href="#">Forecast
+                                                            Option
+                                                            3</button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+
+                                        <div>
+                                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                                <h4 class="cyllo-filrer_subhead">Forecast Coefficients</h4>
+                                                <span><input type="checkbox" name="switch" id="switch">
+                                                    <label for="switch"></label></span>
+                                                <span><i class="ri-information-line"></i></span>
+                                            </div>
+
+
+                                            <div class="col-12 mb-3 d-flex align-items-center gap-3">
+                                                <label for="" class="bg-marketing-auto-dialog-txt">p:</label><input
+                                                    type="text" class="form-control bg-box_container">
+                                            </div>
+                                            <div class="col-12 mb-3 d-flex align-items-center gap-3">
+                                                <label for="" class="bg-marketing-auto-dialog-txt">d:</label><input
+                                                    type="text" class="form-control bg-box_container">
+                                            </div>
+                                            <div class="col-12 mb-3 d-flex align-items-center gap-3">
+                                                <label for="" class="bg-marketing-auto-dialog-txt">q:</label><input
+                                                    type="text" class="form-control bg-box_container">
+                                            </div>
+                                        </div>
                                     </div>
 
 
-                                    <div class="d-flex gap-2 mt-3">
+                                    <div class="d-flex gap-2 mt-3 cyll-filter_apply-btn p-3 pt-1">
                                         <button class="bg-button-primary-stroke py-2 px-4 bg-active-btn w-100 ">
                                             Apply Filter
                                         </button>
@@ -293,49 +353,56 @@
 
                             </div>
                         </div>
-                        <button class="btn  " type="button">
-                            <i class="ri-upload-2-line"></i>  Export
+                        <button class="btn  cyllo-dashboard_secondary-btn" type="button">
+                            <i class="ri-upload-2-line"></i> Export
                         </button>
                         <div class="d-flex  cyllo-graphtype-selection">
 
-                                <div class="bg-sale_forecast-graph_img active">
-                                    <i class="ri-line-chart-fill"></i>
-                                </div>
-                            
-                                <div class="bg-sale_forecast-graph_img">
-                                    <i class="ri-pie-chart-2-fill"></i>
-                                </div>
+                            <div class="bg-sale_forecast-graph_img active">
+                                <i class="ri-line-chart-fill"></i>
+                            </div>
+
+                            <div class="bg-sale_forecast-graph_img">
+                                <i class="ri-pie-chart-2-fill"></i>
+                            </div>
 
                         </div>
 
                     </div>
 
                 </div>
-                <div class="d-flex gap-3">
-                    <div>
+                <div class="cyllo-sales-forecast_main d-flex gap-3">
+                    <div class="cyllo-sale-forecaste-subgraph-container">
                         <div class="bg-box_container mb-3">
-                            <div class="bg-border-btm p-3">
+                            <div class="d-flex align-items-center justify-content-between bg-border-btm px-3 py-2">
                                 <h2 class="bg-churn_tile-text">ACF</h2>
+                                <button class="cyllo-sales_forcast__filter-icon"><i
+                                        class="ri-image-2-line"></i></button>
                             </div>
                             <div class="d-flex align-items-center justify-content-center p-3">
-                                <div class=" cyllo-sales-forcasting_graph"> <img src="images/Graph-Churn.png" alt=""></div>
+                                <div class=" cyllo-sales-forcasting_graph"> <img src="images/Graph-Churn.png" alt="">
+                                </div>
                             </div>
+
                         </div>
                         <div class="bg-box_container mb-3">
-                            <div class="bg-border-btm p-3">
+                            <div class="d-flex align-items-center justify-content-between bg-border-btm px-3 py-2">
                                 <h2 class="bg-churn_tile-text">PACF</h2>
+                                <button class="cyllo-sales_forcast__filter-icon"><i
+                                        class="ri-line-chart-line"></i></button>
                             </div>
                             <div class="d-flex align-items-center justify-content-center p-3">
-                                <div class=" cyllo-sales-forcasting_graph"> <img src="images/Graph-Churn.png" alt=""></div>
+                                <div class=" cyllo-sales-forcasting_graph"> <img src="images/Graph-Churn.png" alt="">
+                                </div>
                             </div>
+
+
                         </div>
                     </div>
                     <div class="bg-box_container bg-sale-forecast_graph-container">
                         <img src="images/bar-graph.png" alt="" class=" bg-sales-forecast-img">
                     </div>
                 </div>
-                
-
             </main>
         </div>
 
