@@ -169,7 +169,7 @@
 
 .bg-userdashboard-system_label {
     color:$black;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 0.9rem;
     display: block;
 }
@@ -343,4 +343,9 @@
     @media (max-width:575px){
         flex-wrap: wrap;
     }
+}
+.cyllo-user-dashboard_ps-container{
+    background-color: $seconday-cyllo;
+    border-radius: 2px;
+    padding: 0.8rem;
 }
