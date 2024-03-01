@@ -125,9 +125,16 @@
 }
 
 .bg-userdashboard_btn-container {
-
+flex-grow: 1;
     width: 100%;
+    @media (max-width:1300px) {
+        flex-wrap: wrap;
+    }
+    @media (max-width:992px) {
+        flex-wrap: nowrap;
+    }
 }
+
 
 
 .bg-userdashboard_system-detail {
