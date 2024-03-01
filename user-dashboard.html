@@ -221,20 +221,11 @@
                 <div class="row py-3">
                     <div class="col-lg-3">
                         <div class="bg-box_container p-3  h-100">
-                            <div class="bg-userdashboard_user-container mb-3">
+                            <div class="cyllo-useradmin-profile mb-3">
                                 <img src="images/user-img.png" class="bg-img" alt="">
                             </div>
                             <div class="bg-userdashboard_user-detail w-100">
-                                <div class="d-flex justify-content-between align-items-start">
-                                    <div>
-                                        <h2 class="bg-userdashboard-name mb-1">Mitchell Admin</h2>
-                                        <p class="bg-userdashboard_md-txt d-flex align-items-center gap-1"><i
-                                                class="ri-mail-fill"></i>admin@yourcompany.example.com</p>
-                                    </div>
-                                    <div class="d-flex align-items-center mb-2"><i
-                                            class="ri-cloud-fill bg-cloud-icon"></i><span
-                                            class="bg-userdashboard_md-txt"> 26 <span>&#176;</span>C</span></div>
-                                </div>
+
 
                                 <form action="" class="d-flex gap-2 flex-wrap w-100">
                                     <div class="bg-user_form-content">
@@ -291,8 +282,48 @@
                                             </ul>
                                         </div>
                                     </div>
+                                    <div class="bg-user_form-content">
+                                        <label for="" class="bg-userdashboard_label">Odoo Bot Status</label>
+                                        <div class="dropdown bg-userdashboard_dropdwn">
+                                            <button
+                                                class="btn dropdown-toggle bg-sale-forecast-dropdown bg-box_container w-100  bg-market-modal-selection-box"
+                                                id="chatDropdown" role="button" data-bs-toggle="dropdown"
+                                                aria-expanded="true">
+                                                English (US)
+                                            </button>
+                                            <ul class="dropdown-menu w-100 " aria-labelledby="chatDropdown"
+                                                data-popper-placement="bottom-start"
+                                                style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 36px, 0px);">
+                                                <li><button class="dropdown-item bg-drop-down-item" href="#">Forecast
+                                                        Option
+                                                        1</button>
+                                                </li>
+                                                <li><button class="dropdown-item  bg-drop-down-item" href="#">Forecast
+                                                        Option
+                                                        2</button>
+                                                </li>
+                                                <li><button class="dropdown-item  bg-drop-down-item" href="#">Forecast
+                                                        Option
+                                                        3</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bg-user_form-content">
+                                        <label for="" class="bg-userdashboard_label">Notification Type</label>
+                                        <div class="form-check ">
+                                            <input class="form-check-input" type="radio" name="options" id="option1"
+                                                value="option1">
+                                            <label class="" for="option1">Handle by Email</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="options" id="option1"
+                                                value="option1">
+                                            <label class="" for="option1">Handle in Odoo</label>
+                                        </div>
+                                    </div>
                                 </form>
-                                <div class="d-flex gap-2 mt-4 bg-userdashboard_btn-container">
+                                <div class="d-flex gap-2 mt-2 bg-userdashboard_btn-container">
                                     <button class="btn bg-button-stroke w-100 text-nowrap" type="button">
                                         Permissions
                                     </button>
@@ -308,38 +339,131 @@
                     </div>
                     <div class="col-lg-9">
                         <div class="row bg-box_container m-0">
-                            <div class="col-lg-6 px-4 my-4 bg-border-right">
-                            
+                            <div class="col-lg-5 px-4 my-4 bg-border-right">
+
                                 <div>
                                     <div class="bg-border-btm pb-3 mb-3">
                                         <h2 class="bg-churn_tile-text">Personal Details</h2>
+
+
                                     </div>
                                     <div>
                                         <div class="cyllo-user-dashboard_ps-container">
                                             <label for="">Name</label>
-                                            <span>Mitchell Admin</span>
+                                            <span class="cyllo-useradmin--md-text">Mitchell Admin</span>
 
                                         </div>
+                                        <div class="cyllo-user-dashboard_ps-container">
+                                            <label for="">Email</label>
+                                            <span class="cyllo-useradmin--md-text">mitchelladmin@gmail.com</span>
+
+                                        </div>
+
+                                        <div class="cyllo-user-dashboard_ps-container">
+                                            <label for="">Phone</label>
+                                            <span class="cyllo-useradmin--md-text">+91 434873240</span>
+                                        </div>
+
+                                        <div class="cyllo-user-dashboard_ps-container">
+                                            <div class="d-flex justify-content-between">
+                                                <label for="">Email Signature</label>
+                                                <div class="d-flex gap-1"><button
+                                                        class="btn cyllo-userdashboard-feature-btn  "><i
+                                                            class="ri-save-fill"></i></button><button
+                                                        class="btn cyllo-userdashboard-feature-btn "><i
+                                                            class="ri-pencil-fill"></i></button></div>
+
+                                            </div>
+                                            <textarea name="" class="w-100 cyllo-user_dashboard-textarea" id="" cols=""
+                                                placeholder="Mr Demo" rows="1"></textarea>
+
+                                        </div>
+                                        <div class="cyllo-user-dashboard_ps-container">
+                                            <label for="">Home Action</label>
+                                            <span class="cyllo-useradmin--md-text">App</span>
+                                        </div>
+                                        <div class="cyllo-user-dashboard_ps-container">
+                                            <label for="">Job Position</label>
+                                            <span class="cyllo-useradmin--md-text">Experienced Developer</span>
+                                        </div>
+                                        <div class="cyllo-user-dashboard_ps-container">
+                                            <label for="">Default Company</label>
+                                            <span class="cyllo-useradmin--md-text">My Company</span>
+                                        </div>
+                                        <div class="cyllo-user-dashboard_ps-container">
+                                            <label for="">Allowed Company</label>
+                                            <div class="d-flex flex-wrap mt-4">
+                                                <span class="cyllo_useradmin--badge">Company 2</span>
+                                                <span class="cyllo_useradmin--badge">Your Company</span>
+                                            </div>
+                                        </div>
+                                        <!--<div class="cyllo-user-dashboard__sub-details">
+                                            <div class=" ">
+                                                <label for=""
+                                                    class=" cyllo_useradmin--detail--text cyllo_useradmin--label">Email
+                                                    Signature</label>
+                                                <p class="cyllo_useradmin_sm-txt">Mr Demo</p>
+                                            </div>
+
+                                            <div class=" ">
+                                                <label for=""
+                                                    class=" cyllo_useradmin--detail--text cyllo_useradmin--label">Home
+                                                    Action</label>
+                                                <p class="cyllo_useradmin_sm-txt">Apps</p>
+                                            </div>
+                                            <div class="">
+                                                <label for=""
+                                                    class=" cyllo_useradmin--detail--text cyllo_useradmin--label">Default
+                                                    Company</label>
+                                                <p class="cyllo_useradmin_sm-txt">Your Company</p>
+                                            </div>
+                                            <div class="">
+                                                <label for=""
+                                                    class=" cyllo_useradmin--detail--text cyllo_useradmin--label">Allowed
+                                                    Companies</label>
+                                                <div class="d-flex flex-wrap">
+                                                    <span class="cyllo_useradmin--badge">Company 2</span>
+                                                    <span class="cyllo_useradmin--badge">Your Company</span>
+                                                </div>
+                                            </div>
+                                        </div>-->
                                     </div>
-                                
+
                                 </div>
 
                             </div>
-                            <div class="col-lg-6 p-4">
+                            <div class="col-lg-7 p-4">
+                                <div class="cyllo_state_btns mb-4">
+                                    <div class="bg-box_container cyllo_useradmin-state--btn">
+                                        <i class="ri-group-fill cyllo_useradmin--icon"></i>
+                                        <span>Groups</span>
+                                    </div>
+                                    <div class="bg-box_container cyllo_useradmin-state--btn">
+                                        <i class="ri-folders-fill cyllo_useradmin--icon"></i>
+                                        <span>Access Right</span>
+                                    </div>
+                                    <div class="bg-box_container cyllo_useradmin-state--btn">
+                                        <i class="ri-stack-fill cyllo_useradmin--icon"></i>
+                                        <span>Record Rules</span>
+                                    </div>
+                                </div>
                                 <div>
+
                                     <div class="bg-border-btm pb-3 ">
                                         <h2 class="bg-churn_tile-text">Your Shortcuts</h2>
                                     </div>
-                                    <div class="d-flex flex-wrap py-3">
-                                        <button class="bg-userdashboard_shortcut-btn"><i
+                                    <div class="d-flex flex-wrap gap-2 py-3">
+                                        <button class="bg-userdashboard_shortcut-btn cyllo-userdashboard-shortcut"><i
                                                 class="ri-add-line"></i>Department</button>
-                                        <button class="bg-userdashboard_shortcut-btn"><i
+                                        <button class="bg-userdashboard_shortcut-btn cyllo-userdashboard-shortcut"><i
                                                 class="ri-add-line"></i>Employee</button>
-                                        <button class="bg-userdashboard_shortcut-btn"><i class="ri-add-line"></i>Journal
+                                        <button class="bg-userdashboard_shortcut-btn cyllo-userdashboard-shortcut"><i
+                                                class="ri-add-line"></i>Journal
                                             Entry</button>
-                                        <button class="bg-userdashboard_shortcut-btn"><i class="ri-add-line"></i>Sales
+                                        <button class="bg-userdashboard_shortcut-btn cyllo-userdashboard-shortcut"><i
+                                                class="ri-add-line"></i>Sales
                                             Order</button>
-                                        <button class="bg-userdashboard_shortcut-btn"><i
+                                        <button class="bg-userdashboard_shortcut-btn cyllo-userdashboard-shortcut"><i
                                                 class="ri-add-line"></i>Employee Skill
                                             report</button>
                                     </div>
@@ -347,8 +471,9 @@
                                 <div class="bg-border-btm pb-3 mb-2">
                                     <h2 class="bg-churn_tile-text">Upcoming Activities</h2>
                                 </div>
-
-                                <div class="d-flex align-items-center justify-content-between mt-3 bg-userdashboard__upcoming-container">
+                                <div class="cyllo-upcoming_activity-container">
+                                <div
+                                    class="d-flex align-items-center justify-content-between mt-3 bg-userdashboard__upcoming-container">
                                     <div class="d-flex align-items-center gap-2">
 
                                         <div>
@@ -359,7 +484,8 @@
                                     </div>
                                     <span class="bg-userdashboard__upcoming-box-count">3 Future</span>
                                 </div>
-                                <div class="d-flex align-items-center justify-content-between mt-3 bg-userdashboard__upcoming-container">
+                                <div
+                                    class="d-flex align-items-center justify-content-between mt-3 bg-userdashboard__upcoming-container">
                                     <div class="d-flex align-items-center gap-2">
 
                                         <div>
@@ -370,6 +496,7 @@
                                     </div>
                                     <span class="bg-userdashboard__upcoming-box-count">3 Future</span>
                                 </div>
+                            </div>
                             </div>
                         </div>
                     </div>
