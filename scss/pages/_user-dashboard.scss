@@ -122,11 +122,13 @@
 }
 
 .bg-userdashboard_btn-container {
-flex-grow: 1;
+    flex-grow: 1;
     width: 100%;
+
     @media (max-width:1300px) {
         flex-wrap: wrap;
     }
+
     @media (max-width:992px) {
         flex-wrap: nowrap;
     }
@@ -321,10 +323,10 @@ flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    padding: 0.4rem 1.1rem;
+    flex-direction: column;
+    padding: 1.5rem 1.1rem;
     flex-grow: 1;
-    border-radius: 30px;
+    border-radius: 2px;
     font-size: 0.9rem;
     color: $primary-font;
     font-weight: 500;
@@ -337,7 +339,7 @@ flex-grow: 1;
 
     @media (max-width:575px) {
         padding: 0.4rem 1rem;
-      flex-grow: unset;
+        flex-grow: unset;
         font-size: 0.8rem;
     }
 }
@@ -367,10 +369,12 @@ flex-grow: 1;
 }
 
 .cyllo-user-dashboard_ps-container {
-    background-color: rgba($seconday-cyllo, 0.5);
+   /* background-color: rgb(234 234 234 / 52%);*/
+   border: 1px solid #dfdfdf;
     border-radius: 2px;
-    padding: 0.5rem 0.8rem;
+    padding: 0.6rem 0.8rem;
     margin-bottom: 0.4rem;
+    margin: 0.2rem;
 }
 
 .cyllo-useradmin--md-text {
@@ -378,7 +382,7 @@ flex-grow: 1;
     font-size: 0.9rem;
     color: $black;
     font-weight: 500;
-    padding-top: 0.2rem;
+
 }
 
 .cyllo-user-dashboard__sub-details {
@@ -386,7 +390,11 @@ flex-grow: 1;
 }
 
 .cyllo-userdashboard-shortcut {
-    width: 120px;
+    width: 177px;
+    color: $active-btn;
+    background-color: $seconday-cyllo;
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
 }
 
 .cyllo-user_dashboard-textarea {
@@ -398,8 +406,6 @@ flex-grow: 1;
     &:focus {
         border-color: $active-btn;
         outline: none;
-
-
     }
 }
 

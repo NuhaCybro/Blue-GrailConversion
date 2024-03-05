@@ -128,15 +128,16 @@
 }
 
 .cyllo-getdriection-container {
-   /*   padding: 1rem;
+    /*   padding: 1rem;
   position: absolute;*/
     left: 1rem;
     top: 0;
     background-color: $white;
     width: 23%;
     display: none;
-   
+
     z-index: 99;
+
     @media(max-width:992px) {
         flex: 0 0 40%;
     }
