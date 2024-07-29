@@ -75,7 +75,7 @@
     color: $primary-font;
     font-size: 12.8px;
     font-weight: 400;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0rem;
 }
 
 .bg-userdashboard_upcoming-detail {
@@ -100,6 +100,7 @@
 
 .bg-userdashboard__upcoming-box-count {
     color: $active-btn;
+    font-size: 12.8px;
 }
 
 .bg-userdashboard_upcoming-vsm-txt {
@@ -156,6 +157,12 @@
 
     justify-content: center;
     flex-direction: column;
+    @media (max-width:1400px) {
+        width:144px;
+    }
+    @media (max-width:1200px) {
+        width: 100%;
+    }
 
     @media (max-width:768px) {
         width: 144px;
@@ -426,4 +433,142 @@
 .cyllo-upcoming_activity-container {
     max-height: 46vh;
     overflow-y: auto;
+}
+
+//..................................................................
+
+.cy-dashboard_container {
+    background-color: $white;
+    border-radius: 12px;
+    padding: 1rem;
+    
+}
+
+.cy-dashbaord-profile-banner {
+    width: 100%;
+    border-radius: 12px;
+    background-image: url(/images/Background\ Image.png);
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+
+}
+
+.cy-dashboard_profile {
+    width: 76px;
+    height: 76px;
+    border-radius: 50px;
+    background-color: $white;
+    position: absolute;
+    bottom: -40px;
+    padding: 5px;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 50px;
+        overflow: hidden;
+    }
+}
+
+.cy-dashboard_name {
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.cy-dashboard_chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.cy-shortcuts {
+    display: flex;
+    align-items: center;
+    background-color: #F8FAFC;
+    border-radius: 12px;
+    justify-content: space-between;
+    padding: 0.9rem;
+    border: none;
+
+    span {
+        width: 200px;
+        text-align: left;
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+
+    i {
+        color: $primary-color;
+        font-size: 1.2rem;
+    }
+}
+
+.cy-border-btm {
+    border-bottom: 1px solid #eaf2f9;
+}
+
+.cy-userdashboard_sm-head {
+    th {
+        font-size: 12.8px;
+        color: #373627;
+        font-weight: 600;
+        padding: 1rem 0.4rem;
+        @media (max-width:768pX){
+            padding: 0.3rem;
+        }
+    }
+
+
+}
+
+.cy-dashboard_table {
+    tbody {
+        td {
+            padding: 0.4rem 0.4rem;
+            @media (max-width:768pX){
+                padding: 0.2rem;
+            }
+        }
+    }
+}
+
+.cy-dashboard-login-profile {
+    width: 24px;
+    height: 24px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.cy-dashboard-system-card{
+padding: 1rem 0;
+}
+.cy-system-detail-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+    border: 1px solid #F0F0F0;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+}
+.cy-system-detail-card{
+    font-size: 14px;
+    color: $primary-font;
+    span{
+        color: $main-heading;
+        font-weight: 500;
+    }
 }
