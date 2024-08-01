@@ -157,9 +157,11 @@
 
     justify-content: center;
     flex-direction: column;
+
     @media (max-width:1400px) {
-        width:144px;
+        width: 144px;
     }
+
     @media (max-width:1200px) {
         width: 100%;
     }
@@ -322,7 +324,7 @@
 .cyllo_state_btns {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
     flex-wrap: wrap;
 }
 
@@ -331,14 +333,16 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 1.5rem 1.1rem;
+    padding: 1rem;
     flex-grow: 1;
     border-radius: 2px;
     font-size: 0.9rem;
     color: $primary-font;
     font-weight: 500;
-    min-width: 140px;
+    min-width: 120px;
     cursor: pointer;
+    background-color: rgba(245, 246, 230, 0.6);
+    border-color: rgba(245, 246, 230, 0.6);
 
     &:hover {
         border-color: $primary-color;
@@ -377,11 +381,13 @@
 
 .cyllo-user-dashboard_ps-container {
     /* background-color: rgb(234 234 234 / 52%);*/
-    border: 1px solid #dfdfdf;
+    background-color: #F8FAFC;
     border-radius: 2px;
     padding: 0.6rem 0.8rem;
     margin-bottom: 0.4rem;
-    margin: 0.2rem;
+    margin: 0.4rem 0.2rem;
+    border-radius: 4px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
 }
 
 .cyllo-useradmin--md-text {
@@ -441,7 +447,7 @@
     background-color: $white;
     border-radius: 12px;
     padding: 1rem;
-    
+
 }
 
 .cy-dashbaord-profile-banner {
@@ -527,7 +533,8 @@
         color: #373627;
         font-weight: 600;
         padding: 1rem 0.4rem;
-        @media (max-width:768pX){
+
+        @media (max-width:768pX) {
             padding: 0.3rem;
         }
     }
@@ -539,7 +546,8 @@
     tbody {
         td {
             padding: 0.4rem 0.4rem;
-            @media (max-width:768pX){
+
+            @media (max-width:768pX) {
                 padding: 0.2rem;
             }
         }
@@ -552,10 +560,12 @@
     border-radius: 50px;
     overflow: hidden;
 }
-.cy-dashboard-system-card{
-padding: 1rem 0;
+
+.cy-dashboard-system-card {
+    padding: 1rem 0;
 }
-.cy-system-detail-card{
+
+.cy-system-detail-card {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -564,11 +574,18 @@ padding: 1rem 0;
     padding: 0.8rem;
     margin: 0.5rem 0;
 }
-.cy-system-detail-card{
+
+.cy-system-detail-card {
     font-size: 14px;
     color: $primary-font;
-    span{
+
+    span {
         color: $main-heading;
         font-weight: 500;
     }
+}
+
+.cy-user-smtext {
+    color: $primary-font;
+    font-size: 12.8px;
 }
