@@ -2,16 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sales Forecast</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ai Chat</title>
+   
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/main.css" />
 </head>
 
-<body>
+<body class=" bg-main">
 
 
     <div class="container-fluid">
@@ -166,7 +168,8 @@
                     </a>
                 </div>
             </nav>
-            <main class="col-md-9 ms-sm-auto col-lg-10 ">
+
+            <main class="col-md-9 ms-sm-auto col-lg-10">
                 <nav class="row navbar navbar-expand-lg bg-top-navbar">
                     <div class="container-fluid">
                         <ul class="navbar-nav bg-search_navbar-nav">
@@ -217,203 +220,92 @@
                         </ul>
                     </div>
                 </nav>
-                <div class="d-flex justify-content-between py-3">
-                    <div>
-                        <h2 class="cyllo_dashboard-head">Sales Prediction Dashboard</h2>
-                        <span class="cyll_dahboard--head_info"><i class="ri-information-line me-1"></i>Actual sale is
-                            from 2023-09-13 to 2024-08-04</span>
-                    </div>
+                <div class="row bg-breadcrumbs-titlebar">
+                    <div class=" d-flex align-items-center  py-2 bg-border-btm ">
+                        <button class="btn cyllo_add-btn"><i class="ri-add-line"></i>New</button>
 
-                    <div class="d-flex align-items-start ">
-                        <div class="position-relative">
-                            <button id="bgdialogBtn" class="btn cyllo-dashboard_secondary-btn" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#bg-dialogcontainer" aria-expanded="false"
-                                aria-controls="bg-dialogcontainer">
-                                <i class="ri-filter-3-line"></i> Filters
-                            </button>
-                            <div class="bg-marketing-auto_add-parent-container  collapse" id="bg-dialogcontainer">
-
-                                <div class="bg-market-dialog-header p-3 bg-border-btm">
-                                    <h2 class="bg-marketing-auto-dialog-head">Sales Filters</h2>
-                                </div>
-                                <form action="" class=" cyllo_filter--content">
-                                    <div class="p-3 pb-0">
-                                        <div class="col-12  mb-2">
-                                            <label for="" class="bg-marketing-auto-dialog-txt">Forcast Type</label>
-                                            <div class="dropdown">
-                                                <button
-                                                    class="btn dropdown-toggle bg-sale-forecast-dropdown bg-box_container w-100  bg-market-modal-selection-box"
-                                                    id="chatDropdown" role="button" data-bs-toggle="dropdown"
-                                                    aria-expanded="true">
-                                                    Select period
-                                                </button>
-                                                <ul class="dropdown-menu w-100 " aria-labelledby="chatDropdown"
-                                                    data-popper-placement="bottom-start"
-                                                    style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 36px, 0px);">
-                                                    <li><button class="dropdown-item bg-drop-down-item" href="#">
-                                                            AMIR</button>
-                                                    </li>
-                                                    <li><button class="dropdown-item  bg-drop-down-item"
-                                                            href="#">Forecast
-                                                            Option
-                                                            2</button>
-                                                    </li>
-                                                    <li><button class="dropdown-item  bg-drop-down-item"
-                                                            href="#">Forecast
-                                                            Option
-                                                            3</button>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                        </div>
-
-                                        <label for="" class="bg-marketing-auto-dialog-txt">Start date</label>
-                                        <div class="col-12 mb-2">
-                                            <input type="date"
-                                                class="bg-box_container w-100 p-1  bg-market-modal-selection-box">
-                                        </div>
-                                        <label for="" class="bg-marketing-auto-dialog-txt">End date</label>
-                                        <div class="col-12 mb-2">
-                                            <input type="date"
-                                                class="bg-box_container w-100 p-1  bg-market-modal-selection-box">
-                                        </div>
-
-                                        <label for="" class="bg-marketing-auto-dialog-txt">Future periods</label>
-                                        <div class="col-12 mb-2">
-                                            <input type="text"
-                                                class="bg-box_container w-100 p-1  bg-market-modal-selection-box">
-                                        </div>
-
-                                        <div class="col-12  my-3 mt-1">
-
-                                            <label for="" class="bg-marketing-auto-dialog-txt">Frequency</label>
-                                            <div class="dropdown">
-                                                <button
-                                                    class="btn dropdown-toggle bg-sale-forecast-dropdown bg-box_container w-100  bg-market-modal-selection-box"
-                                                    id="chatDropdown" role="button" data-bs-toggle="dropdown"
-                                                    aria-expanded="true">
-                                                    Day
-                                                </button>
-                                                <ul class="dropdown-menu w-100 " aria-labelledby="chatDropdown"
-                                                    data-popper-placement="bottom-start"
-                                                    style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 36px, 0px);">
-                                                    <li><button class="dropdown-item bg-drop-down-item"
-                                                            href="#">Forecast
-                                                            Day</button>
-                                                    </li>
-                                                    <li><button class="dropdown-item  bg-drop-down-item"
-                                                            href="#">Forecast
-                                                            Option
-                                                            2</button>
-                                                    </li>
-                                                    <li><button class="dropdown-item  bg-drop-down-item"
-                                                            href="#">Forecast
-                                                            Option
-                                                            3</button>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                        </div>
-
-                                        <div>
-                                            <div class="d-flex align-items-center justify-content-between mb-2">
-                                                <h4 class="cyllo-filrer_subhead">Forecast Coefficients</h4>
-                                                <span><input type="checkbox" name="switch" id="switch">
-                                                    <label for="switch"></label></span>
-                                                <span><i class="ri-information-line"></i></span>
-                                            </div>
-
-
-                                            <div class="col-12 mb-3 d-flex align-items-center gap-3">
-                                                <label for="" class="bg-marketing-auto-dialog-txt">p:</label><input
-                                                    type="text" class="form-control bg-box_container">
-                                            </div>
-                                            <div class="col-12 mb-3 d-flex align-items-center gap-3">
-                                                <label for="" class="bg-marketing-auto-dialog-txt">d:</label><input
-                                                    type="text" class="form-control bg-box_container">
-                                            </div>
-                                            <div class="col-12 mb-3 d-flex align-items-center gap-3">
-                                                <label for="" class="bg-marketing-auto-dialog-txt">q:</label><input
-                                                    type="text" class="form-control bg-box_container">
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="d-flex gap-2 mt-3 cyll-filter_apply-btn p-3 pt-1">
-                                        <button class="bg-button-primary-stroke py-2 px-4 bg-active-btn w-100 ">
-                                            Apply Filter
-                                        </button>
-
-                                    </div>
-
-                                </form>
-
-                            </div>
-                        </div>
-                        <button class="btn  cyllo-dashboard_secondary-btn" type="button">
-                            <i class="ri-upload-2-line"></i> Export
-                        </button>
-                        <div class="d-flex  cyllo-graphtype-selection">
-
-                            <div class="bg-sale_forecast-graph_img active">
-                                <i class="ri-line-chart-fill"></i>
-                            </div>
-
-                            <div class="bg-sale_forecast-graph_img">
-                                <i class="ri-pie-chart-2-fill"></i>
-                            </div>
-
-                        </div>
 
                     </div>
-
                 </div>
-                <div class="cyllo-sales-forecast_main d-flex gap-3">
-                    <div class="cyllo-sale-forecaste-subgraph-container">
-                        <div class="bg-box_container mb-3">
-                            <div class="d-flex align-items-center justify-content-between bg-border-btm px-3 py-2">
-                                <h2 class="bg-churn_tile-text">ACF</h2>
-                                <button class="cyllo-sales_forcast__filter-icon"><i
-                                        class="ri-image-2-line"></i></button>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-center p-3">
-                                <div class=" cyllo-sales-forcasting_graph"> <img src="images/Graph-Churn.png" alt="">
+                <div class="row">
+                    <div class="bg-dashboard-container">
+                        <div class="cyllo_chat-container">
+                            <div class="cyllo_chat--list">
+                                <div class="cyllo_chat-profile">
+                                    <img src="images/user-profile.png" alt="Profile" class="cyllo-img rounded-circle ">
+                                </div>
+                                <div class="cyllo_chat-box">
+                                    <p class="cyllo_chat-box-text">Hey, help me write an essay.</p>
+                                    <button class="btn bg-box_container cyllo-edit_box"><i
+                                            class="ri-pencil-line"></i>Edit
+                                        Prompt</button>
                                 </div>
                             </div>
-
-                        </div>
-                        <div class="bg-box_container mb-3">
-                            <div class="d-flex align-items-center justify-content-between bg-border-btm px-3 py-2">
-                                <h2 class="bg-churn_tile-text">PACF</h2>
-                                <button class="cyllo-sales_forcast__filter-icon"><i
-                                        class="ri-line-chart-line"></i></button>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-center p-3">
-                                <div class=" cyllo-sales-forcasting_graph"> <img src="images/Graph-Churn.png" alt="">
+                            <div class="cyllo_chat--list">
+                                <div class="cyllo_chat-profile rounded-circle ">
+                                    <div class="cyll_chat-aichatter-img">
+                                        <img src="images/Sheet/sparkling-2-fill (2).svg" alt="">
+                                    </div>
+                                
+                                </div>
+                                <div class="cyllo_chat-box cyllo_chat_reply">
+                                    <p class="cyllo_chat-box-text">Sure i can help you,Here are steps involved:</p>
+                                    <ol class="">
+                                        <li class="cyllo_chat-box_highlight">
+                                            <p class="cyllo_chat-box-text"><span class="cyllo_chat-box_highlight">Choose
+                                                    a topic.</span>This is the most
+                                                important step ,as the topic
+                                                determine the direction of your essay.Make sure to choose a topic that
+                                                you
+                                                are intrested in and that you have enough information about.</p>
+                                        </li>
+                                        <li class="cyllo_chat-box_highlight">
+                                            <p class="cyllo_chat-box-text"><span class="cyllo_chat-box_highlight">Choose
+                                                    a topic.</span>This is the most
+                                                important step ,as the topic
+                                                determine the direction of your essay.Make sure to choose a topic that
+                                                you
+                                                are intrested in and that you have enough information about.</p>
+                                        </li>
+                                        <li class="cyllo_chat-box_highlight">
+                                            <p class="cyllo_chat-box-text"><span class="cyllo_chat-box_highlight">Choose
+                                                    a topic.</span>This is the most
+                                                important step ,as the topic
+                                                determine the direction of your essay.Make sure to choose a topic that
+                                                you
+                                                are intrested in and that you have enough information about.</p>
+                                        </li>
+                                    </ol>
+                                    <div class="d-flex align-items-center justify-content-end gap-2">
+                                        <button class="btn bg-box_container cyllo-edit_box"><i
+                                                class="ri-clipboard-line"></i>Copy to Clipboard</button>
+                                        <button class="btn bg-box_container cyllo-edit_box"><i
+                                                class="ri-thumb-up-line"></i></button>
+                                        <button class="btn bg-box_container cyllo-edit_box"><i
+                                                class="ri-thumb-down-line"></i></button>
+                                    </div>
                                 </div>
                             </div>
-
-
+                            <div class="cyllo_chat-input__container">
+                                <form>
+                                    <div class="bg-chat__input-container">
+                                        <textarea class="bg-chat__input" rows="1"
+                                            placeholder="Ask something"></textarea>
+                                        <button class="bg-chat__send-btn">Send</button>
+                                    </div>
+                                    <p class="cyllo_chat-sm-txt">Ask Something.<span>Need Help?</span></p>
+                                </form>
+                            </div>
                         </div>
-                    </div>
-                    <div class="bg-box_container bg-sale-forecast_graph-container">
-                        <img src="images/bar-graph.png" alt="" class=" bg-sales-forecast-img">
                     </div>
                 </div>
             </main>
         </div>
-
     </div>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-
-
 </body>
 
 </html>

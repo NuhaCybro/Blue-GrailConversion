@@ -24,7 +24,7 @@
 }
 
 .bg-navigation-btn {
-  color: $link-color;
+  color: $primary-font;
   font-size: 14px;
   font-weight: 500;
   background: none;
@@ -45,7 +45,7 @@
 
 .bg-main-sectionhead {
   .bg-navigation-btn:not(:last-child) {
-    color: $primary-font;
+    color: $primary-color;
   }
 }
 
@@ -176,9 +176,10 @@
 }
 
 .bg-table_container {
-  max-height: 70vh;
+
   background-color: $white;
   overflow: auto;
+  border: 1px solid $stroke-color;
  // display: unset;
 }
 

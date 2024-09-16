@@ -2,13 +2,15 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sales Forecast</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Cyllo Blue grail</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/main.css" />
+
+
 </head>
 
 <body>
@@ -166,7 +168,8 @@
                     </a>
                 </div>
             </nav>
-            <main class="col-md-9 ms-sm-auto col-lg-10 ">
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 bg-main">
                 <nav class="row navbar navbar-expand-lg bg-top-navbar">
                     <div class="container-fluid">
                         <ul class="navbar-nav bg-search_navbar-nav">
@@ -217,203 +220,251 @@
                         </ul>
                     </div>
                 </nav>
-                <div class="d-flex justify-content-between py-3">
-                    <div>
-                        <h2 class="cyllo_dashboard-head">Sales Prediction Dashboard</h2>
-                        <span class="cyll_dahboard--head_info"><i class="ri-information-line me-1"></i>Actual sale is
-                            from 2023-09-13 to 2024-08-04</span>
+
+                <div class="row bg-breadcrumbs-titlebar">
+                    <div
+                        class="d-flex align-items-center justify-content-between py-2 bg-border-btm bg-breadcrumbs-bar">
+                        <span>Planning Allocation</span>
+                        <form action="" class="cy-pa__search">
+                            <span class="cy-pa__search-icon"><i class="ri-search-line"></i></span>
+                            <input type="search" placeholder="search">
+                        </form>
+                        <div class="d-flex align-items-center justify-content-end gap-2">
+                            <div class="bg-aligned-icons">
+                                <i class="ri-align-justify "></i>
+                                <i class="ri-bar-chart-2-fill"></i>
+                                <i class="ri-layout-grid-fill active"></i>
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div class="d-flex align-items-start ">
-                        <div class="position-relative">
-                            <button id="bgdialogBtn" class="btn cyllo-dashboard_secondary-btn" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#bg-dialogcontainer" aria-expanded="false"
-                                aria-controls="bg-dialogcontainer">
-                                <i class="ri-filter-3-line"></i> Filters
-                            </button>
-                            <div class="bg-marketing-auto_add-parent-container  collapse" id="bg-dialogcontainer">
-
-                                <div class="bg-market-dialog-header p-3 bg-border-btm">
-                                    <h2 class="bg-marketing-auto-dialog-head">Sales Filters</h2>
-                                </div>
-                                <form action="" class=" cyllo_filter--content">
-                                    <div class="p-3 pb-0">
-                                        <div class="col-12  mb-2">
-                                            <label for="" class="bg-marketing-auto-dialog-txt">Forcast Type</label>
-                                            <div class="dropdown">
-                                                <button
-                                                    class="btn dropdown-toggle bg-sale-forecast-dropdown bg-box_container w-100  bg-market-modal-selection-box"
-                                                    id="chatDropdown" role="button" data-bs-toggle="dropdown"
-                                                    aria-expanded="true">
-                                                    Select period
-                                                </button>
-                                                <ul class="dropdown-menu w-100 " aria-labelledby="chatDropdown"
-                                                    data-popper-placement="bottom-start"
-                                                    style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 36px, 0px);">
-                                                    <li><button class="dropdown-item bg-drop-down-item" href="#">
-                                                            AMIR</button>
-                                                    </li>
-                                                    <li><button class="dropdown-item  bg-drop-down-item"
-                                                            href="#">Forecast
-                                                            Option
-                                                            2</button>
-                                                    </li>
-                                                    <li><button class="dropdown-item  bg-drop-down-item"
-                                                            href="#">Forecast
-                                                            Option
-                                                            3</button>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                        </div>
-
-                                        <label for="" class="bg-marketing-auto-dialog-txt">Start date</label>
-                                        <div class="col-12 mb-2">
-                                            <input type="date"
-                                                class="bg-box_container w-100 p-1  bg-market-modal-selection-box">
-                                        </div>
-                                        <label for="" class="bg-marketing-auto-dialog-txt">End date</label>
-                                        <div class="col-12 mb-2">
-                                            <input type="date"
-                                                class="bg-box_container w-100 p-1  bg-market-modal-selection-box">
-                                        </div>
-
-                                        <label for="" class="bg-marketing-auto-dialog-txt">Future periods</label>
-                                        <div class="col-12 mb-2">
-                                            <input type="text"
-                                                class="bg-box_container w-100 p-1  bg-market-modal-selection-box">
-                                        </div>
-
-                                        <div class="col-12  my-3 mt-1">
-
-                                            <label for="" class="bg-marketing-auto-dialog-txt">Frequency</label>
-                                            <div class="dropdown">
-                                                <button
-                                                    class="btn dropdown-toggle bg-sale-forecast-dropdown bg-box_container w-100  bg-market-modal-selection-box"
-                                                    id="chatDropdown" role="button" data-bs-toggle="dropdown"
-                                                    aria-expanded="true">
-                                                    Day
-                                                </button>
-                                                <ul class="dropdown-menu w-100 " aria-labelledby="chatDropdown"
-                                                    data-popper-placement="bottom-start"
-                                                    style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 36px, 0px);">
-                                                    <li><button class="dropdown-item bg-drop-down-item"
-                                                            href="#">Forecast
-                                                            Day</button>
-                                                    </li>
-                                                    <li><button class="dropdown-item  bg-drop-down-item"
-                                                            href="#">Forecast
-                                                            Option
-                                                            2</button>
-                                                    </li>
-                                                    <li><button class="dropdown-item  bg-drop-down-item"
-                                                            href="#">Forecast
-                                                            Option
-                                                            3</button>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                        </div>
-
-                                        <div>
-                                            <div class="d-flex align-items-center justify-content-between mb-2">
-                                                <h4 class="cyllo-filrer_subhead">Forecast Coefficients</h4>
-                                                <span><input type="checkbox" name="switch" id="switch">
-                                                    <label for="switch"></label></span>
-                                                <span><i class="ri-information-line"></i></span>
-                                            </div>
-
-
-                                            <div class="col-12 mb-3 d-flex align-items-center gap-3">
-                                                <label for="" class="bg-marketing-auto-dialog-txt">p:</label><input
-                                                    type="text" class="form-control bg-box_container">
-                                            </div>
-                                            <div class="col-12 mb-3 d-flex align-items-center gap-3">
-                                                <label for="" class="bg-marketing-auto-dialog-txt">d:</label><input
-                                                    type="text" class="form-control bg-box_container">
-                                            </div>
-                                            <div class="col-12 mb-3 d-flex align-items-center gap-3">
-                                                <label for="" class="bg-marketing-auto-dialog-txt">q:</label><input
-                                                    type="text" class="form-control bg-box_container">
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="d-flex gap-2 mt-3 cyll-filter_apply-btn p-3 pt-1">
-                                        <button class="bg-button-primary-stroke py-2 px-4 bg-active-btn w-100 ">
-                                            Apply Filter
-                                        </button>
-
-                                    </div>
-
-                                </form>
-
-                            </div>
+                    <div class="py-2 d-flex gap-2 align-items-center bg-border-btm">
+                        <div class="d-flex gap-1 bg-navigation-icon-box">
+                            <button class=" cy-navigation__icon"><i class="ri-arrow-left-s-line "></i></button>
+                            <button class=" cy-navigation__icon active"><i class="ri-arrow-right-s-line "></i></button>
                         </div>
-                        <button class="btn  cyllo-dashboard_secondary-btn" type="button">
-                            <i class="ri-upload-2-line"></i> Export
-                        </button>
-                        <div class="d-flex  cyllo-graphtype-selection">
-
-                            <div class="bg-sale_forecast-graph_img active">
-                                <i class="ri-line-chart-fill"></i>
-                            </div>
-
-                            <div class="bg-sale_forecast-graph_img">
-                                <i class="ri-pie-chart-2-fill"></i>
-                            </div>
-
-                        </div>
-
+                        <select name="" id="" class="cy-pa__selection bg-button-stroke">
+                            <option value="">Week</option>
+                            <option value="">Monday</option>
+                            <option value="">Tuesday</option>
+                        </select>
+                        <button class="btn bg-button-stroke">Today</button>
+                        <span class="cy-pa_md-head">2024-03-05 - 2024-03-10</span>
                     </div>
 
                 </div>
-                <div class="cyllo-sales-forecast_main d-flex gap-3">
-                    <div class="cyllo-sale-forecaste-subgraph-container">
-                        <div class="bg-box_container mb-3">
-                            <div class="d-flex align-items-center justify-content-between bg-border-btm px-3 py-2">
-                                <h2 class="bg-churn_tile-text">ACF</h2>
-                                <button class="cyllo-sales_forcast__filter-icon"><i
-                                        class="ri-image-2-line"></i></button>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-center p-3">
-                                <div class=" cyllo-sales-forcasting_graph"> <img src="images/Graph-Churn.png" alt="">
+                <div class="row bg-table_container ">
+                    <table class="cy-pa_table">
+                        <thead>
+                            <th></th>
+                            <th>
+                                <div>
+                                    <p class="cy-pa__day">MONDAY</p>
+                                    <span>5</span>
                                 </div>
-                            </div>
-
-                        </div>
-                        <div class="bg-box_container mb-3">
-                            <div class="d-flex align-items-center justify-content-between bg-border-btm px-3 py-2">
-                                <h2 class="bg-churn_tile-text">PACF</h2>
-                                <button class="cyllo-sales_forcast__filter-icon"><i
-                                        class="ri-line-chart-line"></i></button>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-center p-3">
-                                <div class=" cyllo-sales-forcasting_graph"> <img src="images/Graph-Churn.png" alt="">
+                            </th>
+                            <th class="cy-ps-today--highlight">
+                                <div>
+                                    <p class="cy-pa__day">TUESDAY</p>
+                                    <span>6</span>
                                 </div>
-                            </div>
+                            </th>
+                            <th>
+                                <div>
+                                    <p class="cy-pa__day">WEDNESDAY</p>
+                                    <span>7</span>
+                                </div>
+                            </th>
+                            <th>
+                                <div>
+                                    <p class="cy-pa__day">THURSDAY</p>
+                                    <span>6</span>
+                                </div>
+                            </th>
+                            <th>
+                                <div>
+                                    <p class="cy-pa__day">FRIDAY</p>
+                                    <span>7</span>
+                                </div>
+                            </th>
+                            <th>
+                                <div>
+                                    <p class="cy-pa__day">SATURDAY</p>
+                                    <span>8</span>
+                                </div>
+                            </th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="cy-profile">
+                                        <div class="cy-profile__avatar">
+                                            <img src="https://ui-avatars.com/api/?name=Abigail Peterson&amp;background=random"
+                                                class="cy-profile__image" alt="Abigail Peterson">
+                                        </div>
+                                        <span class="cy-profile__name">Abigail Peterson</span>
+
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="cy-pa-slot">Abigail Peterson</div>
+                                </td>
+                                <td class="cy-ps-today--highlight"></td>
+                                <td></td>
+                                <td>
+                                    <div class="cy-pa-slot cy-pa-slot-2">Abigail Peterson</div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="cy-profile">
+                                        <div class="cy-profile__avatar">
+                                            <img src="https://ui-avatars.com/api/?name=Anita Oliver&amp;background=random"
+                                                class="cy-profile__image" alt="Anita Oliver">
+                                        </div>
+                                        <span class="cy-profile__name">Anita Oliver</span>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="cy-ps-today--highlight">
+                                    <div class="cy-pa-slot cy-pa-slot-4">Abigail Peterson</div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <div class="cy-pa-slot cy-pa-slot-5">Abigail Peterson</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                    <div class="cy-profile">
+                                        <div class="cy-profile__avatar">
+                                            <img src="https://ui-avatars.com/api/?name=Azure Interior&amp;background=random"
+                                                class="cy-profile__image" alt="Azure Interior">
+                                        </div>
+                                        <span class="cy-profile__name">Azure Interior</span>
+                                    </div>
 
 
-                        </div>
-                    </div>
-                    <div class="bg-box_container bg-sale-forecast_graph-container">
-                        <img src="images/bar-graph.png" alt="" class=" bg-sales-forecast-img">
-                    </div>
+                                </td>
+                                <td>
+                                    <div class="cy-pa-slot cy-pa-slot-6">Abigail Peterson</div>
+                                </td>
+
+                                <td class="cy-ps-today--highlight"></td>
+                                <td>
+                                    <div class="cy-pa-slot cy-pa-slot-3">Abigail Peterson</div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="cy-profile">
+                                        <div class="cy-profile__avatar">
+                                            <img src="https://ui-avatars.com/api/?name=Brandon Freeman&amp;background=random"
+                                                class="cy-profile__image" alt="Brandon Freeman">
+                                        </div>
+                                        <span class="cy-profile__name">Brandon Freeman</span>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="cy-ps-today--highlight">
+                                    <div class="cy-pa-slot cy-pa-slot-2">Abigail Peterson</div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <div class="cy-pa-slot cy-pa-slot-7">Abigail Peterson</div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="cy-profile">
+                                        <div class="cy-profile__avatar">
+                                            <img src="https://ui-avatars.com/api/?name=Charle&amp;background=random"
+                                                class="cy-profile__image" alt="Charle">
+                                        </div>
+                                        <span class="cy-profile__name">Charle</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="cy-pa-slot cy-pa-slot-9">Abigail Peterson</div>
+                                </td>
+                                <td class="cy-ps-today--highlight"></td>
+                                <td></td>
+                                <td>
+                                    <div class="cy-pa-slot">Abigail Peterson</div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="cy-profile">
+                                        <div class="cy-profile__avatar">
+                                            <img src="https://ui-avatars.com/api/?name=Daiwik&amp;background=random"
+                                                class="cy-profile__image" alt="Daiwik">
+                                        </div>
+                                        <span class="cy-profile__name">Daiwik</span>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="cy-ps-today--highlight"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="cy-profile">
+                                        <div class="cy-profile__avatar">
+                                            <img src="https://ui-avatars.com/api/?name=Fenil&amp;background=random"
+                                                class="cy-profile__image" alt="Fenil">
+                                        </div>
+                                        <span class="cy-profile__name">Fenil</span>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="cy-ps-today--highlight"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="cy-profile">
+                                        <div class="cy-profile__avatar">
+                                            <img src="https://ui-avatars.com/api/?name=Peter John&amp;background=random"
+                                                class="cy-profile__image" alt="Peter John">
+                                        </div>
+                                        <span class="cy-profile__name">Peter John</span>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="cy-ps-today--highlight"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
+
+
             </main>
         </div>
-
     </div>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-
-
 </body>
 
 </html>
